@@ -1,6 +1,7 @@
 ---
 title: Test new
 date: 2016-12-17 22:24:00 Z
+layout: post
 ---
 
 How do they interact?
