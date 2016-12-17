@@ -1,14 +1,15 @@
 ---
-layout: post
 title: Bytecode Hacking for Great Justice
-date: '2015-04-23T11:16:56-04:00'
+date: 2015-04-23 15:16:56 Z
 tags:
 - code
 - python
 - bytecode
 - optimization
+layout: post
 tumblr_url: http://blog.fastforwardlabs.com/post/117173339298/bytecode-hacking-for-great-justice
 ---
+
 <p><em>DO NOT TRY THIS AT HOME! NO PYTHONS WERE HURT IN THE CREATION OF THIS BLOG POST!</em></p>
 <p>Check out the code at code at <a href="http://github.com/mynameisfiber/pytailcall">github.com/mynameisfiber/pytailcall</a></p>
 <p>As an exercise into learning more about python 2.7 bytecode, I wanted to implement the thing that pythonistas <a href="http://neopythonic.blogspot.com/2009/04/tail-recursion-elimination.html">love to hate</a> - tail call optimization! This isn&rsquo;t <a href="http://www.teamrubber.com/blog/python-tail-optimisation-using-byteplay/">novel</a> at all, but I chose to implement this only using the standard library so that I could understand more about generating and modifying bytecode. As a result, I&rsquo;m sure there are <em>many</em> edge cases that I don&rsquo;t consider so please, keep your sys-ops sane and <em>do not use this code in production</em>. <a href="https://github.com/mynameisfiber/pytailcall/">In the end</a>, even though the code is fun it is a filthy hack that shouldn&rsquo;t be used in production code and should never be considered to make it&rsquo;s way into the python source. One point I really like on <a href="http://neopythonic.blogspot.com/2009/04/tail-recursion-elimination.html">Guido&rsquo;s blog post</a> about this issue is tail recursion optimization ruins the stack traces and detracts from python&rsquo;s ability to debug easily.</p>

@@ -1,13 +1,14 @@
 ---
-layout: post
 title: Under the Hood of the Variational Autoencoder (in Prose and Code)
-date: '2016-08-22T14:02:08-04:00'
+date: 2016-08-22 18:02:08 Z
 tags:
 - code
 - deep learning
 - probabilistic programming
+layout: post
 tumblr_url: http://blog.fastforwardlabs.com/post/149329060653/under-the-hood-of-the-variational-autoencoder-in
 ---
+
 <p>The <a href="https://arxiv.org/abs/1312.6114">Variational</a> <a href="https://arxiv.org/abs/1401.4082">Autoencoder</a> (VAE) neatly synthesizes unsupervised deep learning and variational Bayesian methods into one sleek package. In <a href="http://blog.fastforwardlabs.com/post/148842796218/introducing-variational-autoencoders-in-prose-and">Part I</a> of this series, we introduced the theory and intuition behind the VAE, an exciting development in machine learning for combined generative modeling and inference—<a href="http://shakirm.com/slides/DLSummerSchool_Aug2016_compress.pdf">“machines that imagine and reason.”</a></p>
 <p>To recap: VAEs put a probabilistic spin on the basic autoencoder paradigm—treating their inputs, hidden representations, and reconstructed outputs as probabilistic random variables within a directed graphical model. With this <a href="https://xkcd.com/1236/">Bayesian</a> perspective, the encoder becomes a variational <em>inference network</em>, mapping observed inputs to (approximate) posterior distributions over latent space, and the decoder becomes a <em>generative network</em>, capable of mapping arbitrary latent coordinates back to distributions over the original data space.</p>
 <div class="figure">
