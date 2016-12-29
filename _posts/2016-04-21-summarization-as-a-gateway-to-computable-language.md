@@ -7,6 +7,8 @@ tags:
 - language processing
 layout: post
 tumblr_url: http://blog.fastforwardlabs.com/post/143177754283/summarization-as-a-gateway-to-computable-language
+preview_image: http://68.media.tumblr.com/981136c87557be0df4c1d09c3b4ed8b2/tumblr_inline_o600ygq2OG1qcg73w_540.png
+feature: true
 ---
 
 <p>Analyzing unstructured text data such as news, emails, chats, narrative prose, legal documents, or transcribed speech is an extremely tough problem. Thanks to massive leaps in data engineering, we can just about store and retrieve this torrent of information. But we can&rsquo;t yet conduct the kind of rich and fast analyses that we take for granted with structured, quantitative data.</p>

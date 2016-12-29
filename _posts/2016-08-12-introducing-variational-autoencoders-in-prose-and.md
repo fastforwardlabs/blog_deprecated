@@ -7,6 +7,8 @@ tags:
 - probabilistic programming
 layout: post
 tumblr_url: http://blog.fastforwardlabs.com/post/148842796218/introducing-variational-autoencoders-in-prose-and
+preview_image: http://www.fastforwardlabs.com/blog-images/miriam/160727_1340_explore.gray_del11_492x490.slower40.gif
+feature: true
 ---
 
 <p>Effective machine learning means building expressive models that sift out signal from noise—that simplify the complexity of real-world data, yet accurately intuit and capture its subtle underlying patterns.</p>

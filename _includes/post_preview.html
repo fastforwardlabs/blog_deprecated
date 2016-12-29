@@ -1,0 +1,44 @@
+<li class="home-post relative flex flex-wrap content-between {% if include.post.feature %}feature-post{% endif %}">
+  <div class="post-title">
+    <h5 class="post-meta">
+      <span class="post-meta-span">
+        <span class="post-type">
+        {% if post.feature %}
+          Featured Post
+        {% else %}
+          Post
+        {% endif %}
+        </span>
+        {{ include.post.date | date: "%b %-d %Y" }}
+        {% if include.post.author %}
+          {% if include.post.author_link %}
+            by <a href={{ page.author_link }} itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ include.post.author }}</span></a>
+          {% else %}
+            by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ include.post.author }}</span></span>
+          {% endif %}
+        {% endif %}
+      </span>
+    </h5>
+    <h2><span class="post-link-backer"><a class="post-link" href="{{ include.post.url | relative_url }}">{{ include.post.title | escape }}</a></span></h2>
+  </div>
+  {% if include.post.preview_image %}
+    <div class="preview-image" style="background-image: url({{include.post.preview_image}});)"></div>
+    <div class="preview-text" style="">
+      <h5 class="preview-excerpt"><span class="excerpt-span">{{ include.post.content | strip_html | truncate: 300 }}</span></h5>
+      <div class="read-more-holder">
+        <h5 style="margin: 0;"><a class="read-more-link" href="{{ include.post.url }}">...read more
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" style="fill: rgba(0,215,226, 0.8); height: 0.25rem; margin-left: 0.125rem; position: relative; top: -0.1em;" viewBox="0 0 274.2 125"><polygon points="0 0 0 62.5 0 125 137.1 62.5 0 0"/><polygon points="137.1 0 137.1 62.5 137.1 125 274.2 62.5 137.1 0"/></svg> -->
+        </a></h5>
+      </div>
+    </div>
+  {% else %}
+    <div class="preview-text text-only" style="">
+      <h5 class="preview-excerpt text-only"><span class="excerpt-span">{{ include.post.content | strip_html | truncate: 500  }}</span></h5>
+      <div class="read-more-holder">
+        <h5 style="margin: 0;"><a class="read-more-link" href="{{ include.post.url }}">...read more
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" style="fill: rgba(0,215,226, 0.8); height: 0.25rem; margin-left: 0.125rem; position: relative; top: -0.1em;" viewBox="0 0 274.2 125"><polygon points="0 0 0 62.5 0 125 137.1 62.5 0 0"/><polygon points="137.1 0 137.1 62.5 137.1 125 274.2 62.5 137.1 0"/></svg> -->
+        </a></h5>
+      </div>
+    </div>
+  {% endif %}
+</li>

@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  {{ content }}
+
+  <ul class="post-list flex flex-wrap justify-center">
+    {% assign post_count = 1 %}
+    {% assign link_count = 0 %}
+    {% for post in site.posts %}
+      {% assign modulo_check = post_count | modulo:3 %}
+      {% assign disperse_check = post_count | modulo:8 %}
+      {% if modulo_check == 0 and post.feature %}
+        {% assign current_link = site.data.links[link_count] %}
+        {% include link.html link=current_link %}
+        {% assign post_count = post_count | plus: 1 %}
+        {% assign link_count = link_count | plus: 2 %}
+      {% else %}
+        {% if disperse_check == 0 or disperse_check == 7 and post.feature %}
+          {% assign current_link = site.data.links[link_count] %}
+          {% include link.html link=current_link %}
+          {% assign post_count = post_count | plus: 1 %}
+          {% assign link_count = link_count | plus: 1 %}
+        {% endif %}
+      {% endif %}
+      {% include post_preview.html post=post %}
+      {% if post.feature %}
+        {% assign post_count = post_count | plus: 2 %}
+      {% else %}
+        {% assign post_count = post_count | plus: 1 %}
+      {% endif %}
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+
+</div>

@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header wide-container center relative">
+<!--     <svg class="absolute" style="top: -0.5rem; height: 6rem; left: 50%; transform: translate(-50%,0);" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 136.68 150.13"><polygon fill="rgba(0,215,226, 0.5)" points="136.68 0 68.24 0 -0.2 0 68.24 150.13 136.68 0"/></svg> -->
+<!--     <h6 class="post-meta relative"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+      {{ page.date | date: "%B %-d %Y" }}
+    </time></h6> -->
+    <h4>
+      {% if page.feature %}
+        Featured Post
+      {% else %}
+        Post
+      {% endif %}
+    </h4>
+    <h1 class="post-title relative" itemprop="name headline">{{ page.title | escape }}</h1>
+    <h5>
+      {{ page.date | date: "%b %-d %Y" }}
+      {% if page.author %}
+        {% if page.author_link %}
+          &middot; by <a href={{ page.author_link }} itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></a>
+        {% else %}
+          &middot; by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
+        {% endif %}
+      {% endif %}
+    </h5>
+  </header>
+
+  <div class="post-content container" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+</article>

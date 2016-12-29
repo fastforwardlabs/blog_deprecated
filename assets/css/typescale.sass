@@ -1,0 +1,408 @@
+---
+---
+
+*
+  box-sizing: border-box
+
+@mixin webfont
+  &
+    font-family: sans-serif
+  .chambers-loaded &
+    font-family: ChambersSans, sans-serif
+  .chambers-b-loaded &
+    font-family: ChambersSans, sans-serif
+@mixin webfontItalic
+  font-style: italic
+  .chambers-b-loaded &
+    font-family: ChambersSansItalic, sans-serif
+    font-weight: 500
+@mixin webfontBold
+  font-weight: 700
+  font-style: normal
+  .chambers-b-loaded &
+    font-family: ChambersSansBold, sans-serif
+    font-weight: 900
+@mixin webfontItalic
+  font-style: italic
+  .chambers-b-loaded &
+    font-family: ChambersSansItalic, sans-serif
+    font-weight: 500
+@mixin webfontBoldItalic
+  font-weight: 700
+  font-style: italic
+  .chambers-b-loaded &
+    font-family: ChambersSansBoldItalic, sans-serif
+    font-weight: 900
+
+$base_font: 22px
+$base_lh: 1.5
+$rem: $base_font * $base_lh
+
+$light-cyan: rgba(0,215,226, 0.5)
+$cyan: rgba(0,215,226, 0.8)
+$dark-cyan: rgba(0,215,226, 1)
+
+html
+  font-size: $rem
+
+body
+  margin: 0
+  font-size: $base_font
+  font-weight: 500
+  line-height: $base_lh
+  color: #222
+  @include webfont
+
+.block
+  display: block
+.lh0
+  line-height: 0
+
+a
+  color: #222
+  box-shadow: inset 0 -0.25em 0 $light-cyan
+  border-bottom: solid 0.05em $light-cyan
+  text-decoration: none
+  &:hover
+    box-shadow: inset 0 -0.25em 0 $cyan
+    border-bottom-color: $cyan
+  &.no-underline, &.no-underline:hover
+    border-bottom: none
+    box-shadow: none
+
+.nav-link
+  border-bottom: none
+  box-shadow: none
+  text-transform: uppercase
+  letter-spacing: 0.05em
+  color: $cyan
+  font-size: $base_font
+  border-bottom: none
+  box-shadow: none
+  text-rendering: geometricPrecision
+  @include webfontBold
+  &.secondary
+    font-size: $base_font * 0.875
+    line-height: $base_lh/0.875
+    letter-spacing: 0.1em
+    // font-style: italic
+  &:hover
+    border-bottom: none
+    box-shadow: none
+    color: $dark-cyan
+  &.active
+    color: #222
+
+// assume 1rem padding on each side of the text width
+.text-width
+  max-width: 22rem
+
+.h5-text-width
+  max-width: 22rem * 0.875
+
+.wide-container
+  max-width: 33rem
+  padding: 0 1rem
+  margin: 0 auto
+
+.container
+  max-width: 22rem
+  margin: 0 auto
+  padding: 0 1rem
+
+h1,h2,h3,h4,h5,h6
+  margin: 0
+
+$h1_base: $base_font * 1.75
+$h1_adjust: 1.25
+
+h1
+  line-height: $base_lh/$h1_adjust
+  font-size: $h1_base * $h1_adjust
+  margin: 1rem 0 1rem
+  +webfontBold
+
+$h2_base: $base_font * 1.25
+$h2_adjust: 1.1
+
+h2
+  line-height: $base_lh/$h2_adjust
+  font-size: $h2_base * $h2_adjust
+  margin: 1rem 0 1rem
+  +webfontBold
+
+$h3_base: $base_font * 1.125
+$h3_adjust: 1.1
+
+h3
+  line-height: $base_lh/$h3_adjust
+  font-size: $h3_base * $h3_adjust
+  margin: 1rem 0 1rem
+  +webfontBold
+
+h4
+  margin: 1rem 0
+  letter-spacing: 0.05em
+  text-rendering: geometricPrecision
+  text-transform: uppercase
+  +webfontBold
+
+$h5_base: $base_font * 0.875
+
+h5, .h5
+  line-height: $base_lh
+  font-size: $h5_base
+  margin: 1rem 0
+  +webfontItalic
+
+$h6_base: $base_font
+$h6_adjust: 0.9
+
+h6
+  line-height: $base_lh/$h6_adjust
+  font-size: $base_font * $h6_adjust
+  text-transform: uppercase
+  letter-spacing: 0.05em
+  +webfontBold
+
+p
+  margin: 1rem 0
+
+p code
+  background: #efefef
+  padding: 0.1rem 0.2rem 0.1rem
+  font-family: 'Monaco', monospace
+  font-size: $base_font * 0.75
+
+ul, ol
+  padding-left: 1.25rem
+
+.post-list ul
+  list-style-type: disc
+
+strong, b
+  +webfontBold
+
+em, i
+  +webfontItalic
+
+strong em, em strong, b i, i b
+  +webfontBoldItalic
+
+blockquote
+  margin-left: 2px
+  border-left: solid 6px #ddd
+  padding-left: calc(1.25rem - 8px)
+
+pre
+  background: #fafafa
+  padding: 1rem
+  font-family: 'Monaco', monospace
+  font-size: $base_font * 0.75
+  line-height: 1.5
+  margin: 1rem 0
+  overflow-x: auto
+
+div, h1, h2, h3, h4, h5, h6, a, p, pre
+  // outline: solid 1px blue
+figure, img
+  // display: none
+figure, img
+  line-height: 0
+  margin: 0
+img
+  display: block
+  margin: 1rem auto
+  max-width: 100%
+
+.post-list
+  list-style: none
+  padding: 0 !important
+  margin: 0 1rem
+
+.home-post
+  height: 12rem
+  width: 12rem
+  width: 33.33%
+  // width: 33.33vw
+  // height: 33.33vw
+  padding: 0 1rem
+  margin-bottom: 1rem
+  overflow: hidden
+  position: relative
+  // background: blue
+  .post-meta, .post-title h2
+    margin: 0
+  .post-title
+    // height: 2.5rem
+  .post-meta
+    margin-bottom: 0
+    .post-meta-span
+      background: #fff
+      padding: 0.1em
+  .post-type
+    text-transform: uppercase
+    letter-spacing: 0.05em
+    +webfontBold
+  p
+    margin: 0.5rem 0 0.5rem
+  &.feature-post
+    // width: 24rem + 2rem
+    // width: 66.67vw
+    // width: 66.67%
+    // background: $light-cyan
+    .preview-image
+      height: 9.375rem
+      top: 1.3rem
+      left: 1rem
+      // background-image: none !important
+      &:after
+        content: ""
+        position: absolute
+        left: 0
+        top: 0
+        height: 13rem
+        width: 24rem + 2rem
+        // background: rgba(0,0,0,0.125)
+    .preview-text
+      height: $h5_base * 4 * 1.5 - 1px
+    .preview-excerpt
+      height: $h5_base * 3 * 1.5
+
+.link-post-inner
+  // border: solid 4px #efefef
+  // background: #efefef
+  padding: 1rem 0
+  height: 100%
+  // padding: 1rem
+  // .link-post-inner
+  //   // background: $light-cyan
+  //   height: 11.64rem
+  //   margin-top: 0.25rem
+  //   padding: 1rem
+  //   position: relative
+  //   a
+  //     background: #fff
+  //     // box-shadow: inset 0 -0.25em 0 rgba(255,255,255,0.75)
+  //     // border-color: rgba(255,255,255,0.75)
+
+// assuming 22px & 1.5 line height which makes 33 our rem unit
+// 11rem min-width for post unit
+.home-post
+  width: 100%
+@media (min-width: (33px * 11 * 2) + (33px * 2))
+  .home-post
+    width: 50%
+@media (min-width: (33px * 11 * 3) + (33px * 2))
+  .home-post
+    width: 33.33%
+    &.feature-post
+      width: 66.67%
+@media (min-width: (33px * 11 * 6) + (33px * 2))
+  .home-post
+    width: 16.67%
+    &.feature-post
+      width: 33.33%
+
+.site-footer
+  .home-post, .home-post.feature-post, .footer-sep
+    width: 33.33%
+
+.footer-sep-inner
+  // background: #efefef
+  height: 11.5rem
+  margin-top: 0.25rem
+  padding: 0 1rem
+  h5, h4
+    margin: 0
+
+
+.read-more-holder
+  margin-top: 0
+  position: absolute
+  z-index: 2
+  text-align: right
+  bottom: 0
+  right: 1rem
+
+.read-more-link
+  margin: 0
+
+.post-link-backer
+  background: #fff
+  padding-top: 0.1em
+
+.post-title
+  position: relative
+  z-index: 2
+
+.link-domain
+  background: #fff
+  box-shadow: -0.21rem 0 0 #fff, 0.2rem 0 0 #fff
+  padding: 0.15rem 0
+
+.preview-image, .link-image-backer
+  height: 7.25rem
+  width: 100%
+  width: calc(100% - 2rem)
+  background: #efefef
+  position: absolute
+  top: 2.5rem
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center center
+
+.link-image-backer
+  height: 6rem
+  top: 3rem
+  width: 100%
+
+.preview-text
+  height: $h5_base * 5 * 1.5 - 1px
+  &.text-only
+    height: $h5_base * 7 * 1.5 - 1px
+
+.preview-excerpt
+  height: $h5_base * 4 * 1.5
+  margin: 0
+  overflow: hidden
+  position: relative
+  z-index: 2
+  padding-right: 1.2rem
+  padding-left: 0.2rem
+  &.text-only
+    height: $h5_base * 6 * 1.5
+
+.excerpt-span
+  background: #fff
+  box-shadow: -0.21rem 0 0 #fff, 0.2rem 0 0 #fff
+  padding: 0.15rem 0
+
+.border-bottom
+  // border-color: rgba(0,0,0,0.125)
+  border-color: #eee
+  border-width: 2px
+
+@font-face
+  font-family: ChambersSans
+  src: url('Fonts/1385718/c9b720bd-7cae-41eb-a84f-bfe7c2cad5c0.woff2') format('woff2'), url('Fonts/1385718/234fc275-2f1b-4c0f-a523-48d1335efd32.woff') format('woff'), url('Fonts/1385718/2d3751af-f69a-423f-b25f-9e64771a0810.ttf') format('truetype')
+  font-weight: 500
+  font-style: normal
+
+@font-face
+  font-family: ChambersSansBold
+  src: url('Fonts/1464734/fa46ac36-9953-4580-8b48-93fe6deebb45.woff2') format('woff2'), url('Fonts/1464734/f2dcf0a8-0d00-4fe6-9fc7-570bc7801cb2.woff') format('woff'), url('Fonts/1464734/fa247f7b-e6c6-484d-b86c-6376483eccbf.ttf') format('truetype')
+  font-weight: 900
+  font-style: normal
+
+@font-face
+  font-family: ChambersSansItalic
+  src: url("Fonts/1385720/2dc6e720-12de-4f42-b923-1704efa9c107.woff2") format("woff2"), url("Fonts/1385720/13b5a169-2a28-4554-b4e8-6deba5a36926.woff") format("woff"), url("Fonts/1385720/bb1005e3-aac7-4bf1-8020-3dd984825855.ttf") format("truetype")
+  font-weight: 500
+  font-style: italic
+
+@font-face
+  font-family: ChambersSansBoldItalic
+  src: url('Fonts/1464738/c5d6fe40-4f9b-410c-8332-143de7007d10.woff2') format('woff2'), url('Fonts/1464738/62b38225-dff1-43ee-8238-c3d5876911cd.woff') format('woff'), url('Fonts/1464738/1d6bff39-3f05-4706-a206-152082998317.ttf') format('truetype')
+  font-weight: 900
+  font-style: italic
