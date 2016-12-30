@@ -70,6 +70,17 @@ a
     border-bottom: none
     box-shadow: none
 
+a.block, a.flex
+  border-bottom: none
+  box-shadow: none
+  .inblock-link
+    box-shadow: inset 0 -0.25em 0 $light-cyan
+    border-bottom: solid 0.05em $light-cyan
+  &:hover
+    .inblock-link
+      box-shadow: inset 0 -0.25em 0 $cyan
+      border-bottom-color: $cyan
+
 .nav-link
   border-bottom: none
   box-shadow: none
@@ -224,53 +235,51 @@ img
   margin: 0 1rem
 
 .home-post
-  height: 12rem
-  width: 12rem
+  // height: 12rem
   width: 33.33%
   // width: 33.33vw
   // height: 33.33vw
   padding: 0 1rem
   margin-bottom: 1rem
   overflow: hidden
-  position: relative
   // background: blue
-  .post-meta, .post-title h2
-    margin: 0
-  .post-title
-    // height: 2.5rem
-  .post-meta
-    margin-bottom: 0
-    .post-meta-span
-      background: #fff
-      padding: 0.1em
-  .post-type
-    text-transform: uppercase
-    letter-spacing: 0.05em
-    +webfontBold
-  p
-    margin: 0.5rem 0 0.5rem
-  &.feature-post
-    // width: 24rem + 2rem
-    // width: 66.67vw
-    // width: 66.67%
-    // background: $light-cyan
-    .preview-image
-      height: 9.375rem
-      top: 1.3rem
-      left: 1rem
-      // background-image: none !important
-      &:after
-        content: ""
-        position: absolute
-        left: 0
-        top: 0
-        height: 13rem
-        width: 24rem + 2rem
-        // background: rgba(0,0,0,0.125)
-    .preview-text
-      height: $h5_base * 4 * 1.5 - 1px
-    .preview-excerpt
-      height: $h5_base * 3 * 1.5
+  // .post-meta, .post-title h2
+  //   margin: 0
+  // .post-title
+  //   // height: 2.5rem
+  // .post-meta
+  //   margin-bottom: 0
+  //   .post-meta-span
+  //     background: #fff
+  //     padding: 0.1em
+  // .post-type
+  //   text-transform: uppercase
+  //   letter-spacing: 0.05em
+  //   +webfontBold
+  // p
+  //   margin: 0.5rem 0 0.5rem
+  // &.feature-post
+  //   // width: 24rem + 2rem
+  //   // width: 66.67vw
+  //   // width: 66.67%
+  //   // background: $light-cyan
+  //   .preview-image
+  //     height: 9.375rem
+  //     top: 1.3rem
+  //     left: 1rem
+  //     // background-image: none !important
+  //     &:after
+  //       content: ""
+  //       position: absolute
+  //       left: 0
+  //       top: 0
+  //       height: 13rem
+  //       width: 24rem + 2rem
+  //       // background: rgba(0,0,0,0.125)
+  //   .preview-text
+  //     height: $h5_base * 4 * 1.5 - 1px
+  //   .preview-excerpt
+  //     height: $h5_base * 3 * 1.5
 
 .link-post-inner
   // border: solid 4px #efefef
@@ -349,28 +358,40 @@ img
   padding: 0.15rem 0
 
 .preview-image, .link-image-backer
-  height: 7.25rem
+  // height: 7.25rem
   width: 100%
-  width: calc(100% - 2rem)
+  // width: calc(100% - 2rem)
   background: #efefef
   position: absolute
-  top: 2.5rem
+  // top: 2.5rem
   background-size: cover
   background-repeat: no-repeat
   background-position: center center
 
-.link-image-backer
-  height: 6.5rem
-  top: 2.75rem
-  width: 100%
+.post-preview-body
+  height: 10.5rem
+  .preview-image
+    height: 7.5rem
+    top: 1.5rem
 
-.preview-text
-  height: $h5_base * 5 * 1.5 - 1px
-  &.text-only
-    height: $h5_base * 7 * 1.5 - 1px
+.link-body
+  background: #efefef
+  padding: 0.5rem 0
+  margin-top: 0.25rem
+  height: 10.25rem
+  &:hover
+    background: #e6e6e6
+  .highlight-span
+    background: #efefef
+    box-shadow: -0.5rem 0 0 #efefef, 0.2rem 0 0 #efefef
+  .preview-image
+    height: 6.5rem
+    top: 1.875rem
+  .link-highlight-span
+    background: #fff
 
 .preview-excerpt
-  height: $h5_base * 4 * 1.5
+  height: $h5_base * 4 * 1.5 - 1px
   margin: 0
   overflow: hidden
   position: relative
@@ -380,10 +401,18 @@ img
   &.text-only
     height: $h5_base * 6 * 1.5
 
-.excerpt-span
+.feature-post
+  .preview-excerpt
+    height: $h5_base * 3 * 1.5
+
+.white-span
   background: #fff
-  box-shadow: -0.21rem 0 0 #fff, 0.2rem 0 0 #fff
-  padding: 0.15rem 0
+
+h5
+  .highlight-span
+    background: #fff
+    box-shadow: -0.21rem 0 0 #fff, 0.2rem 0 0 #fff
+    padding: 0.15rem 0
 
 .border-bottom
   // border-color: rgba(0,0,0,0.125)

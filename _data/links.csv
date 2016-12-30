@@ -1,6 +1,8 @@
-url,text,image,kicker
-https://blog.ought.com/nips-2016-875bb8fadb8c#.qq47cl881,50 Things I learned at NIPs,https://cdn-images-1.medium.com/max/800/1*YHdae9jFdjEgJM46QSfO-w.jpeg,An in-depth report on the popular machine learning conference:
+url,text,image
+http://course.fast.ai/,Practical Deep Learning for Coders,http://i3.ytimg.com/vi/V2h3IOBDvrA/hqdefault.jpg
+https://github.com/RaRe-Technologies/gensim/blob/128f42ce1350f344537a8313d1588a03fab07a90/docs/notebooks/Word2Vec_FastText_Comparison.ipynb,Comparison of FastText and Word2Vec,
+https://blog.ought.com/nips-2016-875bb8fadb8c#.qq47cl881,50 Things I learned at NIPs,https://cdn-images-1.medium.com/max/800/1*YHdae9jFdjEgJM46QSfO-w.jpeg,
 http://www.nytimes.com/2016/12/14/magazine/the-great-ai-awakening.html,The Great AI Awakening,https://static01.nyt.com/images/2016/12/18/magazine/18ai-cover2/18ai-cover2-articleLarge-v4.jpg,
 https://www.whitehouse.gov/blog/2016/12/20/artificial-intelligence-automation-and-economy,White House report on artificial intelligence automation and the economy,,
 https://lines.chromeexperiments.com/,Land Lines,,
-https://aiexperiments.withgoogle.com/drum-machine,AI Experiments,,
+https://aiexperiments.withgoogle.com/,AI Experiments,,

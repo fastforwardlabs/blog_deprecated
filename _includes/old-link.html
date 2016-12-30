@@ -1,0 +1,25 @@
+<li class="home-post link-post">
+  <div class="link-post-inner relative flex flex-wrap items-center">
+    {% if include.link.image %}
+      <div class="link-image-backer" style="background-image: url({{include.link.image}})"></div>
+    {% endif %}
+    <div class="absolute top-0 col-12 left-0">
+      <h4 class="m0 inline">Link</h4>
+    </div>
+    <div class="link-body relative col-12 left-align flex content-between flex-wrap">
+      <div class="col-12 relative" style="padding-right: 1rem;">
+        {% if include.link.kicker %}
+          <h5 class="m0"><span class="excerpt-span">{{include.link.kicker}}</span></h5>
+        {% else %}
+          <h5 class="m0"><span class="excerpt-span">We're reading</span></h5>
+        {% endif %}
+      </div>
+      <div class="col-12 px1 center">
+        <h3 class="m0"><span class="post-link-backer"><a href="{{include.link.url}}" target="_blank">{{include.link.text}}</a></span></h3>
+      </div>
+      <div class="col-12 right-align">
+        <h5 class="m0"><span class="excerpt-span">on <a href="{{include.link.url}}">{{ include.link.url | remove:'http://' | remove:'https://' | remove:'www.' | split:'/' | first }}</a></span></h5>
+      </div>
+    </div>
+  </div>
+</li>
