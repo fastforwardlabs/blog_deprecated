@@ -1,21 +1,25 @@
 <li class="home-post link-post">
-  <div class="link-post-inner relative flex flex-wrap content-between center">
+  <div class="link-post-inner relative flex flex-wrap items-center">
     {% if include.link.image %}
       <div class="link-image-backer" style="background-image: url({{include.link.image}})"></div>
     {% endif %}
-    <div class="post-title col-12">
-      <div class="mb2">
-        <h5 class="post-meta">
-          <span class="post-type">Link</span>
-        </h5>
-      </div>
-      <h2 style="margin-top: -0.5rem;"><span class="post-link-backer"><a class="post-link" href="{{ include.post.url | relative_url }}">{{ include.link.text | escape }}</a></span></h2>
+    <div class="absolute top-0 col-12 left-0">
+      <h4 class="m0 inline">Link</h4>
     </div>
-    <div class="col-12 center relative">
-      <div>
-        <h5 class="" style="margin-bottom: 0.5rem;"><span class="excerpt-span"><a href="{{include.link.url}}">{{ include.link.url | remove:'http://' | remove:'https://' | remove:'www.' | split:'/' | first }}</a></span></h5>
+    <div class="link-body relative col-12 left-align flex content-between flex-wrap">
+      <div class="col-12 relative" style="padding-right: 1rem;">
+        {% if include.link.kicker %}
+          <h5 class="m0"><span class="excerpt-span">{{include.link.kicker}}</span></h5>
+        {% else %}
+          <h5 class="m0"><span class="excerpt-span">We're reading</span></h5>
+        {% endif %}
       </div>
-      <div style="margin-top: 0.5rem;"><svg style="height: 0.5rem" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.46 6.45"><path fill="#222" d="M5.09,6.37v-4L1.77,5.71a.1.1,0,0,1-.17,0L.75,4.85a.11.11,0,0,1,0-.07.11.11,0,0,1,0-.08l3.3-3.31H.1c-.06,0-.1,0-.1-.08a.13.13,0,0,1,0-.08l1-1.06A.47.47,0,0,1,1.48,0H6.17c.15,0,.21,0,.24.05s.05.1.05.24V4.94a.48.48,0,0,1-.11.39L5.25,6.42s-.05,0-.07,0A.08.08,0,0,1,5.09,6.37Z"/></svg></div>
+      <div class="col-12 px1 center">
+        <h3 class="m0"><span class="post-link-backer"><a href="{{include.link.url}}" target="_blank">{{include.link.text}}</a></span></h3>
+      </div>
+      <div class="col-12 right-align">
+        <h5 class="m0"><span class="excerpt-span">on <a href="{{include.link.url}}">{{ include.link.url | remove:'http://' | remove:'https://' | remove:'www.' | split:'/' | first }}</a></span></h5>
+      </div>
     </div>
   </div>
 </li>
