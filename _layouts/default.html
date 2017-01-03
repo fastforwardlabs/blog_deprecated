@@ -3,7 +3,7 @@
 
   {% include head.html %}
 
-  <body class="debug-grid">
+  <body>
 
     {% include header.html %}
 
@@ -17,9 +17,16 @@
 
     <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
     <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-      messageStyle: "none"
-    });
+      MathJax.Hub.Config({
+        messageStyle: "none"
+      });
+    </script>
+    <script>
+      var posts = [
+        {% for post in site.posts %}
+          "{% include post_preview.html post=post %}",
+        {% endfor %}
+      ];
     </script>
 
   </body>

@@ -7,6 +7,8 @@ tags:
 layout: post
 tumblr_url: http://blog.fastforwardlabs.com/post/149516029368/exploring-deep-learning-on-satellite-data
 preview_image: http://www.fastforwardlabs.com/blog-images/geo/empty_satellite_image.png
+post_type: Guest Post
+author: Patrick Doupe
 ---
 
 ##### *This is a guest post featuring a project Patrick Doupe, now a Senior Data Analyst at Icahn School of Medicine at Mount Sinai, completed as a fellow in the <a href="http://insightdatascience.com">Insight Data Science program</a>. In our partnership with Insight, we occassionally advise fellows on month-long projects and how to build a career in data science.*

@@ -7,6 +7,7 @@ tags:
 - code
 layout: post
 tumblr_url: http://blog.fastforwardlabs.com/post/139921712388/hello-world-in-keras-or-scikit-learn-versus
+preview_image: http://68.media.tumblr.com/a4cf05aa664f57b54fe5021ce966f5d6/tumblr_inline_o30qnzlyxi1qcg73w_540.png
 ---
 
 <p>Despite all the recent excitement around deep learning, neural networks have a reputation among non-specialists as complicated to build and difficult to  interpret.</p><p>And while interpretability remains an issue, there are now high-level neural network libraries that enable developers to quickly build neural network models without worrying about the numerical details of floating point operations and linear algebra.</p><p>This post compares keras with scikit-learn, the most popular, feature-complete classical machine learning library used by Python developers.</p><!-- more --><p>Keras is a high-level neural network library that wraps an API similar to scikit-learn around the Theano or TensorFlow backend. Scikit-learn has a simple, coherent API built around <code>Estimator</code> objects. It is carefully designed and is a good description of machine learning workflow with which many engineers are already comfortable.</p><p>Let&rsquo;s get started by importing the libraries we&rsquo;ll need: scikit-learn, keras and some plotting features.</p><pre><code>&gt;&gt;&gt; %matplotlib inline

@@ -4,6 +4,9 @@ date: 2016-12-12 17:47:22 Z
 layout: post
 tumblr_url: http://blog.fastforwardlabs.com/post/154383131913/machines-in-conversation
 preview_image: http://68.media.tumblr.com/692d44e33b12223b1e7fb77bb122ec99/tumblr_inline_oi327sddi71ta78fg_540.png
+author: Gridspace
+author_link: https://www.gridspace.com/
+post_type: Guest Post
 ---
 
 <figure data-orig-width="430" data-orig-height="327" class="tmblr-full"><img src="http://68.media.tumblr.com/692d44e33b12223b1e7fb77bb122ec99/tumblr_inline_oi327sddi71ta78fg_540.png" alt="image" data-orig-width="430" data-orig-height="327"/></figure>
@@ -24,39 +27,39 @@ The following examples can all be run in the <a href="https://api.gridspace.com/
 
 For example, let’s say we want to call restaurants to get the wait times. You could prompt restaurants to enter the wait time into a keypad, but you’ll likely  have a low success rate. However, by using natural human recordings and allowing the restaurants to respond with natural language, a response rate of over 30% is achievable. This response rate could be even higher if you exclude restaurants that operate an IVR (interactive voice response) system. In the JavaScript sketch below (the full example can be viewed and run <a href="https://api.gridspace.com/scripts/try#waittimes">here</a>), we call a list of restaurants, greet whoever answers the phone, and then ask for a wait time:
 
-{% highlight python %}
+```javascript
 gs.onStart = function() {
-  var waitTimes = {}
-  for (var restaurant in NUMBERS) {
-    var number = NUMBERS[restaurant];
-    console.log(restaurant);
-    console.log(number);
-    var conn = gs.createPhoneCall(number);
-    var trans = "";
-    for (var j = 0; j &lt; MAX_TRANS; j++) {
-        console.log("Try " + j);
-        if (j == 0) {
-          console.log("Saying hello...");
-          newTrans = conn.getFreeResponse({"promptUrl": "http://apicdn.gridspace.com/examples/assets/hi_there.wav"});
-        } else {
-            console.log("Asking for the wait time...");
-        newTrans = conn.getFreeResponse({"promptUrl": "http://apicdn.gridspace.com/examples/assets/wait_time.wav"});
-        }
-        if (newTrans) {
-          trans += newTrans + " ";
-            if (j &gt; 1 || trans.indexOf('minute') != -1 || trans.indexOf('wait') != -1) {
-              break;
-            }
-        }
-    }
-    console.log("Saying thank you...");
-    conn.play("http://apicdn.gridspace.com/examples/assets/thanks.wav");
-    waitTimes[restaurant] = trans;
-    conn.hangUp();
-  }
-  console.log(waitTimes);
+  var waitTimes = {}
+  for (var restaurant in NUMBERS) {
+    var number = NUMBERS[restaurant];
+    console.log(restaurant);
+    console.log(number);
+    var conn = gs.createPhoneCall(number);
+    var trans = "";
+    for (var j = 0; j &lt; MAX_TRANS; j++) {
+      console.log("Try " + j);
+      if (j == 0) {
+        console.log("Saying hello...");
+        newTrans = conn.getFreeResponse({"promptUrl": "http://apicdn.gridspace.com/examples/assets/hi_there.wav"});
+      } else {
+        console.log("Asking for the wait time...");
+        newTrans = conn.getFreeResponse({"promptUrl": "http://apicdn.gridspace.com/examples/assets/wait_time.wav"});
+      }
+      if (newTrans) {
+        trans += newTrans + " ";
+        if (j &gt; 1 || trans.indexOf('minute') != -1 || trans.indexOf('wait') != -1) {
+          break;
+        }
+      }
+    }
+    console.log("Saying thank you...");
+    conn.play("http://apicdn.gridspace.com/examples/assets/thanks.wav");
+    waitTimes[restaurant] = trans;
+    conn.hangUp();
+  }
+  console.log(waitTimes);
 }
-{% endhighlight %}
+```
 
 As soon as we hear the word ‘minute’, we thank them and hang up. The results of each restaurant are simply printed to the console.
 
@@ -66,27 +69,29 @@ In our experiments, about one in three restaurants provide a response, but this 
 
 One glaring problem is the crudeness of the parser (we simply look for the word ‘minute’ and call it a day). In the next example (the full sketch is <a href="https://api.gridspace.com/scripts/try#statusUpdate">here</a>), we listen in on a simulated conference call, wherein status updates for different employees are extracted.
 
-<pre class="prettyprint"><code>const QUERIES = ["~~'status' then ~~'{name:employee}' then (~~'good' or ~~'bad' or ~~'late' or ~~'complete')"];
+```javascript
+const QUERIES = ["~~'status' then ~~'{name:employee}' then (~~'good' or ~~'bad' or ~~'late' or ~~'complete')"];
 const BEEP = 'http://apicdn.gridspace.com/examples/assets/alert.wav';
 
 gs.onIncomingCall = function(connection) {
-  connection.joinConference('Conference', {
-    onScan: function(scan, conversation) {
-      for (var i = 0; i &lt; QUERIES.length; i\++) {
-        var topMatch = scan[i][0];
-        if (!topMatch) {continue;};
-        var match = topMatch['match'];
-        conversation.playToAll(BEEP);
-        console.log("Status update: " + match);
-        if (topMatch.extractions) {
-          console.log("For employee: " + topMatch.extractions[0].value);
-        }
-        console.log("\n");
-      }
-    },
-    scanQueries: QUERIES,
-  });
-};</code></pre>
+  connection.joinConference('Conference', {
+    onScan: function(scan, conversation) {
+      for (var i = 0; i < QUERIES.length; i++) {
+        var topMatch = scan[i][0];
+        if (!topMatch) {continue;};
+        var match = topMatch['match'];
+        conversation.playToAll(BEEP);
+        console.log("Status update: " + match);
+        if (topMatch.extractions) {
+          console.log("For employee: " + topMatch.extractions[0].value);
+        }
+        console.log("\n");
+      }
+    },
+    scanQueries: QUERIES,
+  });
+};
+```
 
 In this example, instead of simply looking for exact words, we scan for approximate matches for status reports and names. This fuzzy natural language extraction allows for soft rephrasing and extraction of general concepts like numbers, names, dates, and times. Even if the conversation lasts for hours, each time a status update is detected, a sound is played, and the employee status is parsed. This entire behavior is implemented in just a couple lines of JavaScript.
 
@@ -94,4 +99,4 @@ In the <a href="https://api.gridspace.com/scripts/try">Sift API hosted script en
 
 While there is still much work to done in the area of conversational speech processing, we are excited about what is already possible. Human-to-human speech systems can now listen, learn and react to increasingly complex patterns in long-form conversational speech. For businesses and developers, these advancements in speech processing mean more structured data and the opportunity to build new kinds of voice applications.
 
-- Evan Macmillan and Anthony Scodary, Co-Founders, Gridspace
+– Evan Macmillan and Anthony Scodary, Co-Founders, Gridspace

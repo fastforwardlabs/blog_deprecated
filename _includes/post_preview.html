@@ -1,16 +1,28 @@
 <li class="home-post relative flex flex-wrap {% if include.post.feature %}feature-post{% endif %}">
   <div>
-    <h4 class="m0 inline">Post</h4>
-    <h5 class="m0 inline">
-      {{ include.post.date | date: "%b %-d %Y" }}
-      {% if include.post.author %}
-        {% if include.post.author_link %}
-          by <a href={{ page.author_link }} itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ include.post.author }}</span></a>
+    {% if include.prepend %}
+      <div class="mb2">
+        <h5 class="m0">
+          {{ include.prepend }} &nbsp;<svg xmlns="http://www.w3.org/2000/svg" style="height: 0.4rem; position: relative; top: 0.025rem;" viewBox="0 0 8.04 8.49"><path fill="#222222" d="M4.49,6.81,7.8,3.47a.19.19,0,0,1,.13-.07c.06,0,.11,0,.11.13v.83a.57.57,0,0,1-.22.41L4.26,8.34c-.12.12-.18.16-.24.16s-.13,0-.24-.16L.22,4.76A.57.57,0,0,1,0,4.35V3.53c0-.08,0-.13.11-.13a.18.18,0,0,1,.13.07L3.53,6.82V.14A.14.14,0,0,1,3.67,0h.68a.13.13,0,0,1,.13.14Z"/></svg>
+        </h5>
+      </div>
+    {% endif %}
+    <div>
+      <h4 class="m0 inline">
+        {% if include.post.post_type %}
+          {{ include.post.post_type }}
         {% else %}
-          by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ include.post.author }}</span></span>
+          {% if include.post.feature %}
+            Featured Post
+          {% else %}
+            Post
+          {% endif %}
         {% endif %}
-      {% endif %}
-    </h5>
+      </h4>
+      <h5 class="inline m0">
+        {{ include.post.date | date: "%b %-d %Y" }}
+      </h5>
+    </div>
   </div>
   <a class="post-preview-body relative flex flex-wrap content-between" href="{{ include.post.url | relative_url }}">
     {% if include.post.preview_image %}
@@ -20,8 +32,17 @@
       <h2 class="m0"><span class="white-span"><span class="inblock-link">{{ include.post.title | escape }}</span></span></h2>
     </div>
     <div class="relative">
-      <h5 class="preview-excerpt {% if include.post.preview_image %}{% else %}text-only{% endif %}"><span class="highlight-span">{{ include.post.content | strip_html | truncate: 300 }}</span></h5>
+      <h5 class="preview-excerpt {% if include.post.preview_image %}{% else %}text-only{% endif %}"><span class="highlight-span">{% if include.post.author %}<span class="author-spacer">By <span itemprop="author" itemscope itemtype="http://schema.org/Person">{{ include.post.author }}</span></span> &middot; {% endif %}{{ include.post.content | strip_html | truncate: 400 }}</span></h5>
       <h5 class="m0 right-align"><span class="inblock-link">...read more</span></h5>
     </div>
   </a>
+  <h5 class="m0 author-byline-preview">
+    {% if include.post.author %}
+      {% if include.post.author_link %}
+        By <a href="{{ include.post.author_link }}" target="_blank" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ include.post.author }}</span></a>
+      {% else %}
+        By <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ include.post.author }}</span></span>
+      {% endif %}
+    {% endif %}
+  </h5>
 </li>

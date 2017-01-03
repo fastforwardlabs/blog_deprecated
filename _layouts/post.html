@@ -5,15 +5,15 @@ layout: default
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header wide-container center relative">
-<!--     <svg class="absolute" style="top: -0.5rem; height: 6rem; left: 50%; transform: translate(-50%,0);" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 136.68 150.13"><polygon fill="rgba(0,215,226, 0.5)" points="136.68 0 68.24 0 -0.2 0 68.24 150.13 136.68 0"/></svg> -->
-<!--     <h6 class="post-meta relative"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-      {{ page.date | date: "%B %-d %Y" }}
-    </time></h6> -->
     <h4>
-      {% if page.feature %}
-        Featured Post
+      {% if page.post_type %}
+        {{ page.post_type }}
       {% else %}
-        Post
+        {% if page.feature %}
+          Featured Post
+        {% else %}
+          Post
+        {% endif %}
       {% endif %}
     </h4>
     <h1 class="post-title relative" itemprop="name headline">{{ page.title | escape }}</h1>
@@ -34,3 +34,24 @@ layout: default
   </div>
 
 </article>
+
+<div class="mt3">
+  <h4 class="px3 h0 mb2">More from the Blog</h4>
+  <ul class="post-list flex flex-wrap justify-center no-feature">
+    {% if page.previous.url %}
+      {% include post_preview.html post=page.previous prepend="Older" %}
+    {% endif %}
+    {% if page.next.url %}
+      {% include post_preview.html post=page.next prepend="Newer" %}
+      {% assign first_post = site.posts.first %}
+      {% include post_preview.html post=first_post prepend="Newest" %}
+    {% else %}
+      {% assign random_1 = site.time | date: "%s%N" | modulo: site.posts.size %}
+      {% assign random_post_1 = site.posts[random_1] %}
+      {% include post_preview.html post=random_post_1 prepend="Archive" %}
+      {% assign random_2 = page.title.size | modulo: site.posts.size %}
+      {% assign random_post_2 = site.posts[random_2] %}
+      {% include post_preview.html post=random_post_2 prepend="Archive" %}
+    {% endif %}
+  </ul>
+</div>

@@ -1,39 +1,11 @@
-<footer class="site-footer mt3">
-  <div class="flex flex-wrap justify-center px2">
-    {% if page.next.url %}
-      {% include post_preview.html post=page.next %}
-    {% endif %}
-    <div class="footer-sep px2">
-      <div class="footer-sep-inner center flex items-center flex-wrap">
-        <div class="col-12">
-          <div class="col-12">
-            <h4>Posts</h4>
-          </div>
-          <div style="margin: 1rem 0;" class="col-12">
-            <div class="col-12">
-              <h5>← Newer</h5>
-            </div>
-            <div class="col-12">
-              <h5>Older →</h5>
-            </div>
-          </div>
-          <div class="col-12">
-            <h5><a href="/">Front</a></h5>
-          </div>
-        </div>
-      </div>
-    </div>
-    {% if page.previous.url %}
-      {% include post_preview.html post=page.previous %}
-    {% endif %}
-  </div>
+<footer class="site-footer">
   <div class="flex center flex-wrap justify-around items-center py2">
     <div class="p1">
       <svg class="block mx-auto" style="height: 1.5rem;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 288 268.1" enable-background="new 0 0 288 268.1"><path fill="#010101" d="M0 42v212l31 14.1L62 254v-64l62-28v-46l-62 28.3V88l62-28V14.1L93 0z"></path><path fill="#00dcec" d="M62 88v56.3l62-28.3z"></path><path fill="#010101" d="M164 42v212l31 14.1 31-14.1v-64l62-28v-46l-62 28.3V88l62-28V14.1L257 0z"></path><path fill="#00dcec" d="M226 88v56.3l62-28.3z"></path></svg>
     </div>
+    <div class="p1"><a href="#" class="nav-link active">Blog</a></div>
     <div class="p1"><a href="#" class="nav-link">Website</a></div>
     <div class="p1"><a href="#" class="nav-link">Email</a></div>
-    <div class="p1"><a href="#" class="nav-link active">Blog</a></div>
     <div class="p1"><a href="#" class="nav-link">Twitter</a></div>
   </div>
 

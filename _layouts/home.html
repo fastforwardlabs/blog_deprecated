@@ -9,14 +9,14 @@ layout: default
   <ul class="post-list flex flex-wrap justify-center">
     {% assign post_count = 1 %}
     {% assign link_count = 0 %}
-    {% for post in site.posts %}
+    {% for post in paginator.posts %}
       {% assign modulo_check = post_count | modulo:3 %}
       {% assign disperse_check = post_count | modulo:8 %}
       {% if modulo_check == 0 and post.feature %}
         {% assign current_link = site.data.links[link_count] %}
         {% include link.html link=current_link %}
         {% assign post_count = post_count | plus: 1 %}
-        {% assign link_count = link_count | plus: 2 %}
+        {% assign link_count = link_count | plus: 1 %}
       {% else %}
         {% if disperse_check == 0 or disperse_check == 7 and post.feature %}
           {% assign current_link = site.data.links[link_count] %}
@@ -24,6 +24,13 @@ layout: default
           {% assign post_count = post_count | plus: 1 %}
           {% assign link_count = link_count | plus: 1 %}
         {% endif %}
+      {% endif %}
+      <!-- Check modulo again after disperse is added in case that moved us over into a modulo -->
+      {% if modulo_check == 0 and post.feature %}
+        {% assign current_link = site.data.links[link_count] %}
+        {% include link.html link=current_link %}
+        {% assign post_count = post_count | plus: 1 %}
+        {% assign link_count = link_count | plus: 1 %}
       {% endif %}
       {% include post_preview.html post=post %}
       {% if post.feature %}
@@ -33,6 +40,20 @@ layout: default
       {% endif %}
     {% endfor %}
   </ul>
+
+  <div class="pagination">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+    {% else %}
+      <span class="previous">Previous</span>
+    {% endif %}
+    <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+    {% else %}
+      <span class="next ">Next</span>
+    {% endif %}
+  </div>
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
 

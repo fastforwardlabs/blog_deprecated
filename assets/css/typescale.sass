@@ -151,14 +151,16 @@ h3
   margin: 1rem 0 1rem
   +webfontBold
 
+$h5_base: $base_font * 0.875
+
 h4
+  line-height: $base_lh
+  font-size: $h5_base
   margin: 1rem 0
   letter-spacing: 0.05em
   text-rendering: geometricPrecision
   text-transform: uppercase
   +webfontBold
-
-$h5_base: $base_font * 0.875
 
 h5, .h5
   line-height: $base_lh
@@ -166,15 +168,8 @@ h5, .h5
   margin: 1rem 0
   +webfontItalic
 
-$h6_base: $base_font
-$h6_adjust: 0.9
-
-h6
-  line-height: $base_lh/$h6_adjust
-  font-size: $base_font * $h6_adjust
-  text-transform: uppercase
-  letter-spacing: 0.05em
-  +webfontBold
+h5 strong, h5 b
+  +webfontBoldItalic
 
 .m0
   margin: 0
@@ -208,14 +203,55 @@ blockquote
   border-left: solid 6px #ddd
   padding-left: calc(1.25rem - 8px)
 
-pre
-  background: #fafafa
-  padding: 1rem
+.highlighter-rouge
   font-family: 'Monaco', monospace
   font-size: $base_font * 0.75
   line-height: 1.5
   margin: 1rem 0
+  width: 100vw
+  position: relative
+  left: 50%
+  right: 50%
+  margin-left: -50vw
+  margin-right: -50vw
+  display: flex
+  position: relative
   overflow-x: auto
+  background: #fafafa
+
+pre
+  margin: 0
+  width: 31rem
+  margin: 0 auto
+  padding: 1rem 0
+  color: #444
+  position: relative
+  // &:before
+  //   content: ""
+  //   position: absolute
+  //   border-left: dotted 1px rgba(0,0,0,0.15)
+  //   position: absolute
+  //   left: -0.5rem
+  //   top: 1rem
+  //   height: calc(100% - 2rem)
+
+// .language-python pre:after, .language-javascript pre:after
+//   position: absolute
+//   left: -0.5rem
+//   top: 0
+//   text-transform: uppercase
+//   // padding: 0 1rem
+//   font-size: $base_font * 0.5
+//   letter-spacing: 0.1em
+//   line-height: 3
+//   color: rgba(0,0,0,0.15)
+//   box-sizing: border-box
+//   +webfontBold
+
+// .language-python pre:after
+//   content: "python"
+// .language-javascript pre:after
+//   content: "javascript"
 
 div, h1, h2, h3, h4, h5, h6, a, p, pre
   // outline: solid 1px blue
@@ -299,7 +335,7 @@ img
   //     // border-color: rgba(255,255,255,0.75)
 
 .link-body
-  height: 7.5rem
+  // height: 7.5rem
   // height: 7rem
 
 // assuming 22px & 1.5 line height which makes 33 our rem unit
@@ -314,15 +350,17 @@ img
     width: 33.33%
     &.feature-post
       width: 66.67%
+  .no-feature
+    .home-post.feature-post
+      width: 33%
 @media (min-width: (33px * 11 * 6) + (33px * 2))
   .home-post
     width: 16.67%
     &.feature-post
       width: 33.33%
-
-.site-footer
-  .home-post, .home-post.feature-post, .footer-sep
-    width: 33.33%
+  .no-feature
+    .home-post.feature-post
+      width: 16.67%
 
 .footer-sep-inner
   // background: #efefef
@@ -374,24 +412,55 @@ img
     height: 7.5rem
     top: 1.5rem
 
+.link-post
+  // padding: 1rem
+  padding: 0 2rem
+
+.author-byline-preview
+  position: absolute
+  left: 1rem
+  z-index: 4
+  bottom: $h5_base * 4 * 1.5
+  padding: 0 0.2rem
+.text-only
+  .author-byline-preview
+    bottom: $h5_base * 6 * 1.5
+.feature-post
+  .author-byline-preview
+    bottom: $h5_base * 3 * 1.5
+.no-feature
+  .home-post.feature-post
+    .author-byline-preview
+      bottom: $h5_base * 4 * 1.5
+
 .link-body
-  background: #efefef
-  padding: 0.5rem 0
-  margin-top: 0.25rem
-  height: 10.25rem
+  // background: #efefef
+  // padding: 0.5rem 0
+  // margin-top: 0.25rem
+  padding: 0
+  min-height: 9.5rem
+  height: auto
+  width: 100%
+  // border: solid 2px $cyan !important
+  // border: solid 2px #eee !important
   &:hover
-    background: #e6e6e6
+    // background: #e6e6e6
   .highlight-span
-    background: #efefef
-    box-shadow: -0.5rem 0 0 #efefef, 0.2rem 0 0 #efefef
+    // background: #efefef
   .preview-image
-    height: 6.5rem
-    top: 1.875rem
+    // height: 5.25rem
+    // top: 2.125rem
+    height: 5.5rem
+    top: 2rem
+    left: 0
+    width: 100%
   .link-highlight-span
     background: #fff
+  .arrow-holder
+    height: $h5_base * $base_lh
 
 .preview-excerpt
-  height: $h5_base * 4 * 1.5 - 1px
+  height: $h5_base * 4 * 1.5
   margin: 0
   overflow: hidden
   position: relative
@@ -405,6 +474,9 @@ img
   .preview-excerpt
     height: $h5_base * 3 * 1.5
 
+.no-feature .feature-post .preview-excerpt
+  height: $h5_base * 4 * 1.5
+
 .white-span
   background: #fff
 
@@ -414,10 +486,39 @@ h5
     box-shadow: -0.21rem 0 0 #fff, 0.2rem 0 0 #fff
     padding: 0.15rem 0
 
+.author-spacer
+  color: #fff
+  user-select: none
+
+.block-highlight
+  background: #fff
+  box-shadow: -0.2rem 0 0 #fff, 0.2rem 0 0 #fff, -0.2rem -0.2rem 0 #fff, 0.2rem -0.2rem 0 #fff, -0.2rem 0.2rem 0 #fff, 0.2rem 0.2rem 0 #fff
+
 .border-bottom
   // border-color: rgba(0,0,0,0.125)
   border-color: #eee
   border-width: 2px
+
+.post table
+  font-size: $h5_base
+  +webfontItalic
+
+.video-holder
+  position: relative
+  width: 100%
+  height: 0
+  padding-bottom: 56.25%
+  overflow: hidden
+
+.video-holder iframe
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+
+.MathJax_Display
+  margin: 1rem 0 !important
 
 @font-face
   font-family: ChambersSans

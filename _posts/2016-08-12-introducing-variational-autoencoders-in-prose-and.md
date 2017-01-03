@@ -9,6 +9,8 @@ layout: post
 tumblr_url: http://blog.fastforwardlabs.com/post/148842796218/introducing-variational-autoencoders-in-prose-and
 preview_image: http://www.fastforwardlabs.com/blog-images/miriam/160727_1340_explore.gray_del11_492x490.slower40.gif
 feature: true
+author: Miriam
+author_link: https://twitter.com/meereve
 ---
 
 <p>Effective machine learning means building expressive models that sift out signal from noise—that simplify the complexity of real-world data, yet accurately intuit and capture its subtle underlying patterns.</p>
@@ -54,7 +56,8 @@ feature: true
 <h2 id="mnist">MNIST</h2>
 <p>For now, we will take our VAE model for a spin using handwritten MNIST digits.</p>
 
-<pre class="prettyprint lang-python">import tensorflow as tf
+```python
+import tensorflow as tf
 from tensorflow.examples.tutorials.mnist import input_data
 
 import vae # this is our model - to be explored in the next post
@@ -76,7 +79,8 @@ HYPERPARAMS = {
 
 mnist = input_data.read_data_sets("mnist_data")
 v = vae.VAE(ARCHITECTURE, HYPERPARAMS)
-v.train(mnist, max_iter=20000)</pre>
+v.train(mnist, max_iter=20000)
+```
 
 <p>Let&rsquo;s verify the model by eye, by plotting how well it parses random MNIST inputs (top) and reconstructs them (bottom):</p>
 <div class="figure">
