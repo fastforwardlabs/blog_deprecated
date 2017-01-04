@@ -32,16 +32,16 @@
       <h2 class="m0"><span class="white-span"><span class="inblock-link">{{ include.post.title | escape }}</span></span></h2>
     </div>
     <div class="relative">
-      <h5 class="preview-excerpt {% if include.post.preview_image %}{% else %}text-only{% endif %}"><span class="highlight-span">{% if include.post.author %}<span class="author-spacer">By <span itemprop="author" itemscope itemtype="http://schema.org/Person">{{ include.post.author }}</span></span> &middot; {% endif %}{{ include.post.content | strip_html | truncate: 400 }}</span></h5>
+      <h5 class="preview-excerpt {% if include.post.preview_image %}{% else %}text-only{% endif %}"><span class="highlight-span">{% if include.post.author %}<span class="author-spacer"><span itemprop="author" itemscope itemtype="http://schema.org/Person">{{ include.post.author }}</span></span>&mdash; {% endif %}{{ include.post.content | strip_html | truncate: 400 }}</span></h5>
       <h5 class="m0 right-align"><span class="inblock-link">...read more</span></h5>
     </div>
   </a>
-  <h5 class="m0 author-byline-preview">
+  <h5 class="m0 author-byline-preview {% if include.post.author_link %}{% else %}pass-through{% endif %}">
     {% if include.post.author %}
       {% if include.post.author_link %}
-        By <a href="{{ include.post.author_link }}" target="_blank" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ include.post.author }}</span></a>
+        <a href="{{ include.post.author_link }}" target="_blank" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ include.post.author }}</span></a>
       {% else %}
-        By <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ include.post.author }}</span></span>
+        <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ include.post.author }}</span></span>
       {% endif %}
     {% endif %}
   </h5>

@@ -6,6 +6,7 @@ tags:
 - jobs
 layout: post
 tumblr_url: http://blog.fastforwardlabs.com/post/150641720788/job-opportunities-at-signal
+post_type: Announcement
 ---
 
 We’re excited to partner with Prehype and an international news media organization to develop Signal, a new way to understand and structure large volumes of streaming news and media content. Signal will combine novel data with <a href="http://blog.fastforwardlabs.com/post/142633141243/new-tools-to-summarize-text">emerging algorithms</a>. We're looking for a couple of folks to join the team. Read more below, and if this is interesting to you, get in touch!

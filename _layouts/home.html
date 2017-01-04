@@ -41,20 +41,45 @@ layout: default
     {% endfor %}
   </ul>
 
-  <div class="pagination">
-    {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
-    {% else %}
-      <span class="previous">Previous</span>
-    {% endif %}
-    <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-    {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path }}" class="next">Next</a>
-    {% else %}
-      <span class="next ">Next</span>
-    {% endif %}
+  <div class="flex h4 justify-around flex-wrap items-center">
+    <div>
+      Page:
+    </div>
+    {% for counter in (1..paginator.total_pages) %}
+      {% if paginator.page == counter %}
+        <div>
+          <strong>{{ counter }}</strong>
+        </div>
+      {% else %}
+        <div>
+          {% if counter == 1 %}
+            <a class="nav-link" href="{{ site.github.url }}/">
+              {{ counter }}
+            </a>
+          {% else %}
+            <a class="nav-link" href="{{ site.github.url }}/page{{ counter }}">
+              {{ counter }}
+            </a>
+          {% endif %}
+        </div>
+      {% endif %}
+    {% endfor %}
+    <div>
+      {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path }}" class="previous nav-link secondary">Previous</a>
+      {% else %}
+        <span class="previous nav-link secondary inactive">Previous</span>
+      {% endif %}
+    </div>
+    <div>
+      {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path }}" class="next nav-link secondary">Next</a>
+      {% else %}
+        <span class="next nav-link secondary inactive">Next</span>
+      {% endif %}
+    </div>
   </div>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p> -->
 
 </div>

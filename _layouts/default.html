@@ -21,13 +21,6 @@
         messageStyle: "none"
       });
     </script>
-    <script>
-      var posts = [
-        {% for post in site.posts %}
-          "{% include post_preview.html post=post %}",
-        {% endfor %}
-      ];
-    </script>
 
   </body>
 

@@ -103,6 +103,9 @@ a.block, a.flex
     color: $dark-cyan
   &.active
     color: #222
+  &.inactive, &.active:hover
+    color: #ccc
+    cursor: default
 
 // assume 1rem padding on each side of the text width
 .text-width
@@ -153,7 +156,7 @@ h3
 
 $h5_base: $base_font * 0.875
 
-h4
+h4, .h4
   line-height: $base_lh
   font-size: $h5_base
   margin: 1rem 0
@@ -438,7 +441,7 @@ img
   // padding: 0.5rem 0
   // margin-top: 0.25rem
   padding: 0
-  min-height: 9.5rem
+  min-height: 8.625rem
   height: auto
   width: 100%
   // border: solid 2px $cyan !important
@@ -483,7 +486,7 @@ img
 h5
   .highlight-span
     background: #fff
-    box-shadow: -0.21rem 0 0 #fff, 0.2rem 0 0 #fff
+    box-shadow: -0.25rem 0 0 #fff, 0.2rem 0 0 #fff
     padding: 0.15rem 0
 
 .author-spacer
@@ -516,6 +519,9 @@ h5
   left: 0
   width: 100%
   height: 100%
+
+.pass-through
+  pointer-events: none
 
 .MathJax_Display
   margin: 1rem 0 !important

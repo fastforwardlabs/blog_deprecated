@@ -11,6 +11,7 @@ preview_image: http://www.fastforwardlabs.com/blog-images/miriam/160727_1340_exp
 feature: true
 author: Miriam
 author_link: https://twitter.com/meereve
+post_type: whitepaper
 ---
 
 <p>Effective machine learning means building expressive models that sift out signal from noise—that simplify the complexity of real-world data, yet accurately intuit and capture its subtle underlying patterns.</p>
