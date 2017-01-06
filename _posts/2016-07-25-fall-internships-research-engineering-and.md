@@ -8,7 +8,7 @@ tags:
 layout: post
 tumblr_url: http://blog.fastforwardlabs.com/post/147953672348/fall-internships-research-engineering-and
 preview_image: /tumblr_files/lights-abstract-curves-long-exposure.jpg
-post_type: Interview
+post_type: Announcement
 ---
 
 <p><em>These positions have been filled. We are not accepting further applications. For announcements of future opportunities, please <a href="http://www.fastforwardlabs.com/#contact">subscribe to our mailing list</a>.</em></p>

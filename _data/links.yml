@@ -1,0 +1,21 @@
+# Add new links to the bottom of the list
+
+- url: http://course.fast.ai/
+  text: Practical Deep Learning for Coders
+  image: http://i3.ytimg.com/vi/V2h3IOBDvrA/hqdefault.jpg
+
+- url: https://github.com/RaRe-Technologies/gensim/blob/128f42ce1350f344537a8313d1588a03fab07a90/docs/notebooks/Word2Vec_FastText_Comparison.ipynb
+  text: Comparison of FastText and Word2Vec
+  image: http://imgur.com/IJUSKpn.png
+
+- url: https://blog.ought.com/nips-2016-875bb8fadb8c#.qq47cl881
+  text: 50 Things I learned at NIPs
+  image: https://cdn-images-1.medium.com/max/800/1*YHdae9jFdjEgJM46QSfO-w.jpeg
+
+- url: http://www.nytimes.com/2016/12/14/magazine/the-great-ai-awakening.html
+  text: The Great AI Awakening
+  image: https://static01.nyt.com/images/2016/12/18/magazine/18ai-cover2/18ai-cover2-articleLarge-v4.jpg
+
+- url: https://lines.chromeexperiments.com/
+  text: Land Lines
+  image: http://imgur.com/PBJNXfg.png

@@ -58,6 +58,10 @@ body
 .lh0
   line-height: 0
 
+.px05
+  padding-left: 0.25rem
+  padding-right: 0.25rem
+
 a
   color: #222
   box-shadow: inset 0 -0.25em 0 $light-cyan
@@ -94,7 +98,7 @@ a.block, a.flex
   @include webfontBold
   &.secondary
     font-size: $base_font * 0.875
-    line-height: $base_lh/0.875
+    line-height: 1.5
     letter-spacing: 0.1em
     // font-style: italic
   &:hover
@@ -425,6 +429,12 @@ img
   z-index: 4
   bottom: $h5_base * 4 * 1.5
   padding: 0 0.2rem
+  pointer-events: none
+  color: transparent
+  a
+    pointer-events: auto
+  .text-only-author
+    color: #222
 .text-only
   .author-byline-preview
     bottom: $h5_base * 6 * 1.5
@@ -461,6 +471,14 @@ img
     background: #fff
   .arrow-holder
     height: $h5_base * $base_lh
+
+.newsletter-post
+  padding: 0 2rem
+  .newsletter-body
+    min-height: 8.625rem
+    height: auto
+    width: 100%
+    padding: 0
 
 .preview-excerpt
   height: $h5_base * 4 * 1.5
@@ -523,8 +541,33 @@ h5
 .pass-through
   pointer-events: none
 
-.MathJax_Display
-  margin: 1rem 0 !important
+input
+  padding: 0
+  margin: 0
+  border: none
+  background: transparent
+  font-size: $base_font
+  line-height: 1.5
+  +webfont
+
+input[type="text"], input[type="email"], input[type="password"]
+  border: solid 1px #ccc
+  &:focus
+    outline-color: $light-cyan
+
+button, input[type="submit"]
+  background: $cyan
+  color: #fff
+  padding: 0 0.5rem
+  cursor: pointer
+  &:hover
+    background: $dark-cyan
+
+.tnum
+  -webkit-font-feature-settings: "tnum"
+  -moz-font-feature-settings: "tnum"
+  -ms-font-feature-settings: "tnum"
+  font-feature-settings: "tnum"
 
 @font-face
   font-family: ChambersSans
