@@ -9,7 +9,7 @@ author_link: https://www.gridspace.com/
 post_type: Guest Post
 ---
 
-<figure data-orig-width="430" data-orig-height="327" class="tmblr-full"><img src="http://68.media.tumblr.com/692d44e33b12223b1e7fb77bb122ec99/tumblr_inline_oi327sddi71ta78fg_540.png" alt="image" data-orig-width="430" data-orig-height="327"/></figure>
+![](http://68.media.tumblr.com/692d44e33b12223b1e7fb77bb122ec99/tumblr_inline_oi327sddi71ta78fg_540.png)
 
 ##### We at Fast Forward Labs have long been interested in speech recognition technologies. This year’s <a href="https://www.oreilly.com/ideas/an-overview-of-the-bot-landscape">chatbot craze</a> has seen growing interest in machines that interface with users in friendly, accessible language. Bots, however, only rarely understand the complexity of colloquial conversation: many practical customer service bots are trained on a very constrained set of queries (”I lost my password”). That’s why we’re excited to highlight <a href="https://www.gridspace.com/">Gridspace</a>, a San Francisco-based startup that provides products, services, and an <a href="https://api.gridspace.com/scripts/try">easy-to-use API</a> focused on making human-to-human conversation analyzable by machines. Gridspace Co-Founders <a href="https://www.linkedin.com/in/evan-macmillan-60716b71">Evan Macmillan</a> and <a href="https://www.linkedin.com/in/scodary"> Anthony Scodary</a> share their thoughts and demo their API below. Catch them this week at the <a href="http://www.slt2016.org/">IEEE Workshop on Spoken Language Technology</a> (SLT) in San Diego!
 
