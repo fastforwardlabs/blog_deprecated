@@ -2,10 +2,10 @@
 layout: default
 ---
 
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+<article class="post mt2" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <header class="post-header wide-container center relative">
-    <h4>
+  <header class="mb2 wide-container mx-auto measure-center">
+    <h4 class="m0">
       {% if page.post_type %}
         {{ page.post_type }}
       {% else %}
@@ -16,8 +16,8 @@ layout: default
         {% endif %}
       {% endif %}
     </h4>
-    <h1 class="post-title relative" itemprop="name headline">{{ page.title | escape }}</h1>
-    <h5>
+    <h1 class="m0 py1" itemprop="name headline">{{ page.title | escape }}</h1>
+    <h5 class="m0">
       {{ page.date | date: "%b %-d %Y" }}
       {% if page.author %}
         {% if page.author_link %}
@@ -29,14 +29,14 @@ layout: default
     </h5>
   </header>
 
-  <div class="post-content container" itemprop="articleBody">
+  <div class="container mx-auto" itemprop="articleBody">
     {{ content }}
   </div>
 
 </article>
 
-<div class="mt4">
-  <h4 class="px3 h0 mb2">More from the Blog</h4>
+<div class="mt2">
+  <h4 class="m0 px2 py2">More from the Blog</h4>
   <ul class="post-list flex flex-wrap justify-center no-feature">
     {% if page.previous.url %}
       {% include post_preview.html post=page.previous prepend="Older" %}

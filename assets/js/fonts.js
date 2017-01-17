@@ -9,7 +9,7 @@
   }
 
   var docEl = doc.documentElement;
-  var observer = new FontFaceObserver( "ChambersSans", {
+  var observer = new FontFaceObserver( "ChambersSansMedium", {
     weight: 500
   });
 
@@ -18,14 +18,14 @@
     sessionStorage.chambersStageOne = true;
 
     Promise.all([
-      (new FontFaceObserver( "ChambersSansBold", {
+      (new FontFaceObserver( "ChambersSansBlack", {
         weight: 900
       })).load(),
-      (new FontFaceObserver( "ChambersSansItalic", {
+      (new FontFaceObserver( "ChambersSansMediumItalic", {
         weight: 500,
         style: "italic"
       })).load(),
-      (new FontFaceObserver( "ChambersSansBoldItalic", {
+      (new FontFaceObserver( "ChambersSansBlackItalic", {
         weight: 900,
         style: "italic"
       })).load(),

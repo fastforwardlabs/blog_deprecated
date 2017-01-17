@@ -7,7 +7,6 @@ tags:
 - internship
 layout: post
 tumblr_url: http://blog.fastforwardlabs.com/post/147953672348/fall-internships-research-engineering-and
-preview_image: /tumblr_files/lights-abstract-curves-long-exposure.jpg
 post_type: Announcement
 ---
 

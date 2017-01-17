@@ -9,4 +9,8 @@ layout: post
 tumblr_url: http://blog.fastforwardlabs.com/post/121193439363/visualization-in-progress
 ---
 
-<img src="/tumblr_files/tumblr_npqiynpKvO1teyfqto1_1280.png"/><br/><p>Visualization in progress.</p>
+<img src="/tumblr_files/tumblr_npqiynpKvO1teyfqto1_1280.png"/>
+
+
+
+Visualization in progress.

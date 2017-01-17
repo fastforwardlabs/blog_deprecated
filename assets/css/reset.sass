@@ -1,0 +1,373 @@
+---
+---
+
+// Webfonts
+
+@font-face
+  font-family: ChambersSansMedium
+  src: url('Fonts/1385718/c9b720bd-7cae-41eb-a84f-bfe7c2cad5c0.woff2') format('woff2'), url('Fonts/1385718/234fc275-2f1b-4c0f-a523-48d1335efd32.woff') format('woff'), url('Fonts/1385718/2d3751af-f69a-423f-b25f-9e64771a0810.ttf') format('truetype')
+  font-weight: 500
+  font-style: normal
+
+@font-face
+  font-family: ChambersSansBlack
+  src: url('Fonts/1464734/fa46ac36-9953-4580-8b48-93fe6deebb45.woff2') format('woff2'), url('Fonts/1464734/f2dcf0a8-0d00-4fe6-9fc7-570bc7801cb2.woff') format('woff'), url('Fonts/1464734/fa247f7b-e6c6-484d-b86c-6376483eccbf.ttf') format('truetype')
+  font-weight: 900
+  font-style: normal
+
+@font-face
+  font-family: ChambersSansMediumItalic
+  src: url("Fonts/1385720/2dc6e720-12de-4f42-b923-1704efa9c107.woff2") format("woff2"), url("Fonts/1385720/13b5a169-2a28-4554-b4e8-6deba5a36926.woff") format("woff"), url("Fonts/1385720/bb1005e3-aac7-4bf1-8020-3dd984825855.ttf") format("truetype")
+  font-weight: 500
+  font-style: italic
+
+@font-face
+  font-family: ChambersSansBlackItalic
+  src: url('Fonts/1464738/c5d6fe40-4f9b-410c-8332-143de7007d10.woff2') format('woff2'), url('Fonts/1464738/62b38225-dff1-43ee-8238-c3d5876911cd.woff') format('woff'), url('Fonts/1464738/1d6bff39-3f05-4706-a206-152082998317.ttf') format('truetype')
+  font-weight: 900
+  font-style: italic
+
+@mixin webfont
+  &
+    font-family: sans-serif
+  .chambers-loaded &
+    font-family: ChambersSansMedium, sans-serif
+  .chambers-b-loaded &
+    font-family: ChambersSansMedium, sans-serif
+@mixin webfontItalic
+  font-style: italic
+  .chambers-b-loaded &
+    font-family: ChambersSansMediumItalic, sans-serif
+    font-weight: 500
+@mixin webfontBoldSmallCaps
+  font-weight: 400
+  font-style: normal
+  font-variant: small-caps
+  .chambers-b-loaded &
+    font-weight: 700
+    font-family: ChambersSansBoldSmallCaps, sans-serif
+    text-transform: uppercase
+    letter-spacing: 0.05em
+@mixin webfontBold
+  font-weight: 700
+  font-style: normal
+  .chambers-b-loaded &
+    font-family: ChambersSansBlack, sans-serif
+    font-weight: 900
+@mixin webfontItalic
+  font-style: italic
+  .chambers-b-loaded &
+    font-family: ChambersSansMediumItalic, sans-serif
+    font-weight: 500
+@mixin webfontBoldItalic
+  font-weight: 700
+  font-style: italic
+  .chambers-b-loaded &
+    font-family: ChambersSansBlackItalic, sans-serif
+    font-weight: 900
+
+// Basic Variables
+
+$base_font: 18px
+$base_lh: 1.5
+$rem: $base_font * $base_lh
+
+$light-cyan: rgba(0,215,226, 0.5)
+$cyan: rgba(0,215,226, 0.8)
+$dark-cyan: rgba(0,215,226, 1)
+
+$measure-max: 740px
+$wide-measure: $measure-max * 1.333
+$measure-three: $measure-max * 1.5
+
+*
+  box-sizing: border-box
+
+// Basscss additions
+.p05
+  padding: 0.25rem
+.px05
+  padding-left: 0.25rem
+  padding-right: 0.25rem
+.py05
+  padding-top: 0.25rem
+  padding-bottom: 0.25rem
+.m0
+  margin: 0
+.lh0
+  line-height: 0
+
+// Set Base Elements
+
+html
+  line-height: $base_lh
+
+html
+  font-size: 18px
+
+@media screen and (min-width: 320px)
+  html
+    font-size: calc(18px + 4 * ((100vw - 320px) / 420))
+
+@media screen and (min-width: $measure-max)
+  html
+    font-size: 22px
+
+body
+  margin: 0
+  font-weight: 500
+  color: #222
+  +webfont
+
+// Links
+
+a
+  color: #222
+  box-shadow: inset 0 -0.25em 0 $light-cyan
+  border-bottom: solid 0.05em $light-cyan
+  text-decoration: none
+  &:hover
+    box-shadow: inset 0 -0.25em 0 $cyan
+    border-bottom-color: $cyan
+  &.no-underline, &.no-underline:hover, &.active, &.active:hover
+    border-bottom: none
+    box-shadow: none
+
+// Resets
+
+figure, img
+  margin: 0
+
+figure
+  margin: 0 1rem 1rem
+  padding: 0
+
+img
+  max-width: 100vw
+  line-height: 0
+  margin: 0 -1rem
+  margin-bottom: -0.33rem
+
+.highlighter-rouge
+  font-family: 'Monaco', monospace
+  font-size: 0.75rem
+  line-height: 1.5
+  margin: 1rem 0
+  overflow-x: auto
+  background: #fafafa
+
+pre
+  padding: 1rem
+  margin: 0
+  color: #444
+
+p
+  margin: 0 1 1rem
+
+h1, h2, h3, h4, h5, h6
+  margin: 0 0 1rem
+
+h1
+  font-size: 2rem
+  line-height: 1.25
+  +webfontBold
+
+h2
+  font-size: 1.5rem
+  line-height: 1.25
+  +webfontBold
+
+h3
+  font-size: 1.25rem
+  line-height: 1.25
+  +webfontBold
+
+h4
+  // font-size: 0.75rem
+  // line-height: 1.25
+  font-weight: 700
+  font-size: 0.67rem
+  line-height: 1.25
+  text-transform: uppercase
+  letter-spacing: 0.1em
+  text-rendering: optimizeGeometry
+  +webfontBold
+
+h5
+  font-size: 0.875rem
+  line-height: 1.5
+  +webfontItalic
+
+strong, b
+  +webfontBold
+
+em, i
+  +webfontItalic
+
+.container
+  max-width: $measure-max
+
+.wide-container
+  max-width: $wide-measure
+
+.body-container
+  margin: 0
+  padding: 0
+
+@media screen and (min-width: $measure-max)
+  .body-container
+    padding-left: 1rem
+    padding-right: 1rem
+
+form
+  input
+    font-size: 1rem
+    font-size: 0.875rem
+    line-height: (1.5/0.875)
+    +webfont
+  input[type="submit"]
+    +webfontBold
+    border: none
+    background: $light-cyan
+    font-size: 0.67rem
+    padding: 0 0.5rem
+    line-height: (1.5/0.67)
+    text-transform: uppercase
+    letter-spacing: 0.1em
+    border-radius: 0.25rem
+    cursor: pointer
+    &:hover
+      background: $cyan
+
+.short-line
+  // for when h4s and h5s are on the same line inlined
+  font-size: 0.875rem
+  line-height: 1.5
+
+.line-spacer
+  // based on line height
+  height: 1.5rem
+
+// Post specifics
+
+.post
+  p, h1, h2, h3, h4, h5, h6, ul
+    padding-left: 1rem
+    padding-right: 1rem
+  ul
+    padding-left: 2.5rem
+  blockquote
+    margin: 0 1rem 1rem 2.5rem
+    +webfontItalic
+    > p
+      padding: 0
+
+@media screen and (min-width: $measure-max)
+  .measure-center
+    text-align: center
+
+// Home specifics
+
+.white-span
+  background-image: linear-gradient(#fff, #fff)
+  background-size: 1rem 2rem
+  background-position: 0 0.2rem
+  background-repeat: repeat-x
+
+.highlight-span
+  background: #fff
+  box-shadow: -0.25rem 0 0 #fff, 0.2rem 0 0 #fff
+  padding: 0.15rem 0
+
+.post-preview, .link-preview, .fill-element
+  margin: 0 0 1rem
+  padding: 0 1rem
+  .post-preview-body
+    height: 15rem
+  .preview-image, .link-image-backer
+    width: 100%
+    background: #efefef
+    position: absolute
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center center
+    top: 2.375rem
+    height: 10.625rem
+  .preview-excerpt
+    height: 0.875rem * 4 * 1.5
+    margin: 0
+    overflow: hidden
+    position: relative
+    z-index: 2
+    padding-right: 1.2rem
+    padding-left: 0.2rem
+    margin-left: -0.05rem
+    // &.text-only
+      // height: 0.875rem * 6 * 1.5
+  &.feature
+    .preview-excerpt
+      height: 0.875rem * 3 * 1.5
+
+.link-preview, .fill-element
+  padding: 0 2rem
+  height: 16.3125rem
+  .link-body, .fill-element-body
+    padding: 0.5rem 1rem
+    // border: solid 1px #ddd
+    min-height: 16.3125rem
+    margin-top: 0
+    height: auto
+    width: 100%
+    .preview-image
+      top: (1.3125rem * 2) + 1rem
+      height: 16.3125rem - (1.3125rem * 4) - 2rem
+      left: 0.5rem
+      width: calc(100% - 1rem)
+    .link-highlight-span
+      background: #fff
+
+@media screen and (min-width: $measure-max)
+  .post-preview, .link-preview, .fill-element
+    width: 50%
+    &.feature
+      width: 100%
+
+@media screen and (min-width: $measure-three)
+  .post-preview, .link-preview, .fill-element
+    width: 33.33%
+    &.feature
+      width: 66.67%
+
+.author-spacer
+  color: #fff
+  user-select: none
+
+.author-byline-preview
+  position: absolute
+  left: 1rem
+  z-index: 4
+  bottom: 0.875rem * 4 * 1.5
+  padding: 0 0.2rem
+  pointer-events: none
+  color: transparent
+  a
+    pointer-events: auto
+  .text-only-author
+    color: #222
+// .text-only
+//   .author-byline-preview
+//     bottom: 0.875rem * 6 * 1.5
+.feature
+  .author-byline-preview
+    bottom: 0.875rem * 3 * 1.5
+
+a.block, a.flex
+  border-bottom: none
+  box-shadow: none
+  .inblock-link
+    box-shadow: inset 0 -0.25em 0 $light-cyan
+    border-bottom: solid 0.05em $light-cyan
+  &:hover
+    .inblock-link
+      box-shadow: inset 0 -0.25em 0 $cyan
+      border-bottom-color: $cyan
