@@ -1,0 +1,78 @@
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+<script
+<script src="{{ "/assets/js/scroll-up-bar.min.js" | relative_url }}"></script>
+
+
+<script type="text/javascript">
+
+  var $body = $('body')
+  var $site_header = $('.site-header')
+  var $post_holder = $('#post-holder')
+  var $post_holder_body = $('#post-holder-body')
+
+  $site_header.scrollupbar()
+
+  var page_counter = 1;
+  $('#load_more_posts_button').click(function() {
+    page_counter++
+    var $post_list = $('.post-list')
+    $.get("/page" + page_counter, function(data) {
+      var htmlData = $.parseHTML(data)
+      var $posts = $(htmlData).find(".post-list li")
+      $post_list.append($posts)
+    })
+    return false
+  })
+
+  // TODO override on command click
+
+  history.replaceState({path: '/'}, null, '/');
+
+  function loadPost(link) {
+    $.get(link, function(data) {
+      var htmlData = $.parseHTML(data)
+      var $html = $(htmlData).find(".html-body")
+      $body.addClass('post-open')
+      $post_holder_body.html($html)
+      $post_holder.scrollTop(0)
+    })
+  }
+
+  function closePost() {
+    $body.removeClass('post-open')
+    $post_holder_body.html('')
+  }
+
+  $('.post-list').on('click', '.internal-post-link', function() {
+    var link = $(this).attr('href')
+    loadPost(link)
+    history.pushState({path: link}, null, link)
+    return false
+  })
+
+  $post_holder_body.on('click', '.internal-post-link', function() {
+    var link = $(this).attr('href')
+    loadPost(link)
+    history.pushState({path: link}, null, link)
+    return false
+  })
+
+  $post_holder_body.on('click', '.internal-home-link', function() {
+    closePost()
+    history.pushState({path: '/'}, null, '/')
+    return false
+  })
+
+  window.addEventListener('popstate', function(e) {
+    if (e.state) {
+      if (e.state.path === '/') {
+        closePost()
+      } else {
+        loadPost(e.state.path)
+      }
+    }
+  })
+</script>

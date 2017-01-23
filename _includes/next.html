@@ -1,0 +1,11 @@
+<li class="block post-nav {{include.next_class}}">
+  <div class="post-nav-inner flex items-center">
+    <div class="col-12 center">
+      {% if include.paginator.next_page %}
+        <div class="">
+          <a href="{{include.paginator.next_page_path}}">Page {{include.paginator.next_page}} <span class="arrow-right">→</span></a>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</li>
