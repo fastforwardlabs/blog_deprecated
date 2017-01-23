@@ -23,7 +23,7 @@ We are a small team. Everyone will be involved in every part of the product deve
 
 The initial phase of the project is a six month engagement. We are open to full time and contract work.
 
-#### What we look for
+### What we look for
 
 - You really know python. If you know Scala and/or Go, awesome.
 - You have experience with distributed data storage solutions (e.g., Hadoop, Spark).
@@ -42,7 +42,7 @@ We are a small team. Everyone will be involved in every part of the product deve
 
 The initial phase of the project is a six month engagement. We are open to full time and contract work.
 
-#### What We look For
+### What We look For
 
 You have prior python programming experience, you write clean object-oriented code, and you know how to hack together an API.
 You know and have worked with popular, off-the-shelf machine learning (e.g., scikit-learn) and NLP libraries (e.g., nltk) on both structured and unstructured text, and time series data.

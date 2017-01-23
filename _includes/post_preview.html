@@ -1,9 +1,9 @@
 <li class="post-preview relative flex flex-wrap {% if include.post.feature %}feature{% endif %}">
   <div class="block col-12">
     {% if include.prepend %}
-      <h5 class="m0 inline">
-        {{ include.prepend }}:
-      </h5>
+      <div class="mb1">
+        {{ include.prepend }} &nbsp;<span class="h5-arrow">↓</span>
+      </div>
     {% endif %}
     <div class="short-line">
       <h4 class="m0 inline" style="margin-right: 0.125rem">
@@ -22,15 +22,17 @@
       </h5>
     </div>
   </div>
-  <a class="post-preview-body relative flex flex-wrap content-between" href="{{ include.post.url | relative_url }}">
+  <a class="post-preview-body relative flex flex-wrap content-between internal-post-link" href="{{ include.post.url | relative_url }}">
     {% if include.post.preview_image %}
       <div class="preview-image" style="background-image: url({{include.post.preview_image}});)"></div>
+    {% else %}
+      <div class="preview-image placeholder-image"></div>
     {% endif %}
     <div class="relative">
       <h2 class="m0"><span class="white-span"><span class="inblock-link">{{ include.post.title | escape }}</span></span></h2>
     </div>
     <div class="relative">
-      <h5 class="preview-excerpt {% if include.post.preview_image %}{% else %}text-only{% endif %}"><span class="highlight-span">{% if include.post.author %}by <span class="author-spacer"><span itemprop="author" itemscope itemtype="http://schema.org/Person">{{ include.post.author }}</span></span> &mdash; {% endif %}{{ include.post.content | strip_html | truncate: 400 }}</span></h5>
+      <h5 class="preview-excerpt"><span class="highlight-span">{% if include.post.author %}by <span class="author-spacer"><span itemprop="author" itemscope itemtype="http://schema.org/Person">{{ include.post.author }}</span></span> {% endif %}{% if include.post.interview_with %}with <span class="author-spacer">{{ include.post.interview_with }}</span>{% endif %}{% if include.post.author or include.post.interview_with %} &mdash; {% endif %}{{ include.post.content | markdownify | strip_html | truncate: 400 }}</span></h5>
       <h5 class="m0 right-align"><span class="inblock-link">...read more</span></h5>
     </div>
   </a>
@@ -40,6 +42,13 @@
         by <a href="{{ include.post.author_link }}" target="_blank" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ include.post.author }}</span></a>
       {% else %}
         by <span class="text-only-author" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ include.post.author }}</span></span>
+      {% endif %}
+    {% endif %}
+    {% if include.post.interview_with %}
+      {% if include.post.interview_with_link %}
+        with <a href={{ include.post.interview_with_link}} target="_blank">{{ include.post.interview_with }}</a>
+      {% else %}
+        with {{ include.post.interview_with }}
       {% endif %}
     {% endif %}
   </h5>

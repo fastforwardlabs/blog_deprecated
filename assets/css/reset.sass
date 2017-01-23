@@ -5,7 +5,7 @@
 
 @font-face
   font-family: ChambersSansMedium
-  src: url('Fonts/1385718/c9b720bd-7cae-41eb-a84f-bfe7c2cad5c0.woff2') format('woff2'), url('Fonts/1385718/234fc275-2f1b-4c0f-a523-48d1335efd32.woff') format('woff'), url('Fonts/1385718/2d3751af-f69a-423f-b25f-9e64771a0810.ttf') format('truetype')
+  src: url('Fonts/6e68411fd97d_subset/6e68411fd97d_subset.woff2') format('woff2'), url('Fonts/6e68411fd97d_subset/6e68411fd97d_subset.woff') format('woff'), url('Fonts/6e68411fd97d_subset/2d3751af-f69a-423f-b25f-9e64771a0810.ttf') format('truetype')
   font-weight: 500
   font-style: normal
 
@@ -30,12 +30,16 @@
 @mixin webfont
   &
     font-family: sans-serif
+    font-weight: 400
   .chambers-loaded &
     font-family: ChambersSansMedium, sans-serif
+    font-weight: 500
   .chambers-b-loaded &
     font-family: ChambersSansMedium, sans-serif
+    font-weight: 500
 @mixin webfontItalic
   font-style: italic
+  font-weight: 400
   .chambers-b-loaded &
     font-family: ChambersSansMediumItalic, sans-serif
     font-weight: 500
@@ -54,11 +58,6 @@
   .chambers-b-loaded &
     font-family: ChambersSansBlack, sans-serif
     font-weight: 900
-@mixin webfontItalic
-  font-style: italic
-  .chambers-b-loaded &
-    font-family: ChambersSansMediumItalic, sans-serif
-    font-weight: 500
 @mixin webfontBoldItalic
   font-weight: 700
   font-style: italic
@@ -117,6 +116,7 @@ body
   margin: 0
   font-weight: 500
   color: #222
+  font-feature-settings: "tnum"
   +webfont
 
 // Links
@@ -135,31 +135,57 @@ a
 
 // Resets
 
+.cyan
+  color: $cyan
+
 figure, img
   margin: 0
 
 figure
-  margin: 0 1rem 1rem
+  margin: 0
   padding: 0
 
 img
-  max-width: 100vw
+  width: 100vw
   line-height: 0
-  margin: 0 -1rem
-  margin-bottom: -0.33rem
+  margin: 1rem -1rem
+  display: block
+
+@media screen and (min-width: $measure-max * 0.667)
+  img
+    width: auto
+    max-width: calc(100% - 2rem)
+    margin: 1rem auto
 
 .highlighter-rouge
   font-family: 'Monaco', monospace
-  font-size: 0.75rem
+  font-size: 0.667rem
   line-height: 1.5
   margin: 1rem 0
+  width: 100vw
+  position: relative
+  left: 50%
+  right: 50%
+  margin-left: -50vw
+  margin-right: -50vw
+  display: flex
+  position: relative
   overflow-x: auto
   background: #fafafa
 
 pre
-  padding: 1rem
   margin: 0
+  width: $measure-max
+  margin: 0 auto
+  padding: 1rem
   color: #444
+  position: relative
+
+p code
+  background: #efefef
+  padding: 0.1rem 0.2rem 0.1rem
+  font-family: 'Monaco', monospace
+  font-size: 0.75rem
 
 p
   margin: 0 1 1rem
@@ -175,21 +201,30 @@ h1
 h2
   font-size: 1.5rem
   line-height: 1.25
+  margin-top: 2rem
   +webfontBold
 
 h3
   font-size: 1.25rem
   line-height: 1.25
+  margin-top: 2rem
   +webfontBold
+
+h2 + h3, h2 + h4, h3 + h4
+  margin-top: 1rem
+
+h4 + h2, h4 + h3
+  margin-top: -0.5rem
 
 h4
   // font-size: 0.75rem
   // line-height: 1.25
   font-weight: 700
-  font-size: 0.67rem
+  font-size: 0.775rem
   line-height: 1.25
+  margin-top: 2rem
   text-transform: uppercase
-  letter-spacing: 0.1em
+  letter-spacing: 0.075em
   text-rendering: optimizeGeometry
   +webfontBold
 
@@ -197,6 +232,9 @@ h5
   font-size: 0.875rem
   line-height: 1.5
   +webfontItalic
+  .h5-arrow
+    +webfont
+    font-style: normal
 
 strong, b
   +webfontBold
@@ -214,6 +252,9 @@ em, i
   margin: 0
   padding: 0
 
+.measure-max
+  max-width: $measure-max
+
 @media screen and (min-width: $measure-max)
   .body-container
     padding-left: 1rem
@@ -225,19 +266,23 @@ form
     font-size: 0.875rem
     line-height: (1.5/0.875)
     +webfont
+
   input[type="submit"]
     +webfontBold
     border: none
-    background: $light-cyan
     font-size: 0.67rem
     padding: 0 0.5rem
     line-height: (1.5/0.67)
     text-transform: uppercase
     letter-spacing: 0.1em
-    border-radius: 0.25rem
     cursor: pointer
+    background: transparent
+    background-image: linear-gradient($light-cyan, $light-cyan)
+    background-size: 1em 1em
+    background-repeat: repeat-x
+    background-position: 0 1.1em
     &:hover
-      background: $cyan
+      background-image: linear-gradient($cyan, $cyan)
 
 .short-line
   // for when h4s and h5s are on the same line inlined
@@ -248,21 +293,53 @@ form
   // based on line height
   height: 1.5rem
 
+@media screen and (min-width: $measure-max)
+  .mm-mb3
+    margin-bottom: 2rem
+  .mm-display-none
+    display: none
+  .mm-block
+    display: block !important
+  .mm-justify-between
+    justify-content: space-between
+
+// Header specifics
+
+.header-ffl-logo-holder
+  padding-left: 0.1rem
+.header-ffl-logo
+  height: 1rem
+  position: relative
+  top: 0.05rem
+  .logo-f
+    fill: #000
+  .logo-tri
+    fill: #00dcec
+
+@media screen and (min-width: $measure-max)
+  .header-ffl-logo-holder
+    padding-left: 0.1rem
+  .header-ffl-logo
+    height: 2.5rem
+    top: 0
+
 // Post specifics
 
 .post
   p, h1, h2, h3, h4, h5, h6, ul
     padding-left: 1rem
     padding-right: 1rem
-  ul
+  ul, ol
     padding-left: 2.5rem
+    li
+      margin-bottom: 0.25rem
   blockquote
     margin: 0 1rem 1rem 2.5rem
     +webfontItalic
     > p
       padding: 0
 
-@media screen and (min-width: $measure-max)
+@media screen and (min-width: $measure-max * 0.667)
   .measure-center
     text-align: center
 
@@ -282,6 +359,9 @@ form
 .post-preview, .link-preview, .fill-element
   margin: 0 0 1rem
   padding: 0 1rem
+  h4
+    font-size: 0.67rem
+    line-height: 1.25
   .post-preview-body
     height: 15rem
   .preview-image, .link-image-backer
@@ -293,6 +373,10 @@ form
     background-position: center center
     top: 2.375rem
     height: 10.625rem
+    &.placeholder-image
+      background-image: url('Images/placeholder-image.svg')
+      background-size: auto 90%
+      background-position: center center
   .preview-excerpt
     height: 0.875rem * 4 * 1.5
     margin: 0
@@ -307,6 +391,11 @@ form
   &.feature
     .preview-excerpt
       height: 0.875rem * 3 * 1.5
+
+.no-feature .post-preview.feature
+  .preview-excerpt
+    height: 0.875rem * 4 * 1.5
+
 
 .link-preview, .fill-element
   padding: 0 2rem
@@ -331,12 +420,57 @@ form
     width: 50%
     &.feature
       width: 100%
+    .no-feature .feature
+      width: 50% !important
 
 @media screen and (min-width: $measure-three)
   .post-preview, .link-preview, .fill-element
     width: 33.33%
     &.feature
       width: 66.67%
+  .no-feature .feature
+    width: 33.33% !important
+
+@media screen and (min-width: ($measure-max * 2))
+  .post-preview, .link-preview, .fill-element
+    width: 25%
+    &.feature
+      width: 50%
+  .no-feature .feature
+    width: 25% !important
+
+@media screen and (min-width: ($measure-max * 3))
+  .post-preview, .link-preview, .fill-element
+    width: 16.66%
+    &.feature
+      width: 33.33%
+  .no-feature .feature
+    width: 16.66% !important
+
+.post-nav
+  height: 16.3125rem
+  width: 100%
+  padding: 0.5rem 1rem
+
+.post-nav-inner
+  height: 16.3125rem - 1rem
+  // background: #efefef
+
+@media screen and (min-width: $measure-max)
+  .post-nav
+    &.col-2-1
+      width: 50%
+    &.col-2-2
+      width: 100%
+
+@media screen and (min-width: $measure-three)
+  .post-nav
+    &.col-3-1
+      width: 33.33%
+    &.col-3-2
+      width: 66.66%
+    &.col-3-3
+      width: 100%
 
 .author-spacer
   color: #fff
@@ -360,6 +494,9 @@ form
 .feature
   .author-byline-preview
     bottom: 0.875rem * 3 * 1.5
+.no-feature .feature
+  .author-byline-preview
+    bottom: 0.875rem * 4 * 1.5
 
 a.block, a.flex
   border-bottom: none
@@ -371,3 +508,19 @@ a.block, a.flex
     .inblock-link
       box-shadow: inset 0 -0.25em 0 $cyan
       border-bottom-color: $cyan
+
+svg.text-logo
+  fill: $cyan
+  height: 0.75rem
+  margin-left: 1rem
+
+.arrow-right
+  display: inline-block
+  position: relative
+  transform: scaleX(-1)
+
+.diamond-ender
+  height: 0.5rem
+  margin: 0 auto
+  display: block
+  fill: #222

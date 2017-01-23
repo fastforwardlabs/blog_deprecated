@@ -76,7 +76,7 @@ def composeAll(*args):
     i.e. composed = composeAll([f, g, h])
          composed(x) # == f(g(h(x)))
     """
-    # adapted from <a href="https://docs.python.org/3.1/howto/functional.html">https://docs.python.org/3.1/howto/functional.html</a>
+    # adapted from https://docs.python.org/3.1/howto/functional.html
     return partial(functools.reduce, compose)(*args)
 ```
 
@@ -90,7 +90,7 @@ class VAE():
     """Variational Autoencoder
 
     see: Kingma &amp; Welling - Auto-Encoding Variational Bayes
-    (<a href="https://arxiv.org/abs/1312.6114">https://arxiv.org/abs/1312.6114</a>)
+    (https://arxiv.org/abs/1312.6114)
     """
     DEFAULTS = {
         "batch_size": 128,

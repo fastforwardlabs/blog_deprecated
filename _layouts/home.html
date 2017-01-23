@@ -7,36 +7,34 @@ layout: default
   {{ content }}
 
   {% assign page_offseter = paginator.page | minus:1 %}
-  {% assign post_offset = 19 | times:page_offseter %}
+  {% assign post_offset = paginator.per_page | times:page_offseter %}
   {% assign link_count = 0 %}
+  {% assign post_count = 0 %}
+  {% assign literal_post_count = 0 %}
 
-  <!-- Loop does pretty much the same as below but just counts, this lets us figure out how many links we've already used -->
-  <!-- TODO: this needs to be updated to reflect new loop -->
+  <!-- TODO: the newsletter is actually kicking out a link currently. Fix that. -->
+
+  <!-- Loop does pretty much the same as below but just counts. That gets us the link count for later pages. -->
   {% if post_offset != 0 %}
-    {% assign literal_post_count = 0 %}
-    {% assign post_count = 1 %}
     {% for post in site.posts %}
       {% assign literal_post_count = literal_post_count | plus:1 %}
-      {% assign modulo_check = post_count | modulo:3 %}
-      {% assign disperse_check = post_count | modulo:8 %}
-      {% if modulo_check == 0 and post.feature %}
-        {% assign post_count = post_count | plus: 1 %}
-        {% assign link_count = link_count | plus: 1 %}
-      {% else %}
-        {% if disperse_check == 0 or disperse_check == 7 and post.feature %}
-          {% assign post_count = post_count | plus: 1 %}
-          {% assign link_count = link_count | plus: 1 %}
-        {% endif %}
-      {% endif %}
-      {% if post_offset == 0 and post_count == 7 %}
+      {% assign modulo_two_check = post_count | plus:1 | modulo:2 %}
+      {% if modulo_two_check == 0 and post.feature %}
         {% assign post_count = post_count | plus:1 %}
+        {% assign link_count = link_count | plus:1 %}
       {% endif %}
-      {% if modulo_check == 0 and post.feature %}
-        {% assign post_count = post_count | plus: 1 %}
-        {% assign link_count = link_count | plus: 1 %}
+      {% assign modulo_three_check = post_count | plus:1 | modulo:3 %}
+      {% if modulo_three_check == 0 and post.feature %}
+        {% assign post_count = post_count | plus:1 %}
+        {% assign link_count = link_count | plus:1 %}
+      {% endif %}
+      {% assign modulo_two_check = post_count | plus:1 | modulo:2 %}
+      {% if modulo_two_check == 0 and post.feature %}
+        {% assign post_count = post_count | plus:1 %}
+        {% assign link_count = link_count | plus:1 %}
       {% endif %}
       {% if post.feature %}
-        {% assign post_count = post_count | plus: 2 %}
+        {% assign post_count = post_count | plus:2 %}
       {% else %}
         {% assign post_count = post_count | plus: 1 %}
       {% endif %}
@@ -44,12 +42,25 @@ layout: default
         {% break %}
       {% endif %}
     {% endfor %}
+    {% assign end_check = post_count | modulo:6 %}
+    {% assign to_end = 6 | minus:end_check %}
+    {% if to_end == 3 %}
+      {% assign link_count = link_count | plus:1 %}
+    {% endif %}
+    {% if to_end == 5 %}
+      {% assign link_count = link_count | plus:2 %}
+    {% endif %}
   {% endif %}
 
+  {% assign post_count = 0 %}
+
   <ul class="post-list body-container flex flex-wrap items-start">
-    {% assign post_count = 0 %}
     {% assign links = site.data.links | reverse %}
     {% assign email_added = 0 %}
+    {% if post_offset != 0 %}
+      {% include prev.html paginator=paginator next_class="col-2-1 col-3-1" %}
+      {% assign post_count = post_count | plus:1 %}
+    {% endif %}
     {% for post in paginator.posts %}
       {% assign modulo_two_check = post_count | plus:1 | modulo:2 %}
       {% if modulo_two_check == 0 and post.feature %}
@@ -84,17 +95,48 @@ layout: default
         {% assign post_count = post_count | plus:1 %}
         {% assign link_count = link_count | plus:1 %}
       {% endif %}
-      {% include post_preview.html post=post %}
+      {% include post_preview.html post=post post_counte=post_count %}
       {% if post.feature %}
         {% assign post_count = post_count | plus:2 %}
       {% else %}
         {% assign post_count = post_count | plus: 1 %}
       {% endif %}
     {% endfor %}
+    {% assign end_check = post_count | modulo:6 %}
+    {% assign to_end = 6 | minus:end_check %}
+    {% if to_end == 0 %}
+      {% include next.html paginator=paginator next_class="col-2-2 col-3-3" %}
+    {% endif %}
+    {% if to_end == 1 %}
+      {% include next.html paginator=paginator next_class="col-2-1 col-3-1" %}
+    {% endif %}
+    {% if to_end == 2 %}
+      {% include next.html paginator=paginator next_class="col-2-2 col-3-2" %}
+    {% endif %}
+    {% if to_end == 3 %}
+      {% assign current_link = links[link_count] %}
+      {% include link.html link=current_link %}
+      {% assign link_count = link_count | plus:1 %}
+      {% assign post_count = post_count | plus:1 %}
+      {% include next.html paginator=paginator next_class="col-2-2 col-3-2" %}
+    {% endif %}
+    {% if to_end == 4 %}
+      {% include next.html paginator=paginator next_class="col-2-2 col-3-1" %}
+    {% endif %}
+    {% if to_end == 5 %}
+      {% assign current_link = links[link_count] %}
+      {% include link.html link=current_link %}
+      {% assign link_count = link_count | plus:1 %}
+      {% assign current_link = links[link_count] %}
+      {% include link.html link=current_link %}
+      {% assign link_count = link_count | plus:1 %}
+      {% assign post_count = post_count | plus:2 %}
+      {% include next.html paginator=paginator next_class="col-2-1 col-3-3" %}
+    {% endif %}
   </ul>
 
   <div class="flex justify-between px1">
-    <div class="px1" style="width: 4rem;">
+<!--     <div class="px1" style="width: 4rem;">
       {% if paginator.previous_page %}
         <a href="{{ paginator.previous_page_path }}"  class="previous">Prev</a>
       {% endif %}
@@ -125,7 +167,7 @@ layout: default
       {% if paginator.next_page %}
         <a href="{{ paginator.next_page_path }}" style="width: 4rem;" class="next">Next</a>
       {% endif %}
-    </div>
+    </div> -->
   </div>
 
   <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p> -->

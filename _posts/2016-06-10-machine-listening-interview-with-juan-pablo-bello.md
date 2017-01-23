@@ -12,6 +12,8 @@ tumblr_url: http://blog.fastforwardlabs.com/post/145708386938/machine-listening-
 preview_image: http://68.media.tumblr.com/5cfcc6b830aa09f63bf9e9b2333524a1/tumblr_inline_o8k7rqJDmA1ta78fg_540.png
 feature: true
 post_type: Interview
+interview_with: Juan Pablo Bello
+interview_with_link: http://steinhardt.nyu.edu/marl/people/bello
 ---
 
 <figure data-orig-width="360" data-orig-height="270" class="tmblr-full"><img src="http://68.media.tumblr.com/5cfcc6b830aa09f63bf9e9b2333524a1/tumblr_inline_o8k7rqJDmA1ta78fg_540.png" alt="image" data-orig-width="360" data-orig-height="270"/></figure>

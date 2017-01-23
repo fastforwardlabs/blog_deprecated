@@ -4,7 +4,7 @@ layout: default
 
 <article class="post mt2" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <header class="mb2 wide-container mx-auto measure-center">
+  <header class="mb2 mm-mb3 wide-container mx-auto measure-center">
     <h4 class="m0">
       {% if page.post_type %}
         {{ page.post_type }}
@@ -21,9 +21,19 @@ layout: default
       {{ page.date | date: "%b %-d %Y" }}
       {% if page.author %}
         {% if page.author_link %}
-          &middot; by <a href={{ page.author_link }} itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></a>
+          &middot; by <a href={{ page.author_link }} target="_blank" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></a>
         {% else %}
           &middot; by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
+        {% endif %}
+      {% endif %}
+      {% if page.interview_with %}
+        {% if page.author %}{% else %}
+          &middot;
+        {% endif %}
+        {% if page.interview_with_link %}
+          with <a href={{ page.interview_with_link}} target="_blank">{{ page.interview_with }}</a>
+        {% else %}
+          with {{ page.interview_with }}
         {% endif %}
       {% endif %}
     </h5>
@@ -32,26 +42,40 @@ layout: default
   <div class="container mx-auto" itemprop="articleBody">
     {{ content }}
   </div>
+  <div class="col-12 mt3 mb4">
+    <svg class="diamond-ender" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   viewBox="0 0 123.9 56.3">
+     <polygon class="st0" points="62,56.2 123.9,28 62,0 62,0 62,0 61.9,0 61.9,0 0,28.3 61.9,56.2 61.9,56.3 62,56.3 62,56.3 "/>
+    </svg>
+  </div>
 
 </article>
 
-<div class="mt2">
-  <h4 class="m0 px2 py2">More from the Blog</h4>
-  <ul class="post-list flex flex-wrap justify-center no-feature">
-    {% if page.previous.url %}
-      {% include post_preview.html post=page.previous prepend="Older" %}
-    {% endif %}
-    {% if page.next.url %}
-      {% include post_preview.html post=page.next prepend="Newer" %}
+<div class="mt3 mb2 measure-center">
+  <div class="body-container">
+    <h4 class="m0 px2">More from the Blog</h4>
+  </div>
+</div>
+<ul class="post-list body-container flex flex-wrap items-start no-feature">
+  {% if page.previous.url %}
+    {% include post_preview.html post=page.previous prepend="Older" %}
+  {% endif %}
+  {% if page.next.url %}
+    {% include post_preview.html post=page.next prepend="Newer" %}
+    {% if page.next.title != site.posts[0].title %}
       {% assign first_post = site.posts.first %}
       {% include post_preview.html post=first_post prepend="Newest" %}
     {% else %}
-      {% assign random_1 = site.time | date: "%s%N" | modulo: site.posts.size %}
-      {% assign random_post_1 = site.posts[random_1] %}
-      {% include post_preview.html post=random_post_1 prepend="Archive" %}
-      {% assign random_2 = page.title.size | modulo: site.posts.size %}
-      {% assign random_post_2 = site.posts[random_2] %}
-      {% include post_preview.html post=random_post_2 prepend="Archive" %}
+      {% assign random_first = site.time | date: "%s%N" | modulo: site.posts.size %}
+      {% assign random_post_first = site.posts[random_first] %}
+      {% include post_preview.html post=random_post_first prepend="Archive" %}
     {% endif %}
-  </ul>
-</div>
+  {% else %}
+    {% assign random_1 = site.time | date: "%s%N" | modulo: site.posts.size %}
+    {% assign random_post_1 = site.posts[random_1] %}
+    {% include post_preview.html post=random_post_1 prepend="Archive" %}
+    {% assign random_2 = page.title.size | modulo: site.posts.size %}
+    {% assign random_post_2 = site.posts[random_2] %}
+    {% include post_preview.html post=random_post_2 prepend="Archive" %}
+  {% endif %}
+</ul>

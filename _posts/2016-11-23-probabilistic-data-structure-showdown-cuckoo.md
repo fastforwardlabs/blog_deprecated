@@ -94,10 +94,10 @@ def obtain_indices_from_item(item_to_insert, fingerprint_size, capacity):
 
 def insert_into_table(table, index_1, index_2, bucket_capacity):
     #now insert item into the table
-    if len(table[index_1])  </pre><pre class="prettyprint lang-python">#let's create a crude cuckoo hashtable
-capacity = 10 #capacity of our cuckoo hashtable
-bucket_capacity = 4
-table = [[] for _ in range(capacity)]
+    if len(table[index_1]) #let's create a crude cuckoo hashtable
+        capacity = 10 #capacity of our cuckoo hashtable
+        bucket_capacity = 4
+        table = [[] for _ in range(capacity)]
 ```
 
 ```python
