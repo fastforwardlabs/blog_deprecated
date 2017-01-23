@@ -10,7 +10,7 @@ layout: post
 tumblr_url: http://blog.fastforwardlabs.com/post/144813278933/evaluating-summarization-systems
 preview_image: http://68.media.tumblr.com/d879f22c1b7be3467b606c8aa8f7cfb6/tumblr_inline_o7n3a6bf5R1ta78fg_540.jpg
 post_type: Guest Post
-author: Agolo
+author: Mohamed AlTantawy, Agolo
 author_link: http://www.agolo.com/
 ---
 
@@ -30,13 +30,13 @@ author_link: http://www.agolo.com/
 
 <p>Our summarization engines are mostly extractive. However, in many cases, we change the original sentences to make the summaries more readable. For example, coreference resolution is often used to replace pronouns and other references with their original entities, for example, the <a href="http://br.advfn.com/noticias/DJN/2016/artigo/70059200">following sentence</a>:<b><br/></b></p>
 
-> “<i><b>The market</b></i> is maturing,” and opening retail stores in India helps “form the building blocks” for the firm in the country, <b><i>he</i></b> said.</p>
+> “**The market** is maturing,” and opening retail stores in India helps “form the building blocks” for the firm in the country, **he** said.
 
 <p>would change to:</p>
 
-> “<b><i>India&rsquo;s smartphone market</i></b> is maturing,” and opening retail stores in India helps “form the building blocks” for the firm in the country, <b><i>Rushabh Doshi</i></b> said.
+> “**India's smartphone market** is maturing,” and opening retail stores in India helps “form the building blocks” for the firm in the country, **Rushabh Doshi** said.
 
-<p>As a result, we want to ensure that the modified sentence will not affect the readability of the summaries. The <a href="https://en.wikipedia.org/wiki/Gunning_fog_index">Gunning Fox Index</a> measures the readability of English writing. The index estimates the years of formal education needed to understand the text on a first reading. It is a linear equation of the average sentence length and percentage of complex words whose scale provides an estimate of grade level. Complex words are defined as words with three or more syllables. Text with a Fog Index value over 18 is generally considered unreadable.  </p><blockquote><p>Fog Index = 0.4 ( average number of words per sentence + percent of complex words)</p></blockquote><p>For the purpose of this task, we are not interested in the absolute values of the Fox Index, but rather in the relative score of the modified text when compared to the original text. We ensure that that the difference in readability score between the original text and the modified text remains within a 10% scale. This method will become useful as we move from extractive to abstractive summaries.<br/></p>
+<p>As a result, we want to ensure that the modified sentence will not affect the readability of the summaries. The <a href="https://en.wikipedia.org/wiki/Gunning_fog_index">Gunning Fox Index</a> measures the readability of English writing. The index estimates the years of formal education needed to understand the text on a first reading. It is a linear equation of the average sentence length and percentage of complex words whose scale provides an estimate of grade level. Complex words are defined as words with three or more syllables. Text with a Fog Index value over 18 is generally considered unreadable.  </p><blockquote><p>Fog Index = 0.4 (average number of words per sentence + percent of complex words)</p></blockquote><p>For the purpose of this task, we are not interested in the absolute values of the Fox Index, but rather in the relative score of the modified text when compared to the original text. We ensure that that the difference in readability score between the original text and the modified text remains within a 10% scale. This method will become useful as we move from extractive to abstractive summaries.<br/></p>
 
 ### Speed and Complexity
 
