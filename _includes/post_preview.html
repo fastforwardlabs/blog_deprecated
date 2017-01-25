@@ -24,7 +24,7 @@
   </div>
   <a class="post-preview-body relative flex flex-wrap content-between internal-post-link" href="{{ include.post.url | relative_url }}">
     {% if include.post.preview_image %}
-      <div class="preview-image" style="background-image: url({{include.post.preview_image}});)"></div>
+      <div class="preview-image" style="background-image: url({{ include.post.preview_image | relative_url }});)"></div>
     {% else %}
       <div class="preview-image placeholder-image"></div>
     {% endif %}
