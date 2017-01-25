@@ -142,7 +142,7 @@ layout: default
     <div class="flex justify-between measure-end px1 mb2 col-12">
       {% if paginator.previous_page %}
         <div class="px1 nav-spacer">
-          <a href="{{ site.github.url }}/{{ paginator.previous_page_path }}"  class="previous"><span class="h5-arrow">←</span> Previous</a>
+          <a href="{{ site.github.url }}{{ paginator.previous_page_path }}"  class="previous"><span class="h5-arrow">←</span> Previous</a>
         </div>
       {% else %}
         <div class="nav-spacer nav-spacer-only"></div>
@@ -157,11 +157,11 @@ layout: default
           {% else %}
             <div class="px05">
               {% if counter == 1 %}
-                <a class="" href="{{ site.github.url }}/{{ site.github.url }}/">
+                <a class="" href="{{ site.github.url }}{{ site.github.url }}/">
                   {{ counter }}
                 </a>
               {% else %}
-                <a class="" href="{{ site.github.url }}/{{ site.github.url }}/page{{ counter }}">
+                <a class="" href="{{ site.github.url }}{{ site.github.url }}/page{{ counter }}">
                   {{ counter }}
                 </a>
               {% endif %}
@@ -171,7 +171,7 @@ layout: default
       </div>
       {% if paginator.next_page %}
         <div class="px1 right-align nav-spacer">
-          <a href="{{ site.github.url }}/{{ paginator.next_page_path }}" class="next">Next <span class="arrow-right h5-arrow">→</span></a>
+          <a href="{{ site.github.url }}{{ paginator.next_page_path }}" class="next">Next <span class="arrow-right h5-arrow">→</span></a>
         </div>
       {% else %}
         <div class="nav-spacer nav-spacer-only"></div>
