@@ -7,6 +7,10 @@
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 
+  {% if page.url == "/404.html" %}
+      <meta http-equiv="refresh" content="3; url={{ site.github.url }}/">
+  {% endif %}
+
   <link rel="stylesheet" href="{{ "/assets/css/syntax.css" | relative_url }}">
   <link rel="stylesheet" href="{{ "/assets/css/basscss.min.css" | relative_url }}">
   <link rel="stylesheet" href="{{ "/assets/css/reset.css" | relative_url }}">

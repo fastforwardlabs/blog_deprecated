@@ -5,21 +5,15 @@
 
   <body>
 
-    <div>
-      <div class="html-body">
+    {% include header.html %}
 
-        {% include header.html %}
-
-        <main class="page-content" aria-label="Content">
-          <div class="wrapper">
-            {{ content }}
-          </div>
-        </main>
-
-        {% include footer.html %}
-
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        {{ content }}
       </div>
-    </div>
+    </main>
+
+    {% include footer.html %}
 
     <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
     <script type="text/x-mathjax-config">

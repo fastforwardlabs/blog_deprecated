@@ -103,6 +103,7 @@ html
 
 html
   font-size: 18px
+  height: 100%
 
 @media screen and (min-width: 320px)
   html
@@ -118,6 +119,12 @@ body
   color: #222
   font-feature-settings: "tnum"
   +webfont
+  min-height: 100%
+  display: flex
+  flex-direction: column
+
+.page-content
+  flex: 1
 
 // Links
 
