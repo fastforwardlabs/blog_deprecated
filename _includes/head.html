@@ -2,60 +2,32 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/png" href="{{ 'images/favicon.png' | relative_url }}">
 
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 
-  <!-- <link href="https://unpkg.com/basscss@8.0.2/css/basscss.min.css" rel="stylesheet"> -->
-
-<!--   <script src="https://use.typekit.net/loy3nzf.js"></script>
-  <script>try{Typekit.load({ async: true });}catch(e){}</script>
- -->
   <link rel="stylesheet" href="{{ "/assets/css/syntax.css" | relative_url }}">
   <link rel="stylesheet" href="{{ "/assets/css/basscss.min.css" | relative_url }}">
-  <!-- <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}"> -->
-  <!-- <link rel="stylesheet" href="{{ "/assets/css/typescale.css" | relative_url }}"> -->
   <link rel="stylesheet" href="{{ "/assets/css/reset.css" | relative_url }}">
-<!--   <style type="text/css">
-    /* Basscss Debug Grid */
-
-    .debug-grid {
-      background-image:
-        linear-gradient(transparent 7.25px, var(--debug-grid-color) 8.25px),
-        linear-gradient(90deg, transparent 7.25px, var(--debug-grid-color) 8.25px);
-      background-position: calc(50% - 4.125px) top;
-      background-size: 8.25px 8.25px;
-    }
-
-    :root {
-      --debug-grid-color: rgba(0, 255, 255, .25);
-    }
-  </style> -->
-
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
 
+  <!-- Font Loading -->
   <script>
     (function( doc ) {
     // IE9+
     if( !( 'geolocation' in navigator ) ) {
       return;
     }
-
     let classes = [];
-
     // Fonts
     if( sessionStorage.chambersStageOne && sessionStorage.chambersStageTwo ) {
       classes.push( "chambers-b-loaded" );
     }
-
     document.documentElement.className += " " + classes.join( " " );
   })( document );
   </script>
   <script src="{{ "/assets/js/fontfaceobserver.standalone.js" | relative_url }}"></script>
   <script src="{{ "/assets/js/fonts.js" | relative_url }}"></script>
-
-  {% if jekyll.environment == 'production' and site.google_analytics %}
-  {% include google-analytics.html %}
-  {% endif %}
 </head>
