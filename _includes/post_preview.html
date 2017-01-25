@@ -31,7 +31,7 @@
     <div class="relative">
       <h2 class="m0"><span class="white-span"><span class="inblock-link">{{ include.post.title | escape }}</span></span></h2>
     </div>
-    <div class="relative">
+    <div class="relative col-12">
       <h5 class="preview-excerpt"><span class="highlight-span">{% if include.post.author %}by <span class="author-spacer"><span itemprop="author" itemscope itemtype="http://schema.org/Person">{{ include.post.author }}</span></span> {% endif %}{% if include.post.interview_with %}with <span class="author-spacer">{{ include.post.interview_with }}</span>{% endif %}{% if include.post.author or include.post.interview_with %} &mdash; {% endif %}{{ include.post.content | markdownify | strip_html | truncate: 400 }}</span></h5>
       <h5 class="m0 right-align"><span class="inblock-link">...read more</span></h5>
     </div>
@@ -46,9 +46,9 @@
     {% endif %}
     {% if include.post.interview_with %}
       {% if include.post.interview_with_link %}
-        with <a href={{ include.post.interview_with_link}} target="_blank">{{ include.post.interview_with }}</a>
+        with <a href={{ include.post.interview_with_link }} target="_blank">{{ include.post.interview_with }}</a>
       {% else %}
-        with {{ include.post.interview_with }}
+        with <span class="text-only-author" itemprop="author" itemscope itemtype="http://schema.org/Person">{{ include.post.interview_with }}</span>
       {% endif %}
     {% endif %}
   </h5>

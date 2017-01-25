@@ -23,7 +23,7 @@ twitter_username: jekyllrb
 github_username: jekyll
 markdown: kramdown
 excerpt_separator: "\\n\\n"
-paginate: 30
+paginate: 20
 gems:
 - jekyll-feed
 - jekyll-paginate

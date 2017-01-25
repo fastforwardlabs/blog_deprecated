@@ -181,7 +181,7 @@ pre
   color: #444
   position: relative
 
-p code
+p code, li code
   background: #efefef
   padding: 0.1rem 0.2rem 0.1rem
   font-family: 'Monaco', monospace
@@ -228,7 +228,7 @@ h4
   text-rendering: optimizeGeometry
   +webfontBold
 
-h5
+h5, .h5
   font-size: 0.875rem
   line-height: 1.5
   +webfontItalic
@@ -237,11 +237,13 @@ h5
     font-style: normal
 
 strong, b
-  color: #333
   +webfontBold
 
 em, i
   +webfontItalic
+
+em strong, i  b, em b, i strong, strong em, b i, b em, strong i
+  +webfontBoldItalic
 
 .container
   max-width: $measure-max
@@ -336,19 +338,36 @@ form
       margin-bottom: 0.25rem
   blockquote
     margin: 0 1rem 1rem 2.5rem
-    +webfontItalic
-    strong
-      +webfontBoldItalic
-    em
-      +webfont
-    em strong, strong em
-      +webfontBold
+    margin-left: 1rem
+    padding-left: 1rem
+    border-left: solid 0.5rem #efefef
+    +webfont
+    // strong
+    //   +webfontBoldItalic
+    // em
+    //   +webfont
+    // em strong, i  b, em b, i strong, strong em, b i, b em, strong i
+    //   +webfontBold
     > p
       padding: 0
+
+.nav-spacer
+  width: 5.5rem
+  height: (0.875rem * 1.5)
 
 @media screen and (min-width: $measure-max * 0.667)
   .measure-center
     text-align: center
+  .nav-spacer
+    width: auto
+  .nav-spacer-only
+    display: none
+
+
+
+@media screen and (min-width: $measure-max)
+  .measure-end
+    justify-content: flex-end
 
 .video-holder
   position: relative
@@ -362,6 +381,7 @@ form
   .video-holder
     width: calc(100% - 2rem)
     margin-left: 1rem
+    padding-bottom: calc(56.25% - 2rem)
 
 
 .video-holder iframe
@@ -406,7 +426,7 @@ form
       background-size: auto 90%
       background-position: center center
   .preview-excerpt
-    height: 0.875rem * 4 * 1.5
+    max-height: 0.875rem * 4 * 1.5
     margin: 0
     overflow: hidden
     position: relative
@@ -418,11 +438,11 @@ form
       // height: 0.875rem * 6 * 1.5
   &.feature
     .preview-excerpt
-      height: 0.875rem * 3 * 1.5
+      max-height: 0.875rem * 3 * 1.5
 
 .no-feature .post-preview.feature
   .preview-excerpt
-    height: 0.875rem * 4 * 1.5
+    max-height: 0.875rem * 4 * 1.5
 
 
 .link-preview, .fill-element
@@ -442,6 +462,10 @@ form
       width: calc(100% - 1rem)
     .link-highlight-span
       background: #fff
+
+.fill-newsletter-body
+  height: 16.3125rem - 1.3125rem - 0.5rem - 1.3125rem - 0.5rem
+  padding: 0 1rem
 
 @media screen and (min-width: $measure-max)
   .post-preview, .link-preview, .fill-element
@@ -482,7 +506,36 @@ form
 
 .post-nav-inner
   height: 16.3125rem - 1rem
-  // background: #efefef
+  padding: 0
+
+.post-nav-borderer
+  height: 16.3125rem - 1rem
+  position: absolute
+  left: 0
+  top: 0
+  width: 100%
+  border: solid 0.4rem #efefef
+  display: none
+.next-post-nav .post-nav-borderer
+  border-top: none
+  border-left: none
+  border-right: none
+.prev-post-nav .post-nav-borderer
+  border-bottom: none
+  border-left: none
+  border-right: none
+
+.nav-line-holder
+  .nav-line
+    width: 100%
+    text-align: center
+    min-width: 5.5rem
+    height: 1.5rem
+    &.top-line
+      margin-bottom: 2rem
+    &.bottom-line
+      margin-top: 2rem
+
 
 @media screen and (min-width: $measure-max)
   .post-nav
@@ -490,15 +543,106 @@ form
       width: 50%
     &.col-2-2
       width: 100%
+      .nav-line-holder
+        width: 100%
+        justify-content: space-between
+        .nav-line, .nav-line.top-line, .nav-line.bottom-line
+          width: auto
+          text-align: left
+          margin: 0
+        .nav-line.bottom-line
+          text-align: right
 
 @media screen and (min-width: $measure-three)
   .post-nav
     &.col-3-1
       width: 33.33%
+      .nav-line
+        width: 100%
+        text-align: center
+        &.top-line
+          margin-bottom: 2rem
+        &.bottom-line
+          margin-top: 2rem
     &.col-3-2
       width: 66.66%
+      .nav-line-holder
+        width: 100%
+        justify-content: space-between
+        .nav-line, .nav-line.top-line, .nav-line.bottom-line
+          width: auto
+          text-align: left
+          margin: 0
+        .nav-line.bottom-line
+          text-align: right
     &.col-3-3
       width: 100%
+      .nav-line-holder
+        width: 100%
+        justify-content: space-between
+        .nav-line, .nav-line.top-line, .nav-line.bottom-line
+          width: auto
+          text-align: left
+          margin: 0
+        .nav-line.bottom-line
+          text-align: right
+
+@media screen and (min-width: ($measure-max * 2))
+  .post-nav
+    &.col-2-1
+      width: 25%
+      .nav-line
+        width: 100%
+        text-align: center
+        &.top-line
+          margin-bottom: 2rem
+        &.bottom-line
+          margin-top: 2rem
+    &.col-2-2
+      width: 50%
+      .nav-line-holder
+        width: 100%
+        justify-content: space-between
+        .nav-line, .nav-line.top-line, .nav-line.bottom-line
+          width: auto
+          text-align: left
+          margin: 0
+        .nav-line.bottom-line
+          text-align: right
+
+@media screen and (min-width: ($measure-max * 3))
+  .post-nav
+    &.col-3-1
+      width: 16.166%
+      .nav-line
+        width: 100%
+        text-align: center
+        &.top-line
+          margin-bottom: 2rem
+        &.bottom-line
+          margin-top: 2rem
+    &.col-3-2
+      width: 33.33%
+      .nav-line-holder
+        width: 100%
+        justify-content: space-between
+        .nav-line, .nav-line.top-line, .nav-line.bottom-line
+          width: auto
+          text-align: left
+          margin: 0
+        .nav-line.bottom-line
+          text-align: right
+    &.col-3-3
+      width: 50%
+      .nav-line-holder
+        width: 100%
+        justify-content: space-between
+        .nav-line, .nav-line.top-line, .nav-line.bottom-line
+          width: auto
+          text-align: left
+          margin: 0
+        .nav-line.bottom-line
+          text-align: right
 
 .author-spacer
   color: #fff
@@ -552,3 +696,7 @@ svg.text-logo
   margin: 0 auto
   display: block
   fill: #222
+
+@media screen and (max-width: 370px)
+  .v-small-hide
+    display: none

@@ -15,9 +15,11 @@ feature: true
 
 <p>Our newly released <a href="http://blog.fastforwardlabs.com/post/142633141243/new-tools-to-summarize-text">summarization report</a> is a response to this problem in two senses.</p>
 
-<figure data-orig-width="1125" data-orig-height="533" class="tmblr-full"><img src="http://68.media.tumblr.com/af5b628fd8b2a1c2f8c6676f0211d362/tumblr_inline_o600vklwhN1qcg73w_540.png" data-orig-width="1125" data-orig-height="533"/></figure><p style="font-size: 0.8em; font-style: italic; color: #00bfcd;">Summaries make documents more manageable
+<figure data-orig-width="1125" data-orig-height="533" class="tmblr-full"><img src="http://68.media.tumblr.com/af5b628fd8b2a1c2f8c6676f0211d362/tumblr_inline_o600vklwhN1qcg73w_540.png" data-orig-width="1125" data-orig-height="533"/></figure>
 
-</p><p>The first is the more obvious: by definition, summarization makes documents shorter and more manageable while retaining meaning. If you want to learn how to build automatically generated extractive summaries in your product, then the specific algorithms and prototypes we describe will definitely be interesting.</p>
+##### Summaries make documents more manageable
+
+<p>The first is the more obvious: by definition, summarization makes documents shorter and more manageable while retaining meaning. If you want to learn how to build automatically generated extractive summaries in your product, then the specific algorithms and prototypes we describe will definitely be interesting.</p>
 
 <p>Summarization algorithms therefore have embedded within them a key component of one of the most fundamental problems in machine intelligence: how to extract and process the meaning of human language.</p>
 
@@ -27,6 +29,8 @@ feature: true
 
 <p>Done well, vectorization allows the subsequent steps of a summarization algorithm to find the key ideas in a document, which it can use to generate a summary. But vectorization is also the first step for the countless other tasks that, like summarization, implicitly involve the computer working with the meaning of a document.</p>
 
-<figure class="tmblr-full" data-orig-height="776" data-orig-width="1125"><img src="http://68.media.tumblr.com/981136c87557be0df4c1d09c3b4ed8b2/tumblr_inline_o600ygq2OG1qcg73w_540.png" data-orig-height="776" data-orig-width="1125"/></figure><p style="font-size: 0.8em; font-style: italic; color: #00bfcd;">The technologies we use to summarize documents have many other potential uses</p>
+<figure class="tmblr-full" data-orig-height="776" data-orig-width="1125"><img src="http://68.media.tumblr.com/981136c87557be0df4c1d09c3b4ed8b2/tumblr_inline_o600ygq2OG1qcg73w_540.png" data-orig-height="776" data-orig-width="1125"/></figure>
+
+##### The technologies we use to summarize documents have many other potential uses
 
 <p>We&rsquo;re really excited about the summarization algorithms and prototypes we describe in the report, which are great solutions to a valuable specific task. But we&rsquo;re perhaps even more excited about the way in which they point to better approaches to simplification, translation, semantic search, document clustering, image caption generation, and even speech recognition.  In that sense, they open a gateway to a future in which machine intelligence can truly understand human language.</p>

@@ -1,11 +1,13 @@
 ---
-title: 'Announcing our next topic: realtime stream analysis'
+title: 'Our Next Topic: Realtime Stream Analysis'
 date: 2014-12-19 21:17:09 Z
 tags:
 - announcement
 - product
 layout: post
+post_type: Announcement
 tumblr_url: http://blog.fastforwardlabs.com/post/105632517263/announcing-our-next-topic-realtime-stream
+preview_image: http://www.fastforwardlabs.com/report_images/ff02/19.png
 ---
 
 <p>We&rsquo;re very pleased to announce our second research report topic will be realtime stream analysis, with a focus on probabilistic data structures. </p>
