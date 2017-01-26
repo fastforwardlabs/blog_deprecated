@@ -1,4 +1,4 @@
-<li class="link-preview block">
+<li class="link-preview block {{ include.optional_class }}">
   <a class="link-body relative flex flex-wrap content-between center" target="_blank" href="{{ include.link.url }}">
     {% if include.link.image %}
       <div class="preview-image" style="background-image: url({{include.link.image}});)"></div>

@@ -1,41 +1,5 @@
 <li class="block post-nav next-post-nav px2 {{include.next_class}}">
   <div class="post-nav-inner flex relative items-center justify-center">
-    <div class="post-nav-borderer"></div>
-    <div class="flex nav-line-holder flex-wrap">
-      <div class="nav-line top-line">
-        {% if include.paginator.previous_page %}
-          <a href="{{include.paginator.previous_page_path}}">← Previous</a>
-        {% endif %}
-      </div>
-      <div class="nav-line flex justify-center">
-        <div class="px05">
-          Page
-        </div>
-        {% for counter in (1..include.paginator.total_pages) %}
-          {% if include.paginator.page == counter %}
-            <div class="px05">
-              {{ counter }}
-            </div>
-          {% else %}
-            <div class="px05">
-              {% if counter == 1 %}
-                <a class="" href="{{ site.github.url }}/">
-                  {{ counter }}
-                </a>
-              {% else %}
-                <a class="" href="{{ site.github.url }}/page{{ counter }}">
-                  {{ counter }}
-                </a>
-              {% endif %}
-            </div>
-          {% endif %}
-        {% endfor %}
-      </div>
-      <div class="nav-line bottom-line">
-        {% if include.paginator.next_page %}
-          <a href="{{include.paginator.next_page_path}}">Next <span class="arrow-right">→</span></a>
-        {% endif %}
-      </div>
-    </div>
+    More Posts
   </div>
 </li>

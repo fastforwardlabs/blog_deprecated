@@ -40,14 +40,23 @@ layout: default
         {% break %}
       {% endif %}
     {% endfor %}
-<!--     {% assign end_check = post_count | modulo:6 %}
+    {% assign end_check = post_count | modulo:6 %}
     {% assign to_end = 6 | minus:end_check %}
+    {% if to_end == 1 %}
+      {% assign link_count = link_count | plus:1 %}
+    {% endif %}
+    {% if to_end == 2 %}
+      {% assign link_count = link_count | plus:2 %}
+    {% endif %}
     {% if to_end == 3 %}
+      {% assign link_count = link_count | plus:1 %}
+    {% endif %}
+    {% if to_end == 4 %}
       {% assign link_count = link_count | plus:1 %}
     {% endif %}
     {% if to_end == 5 %}
       {% assign link_count = link_count | plus:2 %}
-    {% endif %} -->
+    {% endif %}
     <!-- Subtract one in link count to account for newsletter -->
     {% assign link_count = link_count | minus:1 %}
   {% endif %}
@@ -105,37 +114,41 @@ layout: default
         {% assign post_count = post_count | plus:1 %}
       {% endif %}
     {% endfor %}
-<!--     {% assign end_check = post_count | modulo:6 %}
-    {% assign to_end = 6 | minus:end_check %}
-    {% if to_end == 6 %}
-      {% include next.html paginator=paginator next_class="col-2-2 col-3-3" %}
+    {% if paginator.page != paginator.total_pages %}
+      {% assign end_check = post_count | modulo:6 %}
+      {% assign to_end = 6 | minus:end_check %}
+      {% if to_end == 1 %}
+        {% assign current_link = links[link_count] %}
+        {% include link.html link=current_link optional_class="optional-2 optional-3" %}
+        {% assign link_count = link_count | plus:1 %}
+      {% endif %}
+      {% if to_end == 2 %}
+        {% assign current_link = links[link_count] %}
+        {% include link.html link=current_link optional_class="optional-3" %}
+        {% assign link_count = link_count | plus:1 %}
+        {% assign current_link = links[link_count] %}
+        {% include link.html link=current_link optional_class="optional-3" %}
+        {% assign link_count = link_count | plus:1 %}
+      {% endif %}
+      {% if to_end == 3 %}
+        {% assign current_link = links[link_count] %}
+        {% include link.html link=current_link optional_class="optional-2" %}
+        {% assign link_count = link_count | plus:1 %}
+      {% endif %}
+      {% if to_end == 4 %}
+        {% assign current_link = links[link_count] %}
+        {% include link.html link=current_link optional_class="optional-3" %}
+        {% assign link_count = link_count | plus:1 %}
+      {% endif %}
+      {% if to_end == 5 %}
+        {% assign current_link = links[link_count] %}
+        {% include link.html link=current_link optional_class="optional-2 optional-3" %}
+        {% assign link_count = link_count | plus:1 %}
+        {% assign current_link = links[link_count] %}
+        {% include link.html link=current_link optional_class="optional-3" %}
+        {% assign link_count = link_count | plus:1 %}
+      {% endif %}
     {% endif %}
-    {% if to_end == 1 %}
-      {% include next.html paginator=paginator next_class="col-2-1 col-3-1" %}
-    {% endif %}
-    {% if to_end == 2 %}
-      {% include next.html paginator=paginator next_class="col-2-2 col-3-2" %}
-    {% endif %}
-    {% if to_end == 3 %}
-      {% assign current_link = links[link_count] %}
-      {% include link.html link=current_link %}
-      {% assign link_count = link_count | plus:1 %}
-      {% assign post_count = post_count | plus:1 %}
-      {% include next.html paginator=paginator next_class="col-2-2 col-3-2" %}
-    {% endif %}
-    {% if to_end == 4 %}
-      {% include next.html paginator=paginator next_class="col-2-2 col-3-1" %}
-    {% endif %}
-    {% if to_end == 5 %}
-      {% assign current_link = links[link_count] %}
-      {% include link.html link=current_link %}
-      {% assign link_count = link_count | plus:1 %}
-      {% assign current_link = links[link_count] %}
-      {% include link.html link=current_link %}
-      {% assign link_count = link_count | plus:1 %}
-      {% assign post_count = post_count | plus:2 %}
-      {% include next.html paginator=paginator next_class="col-2-1 col-3-3" %}
-    {% endif %} -->
   </ul>
 
   <div class="body-container h5">

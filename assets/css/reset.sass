@@ -474,6 +474,9 @@ form
   height: 16.3125rem - 1.3125rem - 0.5rem - 1.3125rem - 0.5rem
   padding: 0 1rem
 
+.link-preview.optional-2, .link-preview.optional-3
+  display: none
+
 @media screen and (min-width: $measure-max)
   .post-preview, .link-preview, .fill-element
     width: 50%
@@ -481,6 +484,8 @@ form
       width: 100%
     .no-feature .feature
       width: 50% !important
+  .link-preview.optional-2
+    display: block
 
 @media screen and (min-width: $measure-three)
   .post-preview, .link-preview, .fill-element
@@ -489,6 +494,8 @@ form
       width: 66.67%
   .no-feature .feature
     width: 33.33% !important
+  .link-preview.optional-3
+    display: block
 
 @media screen and (min-width: ($measure-max * 2))
   .post-preview, .link-preview, .fill-element
@@ -514,6 +521,7 @@ form
 .post-nav-inner
   height: 16.3125rem - 1rem
   padding: 0
+  background: #efefef
 
 .post-nav-borderer
   height: 16.3125rem - 1rem
@@ -550,106 +558,40 @@ form
       width: 50%
     &.col-2-2
       width: 100%
-      .nav-line-holder
-        width: 100%
-        justify-content: space-between
-        .nav-line, .nav-line.top-line, .nav-line.bottom-line
-          width: auto
-          text-align: left
-          margin: 0
-        .nav-line.bottom-line
-          text-align: right
+      display: none
 
 @media screen and (min-width: $measure-three)
   .post-nav
     &.col-3-1
       width: 33.33%
-      .nav-line
-        width: 100%
-        text-align: center
-        &.top-line
-          margin-bottom: 2rem
-        &.bottom-line
-          margin-top: 2rem
+      display: block
     &.col-3-2
       width: 66.66%
-      .nav-line-holder
-        width: 100%
-        justify-content: space-between
-        .nav-line, .nav-line.top-line, .nav-line.bottom-line
-          width: auto
-          text-align: left
-          margin: 0
-        .nav-line.bottom-line
-          text-align: right
+      display: block
     &.col-3-3
       width: 100%
-      .nav-line-holder
-        width: 100%
-        justify-content: space-between
-        .nav-line, .nav-line.top-line, .nav-line.bottom-line
-          width: auto
-          text-align: left
-          margin: 0
-        .nav-line.bottom-line
-          text-align: right
+      display: none
 
 @media screen and (min-width: ($measure-max * 2))
   .post-nav
     &.col-2-1
       width: 25%
-      .nav-line
-        width: 100%
-        text-align: center
-        &.top-line
-          margin-bottom: 2rem
-        &.bottom-line
-          margin-top: 2rem
+      display: block
     &.col-2-2
       width: 50%
-      .nav-line-holder
-        width: 100%
-        justify-content: space-between
-        .nav-line, .nav-line.top-line, .nav-line.bottom-line
-          width: auto
-          text-align: left
-          margin: 0
-        .nav-line.bottom-line
-          text-align: right
+      display: block
 
 @media screen and (min-width: ($measure-max * 3))
   .post-nav
     &.col-3-1
       width: 16.166%
-      .nav-line
-        width: 100%
-        text-align: center
-        &.top-line
-          margin-bottom: 2rem
-        &.bottom-line
-          margin-top: 2rem
+      display: block
     &.col-3-2
       width: 33.33%
-      .nav-line-holder
-        width: 100%
-        justify-content: space-between
-        .nav-line, .nav-line.top-line, .nav-line.bottom-line
-          width: auto
-          text-align: left
-          margin: 0
-        .nav-line.bottom-line
-          text-align: right
+      display: block
     &.col-3-3
       width: 50%
-      .nav-line-holder
-        width: 100%
-        justify-content: space-between
-        .nav-line, .nav-line.top-line, .nav-line.bottom-line
-          width: auto
-          text-align: left
-          margin: 0
-        .nav-line.bottom-line
-          text-align: right
+      display: block
 
 .author-spacer
   color: #fff

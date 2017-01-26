@@ -5,6 +5,7 @@ date: 2017-01-25 18:15
 preview_image: /images/2017/01/chart.png
 interview_with: David Archer
 interview_with_link: https://galois.com/team/david-archer/
+post_type: Interview
 ---
 
 Our mission at Fast Forward Labs is to commercialize artificial intelligence research, to clearly explain how new technologies work and help enterprises apply them in practical products. As our business model is rare, we're always keen to connect with and learn from organizations that straddle this same line between research and application. That's why we're delighted to feature [Galois](https://galois.com/), a Portland, Oregon-based R&D firm that specializes in security and trustworthiness, in this blog post.
