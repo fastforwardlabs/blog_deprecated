@@ -55,3 +55,7 @@
 - url: https://jaan.io/food2vec-augmented-cooking-machine-intelligence/
   text: food2vec - Augmented cooking with machine intelligence
   image: https://slack-imgs.com/?c=1&url=https%3A%2F%2Fjaan.io%2Fimages%2Fmise-en-place.jpg
+  
+- url: https://ragulpr.github.io/2016/12/22/WTTE-RNN-Hackless-churn-modeling/
+  text: WTTE-RNN - Less hacky churn prediction
+  image: http://i.imgur.com/dEUj9Qe.png
