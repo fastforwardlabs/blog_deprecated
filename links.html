@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<div class="home mt2">
+
+  {% assign links = site.data.links | reverse %}
+
+  <ul class="post-list body-container flex flex-wrap items-start">
+
+  {% for link in links %}
+
+    {% include link.html link=link %}
+
+  {% endfor %}
+
+  </ul>
+
+</div>
