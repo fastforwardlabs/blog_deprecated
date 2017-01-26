@@ -5,11 +5,40 @@
   <link rel="shortcut icon" type="image/png" href="{{ 'images/favicon.png' | relative_url }}">
 
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  <meta name="description" content="{{ page.content | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 
   {% if page.url == "/404.html" %}
       <meta http-equiv="refresh" content="3; url={{ site.github.url }}/">
   {% endif %}
+
+  {% assign public_baseurl = 'http://blog.fastforwardlabs.com' %}
+
+  <meta property="og:url" content="{{ page.url | prepend: public_baseurl }}" />
+
+  {% if page.layout == 'post' %}
+    <meta name="og:title" content="{{ page.title }}">
+    <meta name="og:description" content="{{ page.content | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+    <meta name="og:image" content="{% if page.preview_image contains '://' %}{{ page.preview_image }}{% else %}{{ page.preview_image | prepend: public_baseurl }}{% endif %}">
+  {% else %}
+    <meta name="og:title" content="Fast Forward Labs Blog">
+    <meta name="og:description" content="{{ site.description }}">
+    <meta name="og:image" content="{{ public_baseurl }}/images/blog-share-card.png">
+  {% endif %}
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@fastforwardlabs">
+  <meta name="twitter:creator" content="@fastforwardlabs">
+
+  {% if page.layout == 'post' %}
+    <meta name="twitter:title" content="{{ page.title }}">
+    <meta name="twitter:description" content="{{ page.content | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+    <meta name="twitter:image" content="{% if page.preview_image contains '://' %}{{ page.preview_image }}{% else %}{{ page.preview_image | prepend: public_baseurl }}{% endif %}">
+  {% else %}
+    <meta name="twitter:title" content="Fast Forward Labs Blog">
+    <meta name="twitter:description" content="{{ site.description }}">
+    <meta name="og:image" content="{{ public_baseurl }}/images/blog-share-card.png">
+  {% endif %}
+
 
   <link rel="stylesheet" href="{{ "/assets/css/syntax.css" | relative_url }}">
   <link rel="stylesheet" href="{{ "/assets/css/basscss.min.css" | relative_url }}">

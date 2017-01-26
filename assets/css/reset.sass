@@ -153,7 +153,7 @@ figure
   padding: 0
 
 img
-  width: 100vw
+  width: 100%
   line-height: 0
   margin: 1rem -1rem
   display: block
@@ -163,6 +163,10 @@ img
     width: auto
     max-width: calc(100% - 2rem)
     margin: 1rem auto
+
+@media screen and (min-width: $measure-max)
+  img
+    margin: 1.5rem auto
 
 .highlighter-rouge
   font-family: 'Monaco', monospace
@@ -362,15 +366,13 @@ form
   width: 5.5rem
   height: (0.875rem * 1.5)
 
-@media screen and (min-width: $measure-max * 0.667)
+@media screen and (min-width: $measure-max)
   .measure-center
     text-align: center
   .nav-spacer
     width: auto
   .nav-spacer-only
     display: none
-
-
 
 @media screen and (min-width: $measure-max)
   .measure-end
