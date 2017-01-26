@@ -421,7 +421,7 @@ form
     line-height: 1.25
   .post-preview-body
     height: 15rem
-  .preview-image, .link-image-backer
+  .preview-image, .link-image-backer, .preview-image-overlay, .preview-image-overlay-2
     width: 100%
     background: #efefef
     position: absolute
@@ -430,10 +430,22 @@ form
     background-position: center center
     top: 2.375rem
     height: 10.625rem
+    filter: grayscale(100%) contrast(1.5)
+    // background-color: #f180eb
+    // mix-blend-mode: lighten
     &.placeholder-image
       background-image: url('Images/placeholder-image.svg')
       background-size: auto 90%
       background-position: center center
+  .preview-image-overlay
+    filter: none
+    background-color: #c145bb
+    mix-blend-mode: lighten
+  .preview-image-overlay-2
+    filter: none
+    background-color: #e57ae0
+    mix-blend-mode: darken
+    display: none
   .preview-excerpt
     max-height: 0.875rem * 4 * 1.5
     margin: 0

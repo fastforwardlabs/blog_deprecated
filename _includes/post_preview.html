@@ -25,6 +25,8 @@
   <a class="post-preview-body relative flex flex-wrap content-between internal-post-link" href="{{ include.post.url | relative_url }}">
     {% if include.post.preview_image %}
       <div class="preview-image" style="background-image: url({% if include.post.preview_image contains '://' %}{{ include.post.preview_image }}{% else %}{{ include.post.preview_image | relative_url }}{% endif %});)"></div>
+      <div class="preview-image-overlay"></div>
+      <div class="preview-image-overlay-2"></div>
     {% else %}
       <div class="preview-image placeholder-image"></div>
     {% endif %}
