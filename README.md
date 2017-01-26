@@ -1,5 +1,7 @@
 # Fast Forward Labs Blog
 
+Our blog lives here: http://blog.fastforwardlabs.com/
+
 ## Adding a Link to the Link List
 
 Link blocks are used to fill in gaps between posts in the blog. You can see a list of all added links at http://blog.fastforwardlabs.com/links.html.
