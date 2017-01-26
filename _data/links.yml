@@ -28,17 +28,21 @@
   text: The Great AI Awakening
   image: https://static01.nyt.com/images/2016/12/18/magazine/18ai-cover2/18ai-cover2-articleLarge-v4.jpg
 
+- url: https://points.datasociety.net/did-media-literacy-backfire-7418c084d88d#.ribqhzie5
+  text: Did Media Literacy Backfire
+  image: https://cdn-images-1.medium.com/max/600/1*_xkUoRuG9HZz3VU3LdeCFw.png
+
 - url: http://www.newyorker.com/magazine/2017/01/02/rewriting-the-code-of-life
   text: How DNA Editing Could Change Life on Earth
   image: http://www.newyorker.com/wp-content/uploads/2017/01/170102_r29230-1200x630-1481836641.jpg
 
+- url: https://vimeo.com/199488031
+  text: Object Masking - The Wolf of Wall Street
+  image: /images/link_images/Screen%20Shot%202017-01-23%20at%204.29.25%20PM.png
+
 - url: http://arstechnica.com/information-technology/2017/01/alphago-is-back-and-secretly-crushing-the-worlds-best-human-players/
   text: That mystery Go player crushing the world’s best online? It was AlphaGo again
   image: https://cdn.arstechnica.net/wp-content/uploads/2017/01/GettyImages-515689382-800x591.jpg
-
-- url: https://points.datasociety.net/did-media-literacy-backfire-7418c084d88d#.ribqhzie5
-  text: Did Media Literacy Backfire
-  image: https://cdn-images-1.medium.com/max/600/1*_xkUoRuG9HZz3VU3LdeCFw.png
 
 - url: https://github.com/marcotcr/lime
   text: Lime
@@ -47,7 +51,3 @@
 - url: https://lines.chromeexperiments.com/
   text: Land Lines
   image: http://imgur.com/PBJNXfg.png
-
-- url: https://vimeo.com/199488031
-  text: Object Masking - The Wolf of Wall Street
-  image: /images/link_images/Screen%20Shot%202017-01-23%20at%204.29.25%20PM.png
