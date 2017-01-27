@@ -59,3 +59,7 @@
 - url: https://ragulpr.github.io/2016/12/22/WTTE-RNN-Hackless-churn-modeling/
   text: WTTE-RNN - Less hacky churn prediction
   image: https://i.imgur.com/eR2OPmP.gif
+
+- url: http://affinelayer.com/pix2pix/index.html
+  text: Image-to-Image Translation in Tensorflow
+  image: https://github.com/fastforwardlabs/blog/tree/master/images/link_images/affinelayer.png
