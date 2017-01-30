@@ -15,7 +15,7 @@ market](http://www.fastforwardlabs.com/pre/).
 
 This post gives a feel for the content in our report by introducing the algorithms and technology that make probabilistic programming possible. We'll dive even deeper into these algorithms in conversation with [the Stan Group](http://stan.fit/) Tuesday, February 7 at 1 pm ET/10am PT. Please [join us](https://www.eventbrite.com/e/introduction-to-probabilistic-programming-tickets-31160610224)!
 
-## Bayesian inference
+## Bayesian Inference
 
 Probabilistic programming enables us to construct and fit [Bayesian models](http://www.kdnuggets.com/2016/11/how-bayesian-inference-works.html) in code. At its essence, Bayesian inference is a principled way to draw conclusions from incomplete or
 imperfect data, by interpreting data in light of prior knowledge of probabilities. As pretty much all real-world data is incomplete or imperfect in
@@ -43,7 +43,7 @@ central idea of Bayesian inference is centuries old. Why, then, do relatively fe
 data analysts, data scientists, and machine learning engineers use the
 approach?
 
-## The algorithmic building blocks
+## The Algorithmic Building Blocks
 
 The problem is that, until recently, the algorithms that make product and business problems
 tractable using Bayesian methods have been difficult to implement and computationally
@@ -86,7 +86,7 @@ Sampler](https://arxiv.org/abs/1111.4246) (NUTS), a robust algorithm that tunes
 this parameter automatically, was crucial for making probabilistic
 programming useful and practical.
 
-## Variational inference and automatic differentation
+## Variational Inference and Automatic Differentation
 
 [Variational inference](https://arxiv.org/abs/1601.00670) (VI) samples from a
 distribution by building a simple approximation of the distribution. That
@@ -107,7 +107,7 @@ this problem by using **automatic differentation** (having computers take exact 
 at the CPU instruction level, allowing a probability distribution to be
 explored efficiently.
 
-## Probabilistic programming languages
+## Probabilistic Programming Languages
 
 ADVI and HMC with NUTS are the two fundamental algorithmic innovations that
 have made **probabilistic programming** possible. Their inclusion in leading
