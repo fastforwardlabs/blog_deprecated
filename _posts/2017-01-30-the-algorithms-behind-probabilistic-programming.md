@@ -59,7 +59,7 @@ sampling](https://jeremykun.com/2015/04/06/markov-chain-monte-carlo-without-all-
 Hastings](http://michaeljflynn.net/2015/06/01/my-favorite-algorithm-metropolis-hastings/)
 and Gibbs sampling are well-known examples). If you used Bayesian inference in
 the 90s or early 2000s, you may remember BUGS (and WinBUGS) or JAGS, which used
-these methods. These remain popular teaching tools (see e.g. [STATS131 by
+these methods. These remain popular teaching tools (see e.g. [STATS331 by
 Brendon Brewer](https://www.stat.auckland.ac.nz/~brewer/stats331.pdf), our
 favorite elementary introduction to Bayesian data analysis). But MCMC samplers
 are often too slow for problems with rich structure or internet-scale data.
