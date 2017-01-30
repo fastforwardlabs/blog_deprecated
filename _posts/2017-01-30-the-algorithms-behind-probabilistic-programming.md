@@ -38,7 +38,7 @@ Bayesian inference might be the way to go if you:
  - want to use a single model to answer several questions
  - have sparse data with a shared or hierarchical structure
 
-Many - perhaps most - analytics and product problems are like this. And the
+Many — perhaps most — analytics and product problems are like this. And the
 central idea of Bayesian inference is centuries old. Why, then, do relatively few
 data analysts, data scientists, and machine learning engineers use the
 approach?
