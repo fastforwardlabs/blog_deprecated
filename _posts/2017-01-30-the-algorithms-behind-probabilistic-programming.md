@@ -9,7 +9,7 @@ author_link: https://twitter.com/mikepqr
 ---
 
 We recently [introduced our report on probabilistic
-programming](http://blog.fastforwardlabs.com/tagged/probabilistic-programming). The accompanying prototype allows you to explore the [past and
+programming](http://blog.fastforwardlabs.com/2017/01/18/new-research-on-probabilistic-programming.html). The accompanying prototype allows you to explore the [past and
 future of the New York residential real estate
 market](http://www.fastforwardlabs.com/pre/).
 
