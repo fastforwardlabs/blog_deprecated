@@ -131,7 +131,7 @@ The most popular probabilistic programming tools are [Stan](http://mc-stan.org/)
 a lot of attention. Stan experts [Eric Novik](https://about.me/ericnovik) and [Daniel Lee](http://syclik.com/) will walk us through how Stan works and what problems they've used it to solve in our [online event February 7](https://www.eventbrite.com/e/introduction-to-probabilistic-programming-tickets-31160610224).
 
 For more on PyMC3 see [our interview with Thomas
-Wiecki]http://blog.fastforwardlabs.com/2017/01/11/thomas-wiecki-on-probabilistic-programming-with.html)
+Wiecki](http://blog.fastforwardlabs.com/2017/01/11/thomas-wiecki-on-probabilistic-programming-with.html)
 a PyMC3 core developer (and Director of Data Science at Quantopian). We also
 enjoyed [Chris Fonnesbeck's blog
 post](http://stronginference.com/pymc3-release.html) that accompanied the recent
