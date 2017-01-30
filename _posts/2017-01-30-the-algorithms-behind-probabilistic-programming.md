@@ -112,7 +112,7 @@ ADVI and HMC with NUTS are the two fundamental algorithmic innovations that
 have made **probabilistic programming** possible. Their inclusion in leading
 probabilistic programming environments (which can be traced back to
 [these](https://goodmorningeconomics.wordpress.com/2010/11/16/the-promise-of-bayesian-statistics-pt-2/)
-[two](https://goodmorningeconomics.wordpress.com/2010/11/16/the-promise-of-bayesian-statistics-pt-2/)
+[two](http://andrewgelman.com/2010/11/18/derivative-base/)
 blog posts from 2010) makes inference a one-liner. The end user doesn't need to
 tune parameters or differentiate functions by hand. And because they're built
 on Hamiltonian Monte Carlo or variational inference, they're fast.
