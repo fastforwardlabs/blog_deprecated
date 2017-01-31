@@ -13,7 +13,7 @@ feature: true
 
 <p>Analyzing unstructured text data such as news, emails, chats, narrative prose, legal documents, or transcribed speech is an extremely tough problem. Thanks to massive leaps in data engineering, we can just about store and retrieve this torrent of information. But we can&rsquo;t yet conduct the kind of rich and fast analyses that we take for granted with structured, quantitative data.</p>
 
-<p>Our newly released <a href="http://blog.fastforwardlabs.com/post/142633141243/new-tools-to-summarize-text">summarization report</a> is a response to this problem in two senses.</p>
+<p>Our newly released <a href="http://blog.fastforwardlabs.com/2016/04/11/new-tools-to-summarize-text.html">summarization report</a> is a response to this problem in two senses.</p>
 
 <figure data-orig-width="1125" data-orig-height="533" class="tmblr-full"><img src="http://68.media.tumblr.com/af5b628fd8b2a1c2f8c6676f0211d362/tumblr_inline_o600vklwhN1qcg73w_540.png" data-orig-width="1125" data-orig-height="533"/></figure>
 

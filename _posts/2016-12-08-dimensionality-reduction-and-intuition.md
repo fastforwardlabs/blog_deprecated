@@ -42,7 +42,7 @@ preview_image: http://68.media.tumblr.com/a97d30b7577d5fb32955853cb2ec7b17/tumbl
 
 <img src="http://68.media.tumblr.com/13ece3e2298273b9ce09f11dd0538eb0/tumblr_inline_ohvmg3IZtG1ta78fg_540.png" alt="image" data-orig-width="572" data-orig-height="136"/>
 
-##### Machines using an autoencoder to reconstruct digits with moderate deformation invariance, as we explained in <a href="http://blog.fastforwardlabs.com/post/148842796218/introducing-variational-autoencoders-in-prose-and">this blog post</a>.
+##### Machines using an autoencoder to reconstruct digits with moderate deformation invariance, as we explained in <a href="http://blog.fastforwardlabs.com/2016/08/12/introducing-variational-autoencoders-in-prose-and.html">this blog post</a>.
 
 ## Data Visualization for the 3-D Web
 

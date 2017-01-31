@@ -17,7 +17,7 @@ author_link: https://www.linkedin.com/in/dtunkelang
 
 <figure data-orig-width="728" data-orig-height="315" class="tmblr-full"><img src="http://68.media.tumblr.com/84ee6a02c04f8869d9b14bc31170c5d8/tumblr_inline_o57xvwb9QO1ta78fg_540.png" alt="image" data-orig-width="728" data-orig-height="315"/></figure>
 
-##### This is a guest post by <a href="https://www.linkedin.com/in/dtunkelang">Daniel Tunkelang</a>, a data scientist and engineering executive, to preview the keynote he’ll deliver at our April 28 <a href="http://blog.fastforwardlabs.com/post/141856452603/fast-forward-labs-data-leadership-conference">Data Leadership Conference</a> in New York City!
+##### This is a guest post by <a href="https://www.linkedin.com/in/dtunkelang">Daniel Tunkelang</a>, a data scientist and engineering executive, to preview the keynote he’ll deliver at our April 28 <a href="http://blog.fastforwardlabs.com/2016/03/28/fast-forward-labs-data-leadership-conference.html">Data Leadership Conference</a> in New York City!
 
 <p>In 2012, Harvard Business Review proclaimed that &ldquo;data scientist&rdquo; was the <a href="https://hbr.org/2012/10/data-scientist-the-sexiest-job-of-the-21st-century/">sexiest job of the 21st century</a>. That&rsquo;s pretty amazing, considering that the job title was less than five years old at the time.<b><br/></b></p>
 
@@ -35,4 +35,4 @@ author_link: https://www.linkedin.com/in/dtunkelang
 
 ### Looking Forward to Fast Forward!
 
-<p>I&rsquo;m excited to give the keynote at the <a href="http://blog.fastforwardlabs.com/post/141856452603/fast-forward-labs-data-leadership-conference">Fast Forward Labs Data Leadership Conference</a> on April 28 in New York City! In my talk, I&rsquo;ll focus on the organizational challenges of establishing a data science team and dive into the tradeoffs of the models outlined above. I hope to see you there, and encourage you to bring questions about how to succeed with data science in your organization. </p><p>- Daniel Tunkelang</p>
+<p>I&rsquo;m excited to give the keynote at the <a href="http://blog.fastforwardlabs.com/2016/03/28/fast-forward-labs-data-leadership-conference.html">Fast Forward Labs Data Leadership Conference</a> on April 28 in New York City! In my talk, I&rsquo;ll focus on the organizational challenges of establishing a data science team and dive into the tradeoffs of the models outlined above. I hope to see you there, and encourage you to bring questions about how to succeed with data science in your organization. </p><p>- Daniel Tunkelang</p>
