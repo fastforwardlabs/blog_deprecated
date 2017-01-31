@@ -63,3 +63,7 @@
 - url: http://affinelayer.com/pix2pix/index.html
   text: Image-to-Image Translation in Tensorflow
   image: http://blog.fastforwardlabs.com/images/link_images/affinelayer.png
+  
+- url: https://pudding.cool/process/how-to-implement-scrollytelling/
+  text: How to Implement Scrollytelling with Six Different Libraries
+  image: https://slack-imgs.com/?c=1&url=https%3A%2F%2Fpudding.cool%2Fprocess%2Fhow-to-implement-scrollytelling%2Fassets%2Fscrollytelling.gif

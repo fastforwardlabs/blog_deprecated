@@ -15,7 +15,7 @@ Bayesian inference has been popular in scientific research for a long time. The 
 
 Bayesian methods lack widespread commercial use because they're tough to implement. But probabilistic programming reduces what used to take months of thorny statistical sampling into an afternoon of work.
 
-This will further expand the utility of machine learning. Bayesian models aren't black boxes, a criterion for regulated industries like healthcare. Unlike deep learning networks, they don't require large, clean data sets or large amounts of GPU processing power to deliver results. And they bridge human knowledge with data, which may lead to breakthroughs in areas as diverse as [anomaly detection](http://blog.fastforwardlabs.com/post/143792498983/probabilistic-programming-for-anomaly-detection) and [music analysis](http://blog.fastforwardlabs.com/post/145708386938/machine-listening-interview-with-juan-pablo-bello). 
+This will further expand the utility of machine learning. Bayesian models aren't black boxes, a criterion for regulated industries like healthcare. Unlike deep learning networks, they don't require large, clean data sets or large amounts of GPU processing power to deliver results. And they bridge human knowledge with data, which may lead to breakthroughs in areas as diverse as [anomaly detection](http://blog.fastforwardlabs.com/2016/05/03/probabilistic-programming-for-anomaly-detection.html) and [music analysis](http://blog.fastforwardlabs.com/2016/06/10/machine-listening-interview-with-juan-pablo-bello.html). 
 
 Our work on probabilistic programming includes two prototypes and a report that teaches you:
 
