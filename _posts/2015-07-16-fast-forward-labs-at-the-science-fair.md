@@ -4,7 +4,8 @@ date: 2015-07-16 19:43:26 Z
 tags:
 - TimesOpen
 layout: post
-tumblr_url: http://blog.fastforwardlabs.com/post/124262931473/fast-forward-labs-at-the-science-fair
+redirect_from:
+  - /post/124262931473/fast-forward-labs-at-the-science-fair
 preview_image: http://68.media.tumblr.com/bbd3e0495730ede2d37c309aa574112f/tumblr_inline_nrlfopx9PL1ts2crc_540.jpg
 ---
 

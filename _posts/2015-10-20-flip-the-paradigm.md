@@ -9,7 +9,8 @@ tags:
 - innovation
 - press
 layout: post
-tumblr_url: http://blog.fastforwardlabs.com/post/131569550143/flip-the-paradigm
+redirect_from:
+  - /post/131569550143/flip-the-paradigm
 preview_image: http://68.media.tumblr.com/d935756482197fabc55dcfb430e1b6e4/tumblr_inline_nwkldwjnwC1ta78fg_540.jpg
 ---
 

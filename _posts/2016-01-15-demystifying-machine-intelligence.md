@@ -7,7 +7,8 @@ tags:
 - data science
 - language generation
 layout: post
-tumblr_url: http://blog.fastforwardlabs.com/post/137351428898/demystifying-machine-intelligence
+redirect_from:
+  - /post/137351428898/demystifying-machine-intelligence
 preview_image: http://imgur.com/fkb8Q7u.png
 ---
 

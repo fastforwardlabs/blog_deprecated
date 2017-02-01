@@ -6,7 +6,8 @@ tags:
 - language generation
 layout: post
 post_type: Announcement
-tumblr_url: http://blog.fastforwardlabs.com/post/137165327448/new-nlg-resources-sale-and-january-26-webinar
+redirect_from:
+  - /post/137165327448/new-nlg-resources-sale-and-january-26-webinar
 preview_image: http://68.media.tumblr.com/657a6b3cb24f5c2dc89aa2554daff67a/tumblr_inline_o0ukqsL5Tq1ta78fg_540.png
 ---
 

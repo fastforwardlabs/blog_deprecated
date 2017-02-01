@@ -8,7 +8,8 @@ tags:
 - whitepaper
 - machine learning
 layout: post
-tumblr_url: http://blog.fastforwardlabs.com/post/133407734883/when-dog-is-enough-using-hypernyms-to-improve
+redirect_from:
+  - /post/133407734883/when-dog-is-enough-using-hypernyms-to-improve
 preview_image: http://68.media.tumblr.com/7df25fbff433a17f0a2d414666eff600/tumblr_inline_nxxgbxBEMd1ta78fg_540.png
 ---
 

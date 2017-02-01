@@ -6,7 +6,8 @@ tags:
 - policy
 - white house
 layout: post
-tumblr_url: http://blog.fastforwardlabs.com/post/147100449348/what-we-liked-at-ainow
+redirect_from:
+  - /post/147100449348/what-we-liked-at-ainow
 preview_image: http://68.media.tumblr.com/bbb5c0978c75c9e2e36e04e770b6ccd5/tumblr_inline_oa065reL0V1ta78fg_540.png
 ---
 

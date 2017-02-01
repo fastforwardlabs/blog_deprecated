@@ -8,7 +8,8 @@ tags:
 - ai
 - announcement
 layout: post
-tumblr_url: http://blog.fastforwardlabs.com/post/132485571183/ffl-in-the-bay-area-chicago-and-dc
+redirect_from:
+  - /post/132485571183/ffl-in-the-bay-area-chicago-and-dc
 preview_image: http://68.media.tumblr.com/c9c72b3fe440442ba7cf9e27cfea2f9e/tumblr_inline_nx954t5Jfv1ta78fg_540.png
 post_type: Announcement
 ---

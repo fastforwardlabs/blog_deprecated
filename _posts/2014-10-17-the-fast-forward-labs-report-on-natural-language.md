@@ -6,7 +6,8 @@ tags:
 - design
 layout: post
 post_type: Announcement
-tumblr_url: http://blog.fastforwardlabs.com/post/100264720123/the-fast-forward-labs-report-on-natural-language
+redirect_from:
+  - /post/100264720123/the-fast-forward-labs-report-on-natural-language
 preview_image: /tumblr_files/tumblr_ndlwj0JNFG1teyfqto1_1280.jpg
 ---
 

@@ -7,7 +7,8 @@ tags:
 - gpu
 - whitepaper
 layout: post
-tumblr_url: http://blog.fastforwardlabs.com/post/126686110428/why-now-some-preconditions-for-technology
+redirect_from:
+  - /post/126686110428/why-now-some-preconditions-for-technology
 post_preview: http://68.media.tumblr.com/aedff218136a4dbddc112c09618503ae/tumblr_inline_nt365m6VoK1ta78fg_540.jpg
 preview_image: http://68.media.tumblr.com/aedff218136a4dbddc112c09618503ae/tumblr_inline_nt365m6VoK1ta78fg_540.jpg
 ---

@@ -8,7 +8,8 @@ tags:
 - overkill
 - office
 layout: post
-tumblr_url: http://blog.fastforwardlabs.com/post/120729035823/coffee-thermoregulation
+redirect_from:
+  - /post/120729035823/coffee-thermoregulation
 preview_image: http://68.media.tumblr.com/72224480b881edf2292e6c5145351411/tumblr_inline_npfzn7D0tB1ts2crc_540.jpg
 author: Ryan
 author_link: https://www.flickr.com/photos/jqpubliq/

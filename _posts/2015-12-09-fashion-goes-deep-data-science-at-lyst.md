@@ -9,7 +9,8 @@ tags:
 - deep learning
 layout: post
 post_type: interview
-tumblr_url: http://blog.fastforwardlabs.com/post/134864862628/fashion-goes-deep-data-science-at-lyst
+redirect_from:
+  - /post/134864862628/fashion-goes-deep-data-science-at-lyst
 preview_image: http://68.media.tumblr.com/993f6c53159f5715d9c127b790bb4bf5/tumblr_inline_nz3b9rPB5w1ta78fg_540.png
 interview_with: Eddie Bell
 interview_with_link: https://twitter.com/ejlbell

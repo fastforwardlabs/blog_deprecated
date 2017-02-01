@@ -7,7 +7,8 @@ tags:
 - neural networks
 - deep learning
 layout: post
-tumblr_url: http://blog.fastforwardlabs.com/post/128186450678/dalemberts-deep-dream-bees-and-nonlinear
+redirect_from:
+  - /post/128186450678/dalemberts-deep-dream-bees-and-nonlinear
 preview_image: http://68.media.tumblr.com/5e441cb1ef3adcd99999f7b29da5ee5e/tumblr_inline_nu1ujeo4cc1ta78fg_540.jpg
 author: Kathryn
 author_link: https://twitter.com/HumeKathryn

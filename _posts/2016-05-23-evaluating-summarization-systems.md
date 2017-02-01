@@ -7,7 +7,8 @@ tags:
 - summarization
 - webinar
 layout: post
-tumblr_url: http://blog.fastforwardlabs.com/post/144813278933/evaluating-summarization-systems
+redirect_from:
+  - /post/144813278933/evaluating-summarization-systems
 preview_image: http://68.media.tumblr.com/d879f22c1b7be3467b606c8aa8f7cfb6/tumblr_inline_o7n3a6bf5R1ta78fg_540.jpg
 post_type: Guest Post
 author: Mohamed AlTantawy, Agolo

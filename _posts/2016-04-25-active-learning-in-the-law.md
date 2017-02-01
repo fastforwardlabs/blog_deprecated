@@ -9,7 +9,8 @@ tags:
 - data science
 - legal tech
 layout: post
-tumblr_url: http://blog.fastforwardlabs.com/post/143385205328/active-learning-in-the-law
+redirect_from:
+  - /post/143385205328/active-learning-in-the-law
 preview_image: http://68.media.tumblr.com/5419ce3290efb6634bdefc85748cbe2e/tumblr_inline_o67a1hhHOk1ta78fg_540.gif
 ---
 

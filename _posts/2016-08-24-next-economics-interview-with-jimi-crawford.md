@@ -8,7 +8,8 @@ tags:
 - machine learning
 - hedge funds
 layout: post
-tumblr_url: http://blog.fastforwardlabs.com/post/149419599203/next-economics-interview-with-jimi-crawford
+redirect_from:
+  - /post/149419599203/next-economics-interview-with-jimi-crawford
 preview_image: http://68.media.tumblr.com/de9fc93bc4bda585c1bb51a785fc7801/tumblr_inline_ocf6npUoHK1ta78fg_540.png
 post_type: interview
 interview_with: Jimi Crawford, Orbital Insights

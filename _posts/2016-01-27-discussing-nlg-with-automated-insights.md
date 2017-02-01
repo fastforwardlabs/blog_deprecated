@@ -6,7 +6,8 @@ tags:
 - announcement
 - language generation
 layout: post
-tumblr_url: http://blog.fastforwardlabs.com/post/138157023778/discussing-nlg-with-automated-insights
+redirect_from:
+  - /post/138157023778/discussing-nlg-with-automated-insights
 preview_image: http://imgur.com/PihF0QE.png
 ---
 

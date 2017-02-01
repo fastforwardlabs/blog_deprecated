@@ -8,7 +8,8 @@ tags:
 - retailtech
 - fashiontech
 layout: post
-tumblr_url: http://blog.fastforwardlabs.com/post/127091010798/machine-learning-applications-in-fashion-retail
+redirect_from:
+  - /post/127091010798/machine-learning-applications-in-fashion-retail
 preview_image: http://68.media.tumblr.com/1ea7d218b3ec206decfb85436ead953d/tumblr_inline_ntcf1hms2i1ta78fg_540.jpg
 author: Jessica
 author_link: http://68.media.tumblr.com/1ea7d218b3ec206decfb85436ead953d/tumblr_inline_ntcf1hms2i1ta78fg_540.jpg

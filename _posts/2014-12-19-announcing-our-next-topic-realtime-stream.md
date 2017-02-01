@@ -6,7 +6,8 @@ tags:
 - product
 layout: post
 post_type: Announcement
-tumblr_url: http://blog.fastforwardlabs.com/post/105632517263/announcing-our-next-topic-realtime-stream
+redirect_from:
+  - /post/105632517263/announcing-our-next-topic-realtime-stream
 preview_image: http://www.fastforwardlabs.com/report_images/ff02/19.png
 ---
 

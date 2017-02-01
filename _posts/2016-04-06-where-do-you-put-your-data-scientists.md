@@ -8,7 +8,8 @@ tags:
 - leadership
 layout: post
 post_type: Guest Post
-tumblr_url: http://blog.fastforwardlabs.com/post/142353528013/where-do-you-put-your-data-scientists
+redirect_from:
+  - /post/142353528013/where-do-you-put-your-data-scientists
 preview_image: http://68.media.tumblr.com/84ee6a02c04f8869d9b14bc31170c5d8/tumblr_inline_o57xvwb9QO1ta78fg_540.png
 author: Daniel Tunkelang
 author_link: https://www.linkedin.com/in/dtunkelang

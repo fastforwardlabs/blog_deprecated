@@ -7,7 +7,8 @@ tags:
 - legal hackers
 - machine learning
 layout: post
-tumblr_url: http://blog.fastforwardlabs.com/post/147243583878/two-talks-in-nyc-this-saturday
+redirect_from:
+  - /post/147243583878/two-talks-in-nyc-this-saturday
 preview_image: http://68.media.tumblr.com/6d185b6ef69e9fa29f78e724fdf7415e/tumblr_inline_oa5seyqhEJ1ta78fg_540.png
 post_type: Announcement
 ---

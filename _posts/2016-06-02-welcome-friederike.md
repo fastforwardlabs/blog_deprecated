@@ -6,7 +6,8 @@ tags:
 - office
 - interview
 layout: post
-tumblr_url: http://blog.fastforwardlabs.com/post/145305860858/welcome-friederike
+redirect_from:
+  - /post/145305860858/welcome-friederike
 preview_image: http://68.media.tumblr.com/48ec558f89fc83dbf3e1770639cf6404/tumblr_inline_o85byoZHrx1ta78fg_540.jpg
 post_type: Announcement
 interview_with: Friederike

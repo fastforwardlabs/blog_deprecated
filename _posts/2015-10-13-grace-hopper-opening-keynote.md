@@ -8,7 +8,8 @@ tags:
 - keynote
 - press
 layout: post
-tumblr_url: http://blog.fastforwardlabs.com/post/131108328433/grace-hopper-opening-keynote
+redirect_from:
+  - /post/131108328433/grace-hopper-opening-keynote
 preview_image: http://68.media.tumblr.com/bb7189932710038cbde1e04da9b51eeb/tumblr_inline_nw6da4Gppo1ta78fg_540.jpg
 ---
 

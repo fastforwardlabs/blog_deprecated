@@ -9,7 +9,8 @@ tags:
 - webinar
 - announcement
 layout: post
-tumblr_url: http://blog.fastforwardlabs.com/post/129654767848/fast-forward-labs-interviews-clarifai-about-deep
+redirect_from:
+  - /post/129654767848/fast-forward-labs-interviews-clarifai-about-deep
 post_type: Interview
 interview_with: Clarifai
 interview_with_link: http://clarifai.com/

@@ -5,7 +5,8 @@ tags:
 - announcement
 - jobs
 layout: post
-tumblr_url: http://blog.fastforwardlabs.com/post/150641720788/job-opportunities-at-signal
+redirect_from:
+  - /post/150641720788/job-opportunities-at-signal
 post_type: Announcement
 preview_image: https://images.pexels.com/photos/207580/pexels-photo-207580.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb
 ---

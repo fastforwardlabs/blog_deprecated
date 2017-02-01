@@ -7,7 +7,8 @@ tags:
 - probabilistic programming
 - anomaly detection
 layout: post
-tumblr_url: http://blog.fastforwardlabs.com/post/143792498983/probabilistic-programming-for-anomaly-detection
+redirect_from:
+  - /post/143792498983/probabilistic-programming-for-anomaly-detection
 preview_image: http://68.media.tumblr.com/1d842739c4ecb115ce586049dd552f48/tumblr_inline_o6kjvaPgBs1ta78fg_540.jpg
 author: Noam
 author_link: https://twitter.com/noamsf

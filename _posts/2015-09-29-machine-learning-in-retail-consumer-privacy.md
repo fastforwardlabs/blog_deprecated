@@ -9,7 +9,8 @@ tags:
 - retail
 - whitepaper
 layout: post
-tumblr_url: http://blog.fastforwardlabs.com/post/130144388793/machine-learning-in-retail-consumer-privacy
+redirect_from:
+  - /post/130144388793/machine-learning-in-retail-consumer-privacy
 preview_image: http://68.media.tumblr.com/7404e8cb508c2bc469e5a9887f5ac5e4/tumblr_inline_nvgbviEbKS1ta78fg_540.jpg
 author: Jessica
 author_link: https://twitter.com/sefleuria

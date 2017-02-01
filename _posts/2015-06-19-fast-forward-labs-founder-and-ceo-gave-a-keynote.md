@@ -6,7 +6,8 @@ tags:
 - speech
 - mongodb
 layout: post
-tumblr_url: http://blog.fastforwardlabs.com/post/121940794363/fast-forward-labs-founder-and-ceo-gave-a-keynote
+redirect_from:
+  - /post/121940794363/fast-forward-labs-founder-and-ceo-gave-a-keynote
 preview_image: /tumblr_files/tumblr_nq7ihwHn5R1teyfqto1_1280.png
 ---
 

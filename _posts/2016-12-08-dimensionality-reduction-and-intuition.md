@@ -9,7 +9,8 @@ tags:
 layout: post
 author: Kathryn
 author_link: https://twitter.com/HumeKathryn
-tumblr_url: http://blog.fastforwardlabs.com/post/154210577998/dimensionality-reduction-and-intuition
+redirect_from:
+  - /post/154210577998/dimensionality-reduction-and-intuition
 preview_image: http://68.media.tumblr.com/a97d30b7577d5fb32955853cb2ec7b17/tumblr_inline_ohvie7chq81ta78fg_540.png
 ---
 

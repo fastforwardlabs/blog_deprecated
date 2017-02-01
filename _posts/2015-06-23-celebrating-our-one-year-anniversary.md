@@ -6,7 +6,8 @@ tags:
 - fastforwardlabs
 - burgers
 layout: post
-tumblr_url: http://blog.fastforwardlabs.com/post/122272672728/celebrating-our-one-year-anniversary
+redirect_from:
+  - /post/122272672728/celebrating-our-one-year-anniversary
 preview_image: http://localhost:4000/tumblr_files/tumblr_nqewle0krb1teyfqto1_1280.jpg
 ---
 

@@ -7,7 +7,8 @@ tags:
 - data science
 - artificial intelligence
 layout: post
-tumblr_url: http://blog.fastforwardlabs.com/post/145012049848/online-talk-summarization-algorithms
+redirect_from:
+  - /post/145012049848/online-talk-summarization-algorithms
 post_type: Announcement
 preview_image: https://images.pexels.com/photos/159621/open-book-library-education-read-159621.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb
 ---

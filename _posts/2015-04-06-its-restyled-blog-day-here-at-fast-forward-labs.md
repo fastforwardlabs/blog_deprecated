@@ -4,7 +4,8 @@ date: 2015-04-06 20:12:24 Z
 tags:
 - design
 layout: post
-tumblr_url: http://blog.fastforwardlabs.com/post/115693882278/its-restyled-blog-day-here-at-fast-forward-labs
+redirect_from:
+  - /post/115693882278/its-restyled-blog-day-here-at-fast-forward-labs
 preview_image: http://localhost:4000/tumblr_files/tumblr_nmeisoQ5mn1teyfqto6_1280.png
 author: Grant
 author_link: http://twitter.com/grantcuster

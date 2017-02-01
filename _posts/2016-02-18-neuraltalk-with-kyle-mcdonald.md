@@ -7,7 +7,8 @@ tags:
 - deep learning
 - art
 layout: post
-tumblr_url: http://blog.fastforwardlabs.com/post/139544439008/neuraltalk-with-kyle-mcdonald
+redirect_from:
+  - /post/139544439008/neuraltalk-with-kyle-mcdonald
 preview_image: http://68.media.tumblr.com/806e99a04e9f647a198d0d887942562b/tumblr_inline_o2pgqgwhP01ta78fg_540.jpg
 post_type: Interview
 author: Kathryn

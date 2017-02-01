@@ -9,7 +9,8 @@ tags:
 - fashion technology
 - recommendation system
 layout: post
-tumblr_url: http://blog.fastforwardlabs.com/post/144904410058/human-machine-algorithms-interview-with-eric
+redirect_from:
+  - /post/144904410058/human-machine-algorithms-interview-with-eric
 preview_image: http://68.media.tumblr.com/dd7cacb29c66b0d8ac385f37fde89d2d/tumblr_inline_o7qmpkkMD11qcg73w_540.png
 post_type: interview
 interview_with: Eric Colson, Stitchfix

@@ -7,7 +7,8 @@ tags:
 - fastforwardlabs
 - papers
 layout: post
-tumblr_url: http://blog.fastforwardlabs.com/post/135648861828/five-good-books-of-2015
+redirect_from:
+  - /post/135648861828/five-good-books-of-2015
 preview_image: https://images-na.ssl-images-amazon.com/images/I/51Cf7c2AlpL._SX379_BO1,204,203,200_.jpg
 ---
 

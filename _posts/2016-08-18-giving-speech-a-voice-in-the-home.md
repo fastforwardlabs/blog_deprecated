@@ -8,7 +8,8 @@ tags:
 - data science
 - whitepaper
 layout: post
-tumblr_url: http://blog.fastforwardlabs.com/post/149140805148/giving-speech-a-voice-in-the-home
+redirect_from:
+  - /post/149140805148/giving-speech-a-voice-in-the-home
 preview_image: http://68.media.tumblr.com/24baab55961a73824bb7c218d3fb3d52/tumblr_inline_oc4fofyCUx1ta78fg_540.png
 post_type: Guest Post
 author: Sean Lorenz, SENTER

@@ -5,7 +5,8 @@ tags:
 - deep learning
 - code
 layout: post
-tumblr_url: http://blog.fastforwardlabs.com/post/149516029368/exploring-deep-learning-on-satellite-data
+redirect_from:
+  - /post/149516029368/exploring-deep-learning-on-satellite-data
 preview_image: http://www.fastforwardlabs.com/blog-images/geo/empty_satellite_image.png
 post_type: Guest Post
 author: Patrick Doupe

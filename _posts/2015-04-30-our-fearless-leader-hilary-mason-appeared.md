@@ -8,7 +8,8 @@ tags:
 - bloombergtv
 layout: post
 post_type: Announcement
-tumblr_url: http://blog.fastforwardlabs.com/post/117800183973/our-fearless-leader-hilary-mason-appeared
+redirect_from:
+  - /post/117800183973/our-fearless-leader-hilary-mason-appeared
 preview_image: /tumblr_files/tumblr_nnn20a7yAI1teyfqto1_r1_1280.png
 ---
 

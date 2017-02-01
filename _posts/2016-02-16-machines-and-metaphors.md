@@ -8,7 +8,8 @@ tags:
 - deep learning
 layout: post
 post_type: Guest Post
-tumblr_url: http://blog.fastforwardlabs.com/post/139428219748/machines-and-metaphors
+redirect_from:
+  - /post/139428219748/machines-and-metaphors
 preview_image: http://68.media.tumblr.com/2cf1b0924a1bfc66737d96f4797ef6f7/tumblr_inline_o2neravFOu1ta78fg_540.png
 author: Gene Kogan
 author_link: http://www.genekogan.com/

@@ -7,7 +7,8 @@ tags:
 - bytecode
 - optimization
 layout: post
-tumblr_url: http://blog.fastforwardlabs.com/post/117173339298/bytecode-hacking-for-great-justice
+redirect_from:
+  - /post/117173339298/bytecode-hacking-for-great-justice
 preview_image: http://i.imgur.com/OodCK0c.png
 feature: true
 author: Micha

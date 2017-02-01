@@ -6,7 +6,8 @@ tags:
 - deep learning
 - probabilistic programming
 layout: post
-tumblr_url: http://blog.fastforwardlabs.com/post/149329060653/under-the-hood-of-the-variational-autoencoder-in
+redirect_from:
+  - /post/149329060653/under-the-hood-of-the-variational-autoencoder-in
 preview_image: http://www.fastforwardlabs.com/blog-images/miriam/imgs_code/160816_1754_reloaded_latent_784_500_500_50_round_65536_morph_4730816952.gif
 feature: true
 post_type: Whitepaper

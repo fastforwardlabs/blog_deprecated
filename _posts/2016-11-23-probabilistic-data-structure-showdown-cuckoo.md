@@ -7,7 +7,8 @@ tags:
 layout: post
 author: Julius
 author_link: https://twitter.com/julius_adebayo
-tumblr_url: http://blog.fastforwardlabs.com/post/153566952648/probabilistic-data-structure-showdown-cuckoo
+redirect_from:
+  - /post/153566952648/probabilistic-data-structure-showdown-cuckoo
 preview_image: "/tumblr_files/pmrs-test.png"
 feature: true
 post_type: Whitepaper

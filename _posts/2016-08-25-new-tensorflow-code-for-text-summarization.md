@@ -7,7 +7,8 @@ tags:
 - deep learning
 - summarization
 layout: post
-tumblr_url: http://blog.fastforwardlabs.com/post/149468760123/new-tensorflow-code-for-text-summarization
+redirect_from:
+  - /post/149468760123/new-tensorflow-code-for-text-summarization
 preview_image: http://68.media.tumblr.com/ecc5db59efcfa474331c6a1d2ec84824/tumblr_inline_och5k95kSe1ta78fg_540.png
 ---
 

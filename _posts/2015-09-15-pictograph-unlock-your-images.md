@@ -8,7 +8,8 @@ tags:
 - deepdream
 - announcement
 layout: post
-tumblr_url: http://blog.fastforwardlabs.com/post/129161944823/pictograph-unlock-your-images
+redirect_from:
+  - /post/129161944823/pictograph-unlock-your-images
 preview_image: http://www.fastforwardlabs.com/report_images/ff03/pictograph.png
 ---
 

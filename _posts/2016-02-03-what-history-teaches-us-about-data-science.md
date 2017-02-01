@@ -8,7 +8,8 @@ tags:
 - new york
 - history
 layout: post
-tumblr_url: http://blog.fastforwardlabs.com/post/138628194018/what-history-teaches-us-about-data-science
+redirect_from:
+  - /post/138628194018/what-history-teaches-us-about-data-science
 preview_image: http://68.media.tumblr.com/45c6f3016da356bf6dc765883e601b93/tumblr_inline_o1zrwfo9mf1ta78fg_540.jpg
 author: Kathryn
 author_link: https://twitter.com/HumeKathryn

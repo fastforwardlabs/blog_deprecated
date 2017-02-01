@@ -7,7 +7,8 @@ tags:
 - whitepaper
 - language processing
 layout: post
-tumblr_url: http://blog.fastforwardlabs.com/post/143439945583/making-a-case-for-machine-learning-to-legal
+redirect_from:
+  - /post/143439945583/making-a-case-for-machine-learning-to-legal
 post_type: Guest Post
 author_link: https://twitter.com/dean_gonsowski
 author: Dean Gonsowski

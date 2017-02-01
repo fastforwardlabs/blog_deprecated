@@ -5,7 +5,8 @@ tags:
 - design
 - code
 layout: post
-tumblr_url: http://blog.fastforwardlabs.com/post/119368587133/designing-the-tech-graph
+redirect_from:
+  - /post/119368587133/designing-the-tech-graph
 preview_image: http://i.imgur.com/bJjtxok.png
 author: Grant
 author_link: http://www.twitter.com/grantcuster

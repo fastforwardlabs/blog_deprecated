@@ -7,7 +7,8 @@ tags:
 - design
 - history
 layout: post
-tumblr_url: http://blog.fastforwardlabs.com/post/141666523533/hp-luhn-and-the-heuristic-value-of-simplicity
+redirect_from:
+  - /post/141666523533/hp-luhn-and-the-heuristic-value-of-simplicity
 preview_image: http://68.media.tumblr.com/8ad092dc44ae1ad68bad697a55274b30/tumblr_inline_o4lon7By6N1ta78fg_540.gif
 ---
 

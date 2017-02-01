@@ -6,7 +6,8 @@ tags:
 - deep learning
 - code
 layout: post
-tumblr_url: http://blog.fastforwardlabs.com/post/139921712388/hello-world-in-keras-or-scikit-learn-versus
+redirect_from:
+  - /post/139921712388/hello-world-in-keras-or-scikit-learn-versus
 preview_image: http://68.media.tumblr.com/a4cf05aa664f57b54fe5021ce966f5d6/tumblr_inline_o30qnzlyxi1qcg73w_540.png
 feature: true
 author: Mike

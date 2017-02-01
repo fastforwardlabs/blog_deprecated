@@ -11,7 +11,8 @@ tags:
 - visualization
 - code
 layout: post
-tumblr_url: http://blog.fastforwardlabs.com/post/129793362663/how-do-neural-networks-learn
+redirect_from:
+  - /post/129793362663/how-do-neural-networks-learn
 author: Mike S.
 author_link: http://mwskirpan.com/
 preview_image: http://68.media.tumblr.com/402a5e41ab09be86b8c43ce7f1e147a0/tumblr_inline_nv72twppMF1ta78fg_540.png

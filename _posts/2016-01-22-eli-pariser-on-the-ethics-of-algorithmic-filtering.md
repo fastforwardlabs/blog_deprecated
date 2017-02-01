@@ -8,7 +8,8 @@ tags:
 - ethics
 - filter bubble
 layout: post
-tumblr_url: http://blog.fastforwardlabs.com/post/137812811593/eli-pariser-on-the-ethics-of-algorithmic-filtering
+redirect_from:
+  - /post/137812811593/eli-pariser-on-the-ethics-of-algorithmic-filtering
 preview_image: http://68.media.tumblr.com/3172e6d87c1d99d12058845989f9041f/tumblr_inline_o1bgwg1jOS1ta78fg_540.jpg
 post_type: interview
 author: Kathryn

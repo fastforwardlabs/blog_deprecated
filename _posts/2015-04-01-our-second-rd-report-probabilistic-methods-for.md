@@ -6,7 +6,8 @@ tags:
 - design
 layout: post
 post_type: announcement
-tumblr_url: http://blog.fastforwardlabs.com/post/115234468358/our-second-rd-report-probabilistic-methods-for
+redirect_from:
+  - /post/115234468358/our-second-rd-report-probabilistic-methods-for
 preview_image: /tumblr_files/tumblr_nm5a0kCyu11teyfqto1_1280.jpg
 ---
 

@@ -7,7 +7,8 @@ tags:
 - image recognition
 - whitepaper
 layout: post
-tumblr_url: http://blog.fastforwardlabs.com/post/126113194313/on-stirling-engines-and-orchids-a-prelude-to-deep
+redirect_from:
+  - /post/126113194313/on-stirling-engines-and-orchids-a-prelude-to-deep
 preview_image: http://68.media.tumblr.com/1848a19b440d862d19082e450097910b/tumblr_inline_nsq7opgW3S1ta78fg_540.jpg
 ---
 

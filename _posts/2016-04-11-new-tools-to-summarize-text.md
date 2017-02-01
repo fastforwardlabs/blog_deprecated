@@ -8,7 +8,8 @@ tags:
 - product
 layout: post
 post_type: Announcement
-tumblr_url: http://blog.fastforwardlabs.com/post/142633141243/new-tools-to-summarize-text
+redirect_from:
+  - /post/142633141243/new-tools-to-summarize-text
 preview_image: http://68.media.tumblr.com/bc9e86d90ab7e2dbe8e2b1edf7293166/tumblr_inline_o58ah2oAIz1qcg73w_540.png
 ---
 

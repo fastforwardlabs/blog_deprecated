@@ -9,7 +9,8 @@ tags:
 - event
 layout: post
 post_type: announcement
-tumblr_url: http://blog.fastforwardlabs.com/post/141856452603/fast-forward-labs-data-leadership-conference
+redirect_from:
+  - /post/141856452603/fast-forward-labs-data-leadership-conference
 preview_image: http://68.media.tumblr.com/d453330d60fd9dffb72ac2e76c816b5d/tumblr_inline_o4rm2iqk5a1ta78fg_540.png
 ---
 

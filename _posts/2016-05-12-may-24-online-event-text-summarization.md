@@ -7,7 +7,8 @@ tags:
 - language processing
 - deep learning
 layout: post
-tumblr_url: http://blog.fastforwardlabs.com/post/144244640978/may-24-online-event-text-summarization
+redirect_from:
+  - /post/144244640978/may-24-online-event-text-summarization
 preview_image: http://68.media.tumblr.com/9fea484f8c262c1b0b289a64348027c7/tumblr_inline_o7142hZoGX1ta78fg_540.png
 ---
 

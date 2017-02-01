@@ -7,7 +7,8 @@ tags:
 - data driven
 - innovation
 layout: post
-tumblr_url: http://blog.fastforwardlabs.com/post/154428106298/hilary-mason-at-data-driven-nyc
+redirect_to:
+  - /post/154428106298/hilary-mason-at-data-driven-nyc
 preview_image: http://68.media.tumblr.com/706a85da781f730b2aa59f0dc0e965c4/tumblr_inline_oi4x9i4yhD1ta78fg_540.png
 post_type: Announcement
 ---

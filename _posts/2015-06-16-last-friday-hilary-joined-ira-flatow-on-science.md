@@ -7,7 +7,8 @@ tags:
 - sciencefriday
 layout: post
 post_type: Announcement
-tumblr_url: http://blog.fastforwardlabs.com/post/121674684693/last-friday-hilary-joined-ira-flatow-on-science
+redirect_from:
+  - /post/121674684693/last-friday-hilary-joined-ira-flatow-on-science
 preview_image: http://localhost:4000/tumblr_files/tumblr_nq1krz1wI61teyfqto1_1280.jpg
 ---
 

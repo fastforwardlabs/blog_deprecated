@@ -9,7 +9,8 @@ tags:
 - financial times
 - press
 layout: post
-tumblr_url: http://blog.fastforwardlabs.com/post/130639238038/breaking-down-memes
+redirect_from:
+  - /post/130639238038/breaking-down-memes
 preview_image: http://68.media.tumblr.com/ee5c34209ef754284caac01cfd8e0374/tumblr_inline_nvtfasBYBg1ta78fg_540.png
 ---
 

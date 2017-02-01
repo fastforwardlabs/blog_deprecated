@@ -8,7 +8,8 @@ tags:
 - ai
 - data science
 layout: post
-tumblr_url: http://blog.fastforwardlabs.com/post/132145876978/interview-with-pedro-domingos
+redirect_from:
+  - /post/132145876978/interview-with-pedro-domingos
 post_type: Interview
 preview_image: http://68.media.tumblr.com/4886047f032d47b832630a0ad0a72841/tumblr_inline_nwzgbcEPkQ1ta78fg_540.jpg
 interview_with: Pedro Domingos

@@ -6,7 +6,8 @@ tags:
 - announcement
 - internship
 layout: post
-tumblr_url: http://blog.fastforwardlabs.com/post/147953672348/fall-internships-research-engineering-and
+redirect_from:
+  - /post/147953672348/fall-internships-research-engineering-and
 post_type: Announcement
 preview_image: https://images.pexels.com/photos/187041/pexels-photo-187041.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb
 ---

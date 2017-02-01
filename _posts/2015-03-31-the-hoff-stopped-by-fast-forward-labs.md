@@ -5,7 +5,8 @@ tags:
 - press
 - hasslehoff
 layout: post
-tumblr_url: http://blog.fastforwardlabs.com/post/115138692538/the-hoff-stopped-by-fast-forward-labs
+redirect_from:
+  - /post/115138692538/the-hoff-stopped-by-fast-forward-labs
 preview_image: /tumblr_files/tumblr_nm3aqjqnEp1teyfqto1_1280.jpg
 post_type: Announcement
 ---

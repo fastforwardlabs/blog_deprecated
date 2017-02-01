@@ -9,7 +9,8 @@ tags:
 - helloworld
 - code
 layout: post
-tumblr_url: http://blog.fastforwardlabs.com/post/131957134308/hello-deep-learning
+redirect_from:
+  - /post/131957134308/hello-deep-learning
 feature: true
 author: Micha
 author_link: https://github.com/mynameisfiber

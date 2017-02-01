@@ -12,7 +12,8 @@ author: Kathryn
 author_link: http://www.twitter.com/HumeKathryn
 interview_with: Shivon Zilis
 interview_with_link: http://www.shivonzilis.com
-tumblr_url: http://blog.fastforwardlabs.com/post/141957837058/shivon-zilis-on-the-machine-intelligence-landscape
+redirect_from:
+  - /post/141957837058/shivon-zilis-on-the-machine-intelligence-landscape
 preview_image: http://68.media.tumblr.com/74ea2d9c04837d672993d887788dcd76/tumblr_inline_o4tb0bi8wF1ta78fg_540.png
 ---
 

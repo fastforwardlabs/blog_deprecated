@@ -7,7 +7,8 @@ tags:
 - innovation
 - press
 layout: post
-tumblr_url: http://blog.fastforwardlabs.com/post/125952701033/a-flying-machine-from-new-york-to-paris
+redirect_from:
+  - /post/125952701033/a-flying-machine-from-new-york-to-paris
 preview_image: http://68.media.tumblr.com/131a376a1e12ca1034f528a2e59eaba8/tumblr_inline_nsml4hM1dM1ta78fg_540.jpg
 ---
 

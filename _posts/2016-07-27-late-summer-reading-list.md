@@ -7,7 +7,8 @@ tags:
 - data science
 - summer reading
 layout: post
-tumblr_url: http://blog.fastforwardlabs.com/post/148054489633/late-summer-reading-list
+redirect_from:
+  - /post/148054489633/late-summer-reading-list
 preview_image: /tumblr_files/pexels-photo-57808.jpeg
 ---
 

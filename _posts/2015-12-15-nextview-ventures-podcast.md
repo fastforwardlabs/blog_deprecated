@@ -6,7 +6,8 @@ tags:
 - podcast
 - data science
 layout: post
-tumblr_url: http://blog.fastforwardlabs.com/post/135272766678/nextview-ventures-podcast
+redirect_from:
+  - /post/135272766678/nextview-ventures-podcast
 preview_image: http://68.media.tumblr.com/2a7557828a723a63971bd2f90412bbf0/tumblr_inline_nzf49uMo1i1ta78fg_540.png
 ---
 

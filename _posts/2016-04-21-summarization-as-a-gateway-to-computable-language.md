@@ -6,7 +6,8 @@ tags:
 - product
 - language processing
 layout: post
-tumblr_url: http://blog.fastforwardlabs.com/post/143177754283/summarization-as-a-gateway-to-computable-language
+redirect_from:
+  - /post/143177754283/summarization-as-a-gateway-to-computable-language
 preview_image: http://68.media.tumblr.com/981136c87557be0df4c1d09c3b4ed8b2/tumblr_inline_o600ygq2OG1qcg73w_540.png
 feature: true
 ---

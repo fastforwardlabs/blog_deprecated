@@ -5,7 +5,8 @@ tags:
 - office
 - design
 layout: post
-tumblr_url: http://blog.fastforwardlabs.com/post/95391942638/at-fast-forward-labs-were-thoughtful-about-the
+redirect_from:
+  - /post/95391942638/at-fast-forward-labs-were-thoughtful-about-the
 preview_image: /tumblr_files/tumblr_nao8r2wCGP1teyfqto5_1280.jpg
 ---
 

@@ -6,7 +6,8 @@ tags:
 - deep learning
 - probabilistic programming
 layout: post
-tumblr_url: http://blog.fastforwardlabs.com/post/148842796218/introducing-variational-autoencoders-in-prose-and
+redirect_from:
+  - /post/148842796218/introducing-variational-autoencoders-in-prose-and
 preview_image: http://www.fastforwardlabs.com/blog-images/miriam/160727_1340_explore.gray_del11_492x490.slower40.gif
 feature: true
 author: Miriam

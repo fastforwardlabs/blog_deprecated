@@ -6,7 +6,8 @@ tags:
 - event
 - data science
 layout: post
-tumblr_url: http://blog.fastforwardlabs.com/post/142854186793/assessing-data-science-maturity
+redirect_from:
+  - /post/142854186793/assessing-data-science-maturity
 preview_image: http://68.media.tumblr.com/f80852671283007961d228f73499ecc3/tumblr_inline_o5ornqRft01ta78fg_540.png
 ---
 

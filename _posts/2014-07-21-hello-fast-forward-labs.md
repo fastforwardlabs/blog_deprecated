@@ -4,7 +4,8 @@ date: 2014-07-21 16:01:01 Z
 tags:
 - announcement
 layout: post
-tumblr_url: http://blog.fastforwardlabs.com/post/92438955263/hello-fast-forward-labs
+redirect_from:
+  - /post/92438955263/hello-fast-forward-labs
 preview_image: http://www.fastforwardlabs.com/resources/images/logos/ff-logo-white-bg.png
 ---
 
