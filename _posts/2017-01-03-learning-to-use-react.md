@@ -7,6 +7,8 @@ author: Grant
 author_link: https://twitter.com/grantcuster
 interview_with: Aditya
 interview_with_link: https://twitter.com/whaleandpetunia
+redirect_from:
+  - /post/155350468038/learning-to-use-react
 ---
 
 ![](https://68.media.tumblr.com/3eefb9d8c2e3d798ca6dcead23017de9/tumblr_inline_oj7sj2BjWG1ta78fg_540.png)

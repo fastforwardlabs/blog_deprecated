@@ -4,6 +4,8 @@ date: 2017-01-10 15:00:00 Z
 layout: post
 preview_image: https://68.media.tumblr.com/14005dd5347c443d8716cd09c855a599/tumblr_inline_ojkq92ckuZ1qcg73w_540.jpg
 author: Friederike
+redirect_from:
+  - /post/155677733503/five-2016-trends-we-expect-to-come-to-fruition-in
 ---
 
 The start of a new year is an excellent occasion for audacious extrapolation. Based on 2016  developments, what do we expect for 2017?

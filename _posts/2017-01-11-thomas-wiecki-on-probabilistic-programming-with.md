@@ -7,6 +7,8 @@ post_type: Interview
 interview_with: Thomas Wiecki
 feature: true
 interview_with_link: https://twitter.com/twiecki
+redirect_from:
+  - /post/155718521293/thomas-wiecki-on-probabilistic-programming-with
 ---
 
 ![](https://68.media.tumblr.com/b1cc21602fec1b350032b5b79db93552/tumblr_inline_ojmc1prF0t1ta78fg_540.png)

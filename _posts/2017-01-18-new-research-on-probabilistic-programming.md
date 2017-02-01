@@ -3,6 +3,8 @@ title: New Research on Probabilistic Programming
 date: 2017-01-18 15:00:00 Z
 layout: post
 preview_image: https://68.media.tumblr.com/cbe0007d3ac0cdaaf70d6c4d25978e83/tumblr_inline_ojzf3jTBUF1ta78fg_540.png
+redirect_from:
+  - /post/156046009163/new-research-on-probabilistic-programming
 ---
 
 ![image](https://68.media.tumblr.com/cbe0007d3ac0cdaaf70d6c4d25978e83/tumblr_inline_ojzf3jTBUF1ta78fg_540.png)
