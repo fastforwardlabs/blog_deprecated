@@ -3,7 +3,7 @@ layout: default
 ---
 
 <ul class="post-list body-container flex flex-wrap items-start no-feature">
-  {% for counter in (1..3) %}
+  {% for counter in (0..2) %}
     {% assign post = site.posts[counter] %}
     {% include post_preview.html post=post %}
   {% endfor %}
