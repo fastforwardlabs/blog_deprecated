@@ -14,7 +14,7 @@ collections:
 email: contact@fastforwardlabs.com
 description: 'Fast Forward Labs is a machine intelligence research company. We focus on taking technologies that are just becoming possible, and making them useful.'
 baseurl: ''
-url: ''
+url: 'http://blog.fastforwardlabs.com'
 twitter_username: fastforwardlabs
 github_username: fastforwardlabs
 markdown: kramdown
