@@ -17,7 +17,7 @@ This post gives a feel for the content in our report by introducing the algorith
 
 ## Bayesian Inference
 
-Probabilistic programming enables us to construct and fit [Bayesian models](http://www.kdnuggets.com/2016/11/how-bayesian-inference-works.html) in code. At its essence, Bayesian inference is a principled way to draw conclusions from incomplete or
+Probabilistic programming enables us to construct and fit [probabilistic models](http://www.kdnuggets.com/2016/11/how-bayesian-inference-works.html) in code. At its essence, Bayesian inference is a principled way to draw conclusions from incomplete or
 imperfect data, by interpreting data in light of prior knowledge of probabilities. As pretty much all real-world data is incomplete or imperfect in
 some way, it's an important (and old!) idea.
 
