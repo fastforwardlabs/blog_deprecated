@@ -71,3 +71,7 @@
 - url: http://www.unofficialgoogledatascience.com/2017/01/causality-in-machine-learning.html
   text: Causality in Machine Learning
   image: https://slack-imgs.com/?c=1&url=https%3A%2F%2F2.bp.blogspot.com%2F-SPMRpqxF5Tg%2FWJGHwp8ZqQI%2FAAAAAAAAcBE%2FV3nSX-o_U0UZ9RSSp8p8HPxsFxtxHQK0gCLcB%2Fw1200-h630-p-k-nu%2Fpuppies.png
+
+- url: https://arxiv.org/abs/1701.02434
+  text: A Conceptual Introduction to Hamiltonian Monte Carlo
+  image: http://blog.fastforwardlabs.com/images/link_images/hmc.png
