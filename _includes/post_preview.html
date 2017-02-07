@@ -2,7 +2,7 @@
   <div class="block col-12">
     {% if include.prepend %}
       <div class="mb1">
-        <h5 class="m0">{{ include.prepend }} &nbsp;<span class="h5-arrow">↓</span></h5>
+        <div class="n-s">{{ include.prepend }} &nbsp;<span class="h5-arrow">↓</span></div>
       </div>
     {% endif %}
     <div class="short-line">
@@ -33,7 +33,7 @@
     </div>
     <div class="relative col-12">
       <h5 class="preview-excerpt"><span class="highlight-span">{% if include.post.author %}by <span class="author-spacer"><span itemprop="author" itemscope itemtype="http://schema.org/Person">{{ include.post.author }}</span></span> {% endif %}{% if include.post.interview_with %}with <span class="author-spacer">{{ include.post.interview_with }}</span>{% endif %}{% if include.post.author or include.post.interview_with %} &mdash; {% endif %}{{ include.post.content | markdownify | strip_html | truncate: 400 }}</span></h5>
-      <h5 class="m0 right-align"><span class="inblock-link">...read more</span></h5>
+      <h5 class="m0 right-align"><span class="inblock-link">&hellip;read more</span></h5>
     </div>
   </a>
   <h5 class="m0 author-byline-preview {% if include.post.author_link %}{% else %}pass-through{% endif %}">
