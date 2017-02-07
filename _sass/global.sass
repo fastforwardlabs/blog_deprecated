@@ -1,0 +1,221 @@
+// Webfonts
+
+@font-face
+  font-family: Elena
+  src: url('Fonts/ElenaWebBasicRegularSub.woff') format('woff')
+  font-weight: 400
+  font-style: normal
+
+@font-face
+  font-family: ChambersSansMedium
+  src: url('Fonts/6e68411fd97d_subset/6e68411fd97d_subset.woff2') format('woff2'), url('Fonts/6e68411fd97d_subset/6e68411fd97d_subset.woff') format('woff'), url('Fonts/6e68411fd97d_subset/2d3751af-f69a-423f-b25f-9e64771a0810.ttf') format('truetype')
+  font-weight: 500
+  font-style: normal
+
+@font-face
+  font-family: ChambersSansBlack
+  src: url('Fonts/1464734/fa46ac36-9953-4580-8b48-93fe6deebb45.woff2') format('woff2'), url('Fonts/1464734/f2dcf0a8-0d00-4fe6-9fc7-570bc7801cb2.woff') format('woff'), url('Fonts/1464734/fa247f7b-e6c6-484d-b86c-6376483eccbf.ttf') format('truetype')
+  font-weight: 900
+  font-style: normal
+
+@font-face
+  font-family: ChambersSansMediumItalic
+  src: url("Fonts/1385720/2dc6e720-12de-4f42-b923-1704efa9c107.woff2") format("woff2"), url("Fonts/1385720/13b5a169-2a28-4554-b4e8-6deba5a36926.woff") format("woff"), url("Fonts/1385720/bb1005e3-aac7-4bf1-8020-3dd984825855.ttf") format("truetype")
+  font-weight: 500
+  font-style: italic
+
+@font-face
+  font-family: ChambersSansBlackItalic
+  src: url('Fonts/1464738/c5d6fe40-4f9b-410c-8332-143de7007d10.woff2') format('woff2'), url('Fonts/1464738/62b38225-dff1-43ee-8238-c3d5876911cd.woff') format('woff'), url('Fonts/1464738/1d6bff39-3f05-4706-a206-152082998317.ttf') format('truetype')
+  font-weight: 900
+  font-style: italic
+
+@mixin chambers
+  &
+    font-family: sans-serif
+    font-weight: 400
+  .chambers-loaded &
+    font-family: ChambersSansMedium, sans-serif
+    font-weight: 500
+  .chambers-b-loaded &
+    font-family: ChambersSansMedium, sans-serif
+    font-weight: 500
+@mixin chambersItalic
+  font-style: italic
+  font-weight: 400
+  .chambers-b-loaded &
+    font-family: ChambersSansMediumItalic, sans-serif
+    font-weight: 500
+@mixin chambersBold
+  font-weight: 700
+  font-style: normal
+  .chambers-b-loaded &
+    font-family: ChambersSansBlack, sans-serif
+    font-weight: 900
+@mixin chambersBoldItalic
+  font-weight: 700
+  font-style: italic
+  .chambers-b-loaded &
+    font-family: ChambersSansBlackItalic, sans-serif
+    font-weight: 900
+
+*
+  box-sizing: border-box
+
+$base_font_min: 18px
+$base_font_max: 22px
+
+$base_lh: 1.5
+
+$light-cyan: rgba(0,215,226, 0.5)
+$cyan: rgba(0,215,226, 0.8)
+$dark-cyan: rgba(0,215,226, 1)
+
+$measure_min: 320px
+$measure_max: 756px
+$expanded_measure: $measure_max * 1.5
+$font_size_divider: ($measure_max - $measure_min)/1px
+
+@mixin measure_min
+  @media (min-width: $measure_min)
+    @content
+
+@mixin measure_max
+  @media (min-width: $measure_max)
+    @content
+
+html
+  font-size: $base_font_min
+  line-height: $base_lh
+  +measure_min
+
+@media screen and (min-width: 320px)
+  // base_font_min + difference between max and min * (100vw - $measure_min) / $font_size_divider
+  html
+    font-size: calc(18px + 4 * ((100vw - 320px) / 436))
+
+@media screen and (min-width: $measure-max)
+  html
+    font-size: $base_font_max
+
+body
+  margin: 0
+  padding: 0
+  +chambers
+
+strong, b
+  +chambersBold
+
+em, i
+  +chambersItalic
+
+em strong, i  b, em b, i strong, strong em, b i, b em, strong i
+  +chambersBoldItalic
+
+.body-container
+  margin: 0
+  padding: 0
+  +measure_max
+    padding-left: 1rem
+    padding-right: 1rem
+
+.container
+  max-width: $measure_max
+
+.wide-container
+  max-width: $expanded_measure
+
+.lh0
+  line-height: 0
+
+h1, h2, h3, h4, h5, h6
+  margin: 0 0 1rem
+
+h1
+  font-size: 2.25rem
+  line-height: 1.2
+  +chambersBold
+
+h2, h3
+  margin-top: 2rem
+
+h2
+  font-size: 1.5rem
+  line-height: 1.25
+  +chambersBold
+
+h3
+  font-size: 1.25rem
+  line-height: 1.25
+  +chambersBold
+
+h4
+  text-transform: uppercase
+  line-height: 1.1
+  letter-spacing: 0.075em
+  text-rendering: optimizeGeometry
+  +chambersBold
+
+h4 + h1
+  margin-top: -0.25rem !important
+
+h5, .h5
+  font-size: 0.875rem
+  +chambersItalic
+
+// Nav Secondary
+.n-s
+  font-size: 0.875rem
+  +chambers
+
+a.block, a.flex
+  background-image: none
+  padding-bottom: 0
+
+a, .inblock-link
+  color: #222
+  background-image: linear-gradient($light-cyan, $light-cyan)
+  background-size: 1em 0.3em
+  background-position: 0em 0.95em
+  padding-bottom: 0.3em
+  background-repeat: repeat-x
+  text-decoration: none
+  &:hover
+    background-image: linear-gradient($cyan, $cyan)
+  &.no-underline, &.no-underline:hover, &.active, &.active:hover
+    background-image: none
+h1, h2, h3
+  a, .inblock-link
+    padding-bottom: 0
+    background-position: 0em 1em
+h5, .h5, .n-s
+  a, .inblock-link
+    background-position: 0em 0.975em
+    padding-bottom: 0.3em
+
+a.block, a.flex
+  &:hover
+    background-image: none
+    .inblock-link
+      background-image: linear-gradient($cyan, $cyan)
+
+svg.text-logo
+  fill: #222
+  height: 0.75rem
+  margin-left: 1rem
+
++measure_max
+  .measure-center, .mm-center
+    text-align: center
+  .mm-display-none
+    display: none
+  .mm-block
+    display: block !important
+  .mm-justify-between
+    justify-content: space-between
+  .mm-mb3
+    margin-bottom: 2rem
+
+@media screen and (max-width: 370px)
+  .v-small-hide
+    display: none

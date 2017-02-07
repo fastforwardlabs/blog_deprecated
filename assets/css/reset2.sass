@@ -1,0 +1,213 @@
+---
+---
+
+@import "global"
+
+/* Seravek Web Basic Regular */
+@font-face
+  font-family: 'SeravekWebBasic'
+  src: url('Fonts/SeravekWebBasicRegular/SeravekWebBasicRegular.eot?#iefix') format('embedded-opentype'), url('Fonts/SeravekWebBasicRegular/SeravekWebBasicRegular.woff2') format('woff2'), url('Fonts/SeravekWebBasicRegular/SeravekWebBasicRegular.woff') format('woff')
+  font-weight: 400
+  font-style: normal
+
+/* Seravek Web Basic Regular Italic */
+@font-face
+  font-family: 'SeravekWebBasic'
+  src: url('Fonts/SeravekWebBasicRegularItalic/SeravekWebBasicRegularItalic.eot?#iefix') format('embedded-opentype'), url('Fonts/SeravekWebBasicRegularItalic/SeravekWebBasicRegularItalic.woff2') format('woff2'), url('Fonts/SeravekWebBasicRegularItalic/SeravekWebBasicRegularItalic.woff') format('woff')
+  font-weight: 400
+  font-style: italic
+
+/* Seravek Web Basic Bold */
+@font-face
+  font-family: 'SeravekWebBasic'
+  src: url('Fonts/SeravekWebBasicBold/SeravekWebBasicBold.eot?#iefix') format('embedded-opentype'), url('Fonts/SeravekWebBasicBold/SeravekWebBasicBold.woff2') format('woff2'), url('Fonts/SeravekWebBasicBold/SeravekWebBasicBold.woff') format('woff')
+  font-weight: 700
+  font-style: normal
+
+/* Seravek Web Basic Bold Italic */
+@font-face
+  font-family: 'SeravekWebBasic'
+  src: url('Fonts/SeravekWebBasicBoldItalic/SeravekWebBasicBoldItalic.eot?#iefix') format('embedded-opentype'), url('Fonts/SeravekWebBasicBoldItalic/SeravekWebBasicBoldItalic.woff2') format('woff2'), url('Fonts/SeravekWebBasicBoldItalic/SeravekWebBasicBoldItalic.woff') format('woff')
+  font-weight: 700
+  font-style: italic
+
+.header-ffl-logo-holder
+  padding-left: 0.1rem
+
+.header-ffl-logo
+  height: 1rem
+  position: relative
+  top: 0.05rem
+  .logo-f
+    fill: #000
+  .logo-tri
+    fill: #00dcec
+  +measure_max
+    height: 2.1rem
+    top: 0
+
+// Post Specifics
+
+.post
+  font-family: 'SeravekWebBasic'
+  font-weight: 400
+  a
+    background-position: 0em 0.9em
+    padding-bottom: 0
+  h5, .h5
+    a
+      background-position: 0em 1em
+      padding-bottom: 0.3em
+  p, h1, h2, h3, h4, h5, h6, ul
+    padding-left: 1rem
+    padding-right: 1rem
+  ul, ol
+    padding-left: 2.5rem
+    li
+      margin-bottom: 0.125rem
+  blockquote
+    margin: 0 1rem 1rem 2.5rem
+    margin-left: 1rem
+    padding-left: 1rem
+    border-left: solid 0.5rem #efefef
+  strong, b, em, i, em strong, i  b, em b, i strong, strong em, b i, b em, strong i
+    font-family: 'SeravekWebBasic'
+  strong, b
+    font-weight: 700
+  em, i
+    font-style: italic
+  em strong, i  b, em b, i strong, strong em, b i, b em, strong i
+    font-weight: 700
+
+.post img
+  width: 100vw
+  line-height: 0
+  margin: 1rem -1rem
+  display: block
+  @media (min-width: $measure_max * 0.667)
+    width: auto
+    max-width: calc(100% - 2rem)
+    margin: 1rem auto
+  +measure_max
+    // max-width: $measure_max * 1.333
+    margin: 1.5rem auto
+
+// Preview Styles
+
+.highlight-span
+  background: #fff
+  box-shadow: -0.25rem 0 0 #fff, 0.2rem 0 0 #fff
+  padding: 0.15rem 0
+
+.white-span
+  background-color: #fff
+
+.post-preview, .link-preview, .fill-element
+  margin: 0 0 1rem
+  padding: 0 1rem
+  h4
+    font-size: 0.75rem
+  .post-preview-body
+    height: 15rem
+  .preview-image, .link-image-backer
+    width: 100%
+    background: #efefef
+    position: absolute
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center center
+    top: 2.375rem
+    height: 10.625rem
+    &.placeholder-image
+      background-image: url('Images/placeholder-image.svg')
+      background-size: auto 90%
+      background-position: center center
+  .preview-excerpt
+    max-height: 0.875rem * 4 * 1.5
+    margin: 0
+    overflow: hidden
+    position: relative
+    z-index: 2
+    padding-right: 1.2rem
+    padding-left: 0.2rem
+    margin-left: -0.05rem
+  &.feature
+    .preview-excerpt
+      max-height: 0.875rem * 3 * 1.5
+
+.link-preview, .fill-element
+  padding: 0 2rem
+  height: 16.3125rem
+  .link-body, .fill-element-body
+    padding: 0.5rem 1rem
+    min-height: 16.3125rem
+    margin-top: 0
+    height: auto
+    width: 100%
+    .preview-image
+      top: (1.3125rem * 2) + 1rem
+      height: 16.3125rem - (1.3125rem * 4) - 2rem
+      left: 0.5rem
+      width: calc(100% - 1rem)
+    .link-highlight-span
+      background: #fff
+
+.post-preview, .link-preview, .fill-element
+  +measure-max
+    width: 50%
+    &.feature
+      width: 100%
+    &.optional-2
+      display: block
+  @media screen and (min-width: $measure-max * 1.5)
+    width: 33.33%
+    &.feature
+      width: 66.67%
+    &.optional-2
+      display: none
+    &.optional-3
+      display: block
+  @media screen and (min-width: ($measure-max * 2))
+    width: 25%
+    &.feature
+      width: 50%
+  @media screen and (min-width: ($measure-max * 3))
+    width: 16.66%
+    &.feature
+      width: 33.33%
+
+.no-feature
+  .post-preview.feature
+    +measure-max
+      width: 50% !important
+    @media screen and (min-width: $measure-max * 1.5)
+      width: 33.33% !important
+    @media screen and (min-width: ($measure-max * 2))
+      width: 25% !important
+    @media screen and (min-width: ($measure-max * 3))
+      width: 16.66% !important
+    .preview-excerpt
+      max-height: 0.875rem * 4 * 1.5
+
+.author-spacer
+  color: #fff
+  user-select: none
+
+.author-byline-preview
+  position: absolute
+  left: 1rem
+  z-index: 4
+  bottom: 0.875rem * 4 * 1.5
+  padding: 0 0.2rem
+  pointer-events: none
+  color: transparent
+  a
+    pointer-events: auto
+  .text-only-author
+    color: #222
+.feature
+  .author-byline-preview
+    bottom: 0.875rem * 3 * 1.5
+.no-feature .feature
+  .author-byline-preview
+    bottom: 0.875rem * 4 * 1.5
