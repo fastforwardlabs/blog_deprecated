@@ -75,3 +75,7 @@
 - url: https://arxiv.org/abs/1701.02434
   text: A Conceptual Introduction to Hamiltonian Monte Carlo
   image: http://blog.fastforwardlabs.com/images/link_images/hmc.png
+  
+- url: https://arxiv.org/abs/1611.03530
+  text: Understanding deep learning requires rethinking generalization
+  image: http://blog.fastforwardlabs.com/images/link_images/generalization.png
