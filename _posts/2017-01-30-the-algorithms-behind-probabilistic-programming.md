@@ -96,7 +96,7 @@ circumventing the need for approximate sampling algorithms like MCMC or HMC.
 
 To do this, we start with simple distributions that we understand well (e.g.,
 Gaussians) and perturb them until they match the real distribution from which
-we want to sample. The bulk of this work is done by [stochastic gradient descent(SGD)](http://sebastianruder.com/optimizing-gradient-descent/). Given its widespread use in machine learning (e.g., it's used to train deep neural networks), SGD is well
+we want to sample. The bulk of this work is done by [stochastic gradient descent (SGD)](http://sebastianruder.com/optimizing-gradient-descent/). Given its widespread use in machine learning (e.g., it's used to train deep neural networks), SGD is well
 understood and optimized.
 
 Converting a probabilistic model from a sampling approach to VI used to
@@ -140,4 +140,4 @@ In the report we go into more detail on the strengths and weaknesses of these
 two languages, and discuss some of the many other options. Whichever language you use, the claim of probabilistic programming - that it
 hides the complexity of Bayesian inference - is more true than ever.
 
--[Mike](https://twitter.com/mikepqr)
+– [Mike](https://twitter.com/mikepqr)
