@@ -65,7 +65,7 @@ layout: default
   {% assign newsletter_added = false %}
 
   {% if post_offset != 0 %}
-    {% include prev.html paginator=paginator next_class="col-2-1 col-3-1" %}
+    {% include prev.html paginator=paginator %}
   {% endif %}
   <ul class="post-list body-container flex flex-wrap items-start">
     {% assign links = site.data.links | reverse %}

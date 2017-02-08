@@ -210,10 +210,20 @@ a.block, a.flex
     .inblock-link
       background-image: linear-gradient($cyan, $cyan)
 
-svg.text-logo
-  fill: #222
-  height: 0.75rem
-  margin-left: 1rem
+.p05
+  padding: 0.25rem
+.px05
+  padding-left: 0.25rem
+  padding-right: 0.25rem
+.py05
+  padding-top: 0.25rem
+  padding-bottom: 0.25rem
+
+// THe right arrow in the font points left, this corrects that
+.arrow-right
+  display: inline-block
+  position: relative
+  transform: scaleX(-1)
 
 +measure_max
   .measure-center, .mm-center
