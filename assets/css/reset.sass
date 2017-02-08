@@ -4,6 +4,12 @@
 // Webfonts
 
 @font-face
+  font-family: Elena
+  src: url('Fonts/ElenaWebBasicRegularSub.woff') format('woff')
+  font-weight: 400
+  font-style: normal
+
+@font-face
   font-family: ChambersSansMedium
   src: url('Fonts/6e68411fd97d_subset/6e68411fd97d_subset.woff2') format('woff2'), url('Fonts/6e68411fd97d_subset/6e68411fd97d_subset.woff') format('woff'), url('Fonts/6e68411fd97d_subset/2d3751af-f69a-423f-b25f-9e64771a0810.ttf') format('truetype')
   font-weight: 500
@@ -130,12 +136,12 @@ body
 
 a
   color: #222
-  box-shadow: inset 0 -0.25em 0 $light-cyan
-  border-bottom: solid 0.05em $light-cyan
+  box-shadow: inset 0 -0.3em 0 $light-cyan
+  // border-bottom: solid 0.05em $light-cyan
   text-decoration: none
   &:hover
-    box-shadow: inset 0 -0.25em 0 $cyan
-    border-bottom-color: $cyan
+    box-shadow: inset 0 -0.3em 0 $cyan
+    // border-color: $cyan
   &.no-underline, &.no-underline:hover, &.active, &.active:hover
     border-bottom: none
     box-shadow: none
@@ -199,26 +205,29 @@ p code, li code
   font-size: 0.75rem
 
 p
-  margin: 0 1 1rem
+  margin: 0 0 1rem
 
 h1, h2, h3, h4, h5, h6
   margin: 0 0 1rem
 
 h1
-  font-size: 2rem
-  line-height: 1.25
+  font-size: 2.125rem
+  line-height: 1.2
   +webfontBold
 
 h2
   font-size: 1.5rem
   line-height: 1.25
   margin-top: 2rem
+  font-weight: 500
+  margin-bottom: 1rem
   +webfontBold
 
 h3
   font-size: 1.25rem
   line-height: 1.25
   margin-top: 2rem
+  font-weight: 500
   +webfontBold
 
 h2 + h3, h2 + h4, h3 + h4
@@ -230,8 +239,9 @@ h4 + h2, h4 + h3
 h4
   // font-size: 0.75rem
   // line-height: 1.25
+  font-size: 0.875rem
   font-weight: 700
-  font-size: 0.775rem
+  // font-size: 1rem
   line-height: 1.25
   margin-top: 2rem
   text-transform: uppercase
@@ -242,13 +252,17 @@ h4
 h5, .h5
   font-size: 0.875rem
   line-height: 1.5
+  // font-family: "Seravek"
+  // font-style: italic
+  // font-weight: 400
   +webfontItalic
   .h5-arrow
     +webfont
     font-style: normal
 
 strong, b
-  +webfontBold
+  font-family: "Seravek"
+  font-weight: 500
 
 em, i
   +webfontItalic
@@ -339,7 +353,23 @@ form
 
 // Post specifics
 
+$body_font: 'PT Serif'
+$body_font: 'Seravek'
+// $body_font: 'PT Sans'
+// $body_font: 'Catamaran'
+// $body_font: 'ff-enzo-web'
+
 .post
+  p
+    font-family: $body_font
+    font-weight: 400
+    font-size: 21px
+    line-height: 1.575
+  li
+    font-family: $body_font
+    font-weight: 400
+    font-size: 21px
+    line-height: 1.575
   p, h1, h2, h3, h4, h5, h6, ul
     padding-left: 1rem
     padding-right: 1rem
