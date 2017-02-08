@@ -71,8 +71,11 @@ $light-cyan: rgba(0,215,226, 0.5)
 $cyan: rgba(0,215,226, 0.8)
 $dark-cyan: rgba(0,215,226, 1)
 
+.cyan
+  color: $cyan
+
 $measure_min: 320px
-$measure_max: 756px
+$measure_max: 740px
 $expanded_measure: $measure_max * 1.5
 $font_size_divider: ($measure_max - $measure_min)/1px
 
@@ -92,7 +95,7 @@ html
 @media screen and (min-width: 320px)
   // base_font_min + difference between max and min * (100vw - $measure_min) / $font_size_divider
   html
-    font-size: calc(18px + 4 * ((100vw - 320px) / 436))
+    font-size: calc(18px + 4 * ((100vw - 320px) / 420))
 
 @media screen and (min-width: $measure-max)
   html
@@ -101,14 +104,13 @@ html
 body
   margin: 0
   padding: 0
+  color: #222
   +chambers
 
 strong, b
   +chambersBold
-
 em, i
   +chambersItalic
-
 em strong, i  b, em b, i strong, strong em, b i, b em, strong i
   +chambersBoldItalic
 
@@ -132,9 +134,13 @@ h1, h2, h3, h4, h5, h6
   margin: 0 0 1rem
 
 h1
-  font-size: 2.25rem
+  font-size: 2rem
   line-height: 1.2
   +chambersBold
+  @media screen and (min-width: $measure-max)
+  +measure-max
+    font-size: 2.25rem
+
 
 h2, h3
   margin-top: 2rem
@@ -153,6 +159,7 @@ h4
   text-transform: uppercase
   line-height: 1.1
   letter-spacing: 0.075em
+  font-size: 0.875rem
   text-rendering: optimizeGeometry
   +chambersBold
 
@@ -184,10 +191,14 @@ a, .inblock-link
     background-image: linear-gradient($cyan, $cyan)
   &.no-underline, &.no-underline:hover, &.active, &.active:hover
     background-image: none
-h1, h2, h3
+h1, h2
   a, .inblock-link
     padding-bottom: 0
-    background-position: 0em 1em
+    background-position: 0em 0.975em
+h3
+  a, .inblock-link
+    padding-bottom: 0
+    background-position: 0em 0.975em
 h5, .h5, .n-s
   a, .inblock-link
     background-position: 0em 0.975em
@@ -216,6 +227,6 @@ svg.text-logo
   .mm-mb3
     margin-bottom: 2rem
 
-@media screen and (max-width: 370px)
+@media screen and (max-width: 580px)
   .v-small-hide
     display: none
