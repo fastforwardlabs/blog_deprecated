@@ -240,3 +240,27 @@ a.block, a.flex
 @media screen and (max-width: 580px)
   .v-small-hide
     display: none
+
+// Form Elements
+form
+  input
+    font-size: 1rem
+    font-size: 0.875rem
+    line-height: (1.5/0.875)
+    +chambers
+  input[type="submit"]
+    +chambersBold
+    border: none
+    font-size: 0.67rem
+    padding: 0 0.5rem
+    line-height: (1.5/0.67)
+    text-transform: uppercase
+    letter-spacing: 0.1em
+    cursor: pointer
+    background: transparent
+    background-image: linear-gradient($light-cyan, $light-cyan)
+    background-size: 1em 1em
+    background-repeat: repeat-x
+    background-position: 0 1.1em
+    &:hover
+      background-image: linear-gradient($cyan, $cyan)
