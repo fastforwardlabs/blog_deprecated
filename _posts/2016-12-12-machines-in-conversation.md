@@ -2,7 +2,8 @@
 title: Machines in Conversation
 date: 2016-12-12 17:47:22 Z
 layout: post
-tumblr_url: http://blog.fastforwardlabs.com/post/154383131913/machines-in-conversation
+redirect_from:
+  - /post/154383131913/machines-in-conversation
 preview_image: http://68.media.tumblr.com/692d44e33b12223b1e7fb77bb122ec99/tumblr_inline_oi327sddi71ta78fg_540.png
 author: Gridspace
 author_link: https://www.gridspace.com/

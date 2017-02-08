@@ -7,6 +7,8 @@ author: Grant
 author_link: https://twitter.com/grantcuster
 interview_with: Aditya
 interview_with_link: https://twitter.com/whaleandpetunia
+redirect_from:
+  - /post/155350468038/learning-to-use-react
 ---
 
 ![](https://68.media.tumblr.com/3eefb9d8c2e3d798ca6dcead23017de9/tumblr_inline_oj7sj2BjWG1ta78fg_540.png)
@@ -15,7 +17,7 @@ interview_with_link: https://twitter.com/whaleandpetunia
 
 For every topic we research at Fast Forward Labs, we create prototypes to show how the technology can be applied to make great products. Finite, stand-alone projects, our prototype web applications are great opportunities to experiment with new front-end tech.
 
-In our latest [report on probabilistic programming](https://twitter.com/FastForwardLabs/status/811294428287602688), I used the [React javascript library](https://facebook.github.io/react/) to create the interface with [Redux](http://redux.js.org/) for managing the data state of UI components. This setup was extremely helpful in prototyping: by keeping the application state in one place with Redux, it was much easier to switch components in and out as the prototype direction changed. The setup (which also involved Webpack, Babel and learning ES6 syntax features) did feel overwhelming at times, though new tools and tutorials made the process much smoother than my experience using React on the previous [Text Summarization](http://blog.fastforwardlabs.com/post/142633141243/new-tools-to-summarize-text) prototype. Once everything was rolling, it was the most enjoyable front-end coding experience I’ve ever had.
+In our latest [report on probabilistic programming](https://twitter.com/FastForwardLabs/status/811294428287602688), I used the [React javascript library](https://facebook.github.io/react/) to create the interface with [Redux](http://redux.js.org/) for managing the data state of UI components. This setup was extremely helpful in prototyping: by keeping the application state in one place with Redux, it was much easier to switch components in and out as the prototype direction changed. The setup (which also involved Webpack, Babel and learning ES6 syntax features) did feel overwhelming at times, though new tools and tutorials made the process much smoother than my experience using React on the previous [Text Summarization](http://blog.fastforwardlabs.com/2016/04/11/new-tools-to-summarize-text.html) prototype. Once everything was rolling, it was the most enjoyable front-end coding experience I’ve ever had.
 
 When [Aditya](https://twitter.com/whaleandpetunia), our Data Visualization and Prototyping Intern, started with us this fall, I asked him to get familiar with React and Redux (and Webpack, and ES6 features…) in preparation for future products. Now that he’s experimented with it, we decided to document what has been useful and not so useful in the process.
 

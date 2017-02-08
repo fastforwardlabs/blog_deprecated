@@ -17,7 +17,7 @@ This post gives a feel for the content in our report by introducing the algorith
 
 ## Bayesian Inference
 
-Probabilistic programming enables us to construct and fit [Bayesian models](http://www.kdnuggets.com/2016/11/how-bayesian-inference-works.html) in code. At its essence, Bayesian inference is a principled way to draw conclusions from incomplete or
+Probabilistic programming enables us to construct and fit [probabilistic models](http://www.kdnuggets.com/2016/11/how-bayesian-inference-works.html) in code. At its essence, Bayesian inference is a principled way to draw conclusions from incomplete or
 imperfect data, by interpreting data in light of prior knowledge of probabilities. As pretty much all real-world data is incomplete or imperfect in
 some way, it's an important (and old!) idea.
 
@@ -112,7 +112,7 @@ ADVI and HMC with NUTS are the two fundamental algorithmic innovations that
 have made **probabilistic programming** possible. Their inclusion in leading
 probabilistic programming environments (which can be traced back to
 [these](https://goodmorningeconomics.wordpress.com/2010/11/16/the-promise-of-bayesian-statistics-pt-2/)
-[two](https://goodmorningeconomics.wordpress.com/2010/11/16/the-promise-of-bayesian-statistics-pt-2/)
+[two](http://andrewgelman.com/2010/11/18/derivative-base/)
 blog posts from 2010) makes inference a one-liner. The end user doesn't need to
 tune parameters or differentiate functions by hand. And because they're built
 on Hamiltonian Monte Carlo or variational inference, they're fast.
