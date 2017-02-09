@@ -12,9 +12,9 @@ On Tuesday, we hosted an online talk with the [Stan Group](http://stan.fit/) dis
 Watching the recording, you will learn:
 
 - What kinds of problems are a good fit for Bayesian inference
-- How a "model-centric" approach to data science changes data science workflows
-- How one organization used probabilistic programming to optimize revenue
-- What Hamiltonian Monte Carlo algorithms are and why they can be tricky to use
+- How a model-centric approach changes data science workflows
+- How to use probabilistic programming for revenue models
+- What Hamiltonian Monte Carlo is and why it's tricky to use
 - What Stan is, what it does well, and what its limitations are
 - What we’re excited about in the near future
 
