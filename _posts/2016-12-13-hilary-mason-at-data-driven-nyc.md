@@ -1,5 +1,5 @@
 ---
-title: Hilary Mason at Data Driven NYC
+title: 'Hilary Mason at Data Driven NYC'
 date: 2016-12-13 18:02:12 Z
 tags:
 - ai
@@ -7,7 +7,7 @@ tags:
 - data driven
 - innovation
 layout: post
-redirect_to:
+redirect_from:
   - /post/154428106298/hilary-mason-at-data-driven-nyc
 preview_image: http://68.media.tumblr.com/706a85da781f730b2aa59f0dc0e965c4/tumblr_inline_oi4x9i4yhD1ta78fg_540.png
 post_type: Announcement
