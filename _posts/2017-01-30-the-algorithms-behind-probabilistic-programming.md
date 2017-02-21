@@ -75,7 +75,7 @@ time in regions of high probability, raising efficiency. Those are
 probability distribution as a physical surface. It uses an elegant and
 computationally efficient [idea from 19th-century physics](https://en.wikipedia.org/wiki/Hamiltonian_mechanics) to explore that
 surface using calculus, as if under the influence of gravity. This method doesn't work
-for for discrete parameters, but the user doesn't need to differentiate functions by hand.
+for discrete parameters, but the user doesn't need to differentiate functions by hand.
 
 ![](http://www.fastforwardlabs.com/report_images/ff05/3-06.png)
 
