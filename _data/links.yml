@@ -83,3 +83,7 @@
 - url: https://www.codelitt.com/blog/doom-ai/
   text: Building a deep learning DOOM bot
   image: http://blog.fastforwardlabs.com/images/link_images/Doom_Header-1.jpg
+
+- url: http://sebastianruder.com/optimizing-gradient-descent/
+  text: An overview of gradient descent optimization algorithms
+  image: http://sebastianruder.com/content/images/2016/09/loss_function_image_tumblr.png
