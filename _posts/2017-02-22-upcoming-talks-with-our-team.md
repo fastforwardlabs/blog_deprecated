@@ -30,7 +30,7 @@ Mike Williams, our Director of Research, is giving multiple talks on Bayesian in
 - [QCon](https://qconlondon.com/london-2017/track/modern-learning-systems) in London on March 7 (moderating a full day of talks on modern learning systems - Micha Gorelick will be there as well!)
 - [Strata](https://conferences.oreilly.com/strata/strata-ca/public/schedule/detail/55962) in San Jose on March 16
 
-## Friederike Schuur on Making Data Science make sense for the Business
+## Friederike Schuur on Making Data Science Make Sense in Business
 
 ![](https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F27439198%2F135464603601%2F1%2Foriginal.jpg?w=1000&rect=0%2C97%2C1080%2C540&s=609e9788357526965c00addcb8697403)
 
