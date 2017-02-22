@@ -87,3 +87,7 @@
 - url: http://sebastianruder.com/optimizing-gradient-descent/
   text: An overview of gradient descent optimization algorithms
   image: http://sebastianruder.com/content/images/2016/09/loss_function_image_tumblr.png
+
+- url: https://arxiv.org/abs/1702.06235
+  text: Learning to generate one-sentence biographies from Wikidata
+  image: http://blog.fastforwardlabs.com/images/link_images/seq_model_attn.png
