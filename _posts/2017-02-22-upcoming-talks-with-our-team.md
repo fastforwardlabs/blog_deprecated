@@ -44,5 +44,5 @@ Friederike Schuur, our Researcher and Client Advising Lead, will speak about com
 Finally, Kathryn Hume, our Director of Sales & Marketing, will provide a process enterprises can use to build strong AI products at the [TDWI Accelerate Conference](https://tdwi.org/Events/Accelerate/Boston/Home.aspx) in Boston April 3-5. Her recent [S4x17](http://www.cvent.com/events/s4x17/event-summary-3599b467bc02483eb83063a1933712a5.aspx) keynote about machine learning and information security is featured below. 
 
 <div class="video-holder">
-  <iframe src="https://www.youtube.com/watch?v=U79pZ3JyrG4" frameborder="0" allowfullscreen=""></iframe>
+  <iframe src="https://www.youtube.com/embed/U79pZ3JyrG4" frameborder="0" allowfullscreen></iframe>
 </div>
