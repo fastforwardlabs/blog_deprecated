@@ -20,15 +20,23 @@ Hilary Mason, our CEO and Founder, will be very busy over the next couple of mon
 - [Marketing Analytics and Data Science Conference](https://marketing.knect365.com/marketing-analytics-data-science/) in San Francisco April 4
 - [Informs 2017 Business Analytics Conference](http://meetings2.informs.org/wordpress/analytics2017/) in Vegas April 3
 
-## Mike Williams on Building Products with Probabilistic Programming 
+## Mike Lee Williams on Building Products with Probabilistic Programming 
 
 ![](https://a248.e.akamai.net/secure.meetupstatic.com/photos/event/c/3/c/f/600_446930127.jpeg)
 
-Mike Williams, our Director of Research, is giving multiple talks on Bayesian inference and [probabilistic programming](http://blog.fastforwardlabs.com/2017/01/18/new-research-on-probabilistic-programming.html), our latest research topic. You can catch him at:
+Mike Lee Williams, our Director of Research, is giving two talks on Bayesian inference and [probabilistic programming](http://blog.fastforwardlabs.com/2017/01/18/new-research-on-probabilistic-programming.html), our latest research topic. You can catch him at:
 
 - [Bayesian Mixer Meetup](https://www.meetup.com/Bayesian-Mixer-London/events/237228985/) in London on March 6
-- [QCon](https://qconlondon.com/london-2017/track/modern-learning-systems) in London on March 7 (moderating a full day of talks on modern learning systems - Micha Gorelick will be there as well!)
 - [Strata](https://conferences.oreilly.com/strata/strata-ca/public/schedule/detail/55962) in San Jose on March 16
+
+## Micha Gorelick on Products and Prototypes with Keras
+
+![](https://pbs.twimg.com/card_img/833674259222372354/7NEhbdtY?format=jpg&name=600x314)
+
+Micha Gorelick is giving a talk and an interactive workshop on building a
+working product with Keras, a high level deep learning framework at [QCon
+London on March
+7](https://qconlondon.com/london-2017/track/modern-learning-systems). 
 
 ## Friederike Schuur on Making Data Science Make Sense in Business
 
