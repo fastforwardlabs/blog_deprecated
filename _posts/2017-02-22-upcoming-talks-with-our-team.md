@@ -37,7 +37,7 @@ Mike Williams, our Director of Research, is giving multiple talks on Bayesian in
 Friederike Schuur, our Researcher and Client Advising Lead, will speak about communication strategies to make data science relevant in businesses at the [New York R Conference](http://www.rstats.nyc/) in New York on April 22
 
 
-## Kathryn Hume on Building AI Products and Innovating with Data
+## Kathryn Hume on Building AI Products
 
 ![](https://tdwi.org/events/~/media/TDWI/TDWI%20Events/2017/boston_copley_300_smlogo_left.jpg)
 
