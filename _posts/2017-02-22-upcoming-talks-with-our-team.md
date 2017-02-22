@@ -22,7 +22,7 @@ Hilary Mason, our CEO and Founder, will be very busy over the next couple of mon
 
 ## Mike Williams on Building Products with Probabilistic Programming 
 
-![](https://a248.e.akamai.net/secure.meetupstatic.com/photos/event/c/3/c/f/global_446930127.jpeg)
+![](https://a248.e.akamai.net/secure.meetupstatic.com/photos/event/c/3/c/f/600_446930127.jpeg)
 
 Mike Williams, our Director of Research, is giving multiple talks on Bayesian inference and [probabilistic programming](http://blog.fastforwardlabs.com/2017/01/18/new-research-on-probabilistic-programming.html), our latest research topic. You can catch him at:
 
