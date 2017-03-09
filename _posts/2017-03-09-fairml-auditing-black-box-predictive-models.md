@@ -22,11 +22,11 @@ investigation of the [COMPAS algorithm](https://www.propublica.org/article/machi
 We'll also go over the methodology behind FairML at a conceptual level
 and describe other work addressing bias in machine learning.
 
-This post is a prelude to our upcoming reearch report and prototype on algorithmic interpretability, which we'll release in the next few months. Understanding how algorithms use inputs to inform outputs is, in certain instances, a condition for organizations to adopt machine learning systems. This is particularly salient when algorithms are used for sensitive use cases, like criminal sentencing.
+This post is a prelude to our upcoming research report and prototype on algorithmic interpretability, which we'll release in the next few months. Understanding how algorithms use inputs to inform outputs is, in certain instances, a condition for organizations to adopt machine learning systems. This is particularly salient when algorithms are used for sensitive use cases, like criminal sentencing.
 
 ## Recidivism & ProPublica
 
-Until recently, judges and legal professionals were the sole arbiters deciding whether to relese someone on bail. Legislation and other
+Until recently, judges and legal professionals were the sole arbiters deciding whether to release someone on bail. Legislation and other
 checks that limit discrimination in this process are designed with
 human biases in mind. As algorithms influence--or even take over--these types of decisions, it
 is not clear how to audit the process for fairness and
@@ -55,21 +55,24 @@ In its investigation, ProPublica ran [several regression
 models](https://www.propublica.org/article/how-we-analyzed-the-compas-recidivism-algorithm)
 to quantify how COMPAS risk scores depend on race and other factors.
 Regressions allow one to use the magnitude and sign of the
-coefficient estimate obtained as a measure of an algorithm's dependence
-on particular attributes. However, residual effects might still not
+coefficient estimate obtained as a measure of an model's dependence
+on particular attributes. However, indirect effects might still not
 be accounted for if the attributes used in the regression are co-linear.
 
 The variance inflation factor (VIF) allows us to quantify multicollinearity before
-running a regression. Despite low VIF scores, a variable contained in other attributes used in the regression can still have indirect effects. Consequently, we need a way to properly account for
-the issue of **multicollinearity** and indirect effects for black-box
+running a regression. Despite low VIF scores, a variable correlated with other attributes -even midly- 
+used in the regression can still have indirect effects. Consequently, we need a way to properly account for
+the issue of **multicollinearity** and **indirect effects** for black-box
 models. FairML provides this capability.
 
 ## Audit of a Proxy Model
 
 While used for public sentencing, Northpointe's COMPAS risk assessment
-algorithm is proprietary, so ProPublica was not able to directly examine its model. Instead, ProPublica manually collected data on the COMPAS risk scores
+algorithm is proprietary, so ProPublica was not able to directly examine its model. 
+Instead, ProPublica manually collected data on the COMPAS risk scores
 for thousands of cases in Broward, County FL. Using this data, they built
-regression models that measure the relationship between race and risk scores COMPAS produces.
+regression models that measure the relationship between race and the 
+risk scores COMPAS produces.
 
 For our audit, we used a proxy model. We built a logistic
 regression proxy model using the attributes collected by ProPublica
@@ -82,7 +85,8 @@ data, and our conclusions remain the same.
 
 ### Perturbation
 
-The basic idea behind FairML (and many other attempts to audit or interpret model behavior) is to measure a model's dependence on its inputs by
+The basic idea behind FairML (and many other attempts to audit or interpret model behavior) 
+is to measure a model's dependence on its inputs by
 changing them. If a small change to an input feature dramatically changes the output,
 the model is sensitive to the feature.
 
@@ -94,7 +98,8 @@ If the model places high importance on age, then a slight change would result in
 a big change to the prediction.
 
 But what if the input attributes are correlated? This is certainly true of age
-and education: there aren't many 16-year olds with PhDs! This means that perturbing age alone will not provide an accurate measure
+and education: there aren't many 16-year olds with PhDs! This means that perturbing 
+age alone will not provide an accurate measure
 of the model's dependency on age. One has to perturb the other input
 attributes as well.
 
@@ -213,7 +218,6 @@ Feature: Asian,  Importance: -0.00032404
 Feature: Female,     Importance: 0.045366
 Feature: Native_American,    Importance: 0.0004861
 ```
-
 As a convenience, FairML includes a basic plotting function to visualize these
 dependencies:
 
