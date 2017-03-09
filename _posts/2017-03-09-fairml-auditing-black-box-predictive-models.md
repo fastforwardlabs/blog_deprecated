@@ -5,6 +5,8 @@ date: 2017-03-09 09:44
 preview_image: /images/2017/03/fairness_and_justice_symbol.png
 feature: true
 post_type: Whitepaper
+author: Julius
+author_link: https://twitter.com/julius_adebayo
 ---
 
 ![Fairness in ML](/images/2017/03/fairness_and_justice_symbol.png)
