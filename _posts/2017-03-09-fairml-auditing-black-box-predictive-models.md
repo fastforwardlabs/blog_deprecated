@@ -5,7 +5,6 @@ date: 2017-03-09 09:44
 preview_image: /images/2017/03/fairness_and_justice_symbol.png
 feature: true
 post_type: Whitepaper
-public_draft: true
 ---
 
 ![Fairness in ML](/images/2017/03/fairness_and_justice_symbol.png)
