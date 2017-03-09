@@ -268,7 +268,7 @@ based on this data and audited them. [Our
 results](https://github.com/adebayoj/fairml/blob/master/doc/images/feature_dependence_plot_fairml_random_forest.png)
 are consistent with the  graph shown above.
 
-## Other work
+## Other Work
 
 There are many other examples of research about auditing black-box models. All use input perturbation to
 measure attribute influence on a black-box model, but use different strategies to perturb the input. Two
