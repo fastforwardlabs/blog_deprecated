@@ -11,7 +11,7 @@ author_link: https://twitter.com/humekathryn
 ---
 ![](/images/2017/04/maze%20image.png)
 
-#####In a modern twist on [Claude Shannon's Theseus](https://www.youtube.com/watch?v=vPKkXibQXGA), SigOpt explains optimization by [teaching a mouse](http://blog.sigopt.com/post/151388283013/sigopt-in-depth-building-a-better-mousetrap-via) to solve a randomly generated maze 
+##### In a modern twist on [Claude Shannon's Theseus](https://www.youtube.com/watch?v=vPKkXibQXGA), SigOpt explains optimization by [teaching a mouse](http://blog.sigopt.com/post/151388283013/sigopt-in-depth-building-a-better-mousetrap-via) to solve a randomly generated maze 
 
 The learning of machine learning refers to the process of updating and tuning the parameters of a model. For example, if we take the function f(x) = ax^2 + bx + c, learning would mean to change the values of a, b, and c so that our function does a better job describing our data. 
 
@@ -59,7 +59,7 @@ I don’t think feature engineering will be automated any time in the near futur
 
 ![](/images/2017/04/tunable%20parameters%20deep%20learning.png)
 
-#####Optimization can be a powerful tool for complex neural network architecture
+##### Optimization can be a powerful tool for complex neural network architecture
 
 **What book or article has had the greatest influence on you recently?**
 
