@@ -1,3 +1,7 @@
+---
+date: 2017-03-10 12:00
+---
+
 Fast Forward Labs Blog Interview 
 
 You studied math and computer science at the University of Waterloo, which has a unique Co-op Program where students alternate between four-month study terms at university and four-month work terms in business, industry, or government. How did this experience shape your interests?
