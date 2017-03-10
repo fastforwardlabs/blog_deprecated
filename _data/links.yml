@@ -91,3 +91,7 @@
 - url: https://arxiv.org/abs/1702.06235
   text: Learning to generate one-sentence biographies from Wikidata
   image: http://blog.fastforwardlabs.com/images/link_images/seq_model_attn.png
+
+- url: https://www.wired.com/2017/02/machine-learning-drifting-real-world-internet-balloons/
+  text: Machine Learning Invades the Real World on Internet Balloons
+  image: https://assets.wired.com/photos/w_582/wp-content/uploads/2017/02/Project-Loon-1.jpg
