@@ -289,7 +289,7 @@ in machine learning has become a [hot button
 issue](https://arxiv.org/abs/1104.3913). The [Fairness, Accountability and
 Transparency in Machine Learning](http://www.fatml.org/) community is active
 and dedicated to this line of research. [Recent work](https://arxiv.org/abs/1610.02413)
-have articulated [new definitions of
+has articulated [new definitions of
 fairness](https://www.cis.upenn.edu/~aaroth/rawlsbandits.html), and [the
 inherent tradeoffs](https://arxiv.org/abs/1609.05807) that different notions of
 fairness lead to.
