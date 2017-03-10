@@ -57,7 +57,7 @@ It’s true that models are built and optimized for a given setting, and as your
 
 I don’t think feature engineering will be automated any time in the near future. Hyperparameter optimization is another example of [letting machines do what machines do best](http://blog.fastforwardlabs.com/2016/05/25/human-machine-algorithms-interview-with-eric.html), and enabling humans to focus on more creative and critical thinking activities. Our brains aren’t made to optimize 20-dimensional functions in our head, but they are made to explore aspects of a data set to frame a problem worth solving. I’d advise aspiring data scientists to make sure they understand the full machine learning pipeline, from collection and processing, through model building, through engineering and shipping the model. You can’t be satisfied with just part of the process. Production machine learning requires a different skill set than theoretical data science. There’s certain ways of thinking and behaving you can only learn by doing, by getting your hands dirty on the job, by working with real, messy data and making a model scale on real infrastructure. 
 
-![](/images/2017/04/tunable%20parameters%20deep%20learning.png
+![](/images/2017/04/tunable%20parameters%20deep%20learning.png)
 
 #####Optimization can be a powerful tool for complex neural network architecture
 
