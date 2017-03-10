@@ -17,12 +17,14 @@ The aim is to increase efficiency and spot patterns in data that humans would ot
 But how do we know if a machine learning model is fair? And what does fairness in machine learning mean?
 
 In this post, we'll explore these questions using
-[FairML](https://github.com/adebayoj/fairml), a new Python library
-that can audit black-box predictive models. We'll apply it to
-a hypothetical risk model based on data collected by ProPublica in their
-investigation of the [COMPAS algorithm](https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing).
-We'll also go over the methodology behind FairML at a conceptual level
-and describe other work addressing bias in machine learning.
+[FairML](https://github.com/adebayoj/fairml), a new Python library that audits
+black-box predictive models and is based on [work I did with my advisor while
+at MIT](https://arxiv.org/abs/1611.04967). We'll apply it to a hypothetical
+risk model based on data collected by ProPublica in their investigation of the
+[COMPAS
+algorithm](https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing).
+We'll also go over the methodology behind FairML at a conceptual level and
+describe other work addressing bias in machine learning.
 
 This post is a prelude to our upcoming research report and prototype on algorithmic interpretability, which we'll release in the next few months. Understanding how algorithms use inputs to inform outputs is, in certain instances, a condition for organizations to adopt machine learning systems. This is particularly salient when algorithms are used for sensitive use cases, like criminal sentencing.
 
