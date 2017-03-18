@@ -1,1 +1,3 @@
-test update file
+url: 'http://blog.fastforwardlabs.com/2017/03/13/practical-deep-learning.html'
+text: 'Practical Deep Learning'
+image: 'http://blog.fastforwardlabs.com/images/2017/03/doc-full-screen.jpg'
