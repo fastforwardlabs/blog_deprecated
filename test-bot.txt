@@ -95,6 +95,6 @@
     text: 'Machine Learning Invades the Real World on Internet Balloons'
     image: 'https://assets.wired.com/photos/w_582/wp-content/uploads/2017/02/Project-Loon-1.jpg'
 -
-    url: 'http://blog.fastforwardlabs.com/2017/03/13/practical-deep-learning.html'
-    text: 'Practical Deep Learning'
-    image: 'http://blog.fastforwardlabs.com/images/2017/03/doc-full-screen.jpg'
+    url: 'https://www.oreilly.com/ideas/ideas-on-interpreting-machine-learning'
+    text: 'Ideas on interpreting machine learning'
+    image: 'https://d3tdunqjn7n0wj.cloudfront.net/1400x933/main_art_2-ddae9ba5567dbd9bc5e0f362097b42ab.jpg'
