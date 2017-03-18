@@ -1,3 +1,100 @@
-url: 'http://blog.fastforwardlabs.com/2017/03/13/practical-deep-learning.html'
-text: 'Practical Deep Learning'
-image: 'http://blog.fastforwardlabs.com/images/2017/03/doc-full-screen.jpg'
+-
+    url: 'https://hbr.org/2016/12/hiring-algorithms-are-not-neutral'
+    text: 'Hiring Algorithms Are Not Neutral'
+    image: 'https://hbr.org/resources/images/article_assets/2016/12/dec16-09-175134657-383x215.jpg'
+-
+    url: 'https://www.theguardian.com/technology/2016/dec/19/discrimination-by-algorithm-scientists-devise-test-to-detect-ai-bias'
+    text: 'Discrimination by algorithm: scientists devise test to detect AI bias'
+    image: 'https://i.guim.co.uk/img/media/b7d49b6cf8a9b93d2feb7ab024ed2e8819a14a2a/0_0_3888_2335/master/3888.jpg?w=1200&amp;h=630&amp;q=55&amp;auto=format&amp;usm=12&amp;fit=crop&amp;crop=faces%2Centropy&amp;bm=normal&amp;ba=bottom%2Cleft&amp;blend64=aHR0cHM6Ly91cGxvYWRzLmd1aW0uY28udWsvMjAxNi8wNi8wNy9vdmVybGF5LWxvZ28tMTIwMC05MF9vcHQucG5n&amp;s=8d7b6fd0d7e8bee469babc176a6fb6fc'
+-
+    url: 'http://course.fast.ai/'
+    text: 'Practical Deep Learning for Coders'
+    image: 'http://i3.ytimg.com/vi/V2h3IOBDvrA/hqdefault.jpg'
+-
+    url: 'https://www.wired.com/2017/01/d-wave-turns-open-source-democratize-quantum-computing/'
+    text: 'Quantum Computing Is Real, and D-Wave Just Open-Sourced It'
+    image: 'https://www.wired.com/wp-content/uploads/2017/01/GettyImages-547934569-1200x630.jpg'
+-
+    url: 'https://github.com/RaRe-Technologies/gensim/blob/128f42ce1350f344537a8313d1588a03fab07a90/docs/notebooks/Word2Vec_FastText_Comparison.ipynb'
+    text: 'Comparison of FastText and Word2Vec'
+    image: 'http://imgur.com/IJUSKpn.png'
+-
+    url: 'https://blog.ought.com/nips-2016-875bb8fadb8c#.qq47cl881'
+    text: '50 Things I learned at NIPs'
+    image: 'https://cdn-images-1.medium.com/max/800/1*YHdae9jFdjEgJM46QSfO-w.jpeg'
+-
+    url: 'http://www.nytimes.com/2016/12/14/magazine/the-great-ai-awakening.html'
+    text: 'The Great AI Awakening'
+    image: 'https://static01.nyt.com/images/2016/12/18/magazine/18ai-cover2/18ai-cover2-articleLarge-v4.jpg'
+-
+    url: 'https://points.datasociety.net/did-media-literacy-backfire-7418c084d88d#.ribqhzie5'
+    text: 'Did Media Literacy Backfire'
+    image: 'https://cdn-images-1.medium.com/max/600/1*_xkUoRuG9HZz3VU3LdeCFw.png'
+-
+    url: 'http://www.newyorker.com/magazine/2017/01/02/rewriting-the-code-of-life'
+    text: 'How DNA Editing Could Change Life on Earth'
+    image: 'http://www.newyorker.com/wp-content/uploads/2017/01/170102_r29230-1200x630-1481836641.jpg'
+-
+    url: 'https://vimeo.com/199488031'
+    text: 'Object Masking - The Wolf of Wall Street'
+    image: /images/link_images/Screen%20Shot%202017-01-23%20at%204.29.25%20PM.png
+-
+    url: 'http://arstechnica.com/information-technology/2017/01/alphago-is-back-and-secretly-crushing-the-worlds-best-human-players/'
+    text: 'That mystery Go player crushing the world’s best online? It was AlphaGo again'
+    image: 'https://cdn.arstechnica.net/wp-content/uploads/2017/01/GettyImages-515689382-800x591.jpg'
+-
+    url: 'https://github.com/marcotcr/lime'
+    text: Lime
+    image: 'https://raw.githubusercontent.com/marcotcr/lime/master/doc/images/twoclass.png'
+-
+    url: 'https://lines.chromeexperiments.com/'
+    text: 'Land Lines'
+    image: 'http://imgur.com/PBJNXfg.png'
+-
+    url: 'https://jaan.io/food2vec-augmented-cooking-machine-intelligence/'
+    text: 'food2vec - Augmented cooking with machine intelligence'
+    image: 'https://jaan.io/images/mise-en-place.jpg'
+-
+    url: 'https://ragulpr.github.io/2016/12/22/WTTE-RNN-Hackless-churn-modeling/'
+    text: 'WTTE-RNN - Less hacky churn prediction'
+    image: 'https://i.imgur.com/eR2OPmP.gif'
+-
+    url: 'http://affinelayer.com/pix2pix/index.html'
+    text: 'Image-to-Image Translation in Tensorflow'
+    image: 'http://blog.fastforwardlabs.com/images/link_images/affinelayer.png'
+-
+    url: 'https://pudding.cool/process/how-to-implement-scrollytelling/'
+    text: 'How to Implement Scrollytelling with Six Different Libraries'
+    image: 'https://pudding.cool/process/how-to-implement-scrollytelling/assets/scrollytelling.gif"'
+-
+    url: 'http://www.unofficialgoogledatascience.com/2017/01/causality-in-machine-learning.html'
+    text: 'Causality in Machine Learning'
+    image: 'https://2.bp.blogspot.com/-SPMRpqxF5Tg/WJGHwp8ZqQI/AAAAAAAAcBE/V3nSX-o_U0UZ9RSSp8p8HPxsFxtxHQK0gCLcB/s400/puppies.png'
+-
+    url: 'https://arxiv.org/abs/1701.02434'
+    text: 'A Conceptual Introduction to Hamiltonian Monte Carlo'
+    image: 'http://blog.fastforwardlabs.com/images/link_images/hmc.png'
+-
+    url: 'https://arxiv.org/abs/1611.03530'
+    text: 'Understanding deep learning requires rethinking generalization'
+    image: 'http://blog.fastforwardlabs.com/images/link_images/generalization.png'
+-
+    url: 'https://www.codelitt.com/blog/doom-ai/'
+    text: 'Building a deep learning DOOM bot'
+    image: 'http://blog.fastforwardlabs.com/images/link_images/Doom_Header-1.jpg'
+-
+    url: 'http://sebastianruder.com/optimizing-gradient-descent/'
+    text: 'An overview of gradient descent optimization algorithms'
+    image: 'http://sebastianruder.com/content/images/2016/09/loss_function_image_tumblr.png'
+-
+    url: 'https://arxiv.org/abs/1702.06235'
+    text: 'Learning to generate one-sentence biographies from Wikidata'
+    image: 'http://blog.fastforwardlabs.com/images/link_images/seq_model_attn.png'
+-
+    url: 'https://www.wired.com/2017/02/machine-learning-drifting-real-world-internet-balloons/'
+    text: 'Machine Learning Invades the Real World on Internet Balloons'
+    image: 'https://assets.wired.com/photos/w_582/wp-content/uploads/2017/02/Project-Loon-1.jpg'
+-
+    url: 'http://blog.fastforwardlabs.com/2017/03/13/practical-deep-learning.html'
+    text: 'Practical Deep Learning'
+    image: 'http://blog.fastforwardlabs.com/images/2017/03/doc-full-screen.jpg'
