@@ -106,3 +106,7 @@
     url: 'http://distill.pub/about/'
     text: 'Distill: A modern Medium for Presenting Machine Learning Research'
     image: 'http://distill.pub/preview.jpg'
+-
+    url: 'https://openai.com/blog/learning-to-communicate/'
+    text: 'Learning to Communicate'
+    image: 'https://openai.com/assets/blog/learning_to_communicate/multi_agent_comm_1-471605aa1baa2c145933775e1a02f63d0db4ffe11436171f109b96a9fdd1b5fd.png'
