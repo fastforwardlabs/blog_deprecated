@@ -102,3 +102,7 @@
     url: 'https://iamtrask.github.io/2017/03/17/safe-ai/'
     text: 'Building Safe A.I.: A Tutorial for Encrypted Deep Learning'
     image: 'https://iamtrask.github.io/img/he.png'
+-
+    url: 'http://distill.pub/about/'
+    text: 'Distill: A modern Medium for Presenting Machine Learning Research'
+    image: 'http://distill.pub/preview.jpg'
