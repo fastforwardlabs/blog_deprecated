@@ -98,3 +98,7 @@
     url: 'https://www.oreilly.com/ideas/ideas-on-interpreting-machine-learning'
     text: 'Ideas on interpreting machine learning'
     image: 'https://d3tdunqjn7n0wj.cloudfront.net/1400x933/main_art_2-ddae9ba5567dbd9bc5e0f362097b42ab.jpg'
+-
+    url: 'https://iamtrask.github.io/2017/03/17/safe-ai/'
+    text: 'Building Safe A.I.: A Tutorial for Encrypted Deep Learning'
+    image: 'https://iamtrask.github.io/img/he.png'
