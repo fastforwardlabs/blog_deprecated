@@ -63,3 +63,7 @@ In this post we showed some of the product possibilities opened up by probabilis
 - How much money would you need to have an reasonable (medium) probability of affording a property [in Brooklyn Heights-Cobble Hill, Brooklyn in 2016](http://www.fastforwardlabs.com/pre/#/price/50-1000000/2010/all_boroughs/brooklyn_heights-cobble_hill)? How about [in the West Village](http://www.fastforwardlabs.com/pre/#/price/50-1000000/2010/all_boroughs/west_village)?
 - In what part of Astoria, Queens are you [most likely to be able to find a property for $1m in 2016](http://www.fastforwardlabs.com/pre/#/probability/1000000-50/2016/all_boroughs/astoria/18966)?
 - If current trends continue, how much would you need to have a reasonable (medium) chance of affording a property [in Bedford, Brooklyn in 2018](http://www.fastforwardlabs.com/pre/#/price/50-1000000/2018/all_boroughs/bedford)? How does that compare to past years?
+
+## Beyond Real Estate
+
+The usefulness of probability distributions extends well beyond real estate prototypes. Read our [interview with Thomas Wiecki](http://blog.fastforwardlabs.com/2017/01/11/thomas-wiecki-on-probabilistic-programming-with.html) to see how they can be used in predicting stock market behavior, and keep an eye on this blog for an upcoming post on how we used probabilistic programming to model the likelihood of loan repayment.
