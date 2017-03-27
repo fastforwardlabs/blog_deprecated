@@ -6,7 +6,6 @@ preview_image: https://quamproxime.files.wordpress.com/2017/03/screen-shot-2017-
 feature: false
 author: Kathryn
 author_link: https://twitter.com/HumeKathryn
-published: false
 ---
 
 ![An image of a clock drawn in a cappuccino melting over the side of the cup, reminiscent of a Salvador Dali painting.](https://quamproxime.files.wordpress.com/2017/03/screen-shot-2017-03-25-at-1-28-55-pm.png)
