@@ -114,3 +114,7 @@
     url: 'https://blog.openai.com/evolution-strategies/'
     text: 'Evolution Strategies as a Scalable Alternative to Reinforcement Learning'
     image: 'https://blog.openai.com/content/images/2017/03/2x-2.jpg'
+-
+    url: 'http://www.theverge.com/2017/3/30/15113162/future-utopia-tellart-design-agency-world-government-summit-dubai'
+    text: 'The Future Agency: Inside the big business of imagining the future'
+    image: 'https://cdn0.vox-cdn.com/thumbor/RuDxcxgAhuzwXHJ2GaDB3k6OQ_8=/0x0:3000x1571/fit-in/1200x630/cdn0.vox-cdn.com/uploads/chorus_asset/file/8250197/PMO_GS15_03__1_.jpg'
