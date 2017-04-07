@@ -122,3 +122,7 @@
     url: 'https://gist.github.com/kylemcdonald/c25c64dabdfd21ca8ab0e23b8e559061'
     text: 'Comparison of different t-SNE implementations for speed and results.'
     image: 'https://pbs.twimg.com/media/C8mDHRcXkAAn-PS.png'
+-
+    url: 'https://research.googleblog.com/2017/04/federated-learning-collaborative.html'
+    text: 'Federated Learning: Collaborative Machine Learning without Centralized Training Data'
+    image: 'https://3.bp.blogspot.com/-sb40Lg5MchE/WOa92rSrXVI/AAAAAAAABsU/edvH01nn2SMCnJle8mLnHT_hCa-xXrnsACLcB/s640/02_Personalization%2Bsleeping.png'
