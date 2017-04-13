@@ -22,7 +22,11 @@
       </h5>
     </div>
   </div>
-  <a class="post-preview-body relative flex flex-wrap content-between internal-post-link" href="{{ include.post.url | absolute_url }}">
+  {% if include.post.external_url %}
+    <a class="post-preview-body relative flex flex-wrap content-between internal-post-link" href="{{ include.post.external_url }}">
+  {% else %}
+    <a class="post-preview-body relative flex flex-wrap content-between internal-post-link" href="{{ include.post.url | absolute_url }}">
+  {% endif %}
     {% if include.post.preview_image %}
       <div class="preview-image" style="background-image: url({% if include.post.preview_image contains '://' %}{{ include.post.preview_image }}{% else %}{{ include.post.preview_image | absolute_url }}{% endif %});)"></div>
     {% else %}
