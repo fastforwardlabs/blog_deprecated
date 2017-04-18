@@ -134,3 +134,7 @@
     url: 'http://www.nature.com/news/astronomers-explore-uses-for-ai-generated-images-1.21398'
     text: 'Astronomers explore uses for AI-generated images'
     image: 'http://www.nature.com/polopoly_fs/7.42071.1485880737!/image/WEB_lead_Nguyen%20and%20Mandelbaum.jpg_gen/derivatives/nature_homepage/WEB_lead_Nguyen%20and%20Mandelbaum.jpg'
+-
+    url: 'https://blog.dominodatalab.com/fitting-gaussian-process-models-python/'
+    text: 'Fitting Gaussian Process Models in Python'
+    image: 'https://blog.dominodatalab.com/wp-content/uploads/2017/03/banner.png'
