@@ -138,3 +138,7 @@
     url: 'https://blog.dominodatalab.com/fitting-gaussian-process-models-python/'
     text: 'Fitting Gaussian Process Models in Python'
     image: 'https://blog.dominodatalab.com/wp-content/uploads/2017/03/banner.png'
+-
+    url: 'http://www.openias.org/variational-coin-toss'
+    text: 'Variational Coin Toss'
+    image: 'http://www.openias.org/img/feature-coin-toss.jpg'
