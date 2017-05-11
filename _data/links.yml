@@ -146,3 +146,7 @@
     url: 'https://research.googleblog.com/2017/05/neural-network-generated-illustrations.html'
     text: 'Neural Network-Generated Illustrations in Allo'
     image: 'https://3.bp.blogspot.com/-AD4KlSCL-2E/WROV2QtjHSI/AAAAAAAABzc/G_f1w3s_RdgOXDx02RcdD1LvSBoOwBrPgCLcB/s640/image2.gif'
+-
+    url: 'https://blog.acolyer.org/2017/05/11/understanding-deep-learning-requires-re-thinking-generalization/'
+    text: 'Understanding deep learning requires re-thinking generalization'
+    image: 'https://adriancolyer.files.wordpress.com/2017/05/understanding-deep-learning-fig-2.jpeg?w=640'
