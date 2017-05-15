@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "A quick look at the reply-to-retweet ratio"
+title: "A Quick Look at the Reply-to-Retweet Ratio"
 date: 2017-05-15 16:00
 published: false
 preview_image: http://www.fastforwardlabs.com/cinephile_tsne/images/Cover.png
@@ -23,11 +23,13 @@ wasn't already obvious.
 
 ![United Airlines tweet](/images/2017/05/united_airlines_tweet.png)
 
+##### [Tweet from United Airlines](https://twitter.com/united/status/851471781827420160)
+
 Which politician sends the worst tweets according to this reply-to-retweet
 ratio measure? And without wishing to add to Donald Trump's problems, are
 things getting worse for him?
 
-We scraped<sup>[1](#myfootnote1)</sup> this information from the accounts
+We scraped<sup><a name="footnote1ref" href="#footnote1">1</a></sup> this information from the accounts
 belonging to Donald Trump, Hillary Clinton, Bernie Sanders, Paul Ryan, and
 weird Twitter favorites Mike Huckabee and dril. Explore the visualization
 below.
@@ -49,8 +51,8 @@ href="https://twitter.com/SpeakerRyan/status/859442620187193345">May 2,
 2017</a></blockquote> <script async src="//platform.twitter.com/widgets.js"
 charset="utf-8"></script>
 
-<sup><a name="myfootnote1">1</a></sup> Note we wrote ugly scraping code to
+<a name="footnote1" href="#footnote1ref">1</a> Note we wrote ugly scraping code to
 collect this information because the official Twitter API does not return reply
 count. You can see the code (and use it to download information for another
-account) on [GitHub](TK LINK). Our visualization only shows tweets since
+account) on [GitHub](https://github.com/fastforwardlabs/tweetratio). Our visualization only shows tweets since
 January 2016 that received more than 50 retweets.
