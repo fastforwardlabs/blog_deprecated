@@ -6,7 +6,7 @@ published: false
 preview_image: http://www.fastforwardlabs.com/cinephile_tsne/images/Cover.png
 feature: false
 post_type: Demo
-author: Sepan
+author: Sepand
 author_link: https://twitter.com/s3pans
 interview_with: Mike
 interview_with_link: https://twitter.com/mikepqr
@@ -51,7 +51,7 @@ href="https://twitter.com/SpeakerRyan/status/859442620187193345">May 2,
 2017</a></blockquote> <script async src="//platform.twitter.com/widgets.js"
 charset="utf-8"></script>
 
-<a name="footnote1" href="#footnote1ref">1</a> Note we wrote ugly scraping code to
+<a name="footnote1" href="#footnote1ref">1</a>. Note we wrote ugly scraping code to
 collect this information because the official Twitter API does not return reply
 count. You can see the code (and use it to download information for another
 account) on [GitHub](https://github.com/fastforwardlabs/tweetratio). Our visualization only shows tweets since
