@@ -108,11 +108,12 @@
     font-style: italic
     font-weight: 700
 
-.post img
+.post img, .post iframe.ffl-demo
   width: 100vw
   line-height: 0
   margin: 1rem -1rem
   display: block
+  border: none
   @media (min-width: $measure_max * 0.667)
     width: auto
     max-width: 100%
@@ -120,6 +121,11 @@
   +measure_max
     // max-width: $measure_max * 1.333
     margin: 1.5rem auto
+
+.post iframe.ffl-demo
+  @media (min-width: $measure_max * 0.667)
+    width: 100%
+    width: calc(100% - 2rem)
 
 div.highlighter-rouge
   font-family: 'Monaco', monospace
