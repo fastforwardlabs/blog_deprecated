@@ -21,7 +21,7 @@ times more replies than retweets. Those replies are not filled with praise, and
 that ratio was a sign to United's PR team that they were in trouble, in case it
 wasn't already obvious.
 
-![United Airlines tweet](/img/2017/05/united_airlines_tweet.png)
+![United Airlines tweet](/images/2017/05/united_airlines_tweet.png)
 
 Which politician sends the worst tweets according to this reply-to-retweet
 ratio measure? And without wishing to add to Donald Trump's problems, are
