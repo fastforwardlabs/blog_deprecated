@@ -3,8 +3,8 @@ layout: post
 title: "A Quick Look at the Reply-to-Retweet Ratio"
 date: 2017-05-15 16:00
 published: false
-preview_image: http://www.fastforwardlabs.com/cinephile_tsne/images/Cover.png
-feature: false
+preview_image: /images/2017/05/tweetratio.png
+feature: true
 post_type: Demo
 author: Sepand
 author_link: https://twitter.com/s3pans
