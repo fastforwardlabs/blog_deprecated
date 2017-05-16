@@ -53,8 +53,9 @@ For a more detailed explanation of this dataset, check out the write up on [New
 York Magazine's Select All technology
 blog](http://nymag.com/selectall/2017/05/paul-ryan-has-worst-ratio-on-twitter.html).
 
-<a name="footnote1" href="#footnote1ref">1</a>. Note we wrote ugly scraping code to
+<a name="footnote1" href="#footnote1ref">1</a>. We wrote ugly scraping code to
 collect this information because the official Twitter API does not return reply
 count. You can see the code (and use it to download information for another
-account) on [GitHub](https://github.com/fastforwardlabs/tweetratio). Our visualization only shows tweets since
-January 2016 that received more than 50 retweets.
+account) on [GitHub](https://github.com/fastforwardlabs/tweetratio). Our
+visualization shows tweets since January 2016 that received more than 50
+retweets.
