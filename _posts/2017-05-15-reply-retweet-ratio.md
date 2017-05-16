@@ -49,6 +49,10 @@ href="https://twitter.com/SpeakerRyan/status/859442620187193345">May 2,
 2017</a></blockquote> <script async src="//platform.twitter.com/widgets.js"
 charset="utf-8"></script>
 
+For a more detailed explanation of this dataset, check out the write up on [New
+York Magazine's Select All technology
+blog](http://nymag.com/selectall/2017/05/paul-ryan-has-worst-ratio-on-twitter.html).
+
 <a name="footnote1" href="#footnote1ref">1</a>. Note we wrote ugly scraping code to
 collect this information because the official Twitter API does not return reply
 count. You can see the code (and use it to download information for another
