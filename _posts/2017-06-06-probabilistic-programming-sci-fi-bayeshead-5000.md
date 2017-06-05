@@ -1,18 +1,18 @@
 ---
 layout: post
 title: "Probabilistic Programmming Sci-Fi: BayesHead 5000"
-date: 2017-06-06 11:00
+date: 2017-06-05 11:00
 preview_image: /images/2017/06/mc.png
 author: "Liam Sweeney"
 post_type: "Fiction"
 published: false
 ---
 
-##### We believe in fiction as an important tool for imagining future relationships to technology. In our reports on new technolies we feature short science fiction stories looking at possible implications. The following story, written by Liam Sweeney ([email](mailto:liammerrill@gmail.com)), appeared in our [Probabilistic Programming report](http://blog.fastforwardlabs.com/2017/01/30/the-algorithms-behind-probabilistic-programming.html). After you're finished with this story be sure to check out its inspiration, George Saunders's [I Can Speak](http://www.newyorker.com/magazine/1999/06/21/i-can-speak).
+##### We believe in fiction as an important tool for imagining future relationships to technology. In our reports on new technologies we feature short science fiction stories that imagine the possible implications. The following story, written by Liam Sweeney ([email](mailto:liammerrill@gmail.com)), appeared in our [Probabilistic Programming report](http://blog.fastforwardlabs.com/2017/01/30/the-algorithms-behind-probabilistic-programming.html). After you're finished with this story be sure to check out its inspiration, George Saunders's [I Can Speak](http://www.newyorker.com/magazine/1999/06/21/i-can-speak).
 
 ![Monte Carlo Corporation logo](/images/2017/06/mc.png)
 
-Re: Inquiry on Limitations of the BayesHead 5000
+**Re: Inquiry on Limitations of the BayesHead 5000**
 
 Dear Mr. Jim,
 
@@ -32,9 +32,9 @@ Luckily, with an upgrade to the BayesHead 6000, you’ll no longer be in danger 
 
 I have to say, Mr. Jim, I do sympathize with your position, and especially with your daughter. While we cannot accept responsibility for your predicament, we understand your frustration that your confidence in our product has resulted in a depletion of your daughter’s tuition fund (although we cannot ignore the silver lining that perhaps she will perform as you initially had hoped! now that she has a chance for another round of applications). That said, if it is her desire to attend a safety school this year, I would like to refer you to the student loan division of Monte Carlo Inc. They offer extremely reasonable interest rates and, as I’ll let them explain, significant discounts when loans are paired with a BayesHead upgrade.
 
-Best Regards,
+Best Regards,  
 Gary
 
-Sales Associate
-Monte Carlo Inc.
-Luck: It’s all in your head
+Sales Associate  
+Monte Carlo Inc.  
+*Luck: It’s all in your head*
