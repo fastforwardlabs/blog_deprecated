@@ -1,11 +1,10 @@
 ---
 layout: post
 title: "Probabilistic Programmming Sci-Fi: BayesHead 5000"
-date: 2017-06-05 11:00
+date: 2017-06-06 10:30
 preview_image: /images/2017/06/mc.png
 author: "Liam Sweeney"
 post_type: "Fiction"
-published: false
 ---
 
 ##### We believe in fiction as an important tool for imagining future relationships to technology. In our reports on new technologies we feature short science fiction stories that imagine the possible implications. The following story, written by Liam Sweeney ([email](mailto:liammerrill@gmail.com)), appeared in our [Probabilistic Programming report](http://blog.fastforwardlabs.com/2017/01/30/the-algorithms-behind-probabilistic-programming.html). After you're finished with this story be sure to check out its inspiration, George Saunders's [I Can Speak](http://www.newyorker.com/magazine/1999/06/21/i-can-speak).
