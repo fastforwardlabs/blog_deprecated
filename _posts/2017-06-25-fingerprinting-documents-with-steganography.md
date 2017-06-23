@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "F⁠ingerprinting documents​ with steganography​"
-date: 2017-06-23 12:00
+date: 2017-06-23 11:50
 preview_image: /images/2017/06/confusables.png
 author: Noam
 author_link: "https://github.com/n-s-f"
