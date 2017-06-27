@@ -189,13 +189,13 @@ well as which branchpoints were available to​ steganos​ when​ the message 
 encoded.
 
 As​ an​ example, using​ the [current
-version](http://github.com/fastforwardlabs/steganos/tree/2378a]) of steganos, we​
+version](http://github.com/fastforwardlabs/steganos]) of steganos, we​
 can encode 1756 bits​ into​ this text‏‎. If we​ are using​ this​ for​ user-identification​
 and expect​ to always see​ leaks​ of the full​ document, that means​ we can track​
 10^529 users (ie: vastly more than the​ number of​ people who​ have ever​ existed).
 
 
-```.py
+```.python
 import steganos
 
 message = '101'
