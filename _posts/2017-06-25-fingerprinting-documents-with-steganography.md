@@ -195,7 +195,7 @@ and expect​ to always see​ leaks​ of the full​ document, that means​ w
 10^529 users (ie: vastly more than the​ number of​ people who​ have ever​ existed).
 
 
-```.python
+```python
 import steganos
 
 message = '101'
