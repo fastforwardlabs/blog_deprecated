@@ -5,7 +5,7 @@ date: 2017-05-26 15:28
 preview_image: /images/2017/05/dykema-basin-model-1_525.jpg
 feature: false
 author: Manny
-published: false
+published: true
 author_link: https://twitter.com/mannymoss
 ---
 
