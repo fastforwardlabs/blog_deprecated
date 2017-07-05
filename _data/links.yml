@@ -158,3 +158,7 @@
     url: 'http://seat14c.com'
     text: 'A flight to the future. A new world to consider.'
     image: 'https://s3-us-west-1.amazonaws.com/xprize-ana-assets/images/banners/content-submssion-banner.jpg'
+-
+    url: 'https://www.youtube.com/watch?v=Al0iYEgbWsI'
+    text: 'VR Notebook Flip Through'
+    image: 'https://i.ytimg.com/vi/Al0iYEgbWsI/maxresdefault.jpg'
