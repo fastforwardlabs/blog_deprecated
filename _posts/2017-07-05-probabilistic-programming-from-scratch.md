@@ -1,21 +1,21 @@
 ---
 layout: post
 title: "Probabilistic programming from scratch"
-date: 2017-07-05 10:30
+date: 2017-07-06 12:00
 preview_image: /images/2017/07/output_30_0.png
 author: Mike
 author_link: "https://twitter.com/mikepqr"
 feature: true
-published: false
+published: true
 ---
 
 ##### This article contains highlights from a series of [three interactive video tutorials](https://www.safaribooksonline.com/search/?query=%22Probabilistic%20Programming%20from%20Scratch%22&extended_publisher_data=true&highlight=true&is_academic_institution_account=false&source=user&include_assessments=false&include_courses=true&include_orioles=true&include_playlists=true&publishers=O%27Reilly%20Media%2C%20Inc.&field=title&sort=relevance&utm_source=oreilly&utm_medium=newsite&utm_campaign=probabilistic-programming-from-scratch-top-cta-orioles-link) on probabilistic programming from scratch published on O'Reilly Safari (login required).
 
 ##### If you're interested in the business case for probabilistic programming the [Fast Forward Labs report](http://blog.fastforwardlabs.com/2017/01/18/new-research-on-probabilistic-programming.html) discusses it in detail, and compares modern industrial strength systems like Stan and PyMC3. Please [get in touch](http://www.fastforwardlabs.com/#contact) if you're interested in working with us.
 
-##### This article is [available as a Jupyter Notebook](http://TODO-INSERT-LINK).
+##### This article is [available as a Jupyter Notebook](https://github.com/fastforwardlabs/probabilistic-programming-from-scratch).
 
-Real-world data is almost always incomplete or innaccurate in some way. This means that the uncertain conclusions we draw from it are only meaningful if we can answer the question: how uncertain?
+Real-world data is almost always incomplete or inaccurate in some way. This means that the uncertain conclusions we draw from it are only meaningful if we can answer the question: how uncertain?
 
 One way to do this is using Bayesian inference. But, while Bayesian inference is conceptually simple, it can be analytically and computationally difficult in practice. Probabilistic programming is a paradigm that abstracts away some of this complexity.
 
@@ -62,7 +62,7 @@ def posterior_sampler(data, prior_sampler, simulate):
 
 This function turns the _prior_ distribution into the _posterior_. What does that mean?
 
-I talk about these distributions in more detail in [the Orioles](https://www.safaribooksonline.com/search/?query=%22Probabilistic%20Programming%20from%20Scratch%22&extended_publisher_data=true&highlight=true&is_academic_institution_account=false&source=user&include_assessments=false&include_courses=true&include_orioles=true&include_playlists=true&publishers=O%27Reilly%20Media%2C%20Inc.&field=title&sort=relevance&utm_source=oreilly&utm_medium=newsite&utm_campaign=probabilistic-programming-from-scratch-top-cta-orioles-link), but for this article, the rough idea is sufficient: samples from the prior distribution are our best guesses of the values of the unknown parameter of our system. In the case of an A/B test, this is the conversion fraction of a layout. These guesses are made before we do the experiment.
+I talk about these distributions in more detail in [the video tutorials](https://www.safaribooksonline.com/search/?query=%22Probabilistic%20Programming%20from%20Scratch%22&extended_publisher_data=true&highlight=true&is_academic_institution_account=false&source=user&include_assessments=false&include_courses=true&include_orioles=true&include_playlists=true&publishers=O%27Reilly%20Media%2C%20Inc.&field=title&sort=relevance&utm_source=oreilly&utm_medium=newsite&utm_campaign=probabilistic-programming-from-scratch-top-cta-orioles-link), but for this article, the rough idea is sufficient: samples from the prior distribution are our best guesses of the values of the unknown parameter of our system. In the case of an A/B test, this is the conversion fraction of a layout. These guesses are made before we do the experiment.
 
 Samples from the posterior distribution, meanwhile, are guesses of the same parameters made _after_ the experiment, in the light of the data we gathered. Once you have the posterior, you can answer concrete questions about the implications of the data, such as how likely it is that layout B is better, given our data.
 
@@ -98,7 +98,7 @@ Here's what happens when we run this function a few times to simulate 100 visito
 Effectively, this function runs a fake A/B test in which we already know the conversion fraction. Here's how it works. The `random` function returns a random floating point number between 0 and 1. That number will be smaller than `p` with probability equal to `p`. We use a generator expression to do this `n_visitors` times. `outcomes` is then an iterable of booleans, `True` if that trial was a success (i.e. the ith visitor converted) and `False` if not. Finally we take advantage of the fact that the `sum` of an iterable of booleans is equal to the number of `True` elements it contains. 
 
 We use a generator comprehension in this function because `n_visitors` could potentially be very large, and we want to do these calculations lazily and avoid holding the
-outcome for each visitor in memory simultaneously. (If Python generators are new to you, I recommend you [watch](https://www.youtube.com/watch?v=EnSu9hHGq5o) or [read](https://nedbatchelder.com/text/iter.html) Ned Batchelder's fantastic PyCon 2013 talk, "How To Loop Like a Native" for an introduction. If you're not using generators, you're not using the full power of Python. I talk about them much more in the Orioles.)
+outcome for each visitor in memory simultaneously. (If Python generators are new to you, I recommend you [watch](https://www.youtube.com/watch?v=EnSu9hHGq5o) or [read](https://nedbatchelder.com/text/iter.html) Ned Batchelder's fantastic PyCon 2013 talk, "How To Loop Like a Native" for an introduction. If you're not using generators, you're not using the full power of Python. I talk about them much more in the video tutorials.)
 
 Finally we need `prior_sampler`. This should be a generator that yields a large (potentially infinite) number of guesses for the conversion fraction of a layout. Suppose we've never used layout A. Logically we know that it must be somewhere between 0 and 100%, but other than that we have no idea. This generator captures that idea:
 
