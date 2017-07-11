@@ -11,6 +11,9 @@ collections:
   uploads:
     title: Uploads
     output: true
+  newsletters:
+    title: Newsletters
+    output: true
 email: contact@fastforwardlabs.com
 description: 'Fast Forward Labs is a machine intelligence research company. We focus on taking technologies that are just becoming possible, and making them useful.'
 baseurl: ''
