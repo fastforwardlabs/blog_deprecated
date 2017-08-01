@@ -186,3 +186,7 @@
     url: 'https://limn.it/utopian-hacks/'
     text: 'Utopian Hacks'
     image: 'https://limn.it/wp-content/uploads/v02n05p005-SolPC-ad.png'
+-
+    url: 'http://ruder.io/multi-task/'
+    text: 'An Overview of Multi-Task Learning for Deep Learning'
+    image: 'http://ruder.io/content/images/2017/05/relationship_networks.png'
