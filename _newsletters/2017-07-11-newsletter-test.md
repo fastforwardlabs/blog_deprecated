@@ -1,12 +1,12 @@
 ---
+layout: newsletter
 ---
-<style type="text/css">.class_styled { color: blue }</style>
 
 # Newsletter test
 
 Newsletter test
 
-<div class="class_styled"><p>blue text, this would mean stylesheet works</p></div>
+<div class=""><p>blue text, <a href="#">this would mean</a> stylesheet works</p></div>
 
 <div style="color: red"><p>red text, this would mean inline styles work</p></div>
 

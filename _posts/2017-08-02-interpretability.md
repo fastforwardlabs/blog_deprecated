@@ -2,7 +2,7 @@
 layout: post
 title: "New Research on Interpretability"
 date: 2017-08-02 09:00
-preview_image: /images/2017/08/ff06-logo.gif
+preview_image: /images/2017/08/ff06-animation.gif
 author: Mike
 author_link: "https://twitter.com/mikepqr"
 feature: true
@@ -81,8 +81,7 @@ machines.
 ## Learn More
 
 We will host a [public webinar on
-interpretability](https://mlinterpretability.splashthat.com/) on September 6
-2017. We'll be joined by guests Patrick Hall (Senior Data Scientist at H2O,
+interpretability](https://mlinterpretability.splashthat.com/) on September 6 2017. We'll be joined by guests Patrick Hall (Senior Data Scientist at H2O,
 co-author of [Ideas on Interpreting Machine
 Learning](https://www.oreilly.com/ideas/ideas-on-interpreting-machine-learning))
 and Sameer Singh (Assistant Professor of Computer Science at UC Irvine,
