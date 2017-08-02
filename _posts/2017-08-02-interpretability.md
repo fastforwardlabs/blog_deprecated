@@ -6,7 +6,7 @@ preview_image: /images/2017/08/ff06-animation.gif
 author: Mike
 author_link: "https://twitter.com/mikepqr"
 feature: true
-published: false
+published: true
 ---
 
 We're excited to release the latest prototype and report from our machine
