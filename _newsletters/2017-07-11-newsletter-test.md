@@ -26,7 +26,7 @@ Topic models (e.g., [Latent Dirichlet Allocation](http://ai.stanford.edu/~ang/pa
 
 An automated approach for deciding if a topic model is good is to have a computer calculate its perplexity. Perplexity is a measure that results from the comparison of the predicted and actual distribution of topics across documents on a held-out test, i.e., a set of documents not seen during model training. But in the same way that improving the accuracy of a recommendation engine doesn't necessarily result in more sales, improving the perplexity of topic models does not necessarily result in a better summarization product. In fact, as shown in [Reading Tea Leaves: How Humans Interpret Topic Models](https://papers.nips.cc/paper/3700-reading-tea-leaves-how-humans-interpret-topic-models.pdf), it often doesn't!
 
-![]({{ github_url }}/images/2017/08/lda-diagram.png)
+![]({{ site.github.url }}/images/2017/08/lda-diagram.png)
 
 ##### An illustration of Latent Dirichlet Allocation (LDA), a topic modeling technique.
 
@@ -34,7 +34,7 @@ In practice, data scientists look at the automatically extracted topics of the m
 
 That's why we are excited to see [An Automatic Approach for Document-level Topic Model Evaluation](https://arxiv.org/abs/1706.05140) by Shraey Bhatia and collaborators. They show that it's not enough to look at the top few words in each topic; it's easy to build a topic model that generates coherent topics whilst failing to associate topics with documents in a sensible manner. To ensure that topic models hit both objectives, data scientists must _also_ look at the top few topics in each document. Building upon this insight, Bhatia and collaborators offer an automated measure of the quality of the allocation of topics to documents that relies on the coherence of topics _and_ the association between topics and documents. Crucially, as verified by crowdsourcing, their measure does correlate closely with human validators.
 
-![]({{ github_url }}/images/2017/08/human-judgement.jpg)
+![]({{ site.github.url }}/images/2017/08/human-judgement.jpg)
 
 ##### The human judgments of the fit between topic models and the analyzed documents correlates closely with the model's assessment.
 
@@ -44,7 +44,7 @@ The number of documents we create and store is growing; we are in need of techni
 
 In machine learning, even the most sophisticated algorithms are nothing without the right data on which to run them. Problems with training data can result in conspicuous failures that highlight the need for a better understanding not just of algorithms, but also of the datasets on which the algorithms are training. In a recent article from [co.design](https://www.fastcodesign.com/90134155/the-most-crucial-design-job-of-the-future), Caroline Sinders calls the "Data Ethnographer" the "most crucial design job of the future." We agree; let's write that job description.
 
-![]({{ github_url }}/images/2017/08/crabs.jpg)
+![]({{ site.github.url }}/images/2017/08/crabs.jpg)
 
 ##### Data Ethnography can help us understand why these french fries were classified as crabs.
 
