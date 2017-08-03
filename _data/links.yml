@@ -190,3 +190,7 @@
     url: 'http://ruder.io/multi-task/'
     text: 'An Overview of Multi-Task Learning for Deep Learning'
     image: 'http://ruder.io/content/images/2017/05/relationship_networks.png'
+-
+    url: 'http://ncase.me/trust/'
+    text: 'The Evolution of Trust'
+    image: 'http://ncase.me/trust/social/thumbnail.png'
