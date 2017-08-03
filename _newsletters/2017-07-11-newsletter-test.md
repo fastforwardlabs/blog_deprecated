@@ -1,8 +1,7 @@
 ---
 layout: newsletter
+slug: 2017-07-11-newsletter-test
 ---
-
-![Fast Forward Labs Logo](/images/2017/08/ff-logo-horizontal-white-bg.png)
 
 ## Introduction
 
@@ -10,7 +9,7 @@ As a society, we like hopping on bandwagons. In the 1950s and 60s, we hopped on 
 
 Welcome to the Fast Forward Labs' public newsletter. Once a month, we will share with you updates on data, data science, machine learning, and AI - _without_ jumping on the bandwagon.
 
-## *"Seldom do more than a few of nature's secrets ... "*
+## *"Seldom do more than a few of nature's secrets..."*
 *"... give way at one time,"* said Shannon. It is an exciting time to be working in the field of machine learning and AI. These tools can help diagnose disease, achieving [higher accuracy of tumor classification on slides of lung cancer tissue](https://med.stanford.edu/news/all-news/2016/08/computers-trounce-pathologists-in-predicting-lung-cancer-severity.html) compared to human medical doctors, for example. However, for all its success, today's AI solves problems in narrow domains. [Google's AlphaGo](https://research.googleblog.com/2016/01/alphago-mastering-ancient-game-of-go.html) beat [the best human Go players](https://techcrunch.com/2017/05/23/googles-alphago-ai-beats-the-worlds-best-human-go-player/), a tremendous success - but AlphaGo was successful because its developers [carefully studied and exploited characteristics of the game Go](https://medium.com/@karpathy/alphago-in-context-c47718cb95a5), a deterministic, fully observed, two-player, zero-sum game.
 
 AI is not the threat it is sometimes made out to be either. A [recent headline](http://www.pcgamer.com/facebook-kills-ai-that-invented-its-own-language-because-english-was-slow/): *"Facebook kills AI that invented its own language because English was slow."* Facebook toyed with a reinforcement learning system in which two virtual agents could achieve a task [only if they learned to exchange information *in some way*](https://research.fb.com/publications/multi-agent-cooperation-and-the-emergence-of-natural-language/). Given the world's multitude of ways for information exchange, from English to Irish Gaelic or even Morse code, it would have been surprising had the agents developed the _English_ language for the task.
@@ -27,7 +26,7 @@ Topic models (e.g., [Latent Dirichlet Allocation](http://ai.stanford.edu/~ang/pa
 
 An automated approach for deciding if a topic model is good is to have a computer calculate its perplexity. Perplexity is a measure that results from the comparison of the predicted and actual distribution of topics across documents on a held-out test, i.e., a set of documents not seen during model training. But in the same way that improving the accuracy of a recommendation engine doesn't necessarily result in more sales, improving the perplexity of topic models does not necessarily result in a better summarization product. In fact, as shown in [Reading Tea Leaves: How Humans Interpret Topic Models](https://papers.nips.cc/paper/3700-reading-tea-leaves-how-humans-interpret-topic-models.pdf), it often doesn't!
 
-![](/images/2017/08/lda-diagram.png)
+![]({{ github_url }}/images/2017/08/lda-diagram.png)
 
 ##### An illustration of Latent Dirichlet Allocation (LDA), a topic modeling technique.
 
@@ -35,7 +34,7 @@ In practice, data scientists look at the automatically extracted topics of the m
 
 That's why we are excited to see [An Automatic Approach for Document-level Topic Model Evaluation](https://arxiv.org/abs/1706.05140) by Shraey Bhatia and collaborators. They show that it's not enough to look at the top few words in each topic; it's easy to build a topic model that generates coherent topics whilst failing to associate topics with documents in a sensible manner. To ensure that topic models hit both objectives, data scientists must _also_ look at the top few topics in each document. Building upon this insight, Bhatia and collaborators offer an automated measure of the quality of the allocation of topics to documents that relies on the coherence of topics _and_ the association between topics and documents. Crucially, as verified by crowdsourcing, their measure does correlate closely with human validators.
 
-![](/images/2017/08/human-judgement.jpg)
+![]({{ github_url }}/images/2017/08/human-judgement.jpg)
 
 ##### The human judgments of the fit between topic models and the analyzed documents correlates closely with the model's assessment.
 
