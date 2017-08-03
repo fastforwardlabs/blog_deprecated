@@ -4,11 +4,11 @@ layout: newsletter
 
 # Newsletter test
 
+![FF06 Interpretability](/images/2017/08/ff06-animation.gif)
+
+![FF06 Interpretability]({{ site.github.url }}/images/2017/08/ff06-animation.gif)
+
 Newsletter test
-
-<div class=""><p>blue text, <a href="#">this would mean</a> stylesheet works</p></div>
-
-<div style="color: red"><p>red text, this would mean inline styles work</p></div>
 
 This is testing the way the [newsletter](http://nymag.com/newsletters/) handles passing a URL to MailChimp from the blog.
 
