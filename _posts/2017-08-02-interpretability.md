@@ -92,9 +92,8 @@ black box machine learning models).
 
 We offer our research on interpretability in a few ways:
 
- - Single report and prototype (digital and physical copies)
- - Annual research subscription (access to all our research)
+ - Annual research subscription (for individuals and corporate members)
  - Subscription and advising (research and time with our team)
- - Special projects and workshops (help to build a great data product or organization)
+ - Special projects and workshops (help to build a great data product or strategy)
 
 Email us at <contact@fastforwardlabs.com> if you’d like to learn more!
