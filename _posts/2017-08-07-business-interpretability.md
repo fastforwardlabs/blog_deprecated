@@ -9,8 +9,6 @@ feature: false
 published: true
 ---
 
-# 
-
 Last week we launched the latest prototype and report from our machine
 intelligence R&D team:
 [_Interpretability_](http://blog.fastforwardlabs.com/2017/08/02/interpretability.html).
