@@ -13,11 +13,11 @@ published: false
 
 ##### The [Tabula Rogeriana](https://en.wikipedia.org/wiki/Tabula_Rogeriana), a world map created by Muhammad al-Idrisi through traveler interviews in 1154.
 
-The Wikipedia corpus is one of the favorite datasets of the machine learning community. It is often used for experimenting, benchmarking and providing how-to examples. These experiments are generally kept separate from the Wikipedia user interface, however, which has intentionally been kept simple and true to the early hypertext vision of the web. For this experiment, [_Encartopedia_](http://encartopedia.dev.fastforwardlabs.com), I used machine learning techniques and visualization to explore new navigation possibilities for Wikipedia while preserving its hypertextual feel.
+The Wikipedia corpus is one of the favorite datasets of the machine learning community. It is often used for experimenting, benchmarking and providing how-to examples. These experiments are generally kept separate from the Wikipedia user interface, however, which has intentionally been kept simple and true to the early hypertext vision of the web. For this experiment, [_Encartopedia_](http://encartopedia.fastforwardlabs.com), I used machine learning techniques and visualization to explore new navigation possibilities for Wikipedia while preserving its hypertextual feel.
 
 ![Encartopedia](/images/2017/08/enc-ui.png)
 
-##### [Encartopedia](http://encartopedia.dev.fastforwardlabs.com) features the conventional Wikipedia interface in the left panel, and a mapping of articles based on similiarity on the right.
+##### [Encartopedia](http://encartopedia.fastforwardlabs.com) features the conventional Wikipedia interface in the left panel, and a mapping of articles based on similiarity on the right.
 
 ## Mapping articles
 
