@@ -11,25 +11,37 @@ published: true
 
 ![Tabula Rogeriana](/images/2017/08/enc-tabula.jpg)
 
-Wikipedia corpus is being used a lot in ML community for experimenting, benchmarking and providing examples, however the Wikipedia user interface is intentionally kept simple without adding layers of information on top of the content. So I saw great potential to use some ML techniques and augment new possibilities of navigation to Wikipedia without changing its original hypertextual feel. The result is **[Encartopedia](http://encartopedia.dev.fastforwardlabs.com/)**:
+##### The [Tabula Rogeriana](https://en.wikipedia.org/wiki/Tabula_Rogeriana), a world map created by Muhammad al-Idrisi through traveler interviews in 1154.
+
+The Wikipedia corpus is one of the favorite datasets of the machine learning community. It is often used for experimenting, benchmarking and providing how-to examples. These experiments are kept separate from the Wikipedia user interface, however, which has intentionally been kept simple and true to the early hypertext vision of the web. For this experiment, [_Encartopedia_](http://encartopedia.dev.fastforwardlabs.com), I used machine learning techniques and visualization to explore new navigation possibilities for Wikipedia while preserving its hypertextual feel.
 
 ![Encartopedia](/images/2017/08/enc-ui.png)
 
-The starting point for the research was [hatnote.com](http://seealso.hatnote.com/) which has a glossary of Wikipedia visualizations and alternative user interfaces. Among those examples [Wikigalaxy](http://wiki.polyfra.me/) by [Owen Cornec](http://byowen.com/) was the most inspiring for the attempt in mapping the semantic space of Wikipedia into a navigable space. From there I borrowed the coordinates of the dimensionality reduction algorithm, mapping the articles to 2D coordinates for 100k top Wikipedia articles. In order to have coordinates for all 5M+ Wikipedia articles I used a method similar to this [benchmark](https://rare-technologies.com/performance-shootout-of-nearest-neighbours-contestants/) to create a fast index of 500 dimensional LSA vectors for all 5M+ articles using [‘annoy‘](https://github.com/spotify/annoy) to query the nearest neighbors of the article and use triangulation to estimate the position of the new article. The ‘annoy’ index also returns the k-nearest neighbors for any articles, which has been employed in the Encartopedia UI.
+##### [Encartopedia](http://encartopedia.dev.fastforwardlabs.com) features the conventional Wikipedia interface in the left panel, and a mapping of articles based on similiarity on the right.
 
-In order to have the color coding of the points to be consistent with the result of t-SNE, I found applying [DBSCAN](http://scikit-learn.org/stable/modules/generated/sklearn.cluster.DBSCAN.html) clustering algorithm over the result of t-SNE coordinates very simple and sufficiently good. Unlike many other clustering algorithms DBSCAN doesn’t create evenly sized clusters so the result of clustering ends up being very similar to t-SNE clusters after some parameter tuning. DBSCAN doesn’t assign categories to all the points but it is easy to assign those points to a cluster in the second pass using [Nearest Neighbors](http://scikit-learn.org/stable/modules/neighbors.html). To name those clusters I scraped the Wikipedia Categories assigned to those articles and found the top category shared between those articles.
+## Mapping articles
 
-<p>
-	<img src="/images/2017/08/enc-color.png" alt="coloring tsne" style="width: 310px; display: inline-block; margin: 0"/>
-	<img src="/images/2017/08/enc-voro.png" alt="voroni tsne" style="width: 340px; display: inline-block; margin: 0"/>
-	<div style="width: 90%; margin: 10px auto; font-size: 0.75em; text-align: center">
-		<div><b>Left:</b> Color coding points by clustering the result of t-SNE using DBSCAN</div>
-		<div><b>Right:</b> Overlaying the clusters with voronoi diagram for mouseover interactions</div>
-	</div>
-</p>
+The starting point for the research was [hatnote.com](http://seealso.hatnote.com/) which has a glossary of Wikipedia visualizations and alternative user interfaces. Among those examples [Wikigalaxy](http://wiki.polyfra.me/) by [Owen Cornec](http://byowen.com/) was the most inspiring for the attempt in mapping the semantic space of Wikipedia into a navigable space. From Wikigalaxy I borrowed the coordinates of their dimensionality reduction algorithm, mapping the articles to 2D coordinates for the 100,000 top Wikipedia articles.
 
+The mapping of the top 100,000 articles makes up the base visualization in the right panel of Encartopedia. The mapping is not only limited to those 100,000 articles, however. Any article you navigate to in Wikipedia can be located on the navigation map. To make this possible I used a method similar to this [benchmark](https://rare-technologies.com/performance-shootout-of-nearest-neighbours-contestants/) to create a fast index of 500 dimensional LSA vectors for all five million articles. I used [Annoy](https://github.com/spotify/annoy) to query the nearest neighbors of the chosen article and used triangulation to then place the article on the map. The nearest neighbors are also displayed above the Wikipedia article in the "Semantic Neighbors" section.
 
-The UI is build using React and Redux. The map is mostly in THREE.js and rendered on a canvas except for the annotations which are SVG. Using D3.js is almost inevitable in any data-driven UI, especially with the modular design of d3.js version 4. 
+## Categorizing clusters
 
-In the end I wanted to mention how grateful I am for Fast Forward Labs, especially [Grant](https://twitter.com/GrantCuster), [Hilary](https://twitter.com/hmason) and [Micha](https://github.com/mynameisfiber) for giving me the opportunity and supporting  to work on this project which I was fascinated about for a long time. My interest in Wikipedia is not just because I spend too much time reading random articles, but also the idea of the ultimate encyclopedia containing the totality of human knowledge. Once such an encyclopedia was an idealistic dream that was mostly [fantasized in literature](https://www.pastemagazine.com/blogs/lists/2014/03/10-of-the-weirdest-mostly-fictional-encyclopedias.html), but now its accessibility has completely trivialized it. So maybe being able to map and log the navigation within this metaspace brings back a little bit of the old fantasy.
+In order to color code the topic clusters in the article map, I applied the [DBSCAN](http://scikit-learn.org/stable/modules/generated/sklearn.cluster.DBSCAN.html) clustering algorithm over the result of article coordinates. Unlike many other clustering algorithms DBSCAN doesn’t create evenly sized clusters, making it a good fit for the map clustsers (after some parameter tuning). DBSCAN doesn’t assign categories to all the points but it is easy to assign those points to a cluster in the second pass using [Nearest Neighbors](http://scikit-learn.org/stable/modules/neighbors.html). To name the clusters I scraped the Wikipedia categories assigned to those articles and found the top category shared between those articles.
+
+![Coloring the map](/images/2017/08/enc-color.png)
+
+##### Color coding points by clustering using DBSCAN
+
+![Voronoi overlay of the map](/images/2017/08/enc-voro.png)
+
+##### Overlaying the clusters with a voronoi diagram for mouseover interactions.
+
+## Making it interactive
+
+The UI is build using [React](https://facebook.github.io/react/) and [Redux](http://redux.js.org/). The map is mostly in [three.js](https://threejs.org/) and rendered on a canvas except for the annotations which are SVG. Using [D3.js](https://d3js.org/) is almost inevitable in any data-driven UI, especially with the modular design of version 4. 
+
+## The possibiities of encyclopedia cartography
+
+In the end I wanted to mention how grateful I am for Fast Forward Labs, especially [Grant](https://twitter.com/GrantCuster), [Hilary](https://twitter.com/hmason) and [Micha](https://github.com/mynameisfiber) for giving me the opportunity to work on this project which I have been fascinated with for a long time. My interest in Wikipedia is not just because I spend too much time reading random articles, but also because I am fascinated by the idea of the ultimate encyclopedia containing the totality of human knowledge. Once such an encyclopedia was an idealistic dream that was mostly [fantasized about in literature](https://www.pastemagazine.com/blogs/lists/2014/03/10-of-the-weirdest-mostly-fictional-encyclopedias.html), but now its accessibility has completely trivialized it. So maybe being able to map and log the navigation within this metaspace brings back a little bit of the old fantasy.
 
