@@ -23,7 +23,7 @@ github_username: fastforwardlabs
 markdown: kramdown
 paginate: 20
 paginate_path: "/page/:num/"
-gems:
+plugins:
 - jekyll-feed
 - jekyll-paginate
 - jekyll-redirect-from
