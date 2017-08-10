@@ -13,7 +13,7 @@ published: false
 
 ##### The [Tabula Rogeriana](https://en.wikipedia.org/wiki/Tabula_Rogeriana), a world map created by Muhammad al-Idrisi through traveler interviews in 1154.
 
-The Wikipedia corpus is one of the favorite datasets of the machine learning community. It is often used for experimenting, benchmarking and providing how-to examples. These experiments are kept separate from the Wikipedia user interface, however, which has intentionally been kept simple and true to the early hypertext vision of the web. For this experiment, [_Encartopedia_](http://encartopedia.dev.fastforwardlabs.com), I used machine learning techniques and visualization to explore new navigation possibilities for Wikipedia while preserving its hypertextual feel.
+The Wikipedia corpus is one of the favorite datasets of the machine learning community. It is often used for experimenting, benchmarking and providing how-to examples. These experiments are generally kept separate from the Wikipedia user interface, however, which has intentionally been kept simple and true to the early hypertext vision of the web. For this experiment, [_Encartopedia_](http://encartopedia.dev.fastforwardlabs.com), I used machine learning techniques and visualization to explore new navigation possibilities for Wikipedia while preserving its hypertextual feel.
 
 ![Encartopedia](/images/2017/08/enc-ui.png)
 
@@ -21,13 +21,13 @@ The Wikipedia corpus is one of the favorite datasets of the machine learning com
 
 ## Mapping articles
 
-The starting point for the research was [hatnote.com](http://seealso.hatnote.com/) which has a glossary of Wikipedia visualizations and alternative user interfaces. Among those examples [Wikigalaxy](http://wiki.polyfra.me/) by [Owen Cornec](http://byowen.com/) was the most inspiring for the attempt in mapping the semantic space of Wikipedia into a navigable space. From Wikigalaxy I borrowed the coordinates of their dimensionality reduction algorithm, mapping the articles to 2D coordinates for the 100,000 top Wikipedia articles.
+The starting point for the research was [hatnote.com](http://seealso.hatnote.com/) which has a glossary of Wikipedia visualizations and alternative user interfaces. Among those examples [Wikigalaxy](http://wiki.polyfra.me/) by [Owen Cornec](http://byowen.com/) was the most inspiring for its attempt to map the semantic space of Wikipedia into a navigable space. From Wikigalaxy I borrowed the coordinates of their dimensionality reduction algorithm, mapping the articles to 2D coordinates for the 100,000 top Wikipedia articles.
 
 The mapping of the top 100,000 articles makes up the base visualization in the right panel of Encartopedia. The mapping is not only limited to those 100,000 articles, however. Any article you navigate to in Wikipedia can be located on the navigation map. To make this possible I used a method similar to this [benchmark](https://rare-technologies.com/performance-shootout-of-nearest-neighbours-contestants/) to create a fast index of 500 dimensional LSA vectors for all five million articles. I used [Annoy](https://github.com/spotify/annoy) to query the nearest neighbors of the chosen article and used triangulation to then place the article on the map. The nearest neighbors are also displayed above the Wikipedia article in the "Semantic Neighbors" section.
 
 ## Categorizing clusters
 
-In order to color code the topic clusters in the article map, I applied the [DBSCAN](http://scikit-learn.org/stable/modules/generated/sklearn.cluster.DBSCAN.html) clustering algorithm over the result of article coordinates. Unlike many other clustering algorithms DBSCAN doesn’t create evenly sized clusters, making it a good fit for the map clustsers (after some parameter tuning). DBSCAN doesn’t assign categories to all the points but it is easy to assign those points to a cluster in the second pass using [Nearest Neighbors](http://scikit-learn.org/stable/modules/neighbors.html). To name the clusters I scraped the Wikipedia categories assigned to those articles and found the top category shared between those articles.
+In order to color code and categorize the topic clusters in the article map, I applied the [DBSCAN](http://scikit-learn.org/stable/modules/generated/sklearn.cluster.DBSCAN.html) clustering algorithm over the result of article coordinates. Unlike many other clustering algorithms DBSCAN doesn’t create evenly sized clusters, making it a good fit for the map clusters (after some parameter tuning). DBSCAN doesn’t assign categories to all the points but it is easy to assign those points to a cluster in the second pass using [Nearest Neighbors](http://scikit-learn.org/stable/modules/neighbors.html). To name the clusters I scraped the Wikipedia categories assigned to those articles and found the top category shared between them.
 
 ![Coloring the map](/images/2017/08/enc-color.png)
 
@@ -45,3 +45,4 @@ The UI is build using [React](https://facebook.github.io/react/) and [Redux](htt
 
 In the end I wanted to mention how grateful I am for Fast Forward Labs, especially [Grant](https://twitter.com/GrantCuster), [Hilary](https://twitter.com/hmason) and [Micha](https://github.com/mynameisfiber) for giving me the opportunity to work on this project which I have been fascinated with for a long time. My interest in Wikipedia is not just because I spend too much time reading random articles, but also because I am fascinated by the idea of the ultimate encyclopedia containing the totality of human knowledge. Once such an encyclopedia was an idealistic dream that was mostly [fantasized about in literature](https://www.pastemagazine.com/blogs/lists/2014/03/10-of-the-weirdest-mostly-fictional-encyclopedias.html), but now its accessibility has completely trivialized it. So maybe being able to map and log the navigation within this metaspace brings back a little bit of the old fantasy.
 
+&ndash; [Sepand](https://sepans.com/sp)
