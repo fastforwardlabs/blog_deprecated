@@ -5,8 +5,8 @@ date: 2017-08-08 09:00
 preview_image: /images/2017/08/enc-tabula.jpg
 author: Sepand
 author_link: "https://sepans.com/sp"
-feature: false
-published: true
+feature: true
+published: false
 ---
 
 ![Tabula Rogeriana](/images/2017/08/enc-tabula.jpg)
