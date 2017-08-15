@@ -14,7 +14,7 @@ On September 6, we will host a [public webinar on interpretability](https://mlin
 
 Last week at Fast Forward Labs, we had fun reading about AI's foray into [Starcraft](https://www.theverge.com/2017/8/9/16117850/deepmind-blizzard-starcraft-ai-toolset-api), played Monday-morning quarterback to Disney's reported decision to pull their catalog from [Netflix](http://money.cnn.com/2017/08/08/media/disney-netflix/), and got deep into the history of the humble [cookie](https://labs.rs/en/invisible-infrastructures-online-trackers/).
 
-In our newsletter this week, we discuss a few of our perennial favorite topics: algorithms that push machine learning into new realms, how to make sense of some of the challenges that AI poses out in the real world, and research that challenges how we think about intelligence. We're also changing up our production process a bit to improve overall readability. If you notice anything amiss, or have any questions, please don't hesitate to [drop us a line](mailto:subscribers@fastforwardlabs.com). Feedback is always appreciated!
+In our newsletter this week, we discuss a few of our perennial favorite topics: algorithms that push machine learning into new realms and research that challenges how we think about intelligence. We're also changing up our production process a bit to improve overall readability. If you notice anything amiss, or have any questions, please don't hesitate to [drop us a line](mailto:subscribers@fastforwardlabs.com). Feedback is always appreciated!
 
 ---
 
@@ -41,24 +41,6 @@ The laboratory of Vivienne Sze at MIT took a heads-on [approach](http://news.mit
 ### To the future
 
 It is easy to get carried away by the black-box beauty of deep, convoluted, twisted and interconnected networks that - like magic - produce the right results (given enough computational power, of course).  But there is another paradigm of beauty, that of elegance and efficiency. Algorithmic innovation to push the limits of the engineer's dream given existing hardware follows that paradigm.
-
----
-
-## AI opportunities live outside the box
-
-[AI Could Revolutionize War as Much as Nukes](www.wired.com/story/ai-could-revolutionize-war-as-much-as-nukes) -- a recent Wired headline covering the [Artificial Intelligence and National Security Report](www.belfercenter.org/sites/default/files/files/publication/AI%20NatSec%20-%20final.pdf) by the Belfer Center for Science and International Affairs at Harvard's Kennedy School of Government.
-
-The Belfer Center purports to comment on how AI growth is expected to affect military, information, and economic "superiority." However, the offered guidance is strictly focused on the traditional players in national security, DoD and the Intelligence Community (with brief nods to the State Department and NIST), and [areas](https://www.nytimes.com/2016/10/26/us/pentagon-artificial-intelligence-terminator.html) where these players are [already active](http://www.businessinsider.com/the-pentagon-wants-at-least-12-billion-to-fund-ai-weapon-technology-in-2017-2015-12). While the paper sets forth an admirable pathway for the government's traditional foreign policy elements to prepare for hostile, technology-driven, overt engagement, there is more room available to secure the country against the impacts, threats, and challenges of AI -- whether malicious and intentional or not -- by proactively supporting the sectors that are currently most directly engaged in the new "AI battle space," the private sector and academia.
-
-*"Most AI research advances are occurring in the private sector and academia,"* and to be sure, the government's technology development initiatives like the agile Intelligence Community investment arm, [In-Q-Tel](www.iqt.org), can lead in accessing emerging data, machine learning, and AI systems. However, the biggest players in AI today are private companies who have access to and can work with incredible volumes of data that allows them to build superior (data) products. In the US, [no public-sector entity can touch](https://research.googleblog.com/2017/07/revisiting-unreasonable-effectiveness.html) Facebook, Alphabet, Amazon, Microsoft, nor do they compare favorably with [Baidu](www.wired.com/story/how-baidu-will-win-chinas-ai-raceand-maybe-the-worlds) TenCent and Alibaba in China, or NTT in Japan.
-
-The government could define policies regarding the in vivo testing of fully-automated robotics systems (for example, surgical [robot arms can be hacked](https://www.wired.com/2017/05/watch-hackers-sabotage-factory-robot-arm-afar/)), with joint Department of Commerce/Health and Human Services SBIR grants for its development. Similarly, development of legal and financially focused document translation systems should be incentivized to help companies expand their offerings globally. The Department of Justice, again with Commerce, needs to invest in ways to deal with the unprecedented scope and [scale]( https://www.bloomberg.com/news/articles/2017-08-08/china-to-spend-1-5-trillion-on-outbound-m-a-in-a-decade-report) of threats to data.
-
-![]({{ site.github.url }}/images/2017/08/undersea_cable-1502752429338.jpeg)
-
-##### Chinese tech presents risks for US cyber-security, making its way into consumer products, but also exposing the vulnerabilities of the [infrastructure](www.usni.org/magazines/proceedings/2017-07/chinas-cyber-economic-warfare-threatens-us) US commerce depends on.
-
-The federal government should think well beyond DoD and traditional foreign policy elements and focus on how to best invest in and collaborate with existing players, academic and commercial, when considering the future security of the US.
 
 ---
 
