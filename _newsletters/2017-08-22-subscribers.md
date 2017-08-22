@@ -75,7 +75,7 @@ As technology continues to develop, more and more use cases for ML and AI applic
 
 ---
 
-# Jobs, Jobs, Jobs
+## Jobs, Jobs, Jobs
 
 Here's a job opportunity for a data scientist:
 
@@ -94,4 +94,4 @@ We're giving talks at some upcoming conferences:
 As always, thank you for reading.  We'd love to hear your thoughts! You can reach us anytime at subscribers@fastforwardlabs.com. 
 
 
-The Fast Forward Labs Team
+--The Fast Forward Labs Team
