@@ -8,7 +8,7 @@ You can add a link to the reading list, which show up as the "We are reading" li
 
 ## Adding a Post
 
-Our blog is on Jekyll and posts are written in markdown. You can look at Jekyll documentation or previous posts to see how to format posts (better internal documentation coming soon!). Our blog is published automatically using Github pages so posts you put in the `posts` folder will go live unless they have the metadata `published: false` at the beginning.
+Our blog is on Jekyll and posts are written in markdown. You can look at Jekyll documentation or previous posts to see how to format posts (better internal documentation coming soon!). Our blog is published automatically using Github pages so posts you put in the `_posts` folder will go live unless they have the metadata `published: false` at the beginning.
 
 ### FFL Specific Formatting
 
@@ -16,4 +16,4 @@ If the post looks good in Github's markdown preview it will probably look good (
 
 ### Adding Images
 
-You can use https://ffl-is-reading.now.sh/ to add images for blog posts. It will let you upload an image and then give you a link to that image that you can paste into the markdown. If you want the image to show up in the github markdown preview you need to remove the `{ site.github_url}` from the start of the address. That part is only important for newsletter posts. The image will work on the actual blog with it included, however.
+You can use https://ffl-is-reading.now.sh/ to add images for blog posts. It will let you upload an image and then give you a link to that image that you can paste into the markdown. If you want the image to show up in the github markdown preview you need to remove the `{{ site.github_url }}` from the start of the address. That part is only important for newsletter posts. The image will work on the actual blog with it included, however.
