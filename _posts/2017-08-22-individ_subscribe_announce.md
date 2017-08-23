@@ -1,3 +1,7 @@
+---
+published: false
+---
+
 ****Announcing Individual User Subscriptions****
 
 For the past three months at Fast Forward Labs we have been beta-testing a ***subscription option for individuals*** who would love to read our reporting on ***emerging capabilities in machine learning*** and dig further into field even if they're not in a role where their employer is a full-time client.
