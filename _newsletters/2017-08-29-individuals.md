@@ -15,13 +15,13 @@ It's time to retire the MNIST data, not only for the fashion conscious engineer.
 
 On to our newsletter: with recommended reading on Bayesian inference and probabilistic programming - as well as thoughts on AI and national security, and the enduring legacy of Zork. Enjoy!
 
-But first, a thank you, and a quick announcement: 
+But first, a thank you - and a quick announcement: 
 
 ---
 
 ## The Future of the Individual Subscribers Program
 
-Thank you very much for signing up and providing thoughts for our Individual Subscribers beta program this summer - please do complete the feedback form here (https://docs.google.com/forms/d/e/1FAIpQLScAil6KZ99nL457a32n_Hq5c8cfqaEbvvDXN6RHoeJQ7T0_sw/viewform), we’d love to get your ideas on how to help the program grow.
+Thank you very much for signing up and providing thoughts for our Individual Subscribers beta program this summer - please do complete the feedback form [here] (https://docs.google.com/forms/d/e/1FAIpQLScAil6KZ99nL457a32n_Hq5c8cfqaEbvvDXN6RHoeJQ7T0_sw/viewform), we’d love to get your ideas on how to help the program grow.
 
 We will be continuing the program and opening up the individual subscription program open to the public next week!  Because of your beta participation you will receive 50% off pricing for the first year, and early access, beginning this coming Friday.  Stay tuned for an email from us with details on registration later this week!
 
@@ -90,7 +90,7 @@ Infocom open-sourced the game back in the early 90's, so now you can [play](http
 
 ## Jobs, Jobs, Jobs
 
-Here's a couple of job opportunities for data scientists:
+Here are a couple of job opportunities for data scientists:
 
 **Enigma** - Data Scientist ([job description](https://www.enigma.com/careers/data-scientist))
 **Crisis Text Line** - Machine Learning Data Scientist ([job description](https://crisistextline.workable.com/j/6B5C231A62))
@@ -106,7 +106,6 @@ We're giving talks at some upcoming conferences:
 
 We're also very excited about our upcoming webinar on Machine Learning and Interpretability; you can register [here](https://splashthat.com/sites/view/mlinterpretability.splashthat.com).
 
-Thank you for reading.  We'd love to hear your thoughts! You can reach us anytime at clients@fastforwardlabs.com. 
+Thank you for reading.  We'd love to hear your thoughts! You can reach us anytime at subscribers@fastforwardlabs.com. 
 
 — The Fast Forward Labs Team
-
