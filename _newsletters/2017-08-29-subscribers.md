@@ -1,6 +1,6 @@
 ---
 layout: newsletter
-slug: 2017-08-29-individuals
+slug: 2017-08-29-subscribers
 ---
 
 Hello!
@@ -21,7 +21,7 @@ But first, a thank you - and a quick announcement:
 
 ## The Future of the Individual Subscribers Program
 
-Thank you very much for signing up and providing thoughts for our Individual Subscribers beta program this summer - please do complete the feedback form [here] (https://docs.google.com/forms/d/e/1FAIpQLScAil6KZ99nL457a32n_Hq5c8cfqaEbvvDXN6RHoeJQ7T0_sw/viewform), we’d love to get your ideas on how to help the program grow.
+Thank you very much for signing up and providing thoughts for our Individual Subscribers beta program this summer - please do complete the feedback form [here](https://docs.google.com/forms/d/e/1FAIpQLScAil6KZ99nL457a32n_Hq5c8cfqaEbvvDXN6RHoeJQ7T0_sw/viewform), we’d love to get your ideas on how to help the program grow.
 
 We will be continuing the program and opening up the individual subscription program open to the public next week!  Because of your beta participation you will receive 50% off pricing for the first year, and early access, beginning this coming Friday.  Stay tuned for an email from us with details on registration later this week!
 
