@@ -202,3 +202,7 @@
     url: 'https://www.youtube.com/watch?v=59bMh59JQDo'
     text: 'Machine Learning and Human Bias'
     image: 'https://i.ytimg.com/vi/59bMh59JQDo/maxresdefault.jpg'
+-
+    url: 'https://experiments.withgoogle.com/ar'
+    text: 'AR Experiments'
+    image: 'https://lh3.googleusercontent.com/_jcm73r3fb-gBc_Y5NbhXVYfy34MKRLalhYKnSpp4RpEV9nTe0M6B2Qq_bQmOuVHbAIizrxhEKAegMgHVSsTWkLBD6br'
