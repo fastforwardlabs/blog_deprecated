@@ -5,17 +5,15 @@ slug: 2017-08-29-subscribers
 
 Hello!
 
-A shock collar for your Roomba? Deep reinforcement learning allows agents to learn based on trial and error, reward and punishment. A new [review paper](https://arxiv.org/abs/1708.05866) recaps the achievements in the field.
+A shock collar to train your Roomba? Deep reinforcement learning allows agents to learn based on trial and error, reward and punishment. A new [review paper](https://arxiv.org/abs/1708.05866) recaps the achievements in the field.
 
 ![xkcd deep learning cartoon]({{ site.github.url }}/images/2017/08/drone_training-1503941734848.png)
 
 ##### XKCD aptly summarizes the promise of [deep reinforcement learning](https://arxiv.org/abs/1708.05866).
 
-It's time to retire the MNIST data, not only for the fashion conscious engineer. The fashion retailer Zalando open-sourced a [data set](https://github.com/zalandoresearch/fashion-mnist) to benchmark your machine learing algorithms; turns out MNIST has become too easy. 
+Not only for the fashion conscious engineer, it's time to retire the MNIST data. The fashion retailer Zalando open-sourced a [data set](https://github.com/zalandoresearch/fashion-mnist) to benchmark your machine learing algorithms; turns out MNIST has become too easy. 
 
-On to our newsletter: with recommended reading on Bayesian inference and probabilistic programming - as well as thoughts on AI and national security, and the enduring legacy of Zork. Enjoy!
-
-But first, a thank you - and a quick announcement: 
+Before we go on to our newsletter — with recommended reading on Bayesian inference and probabilistic programming, thoughts on AI and national security, and the enduring legacy of Zork — a quick announcement. 
 
 ---
 
@@ -97,6 +95,7 @@ Here are a couple of job opportunities for data scientists:
 
 We're always happy to share opportunities we hear about; please let us know if you have any you'd like for us to pass along.
 
+---
 
 ## FFL Updates
 
