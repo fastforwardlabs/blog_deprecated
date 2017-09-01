@@ -29,13 +29,13 @@ Fundamentally, machine learning algorithms learn relationships between inputs an
 
 Some relationships are simple and can be captured by simple, linear models, which are easy to inspect and understand. For example, the probability of loan default increases with loan amount and decreases with income. These models are interpretable, meaning, they allow a qualitative understanding between inputs and outputs.
 
-![loan default]({{ site.github.url }}/images/2017/08/2_11-1504010664139.png)
+![loan default]/images/2017/08/2_11-1504010664139.png)
 
 ##### The simple, linear relationship between income, loan amount, and loan default. 
 
 But some relationships are complex. A customer's decisions to cancel a subscription, the focus of our _Refractor_ prototype, or the long-term success of a romantic relationship may depend on multiple factors in non-linear ways. To accurately model these relationships we need models with the flexibility to capture that complexity. Models such as random forests, gradient boosted trees, and neural networks can do just that. But, these complex models are intrinsically difficult to inspect, understand and interpret.
 
-![complex decision surface]({{ site.github.url }}/images/2017/08/2_15-1504010918343.png)
+![complex decision surface](/images/2017/08/2_15-1504010918343.png)
 
 ##### Complex, non-linear relationships, as shown in this figure, cannot be captured by simple models. Models that can capture this complexity tend to be less interpretable.
 
@@ -47,7 +47,7 @@ But data scientists and machine learning *practitioners* benefit from interpreta
 
 One approach to ensure interpretability is to use simple models, but the trade-off between interpretability and accuracy means that, if relationships between inputs and outputs are complex, accuracy will suffer. 
 
-![accuracy vs. interpretability]({{ site.github.url }}/images/2017/08/2_16-1504056142850.png)
+![accuracy vs. interpretability](/images/2017/08/2_16-1504056142850.png)
 
 ##### More accurate models tend to be harder to inspect and understand. 
 
@@ -67,7 +67,7 @@ LIME formalizes this idea. It takes a prediction you want to explain and systema
 
 LIME fits a linear model to describe the relationships between the (perturbed) inputs and outputs. In doing so, it weights generated labels close to the example more heavily to nudge the algorithm to focus on the most relevant part of the "decision function". So, the simple linear algorithm approximates the more complex, non-linear function learned by the high-accuracy model *locally*, in the vicinity of the to-be-explained prediction. 
 
-![locally linear approximation]({{ site.github.url }}/images/2017/08/3_07-1504056507453.png)
+![locally linear approximation](/images/2017/08/3_07-1504056507453.png)
 
 ##### Even complex decision functions can be approximated _locally_ by simple linear models.
 
@@ -111,11 +111,11 @@ To explain predictions, we need to be able to _understand_ the reasons returned 
 ### Why relationships (are predicted to) fail
 According to the model, across couples based on random forest's feature importances only, your age, your partner's age, and the difference in age between partners determines whether couples are going to stay together, or not. LIME shows that the reasons for likely relationship success vary from one couple to the next.
 
-![]({{ site.github.url }}/images/2017/09/lime_3-1504282789410.png)
+![](/images/2017/09/lime_3-1504282789410.png)
 
 ##### This couple is likely to stay together, the model gives it a 0.89 probability. LIME informs us that the prediction is due to the fact that the couple is married while their (young) age lowers their chances of relationship "success".
 
-![]({{ site.github.url }}/images/2017/09/lime_13-1504299937445.png)
+![](/images/2017/09/lime_13-1504299937445.png)
 
 ##### This couple is likely to stay together, the model gives it a 0.75 probability. LIME informs us the prediction is due to the fact that the couple owns their home, they are matched in terms of the level of education, and the respondent is between 43 and 55 years. Curiously, living in an urban area and voting democrat is associated with a lower chance to staying together.  
 
@@ -125,13 +125,13 @@ LIME captures nuances above feature importances, the variables the trained model
 
 How about using algorithms to manage your love life strategically? The model suggests to look for a partner close in age. Should you ask for a pay increase, buy a house, or get married? We asked LIME.
 
-![]({{ site.github.url }}/images/2017/09/pre_marriage_lime-1504283413457.png)
+![](/images/2017/09/pre_marriage_lime-1504283413457.png)
 
 ##### Your chances of staying together aren't bad, the model gives is a 0.79. But merely "living together" is hurting your chances, according to LIME.
 
 Evaluating different options, getting married leads to the biggest increase in your chance of staying together. But, we advice _against_ marrying tonight's Tinder date. It may be tempting to treat LIME's reasons as _causes_ of the real-world phenomena the model is predicting; surely, a high amount of debt on my loan application is the reason (read "cause") for my denied loan application (especially if a smaller debt amount would have changed the outcome).
 
-![]({{ site.github.url }}/images/2017/09/post_marriage_lime-1504283506173.png)
+![](/images/2017/09/post_marriage_lime-1504283506173.png)
 
 ##### Getting married increases your chance of staying together to 0.91. But, reasons are not causes. We advice against marrying tonight's Tinder date.
 
