@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Why your relationship is likely to last (or not): using Local Interpretable Model-Agnostic Explanations (LIME)"
-date: 2017-09-04
+date: 2017-09-01
 preview_image: /images/2017/09/henry_viii-1504299070584.jpg
 author: Friederike
 author_link: www.linkedin.com/in/friederikeschueuer
@@ -77,7 +77,7 @@ Based on two simple ideas, LIME is an exciting breakthrough. It allows you to tr
 
 Love endures forever but when it doesn't, wouldn't you like to know why? We took the Stanford [HCMST data](https://data.stanford.edu/hcmst) (How Couples Meet and Stay Together), a longitudinal study on how American's meet their partners, and build a classifier to predict whether (and why) couples are likely to stay together. 
 
-We modeled the relationship between couples and their relationship fate using a random forest classifier, a widely used ensemble model that is difficult to inspect and understand. Popular machine learning libraries offer simple ways to implement machine learning routines. We used `sklearn`'s' `RandomForestClassifier` for model training, `GridSearchCV` for hyperparameter tuning, and `Pipeline` to streamline data preprocessing. If you want to see the code, and experiment with LIME, you can access the notebook [here]().
+We modeled the relationship between couples and their relationship fate using a random forest classifier, a widely used ensemble model that is difficult to inspect and understand. Popular machine learning libraries offer simple ways to implement machine learning routines. We used `sklearn`'s' `RandomForestClassifier` for model training, `GridSearchCV` for hyperparameter tuning, and `Pipeline` to streamline data preprocessing. If you want to see the code, and experiment with LIME, you can access the notebook [here](https://github.com/fastforwardlabs/couples-lime/blob/master/couples-lime.ipynb).
 
 To explain predictions, once we had a trained model, we needed to instantiate the `LimeTabularExplainer` object. It takes as inputs a list of feature names (`feature_names`) and class names (`class_names`), a list of all categorical variables (`categorical_features`) and a dictionary of the values of all categorical variables (`categorical_names`) in addition to the training data; LIME perturbs inputs according to the training data distribution.
 
@@ -95,7 +95,7 @@ explainer = LimeTabularExplainer(
     )
 ```
 
-The `LimeTabularExplainer` object has a method `explain_instance` that takes an example input and returns the top reasons for its corresponding prediction. The  `explain_instance` method requires a function (`pipeline.predict_proba`) as input that takes the "raw" example input data, transforms, scales, one-hot encodes, etc. (as appropriate), and returns its prediction using the trained model. To see how we made ours, see our [notebook]().
+The `LimeTabularExplainer` object has a method `explain_instance` that takes an example input and returns the top reasons for its corresponding prediction. The  `explain_instance` method requires a function (`pipeline.predict_proba`) as input that takes the "raw" example input data, transforms, scales, one-hot encodes, etc. (as appropriate), and returns its prediction using the trained model. To see how we made ours, see our [notebook](https://github.com/fastforwardlabs/couples-lime/blob/master/couples-lime.ipynb).
 
 ```python
 example = 3
