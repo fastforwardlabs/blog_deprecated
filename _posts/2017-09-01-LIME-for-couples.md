@@ -86,11 +86,11 @@ from lime.lime_tabular import LimeTabularExplainer
 
 # The Lime LimeTabularExplainer object
 explainer = LimeTabularExplainer(
-    train,                                                                      # training data
-    class_names=['BrokeUp', 'StayedTogether'],      # class names
-    feature_names=list(data.columns),                      # names of all features (regardless of type)
-    categorical_features=categorical_features,         # names of only categorical features
-    categorical_names=categorical_names,              # labels of all values of all categorical features 
+    train, # training data
+    class_names=['BrokeUp', 'StayedTogether'], # class names
+    feature_names=list(data.columns), # names of all features (regardless of type)
+    categorical_features=categorical_features, # names of only categorical features
+    categorical_names=categorical_names, # labels of all values of all categorical features 
     discretize_continuous=True
     )
 ```
