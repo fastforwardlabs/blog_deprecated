@@ -11,7 +11,7 @@ published: false
 
 ![](/images/2017/09/henry_viii-1504299070584.jpg)
 
-##### Henry VIII of England had many relationships. 
+##### Henry VIII of England had many relationships. We build a classifier to predict whether relationships are going to last, or not, and used Local Interpretable Model-Agnostic Explanations (LIME) to understand the predicted success, or failure, of individual relationship predictions.
 
 Last month we launched the latest report and prototype from our machine intelligence R&D team, [_Interpretability_](http://blog.fastforwardlabs.com/2017/08/02/interpretability.html), and we shared our view on [why interpretability matters for business](http://blog.fastforwardlabs.com/2017/08/02/business-interpretability.html).
 
