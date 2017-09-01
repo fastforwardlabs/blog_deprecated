@@ -9,7 +9,7 @@ feature: true
 published: false
 ---
 
-![]({{ site.github.url }}/images/2017/09/henry_viii-1504299070584.jpg)
+![](/images/2017/09/henry_viii-1504299070584.jpg)
 
 ##### Henry VIII of England had many relationships. 
 
@@ -86,11 +86,11 @@ from lime.lime_tabular import LimeTabularExplainer
 
 # The Lime LimeTabularExplainer object
 explainer = LimeTabularExplainer(
-    train,
-    class_names=['BrokeUp', 'StayedTogether'],
-    feature_names=list(data.columns),
-    categorical_features=categorical_features, # add explanation here
-    categorical_names=categorical_names,
+    train,                                                                      # training data
+    class_names=['BrokeUp', 'StayedTogether'],      # class names
+    feature_names=list(data.columns),                      # names of all features (regardless of type)
+    categorical_features=categorical_features,         # names of only categorical features
+    categorical_names=categorical_names,              # labels of all values of all categorical features 
     discretize_continuous=True
     )
 ```
