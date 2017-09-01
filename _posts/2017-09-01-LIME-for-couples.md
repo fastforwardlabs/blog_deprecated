@@ -29,7 +29,7 @@ Fundamentally, machine learning algorithms learn relationships between inputs an
 
 Some relationships are simple and can be captured by simple, linear models, which are easy to inspect and understand. For example, the probability of loan default increases with loan amount and decreases with income. These models are interpretable, meaning, they allow a qualitative understanding between inputs and outputs.
 
-![loan default]/images/2017/08/2_11-1504010664139.png)
+![loan default](/images/2017/08/2_11-1504010664139.png)
 
 ##### The simple, linear relationship between income, loan amount, and loan default. 
 
