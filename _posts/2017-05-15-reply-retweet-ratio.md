@@ -34,7 +34,7 @@ belonging to Donald Trump, Hillary Clinton, Bernie Sanders, Paul Ryan, and
 weird Twitter favorites Mike Huckabee and dril. Explore the visualization
 below.
 
-<iframe class="ffl-demo" src="http://www.fastforwardlabs.com/tweetratio/" height="400px"></iframe>
+<iframe class="ffl-demo" src="http://fastforwardlabs.github.io/tweetratio/" height="400px"></iframe>
 
 Things are getting worse for Donald Trump since his inauguration, but it's
 clear that Paul Ryan is by far the worst tweeter in this group. Here's the

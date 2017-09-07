@@ -6,7 +6,7 @@ tags:
 layout: post
 redirect_from:
   - /post/92438955263/hello-fast-forward-labs
-preview_image: http://www.fastforwardlabs.com/resources/images/logos/ff-logo-white-bg.png
+preview_image: http://fastforwardlabs.github.io/resources/images/logos/ff-logo-white-bg.png
 ---
 
 <p>I’m very pleased to introduce <a href="http://www.fastforwardlabs.com/" title="Fast Forward Labs" target="_blank">Fast Forward Labs</a>.</p>

@@ -2,7 +2,7 @@
 layout: post
 title: The Algorithms Behind Probabilistic Programming
 date: 2017-01-30 13:52
-preview_image: http://www.fastforwardlabs.com/report_images/ff05/3-08.png
+preview_image: http://fastforwardlabs.github.io/report_images/ff05/3-08.png
 feature: false
 author: Mike
 author_link: https://twitter.com/mikepqr
@@ -11,7 +11,7 @@ author_link: https://twitter.com/mikepqr
 We recently [introduced our report on probabilistic
 programming](http://blog.fastforwardlabs.com/2017/01/18/new-research-on-probabilistic-programming.html). The accompanying prototype allows you to explore the [past and
 future of the New York residential real estate
-market](http://www.fastforwardlabs.com/pre/).
+market](http://fastforwardlabs.github.io/pre/).
 
 This post gives a feel for the content in our report by introducing the algorithms and technology that make probabilistic programming possible. We'll dive even deeper into these algorithms in conversation with [the Stan Group](http://stan.fit/) Tuesday, February 7 at 1 pm ET/10am PT. Please [join us](https://www.eventbrite.com/e/introduction-to-probabilistic-programming-tickets-31160610224)!
 
@@ -77,7 +77,7 @@ computationally efficient [idea from 19th-century physics](https://en.wikipedia.
 surface using calculus, as if under the influence of gravity. This method doesn't work
 for discrete parameters, but the user doesn't need to differentiate functions by hand.
 
-![](http://www.fastforwardlabs.com/report_images/ff05/3-06.png)
+![](http://fastforwardlabs.github.io/report_images/ff05/3-06.png)
 
 To use HMC, you need to tune a sensitive hyperparameter, which makes its
 application expensive and error-prone. The invention of the [No U-Turn
@@ -92,7 +92,7 @@ distribution by building a simple approximation of the distribution. That
 approximation is so simple that it can be sampled from directly, entirely
 circumventing the need for approximate sampling algorithms like MCMC or HMC.
 
-![](http://www.fastforwardlabs.com/report_images/ff05/3-08.png)
+![](http://fastforwardlabs.github.io/report_images/ff05/3-08.png)
 
 To do this, we start with simple distributions that we understand well (e.g.,
 Gaussians) and perturb them until they match the real distribution from which

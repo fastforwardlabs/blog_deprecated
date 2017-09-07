@@ -8,7 +8,7 @@ tags:
 layout: post
 redirect_from:
   - /post/149329060653/under-the-hood-of-the-variational-autoencoder-in
-preview_image: http://www.fastforwardlabs.com/blog-images/miriam/imgs_code/160816_1754_reloaded_latent_784_500_500_50_round_65536_morph_4730816952.gif
+preview_image: http://fastforwardlabs.github.io/blog-images/miriam/imgs_code/160816_1754_reloaded_latent_784_500_500_50_round_65536_morph_4730816952.gif
 feature: true
 post_type: Whitepaper
 author: Miriam
@@ -19,14 +19,14 @@ author_link: https://twitter.com/meereve
 
 <p>To recap: VAEs put a probabilistic spin on the basic autoencoder paradigm—treating their inputs, hidden representations, and reconstructed outputs as probabilistic random variables within a directed graphical model. With this <a href="https://xkcd.com/1236/">Bayesian</a> perspective, the encoder becomes a variational <em>inference network</em>, mapping observed inputs to (approximate) posterior distributions over latent space, and the decoder becomes a <em>generative network</em>, capable of mapping arbitrary latent coordinates back to distributions over the original data space.</p>
 <div class="figure">
-<img src="http://www.fastforwardlabs.com/blog-images/miriam/imgs_code/vae.4.png" title="A variational autoencoder" style="width:80.0%"/></div>
+<img src="http://fastforwardlabs.github.io/blog-images/miriam/imgs_code/vae.4.png" title="A variational autoencoder" style="width:80.0%"/></div>
 <p>The beauty of this setup is that we can take a principled Bayesian approach toward building systems with a rich internal “mental model” of the observed world, all by training a single, cleverly-designed deep neural network.</p>
 <p>These benefits derive from an enriched understanding of data as merely the tip of the iceberg—the observed result of an underlying causative probabilistic process.</p>
 <p>The power of the resulting model is captured by Feynman’s famous <a href="http://archives-dc.library.caltech.edu/islandora/object/ct1:483">chalkboard quote</a>: “What I cannot create, I do not understand.” When trained on MNIST handwritten digits, our VAE model can parse the information spread thinly over the high-dimensional observed world of pixels, and condense the most meaningful features into a structured distribution over reduced latent dimensions.</p>
 <p>Having recovered the latent manifold and assigned it a coordinate system, it becomes trivial to walk from one point to another along the manifold, creatively generating realistic digits all the while:</p>
 <div class="figure">
-<img src="http://www.fastforwardlabs.com/blog-images/miriam/imgs_code/160816_1754_reloaded_latent_784_500_500_50_round_65536_morph_4730816952.gif" title="Generatively morphing digits"/></div>
-<p>In this post, we’ll take a look under the hood at the math and technical details that allow us to optimize the VAE model we sketched in <a href="http://blog.fastforwardlabs.com/2016/08/12/introducing-variational-autoencoders-in-prose-and.html">Part I</a>.</p>
+<img src="http://fastforwardlabs.github.io/blog-images/miriam/imgs_code/160816_1754_reloaded_latent_784_500_500_50_round_65536_morph_4730816952.gif" title="Generatively morphing digits"/></div>
+<p>In this post, we’ll take a look under the hood at the math and technical details that allow us to optimize the VAE model we sketched in <a href="http://fastforwardlabs.github.io/2016/08/12/introducing-variational-autoencoders-in-prose-and.html">Part I</a>.</p>
 <p>Along the way, we’ll show how to implement a VAE in <a href="http://tensorflow.org/">TensorFlow</a>—a library for efficient numerical computation using data flow graphs, with key features like <a href="http://alexey.radul.name/ideas/2013/introduction-to-automatic-differentiation/">automatic differentiation</a> and parallelizability (across clusters, CPUs, GPUs…and <a href="https://cloudplatform.googleblog.com/2016/05/Google-supercharges-machine-learning-tasks-with-custom-chip.html">TPUs</a> if you’re lucky). You can find (and tinker with!) the full implementation <a href="https://github.com/fastforwardlabs/vae-tf/tree/master">here</a>, along with a couple <a href="https://github.com/fastforwardlabs/vae-tf/tree/master/out">pre-trained models</a>.</p>
 <!-- more -->
 <h2 id="building-the-model">Building the Model</h2>
@@ -315,7 +315,7 @@ class VAE():
 
 <p>Helpfully, TensorFlow comes with a built-in <a href="https://www.tensorflow.org/versions/r0.10/how_tos/summaries_and_tensorboard/index.html">visualization dashboard</a>. Here’s the computational graph for an end-to-end VAE with two hidden encoder/decoder layers (that’s what all the <code>tf.name_scope</code>-ing was for):</p>
 <div class="figure">
-<img src="http://www.fastforwardlabs.com/blog-images/miriam/imgs_code/tensorboard.png" title="TensorBoard" style="max-width: 398px !important"/><h2 id="wrapping-up">Wrapping Up
+<img src="http://fastforwardlabs.github.io/blog-images/miriam/imgs_code/tensorboard.png" title="TensorBoard" style="max-width: 398px !important"/><h2 id="wrapping-up">Wrapping Up
 </h2><p>The future of deep latent models lies in models that can reason about the world—“understanding” complex observations, transforming them into meaningful internal representations, and even leveraging these representations to make decisions—all while coping with scarce data, and in semisupervised or unsupervised settings. VAEs are an important step toward this future, demonstrating the power of new ways of thinking that result from unifying variational Bayesian methods and deep learning.</p>
 <p>We now understand how these fields come together to make the VAE possible, through a theoretically-sound objective function that balances accuracy (reconstruction loss) with variational regularization (KL loss), and efficient optimization of the fully differentiable model thanks to the reparameterization trick.</p>
 <p>We’ll wrap up for now with one more way of visualizing the condensed information encapsulated in VAE latent space.</p>
@@ -323,15 +323,15 @@ class VAE():
 <p>To get an undistorted sense of the full latent manifold, we can sample and decode latent space coordinates proportionally to the model’s distribution over latent space. In other words—thanks to variational regularization provided by the KL loss!—we simply sample relative to our chosen prior distribution over <span class="math inline">\(z\)</span>. In our case, this means sampling linearly spaced percentiles from the <a href="http://work.thaslwanter.at/Stats/html/statsDistributions.html#other-important-presentations-of-probability-densities">inverse CDF</a> of a spherical Gaussian.<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a></p>
 <p>Once again, evolving over (logarithmic) time:</p>
 <div class="figure">
-<img src="http://www.fastforwardlabs.com/blog-images/miriam/imgs_code/160816_1813_latent_784_500_500_2_explore_ppf30_16.0.500x500.slower47.gif" title="Decoder's undistorted view of latent space, over training"/></div>
+<img src="http://fastforwardlabs.github.io/blog-images/miriam/imgs_code/160816_1813_latent_784_500_500_2_explore_ppf30_16.0.500x500.slower47.gif" title="Decoder's undistorted view of latent space, over training"/></div>
 <p>Interestingly, we can see that the slim tails of the distribution (edges of the frame) are not well-formed. Presumably, this results from few observed inputs being mapped to latent posteriors with significant density in these regions.</p>
 <p>Here are a few resulting constellations (from a single model):</p>
 <div class="figure">
-<img src="http://www.fastforwardlabs.com/blog-images/miriam/imgs_code/160805_1646_reloaded_latent_784_500_500_2_round_131072_explore_ppf_30.png" title="Generative view of latent space: 30x30"/></div>
+<img src="http://fastforwardlabs.github.io/blog-images/miriam/imgs_code/160805_1646_reloaded_latent_784_500_500_2_round_131072_explore_ppf_30.png" title="Generative view of latent space: 30x30"/></div>
 <div class="figure">
-<img src="http://www.fastforwardlabs.com/blog-images/miriam/imgs_code/160805_1646_reloaded_latent_784_500_500_2_round_131072_explore_ppf_60.png" title="Generative view of latent space: 60x60"/></div>
+<img src="http://fastforwardlabs.github.io/blog-images/miriam/imgs_code/160805_1646_reloaded_latent_784_500_500_2_round_131072_explore_ppf_60.png" title="Generative view of latent space: 60x60"/></div>
 <div class="figure">
-<img src="http://www.fastforwardlabs.com/blog-images/miriam/imgs_code/160805_1646_reloaded_latent_784_500_500_2_round_131072_explore_ppf_100.png" title="Generative view of latent space: 100x100"/></div>
+<img src="http://fastforwardlabs.github.io/blog-images/miriam/imgs_code/160805_1646_reloaded_latent_784_500_500_2_round_131072_explore_ppf_100.png" title="Generative view of latent space: 100x100"/></div>
 <p>Theoretically, we could subdivide the latent space into infinitely many points (limited in practice only by the computer’s floating point precision), and let the generative network dream up infinite constellations of creative variations on MNIST.</p>
 <p>That’s enough digits for now! Keep your eyes out for the next installment, where we’ll tinker with the vanilla VAE model in the context of a new dataset.</p>
 <p>– Miriam</p>

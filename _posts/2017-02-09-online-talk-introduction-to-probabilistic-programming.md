@@ -2,7 +2,7 @@
 layout: post
 title: 'Online Talk: Introduction to Probabilistic Programming'
 date: 2017-02-09 09:44
-preview_image: http://www.fastforwardlabs.com/report_images/ff05/2-08.png
+preview_image: http://fastforwardlabs.github.io/report_images/ff05/2-08.png
 post_type: Announcement
 feature: false
 ---

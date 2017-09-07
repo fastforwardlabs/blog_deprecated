@@ -2,7 +2,7 @@
 layout: post
 title: 'Summer Internships: Data Science, Applied Data Science Writing, Prototyping & Data Viz.'
 date: 2017-02-08 11:34
-preview_image: http://www.fastforwardlabs.com/resources/images/logos/ff-logo-white-bg.png
+preview_image: http://fastforwardlabs.github.io/resources/images/logos/ff-logo-white-bg.png
 feature: false
 post_type: Announcement
 ---

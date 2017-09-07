@@ -35,13 +35,13 @@ One powerful feature of probabilistic programming is the ability to build hierar
 
 ![image](https://68.media.tumblr.com/1af64c0928793e79071e487732c1a594/tumblr_inline_ojzf6gWDhT1ta78fg_540.png)
 
-We explored using probabilistic programming for hierarchical models in our [Probabilistic Real Estate](http://www.fastforwardlabs.com/pre) prototype. This prototype predicts future real estate prices across the New York City boroughs. It enables you to input your budget (say $1.6 million) and shows you the probability of finding properties in that price range across different neighborhoods and future time periods.
+We explored using probabilistic programming for hierarchical models in our [Probabilistic Real Estate](http://fastforwardlabs.github.io/pre) prototype. This prototype predicts future real estate prices across the New York City boroughs. It enables you to input your budget (say $1.6 million) and shows you the probability of finding properties in that price range across different neighborhoods and future time periods.
 
 Hierarchical models helped make predictions in neighborhoods with sparse pricing data. In our model, we declared that apartments are in neighborhoods and neighborhoods are in boroughs; on average, apartments in one neighborhood are more similar to others in the same location than elsewhere. By modeling this way, we could learn about the West Village not only from the West Village, but also from the East Village and Brooklyn. That means, with little data about the West Village, we could use data from the East Village to fill in the gaps! 
 
 Many companies suffer from imperfect, incomplete data. These types of inferences can be invaluable to improve predictions based on real-world dependencies.
 
-Play around with [the prototype](http://www.fastforwardlabs.com/pre)! You'll see how the color gradients give you an intuitive sense for what probability distributions look like in practice.
+Play around with [the prototype](http://fastforwardlabs.github.io/pre)! You'll see how the color gradients give you an intuitive sense for what probability distributions look like in practice.
 
 ## How to Access our Reports &amp; Prototypes
 

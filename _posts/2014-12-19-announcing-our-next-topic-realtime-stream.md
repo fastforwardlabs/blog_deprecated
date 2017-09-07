@@ -8,7 +8,7 @@ layout: post
 post_type: Announcement
 redirect_from:
   - /post/105632517263/announcing-our-next-topic-realtime-stream
-preview_image: http://www.fastforwardlabs.com/report_images/ff02/19.png
+preview_image: http://fastforwardlabs.github.io/report_images/ff02/19.png
 ---
 
 <p>We&rsquo;re very pleased to announce our second research report topic will be realtime stream analysis, with a focus on probabilistic data structures. </p>
