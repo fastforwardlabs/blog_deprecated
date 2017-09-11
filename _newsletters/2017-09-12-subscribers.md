@@ -42,7 +42,7 @@ Two - it sets a seat at the table. By calling for regulation of AI now, Musk is 
 
 Three - it's great recruiting. Competition for talented AI researchers and engineers is fierce. This is known. But by calling out the risks of AI as forcefully as he has, Musk  may be making a subtle appeal to top-notch researchers who may be on the fence about joining the ranks of larger engineering teams, or vacillating about leaving academia, by signaling the opportunity to work on solving (what seem like) existential challenges for humanity. Not a bad recruiting poster.
 
-![]({{ site.github.url }}/images/2017/09/star_trek_chess-1505156456055.jpg)
+![](/images/2017/09/star_trek_chess-1505156456055.jpg)
 
 So what can we take away from thinking about these possible ulterior motives for the recent spate of dire (if premature and exaggerated) warnings about the risks of AI? One takeaway is a recognition that there *are* real risks to humans from ML and AI. Building systems that are [interpretable](http://blog.fastforwardlabs.com/2017/08/02/interpretability.html), that consider aspects of [fairness and accountability](http://www.fatml.org/), and that recognize the potential for harm that today's algorithms possess is not just responsible - its good design. Building trustworthy systems is also good recruiting and good marketing. Another takeaway is that we should all feel empowered to articulate our own "Laws of Robotics", "Adages of Futurism", or "Laws of AI". This may sound like another principle of sound design (and it is), but it is also a way of thinking through potential risks, as well as opportunities for countering those risks, in ways that are specific to the context of the product being built, or the problem being solved.
 
@@ -52,7 +52,7 @@ What "Laws of AI" or "Adages of ML" would you put on your list? No need to limit
 
 ## Fashion-forward algorithms
 
-![]({{ site.github.url }}/images/2017/09/Clueless-1504732987912.gif)
+![](/images/2017/09/Clueless-1504732987912.gif)
 
 ##### The idea to have a computer make your fashion decisions for you is not new. In the film "Clueless", Alicia Silverstone had images of her entire wardrobe imported in her personal computer to help her pick the perfect outfit for the day.
 
