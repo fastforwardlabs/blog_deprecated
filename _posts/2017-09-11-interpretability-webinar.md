@@ -203,7 +203,7 @@ Mike: I also recommend [What’s your ML test score? A rubric for ML production
 systems](https://research.google.com/pubs/pub45742.html), which mentions a
 bunch of really basic stuff that far too few of us do.
 
-**Ashish Mishra: What effect will interpretability have on feature selection?**
+#### What effect will interpretability have on feature selection?
 
 Mike: anecdotally, we spotted a bunch of problems with our model of customer
 churn using LIME. In particular, as non-experts in the domain, we’d left in
