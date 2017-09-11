@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "Interpretability in conversation with Patrick Hall and Sameer Singh"
