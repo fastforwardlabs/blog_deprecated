@@ -314,7 +314,7 @@ confidence" explanation, i.e. it'll find the subset of the image that is most
 adversarial, but with sufficient uncertainty to say "don't take this
 explanation too seriously".
 
-#### Peter Clark: can you explain the significance of the clusters in the H2O screen
+#### Can you explain the significance of the clusters in the H2O interpretability interface?
 
 Patrick: We chose to use clusters in the training data, instead of bootstrapped
 or simulated samples around a row of data, to construct local regions on which
@@ -330,7 +330,7 @@ explanatory model can degrade in this case. If you’re curious,  we choose the
 number clusters by maximizing the R-squared between all the linear model
 predictions and the complex model’s predictions.
 
-#### Jean-Gabriel Young: LIME makes accurate models more interpretable. Also mentioned was the related idea of making interpretable models more accurate. Which is more promising?
+#### LIME makes accurate models more interpretable. Also mentioned was the related idea of making interpretable models more accurate. Which is more promising?
 
 Patrick: Most research I see is towards making accurate models more
 interpretable. One nice practical approach for going the other direction --
