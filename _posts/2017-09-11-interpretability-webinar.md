@@ -340,3 +340,8 @@ Sameer: Personally, I like the former, since I do believe an inaccurate model
 is not a useful model. I also don’t want to restrict the architecture or the
 algorithms that people want to use, nor do I want to constrain them to certain
 types of interpretations that an interpretable model provides. 
+
+### Mailing list
+
+Our public mailing list is a great way of getting a taste of what Fast Forward 
+Labs is interested in and working on right now. [We hope you'll sign up](https://fastforwardlabs.us8.list-manage.com/subscribe/post?u=bdb368b9a389b010c19dbcd54&id=1d8c97a0bd)!
