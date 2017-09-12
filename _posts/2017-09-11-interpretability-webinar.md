@@ -11,7 +11,7 @@ published: false
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/NxYCY8-Qfx0" frameborder="0" allowfullscreen></iframe>
 
-We're pleased to share a recording and resources accompanying our recent
+We're pleased to share the recording of and resources accompanying our recent
 webinar on machine learning interpretability.
 
 We were joined by guest Patrick Hall (Senior Director for Data Science Products
@@ -197,7 +197,7 @@ financial risks of out-of-range predictions on new data are staggering! I do
 also hope that machine learning models that make serious impacts on people’s
 lives will be better regulated in the future, and the EU is taking steps toward
 this with the GDPR. In the meantime, you can keep up with research in this area
-at [FATML](http://www.fatml.org/) 
+at [FATML](http://www.fatml.org/). 
 
 Mike: I also recommend [What’s your ML test score? A rubric for ML production
 systems](https://research.google.com/pubs/pub45742.html), which mentions a
@@ -205,7 +205,7 @@ bunch of really basic stuff that far too few of us do.
 
 #### What effect will interpretability have on feature selection?
 
-Mike: anecdotally, we spotted a bunch of problems with our model of customer
+Mike: Anecdotally, we spotted a bunch of problems with our model of customer
 churn using LIME. In particular, as non-experts in the domain, we’d left in
 features that were leaking the target variable. These lit up like Christmas
 trees in our web interface thanks to LIME.
@@ -216,11 +216,11 @@ difficult to explain features in their models as well. It’s no good to say
 prediction if you can’t also say directly what that variable is exactly and how
 it was derived. 
 
-#### I'm a graduate DS student who just sent from ML research to a group of people in industry who I thought would be interested. In response I got the question "will your research replace my job". What are some ways to overcome the fear of ML and convince people that AI won't replace the creativity in decision making of humans.
+#### I'm a graduate DS student who just sent some ML research to a group of people in industry who I thought would be interested. In response I got the question "will your research replace my job". What are some ways to overcome the fear of ML and convince people that AI won't replace the creativity in decision making of humans.
 
 Patrick: Well it might one day -- and we all need to be realistic about that.
 But for today, and likely for many years, most of us can rest easy. Today,
-machine learning is only good at specific tasks: task where there is a large
+machine learning is only good at specific tasks: tasks where there is a large
 amount of labeled, easy-to-use "clean" data that has also been labeled.
 
 Sameer: For now, you can use the explanations almost as a way to show that
@@ -230,13 +230,12 @@ but with an explanation and demystifies this, even if it is doing the right
 thing for right reasons, the perception of machine learning will not be of an
 adversary.
 
-#### Why is it that some models are seen as interpretable and others aren't? There are large tomes on the theory of linear models, yet they're seen as interpretable. Could part of this be due to how long they've been taught?**
+#### Why is it that some models are seen as interpretable and others aren't? There are large tomes on the theory of linear models, yet they're seen as interpretable. Could part of this be due to how long they've been taught?
 
 Mike: this is a great point. I don’t think it’s simply due to our relative
 familiarity with linear models. It’s that a trained linear model really is
 simple to describe (and interpret). Trained neural networks are, in a relative
-sense, not even simple to describe. The big linear modeling textbooks are about
-The long textbooks deep domain-specific implications, difficulties like
+sense, not even simple to describe. The big linear modeling textbooks are about the long textbooks' deep domain-specific implications, difficulties like
 causality, and the [real numerical/engineering
 subtleties](https://arxiv.org/abs/1008.4686). 
 
@@ -272,7 +271,7 @@ row-by-row when predictions are made.
 #### Aren't we reducing interpretability to visual analytics of sensitivity?
 
 Patrick: In some cases yes, but I would argue this is a good thing. In my
-opinion, explanations themselves have to be simple. However, I’m just more
+opinion, explanations themselves have to be simple. However, I’m more
 interested in fostering the understanding of someone who was just denied parole
 or a credit card (both of which are happening today) based on the decision of a
 predictive model. For the mass-consumer audience, it’s not an effective
