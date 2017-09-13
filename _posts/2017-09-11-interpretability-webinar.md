@@ -34,11 +34,11 @@ interested in working together.
 
  * Fast Forward Labs, <contact@fastforwardlabs.com>,
    [`@fastforwardlabs`](https://twitter.com/FastForwardLabs)
- * Mike Lee Williams, [`@mikepqr`](https://twitter.com/mikepqr)
- * Patrick Hall, [`@jpatrickhall`](https://twitter.com/jpatrickhall),
+ * Mike Lee Williams, [@mikepqr](https://twitter.com/mikepqr)
+ * Patrick Hall, [@jpatrickhall](https://twitter.com/jpatrickhall),
    <phall@h2o.ai>
  * Sameer Singh, [sameersingh.org](http://sameersingh.org/) or
-   [`@sameer_`](https://twitter.com/sameer_), <sameer@uci.edu>
+   [@sameer_](https://twitter.com/sameer_), <sameer@uci.edu>
 
 ### Code, demos and applications
 
