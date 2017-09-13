@@ -33,7 +33,7 @@ interested in working together.
 ### Contact
 
  * Fast Forward Labs, <contact@fastforwardlabs.com>,
-   [`@fastforwardlabs`](https://twitter.com/FastForwardLabs)
+   [@fastforwardlabs](https://twitter.com/FastForwardLabs)
  * Mike Lee Williams, [@mikepqr](https://twitter.com/mikepqr)
  * Patrick Hall, [@jpatrickhall](https://twitter.com/jpatrickhall),
    <phall@h2o.ai>
