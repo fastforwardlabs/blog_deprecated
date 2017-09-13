@@ -76,6 +76,6 @@ We're giving talks at some upcoming conferences:
 - [Grace Hopper Celebration](https://ghc.anitaborg.org/): October 4-6 **(Orlando, Hilary)**
 - [AEC Technology Symposium](http://core.thorntontomasetti.com/aec-tech-symposium/): October 19-21 **(New York, Friederike)**
 
-Thank you for reading.  We'd love to hear your thoughts! You can reach us anytime at [contact@fastforwardlabs.com](mailto:contact@fastforwardlabs.com). 
+Thank you for reading.  We'd love to hear your thoughts! You can reach us anytime at [subscribers@fastforwardlabs.com](mailto:subscribers@fastforwardlabs.com). 
 
 — The Fast Forward Labs Team
