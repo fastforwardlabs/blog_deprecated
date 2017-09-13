@@ -6,7 +6,7 @@ preview_image: /images/2017/08/ff06-logo.png
 author: Mike
 author_link: http://twitter.com/mikepqr
 feature: true
-published: false
+published: true
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/NxYCY8-Qfx0" frameborder="0" allowfullscreen></iframe>
@@ -85,7 +85,7 @@ interested in working together.
    a forthcoming talk by SriSatish Ambati and Patrick Hall at Strata NYC, Sep
    27 2017
 
-## Questions
+## Audience questions we didn't address during the webinar
 
 #### Is there a standard way to measure model complexity?
 
@@ -163,7 +163,7 @@ engineering things that beat other things. Interpretability is, almost by
 definition, much more fuzzier to define and evaluate, making us a little
 nervous as empiricists, I think. 
 
-#### How does interpretability varies across industry, e.g. aviation v media v financial services.
+#### How does interpretability varies across industry, e.g. aviation v media v financial services?
 
 Patrick: I can only say that the regulations for predictive models are probably
 most mature in credit lending *in the U.S.*, and that I see machine learning
@@ -183,7 +183,7 @@ well-enforced) there. There’s no question, however, that more accurate models
 would make more money. People are [starting to build neural network-based
 trading and lending
 models](https://insight.equifax.com/approve-business-customers/) that satisfy
-applicable regulations (e.g. [SR
+applicable regulations, e.g. [SR
 11-7](https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm), and
 the [Fair Credit Reporting
 Act](https://en.wikipedia.org/wiki/Fair_Credit_Reporting_Act). There's a huge
