@@ -9,7 +9,9 @@ feature: true
 published: true
 ---
 
+<div class="video-holder">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/NxYCY8-Qfx0" frameborder="0" allowfullscreen></iframe>
+</div>
 
 We're pleased to share the recording of and resources accompanying our recent
 webinar on machine learning interpretability.
