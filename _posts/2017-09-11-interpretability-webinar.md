@@ -89,7 +89,7 @@ interested in working together.
 
 ## Audience questions we didn't address during the webinar
 
-#### Is there a standard way to measure model complexity?
+**Is there a standard way to measure model complexity?**
 
 Patrick: Not that I am aware of, but we use and have [put forward this simple
 heuristic](https://www.oreilly.com/ideas/ideas-on-interpreting-machine-learning):
@@ -113,7 +113,7 @@ complexity](https://en.wikipedia.org/wiki/Kolmogorov_complexity). The open
 question is which of these measures of complexity correlates with a user’s
 capacity to interpret it.
 
-#### Is there really a trade-off in call cases between interpretability and accuracy? There are certainly cases where there isn't, e.g Rich Caruana's pneumonia model. Can you characterize where this trade-off exists and doesn't?
+**Is there really a trade-off in call cases between interpretability and accuracy? There are certainly cases where there isn't, e.g Rich Caruana's pneumonia model. Can you characterize where this trade-off exists and doesn't?**
 
 Patrick: I think we are making an assumption that greater accuracy requires
 greater complexity -- which it often does for predictive modeling. So, maybe
@@ -130,7 +130,7 @@ where you can get high enough accuracy for your use case with a model so simple
 it’s interpretable by inspection (which does happen!), there is of course no
 trade-off. You can have it all!
 
-#### Is the black box aspect of machine learning programming only an early AI development issue? Will it eventually be possible to program in "check points" where programmed models will reveal key points or factors that appear within levels of neural network calculations?
+**Is the black box aspect of machine learning programming only an early AI development issue? Will it eventually be possible to program in "check points" where programmed models will reveal key points or factors that appear within levels of neural network calculations?**
 
 Patrick: I don’t think this is an early AI issue. In my opinion, it’s about the
 fundamental complexity of the generated models. Again, the sheer volume of
@@ -144,7 +144,7 @@ checkpoints, but what if at the checkpoint, the model says: "these are the
 combinations of the original model inputs"? So perhaps the combination of
 training checkpoints plus constraints on complexity could be very useful. 
 
-#### Conversations in data science center around the latest/greatest models, not interpretability. Do you have any recommendations for building a company culture that values interpretability.
+**Conversations in data science center around the latest/greatest models, not interpretability. Do you have any recommendations for building a company culture that values interpretability.**
 
 Mike: send your colleagues our blog post [The Business Case for Machine
 Learning
@@ -165,7 +165,7 @@ engineering things that beat other things. Interpretability is, almost by
 definition, much more fuzzier to define and evaluate, making us a little
 nervous as empiricists, I think. 
 
-#### How does interpretability varies across industry, e.g. aviation v media v financial services?
+**How does interpretability varies across industry, e.g. aviation v media v financial services?**
 
 Patrick: I can only say that the regulations for predictive models are probably
 most mature in credit lending *in the U.S.*, and that I see machine learning
@@ -191,7 +191,7 @@ the [Fair Credit Reporting
 Act](https://en.wikipedia.org/wiki/Fair_Credit_Reporting_Act). There's a huge
 first-to-market advantage in deploying these more accurate models.
 
-#### Model governance and model reviews are standard for financial models as are stress tests. Do you see something similar in the future of industry ML models?
+**Model governance and model reviews are standard for financial models as are stress tests. Do you see something similar in the future of industry ML models?**
 
 Patrick: I don’t know why so few machine learning practitioners stress-test
 their models. It’s easy to do with simple sensitivity analysis, and the
@@ -205,7 +205,7 @@ Mike: I also recommend [What’s your ML test score? A rubric for ML production
 systems](https://research.google.com/pubs/pub45742.html), which mentions a
 bunch of really basic stuff that far too few of us do.
 
-#### What effect will interpretability have on feature selection?
+**What effect will interpretability have on feature selection?**
 
 Mike: Anecdotally, we spotted a bunch of problems with our model of customer
 churn using LIME. In particular, as non-experts in the domain, we’d left in
@@ -218,7 +218,7 @@ difficult to explain features in their models as well. It’s no good to say
 prediction if you can’t also say directly what that variable is exactly and how
 it was derived. 
 
-#### I'm a graduate DS student who just sent some ML research to a group of people in industry who I thought would be interested. In response I got the question "will your research replace my job". What are some ways to overcome the fear of ML and convince people that AI won't replace the creativity in decision making of humans.
+**I'm a graduate DS student who just sent some ML research to a group of people in industry who I thought would be interested. In response I got the question "will your research replace my job". What are some ways to overcome the fear of ML and convince people that AI won't replace the creativity in decision making of humans.**
 
 Patrick: Well it might one day -- and we all need to be realistic about that.
 But for today, and likely for many years, most of us can rest easy. Today,
@@ -232,7 +232,7 @@ but with an explanation and demystifies this, even if it is doing the right
 thing for right reasons, the perception of machine learning will not be of an
 adversary.
 
-#### Why is it that some models are seen as interpretable and others aren't? There are large tomes on the theory of linear models, yet they're seen as interpretable. Could part of this be due to how long they've been taught?
+**Why is it that some models are seen as interpretable and others aren't? There are large tomes on the theory of linear models, yet they're seen as interpretable. Could part of this be due to how long they've been taught?**
 
 Mike: this is a great point. I don’t think it’s simply due to our relative
 familiarity with linear models. It’s that a trained linear model really is
@@ -259,7 +259,7 @@ restricting the number of features chosen as an explanation (L1 regularization
 or Lasso), and normalizing the regression variables over our samples (to reduce
 the effect of the bias).
 
-#### Once we identify biases, how do we address them?
+**Once we identify biases, how do we address them?**
 
 Patrick: Problematic features -- such as those correlated to race, gender,
 marital status, disability status, etc. -- can be removed from the input data
@@ -270,7 +270,7 @@ local contribution of problematic features using something like LOCO or LIME
 and subtracting out the different contributions of problematic features
 row-by-row when predictions are made. 
 
-#### Aren't we reducing interpretability to visual analytics of sensitivity?
+**Aren't we reducing interpretability to visual analytics of sensitivity?**
 
 Patrick: In some cases yes, but I would argue this is a good thing. In my
 opinion, explanations themselves have to be simple. However, I’m more
@@ -280,7 +280,7 @@ predictive model. For the mass-consumer audience, it’s not an effective
 strategy to provide explanations that are just as mathematically complex as the
 original model.
 
-#### How is LIME different than variable importance, which we get from different algorithms (e.g. RFs?)
+**How is LIME different than variable importance, which we get from different algorithms (e.g. RFs?)**
 
 Patrick: The key is locality. LIME essentially provides local variable
 importance, meaning that you often get a different variable importance value
@@ -299,13 +299,13 @@ a negative factor, and for a positive, and global explanations will not be able
 to capture that. That said, it’s much easier to look at only the big picture,
 instead of many small pictures.
 
-#### Which bootstrapping algorithm is used by LIME generate the perturbed samples
+**Which bootstrapping algorithm is used by LIME generate the perturbed samples**
 
 Sameer: This is often domain dependent, and you can plug in your own. We tried
 to stick with pretty simple techniques for each domain, such as removing tokens
 in text, patches in images, etc. More details are in the paper/code.
 
-#### In the case of adversarial attacks, can LIME detect what causes the deviation from correct detection.
+**In the case of adversarial attacks, can LIME detect what causes the deviation from correct detection.**
 
 Sameer: (excerpt from an email thread with Adam) This is quite an interesting
 idea, but unfortunately, I believe LIME will get quite stumped in this case,
@@ -315,7 +315,7 @@ confidence" explanation, i.e. it'll find the subset of the image that is most
 adversarial, but with sufficient uncertainty to say "don't take this
 explanation too seriously".
 
-#### Can you explain the significance of the clusters in the H2O interpretability interface?
+**Can you explain the significance of the clusters in the H2O interpretability interface?**
 
 Patrick: We chose to use clusters in the training data, instead of bootstrapped
 or simulated samples around a row of data, to construct local regions on which
@@ -331,7 +331,7 @@ explanatory model can degrade in this case. If you’re curious,  we choose the
 number clusters by maximizing the R-squared between all the linear model
 predictions and the complex model’s predictions.
 
-#### LIME makes accurate models more interpretable. Also mentioned was the related idea of making interpretable models more accurate. Which is more promising?
+**LIME makes accurate models more interpretable. Also mentioned was the related idea of making interpretable models more accurate. Which is more promising?**
 
 Patrick: Most research I see is towards making accurate models more
 interpretable. One nice practical approach for going the other direction --
