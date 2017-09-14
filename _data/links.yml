@@ -206,3 +206,8 @@
     url: 'https://experiments.withgoogle.com/ar'
     text: 'AR Experiments'
     image: 'https://lh3.googleusercontent.com/_jcm73r3fb-gBc_Y5NbhXVYfy34MKRLalhYKnSpp4RpEV9nTe0M6B2Qq_bQmOuVHbAIizrxhEKAegMgHVSsTWkLBD6br'
+
+-
+    url: 'https://www.nature.com/articles/nature23463.epdf?referrer_access_token=uplEG40T7AzKfaPeAeKlndRgN0jAjWel9jnR3ZoTv0O4LAhrt7fpCgAOW22z2TXZZIfOPREG7W8fglNDja0fVcQmhyDtn1isVNmLeKFFa0f2PrKHYoflAWS-UfBur9c1e1svpzpBiaQ9Olk9nnTCkMrfkzZqqy3JDF_VU4yqcFSFYph0ag_cFmQASwVfV9ksDEH5N036s_6SekVDeM9oai1GKX4L_JmgVHazSqOTPrS1qYxajyc1ChobULn54DTV4dbRm17uij3x56UqYCi7cyvrsZMsklexVUc0B3hyPc9-eawY7jWwhkhgh97iBLnB&tracking_referrer=physicsworld.com'
+    text: 'Fast automated analysis of strong gravitational lenses with convolutional neural networks'
+    image: 'http://images.iop.org/objects/phw/news/21/8/39/2017-08-30-grav-lens.jpg'
