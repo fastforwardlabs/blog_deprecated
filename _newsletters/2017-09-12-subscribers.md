@@ -71,7 +71,7 @@ Time for a doodle? Doodle with an [RNN](https://magenta.tensorflow.org/sketch-rn
 
 We're giving talks at some upcoming conferences:
 - [Nexterday North 2017](http://www.businesswire.com/news/home/20170824005127/en/Nexterday-North-2017-Re-Invents-Core-Digital-Communications): September 20 **(Helsinki, Hilary)**
-- [Bloomberg Data For Good Exchange](https://www.bloomberg.com/company/d4gx/): September 24 **(New York, Friederike)
+- [Bloomberg Data For Good Exchange](https://www.bloomberg.com/company/d4gx/): September 24 **(New York, Friederike)**
 - [Strata Data Conference](https://conferences.oreilly.com/strata/strata-ny): September 28 **(New York, Hilary)**
 - [Grace Hopper Celebration](https://ghc.anitaborg.org/): October 4-6 **(Orlando, Hilary)**
 - [AEC Technology Symposium](http://core.thorntontomasetti.com/aec-tech-symposium/): October 19-21 **(New York, Friederike)**
