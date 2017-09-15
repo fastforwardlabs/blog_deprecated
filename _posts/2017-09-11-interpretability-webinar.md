@@ -16,8 +16,8 @@ published: true
 We're pleased to share the recording of and resources accompanying our recent
 webinar on machine learning interpretability.
 
-We were joined by guest Patrick Hall (Senior Director for Data Science Products
-at H2o.ai, co-author of [Ideas on Interpreting Machine
+We were joined by guests Patrick Hall (Senior Director for Data Science
+Products at H2o.ai, co-author of [Ideas on Interpreting Machine
 Learning](https://www.oreilly.com/ideas/ideas-on-interpreting-machine-learning))
 and Sameer Singh (Assistant Professor of Computer Science at UC Irvine,
 co-creator of [LIME](https://github.com/marcotcr/lime)).
