@@ -13,8 +13,8 @@ published: true
 <iframe width="560" height="315" src="https://www.youtube.com/embed/NxYCY8-Qfx0" frameborder="0" allowfullscreen></iframe>
 </div>
 
-We're pleased to share the recording of and resources accompanying our recent
-webinar on machine learning interpretability.
+We're pleased to share the recording of our recent webinar on machine learning
+interpretability and accompanying resources.
 
 We were joined by guests Patrick Hall (Senior Director for Data Science
 Products at H2o.ai, co-author of [Ideas on Interpreting Machine
