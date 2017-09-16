@@ -71,9 +71,8 @@ interested in working together.
    Interpretability](https://arxiv.org/abs/1606.05386) by Marco Tulio Ribero,
    Sameer Singh and Carlos Guestrin
  * [Fairness, Accountability and Transparency in Machine
-   Learning](https://docs.google.com/document/d/1ksTNmY9GcxH9KtohkWS9yXI-8ugnpDjd1gGmYSeAXf0/edit#)
-   community and conference ([next conference](https://fatconference.org/) in
-   NYC, February 2018)
+   Learning](http://www.fatml.org/) and [FAT
+   conference](https://fatconference.org/) (NYC, February 2018)
  * [Logic Magazine Issue 1](https://logicmag.io/01-intelligence/), which
    features the interview with an anonymous data scientist
 
