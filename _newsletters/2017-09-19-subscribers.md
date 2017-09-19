@@ -74,6 +74,6 @@ Conference season continues!  We're speaking in a few places over the upcoming w
 
 And we also look forward to Strata NY talks by our new Cloudera colleagues. For example, check out [Mike Olson's talks and briefings on September 27/28](https://conferences.oreilly.com/strata/strata-ny/public/schedule/speaker/5259).
 
-As always, thank you for reading, and please feel free to reach out anytime; we'd love to hear from you!  You can still find us at [clients@fastforwardlabs.com](mailto:clients@fastforwardlabs.com).
+As always, thank you for reading, and please feel free to reach out anytime; we'd love to hear from you!  You can still find us at [subscribers@fastforwardlabs.com](mailto:subscribers@fastforwardlabs.com).
 
 -- The Cloudera Fast Forward Labs Team
