@@ -5,6 +5,8 @@ date: 2017-09-24 15:30
 preview_image: /images/2017/09/refractor-local.gif
 feature: true
 published: false
+author: Grant
+author_link: https://twitter.com/GrantCuster
 ---
 
 ##### This post is part of a series highlighting the importance of interpretability. Previous posts include a [video conversation on interpretability](http://blog.fastforwardlabs.com/2017/09/11/interpretability-webinar.html), [a guide to using the LIME technique to predict whether couples will stay together](http://blog.fastforwardlabs.com/2017/09/01/LIME-for-couples.html), and a look at the [business rationale](http://blog.fastforwardlabs.com/2017/08/02/business-interpretability.html). In [our post on FairML](http://blog.fastforwardlabs.com/2017/03/09/fairml-auditing-black-box-predictive-models.html), we used interpretability techniques to identify discriminatory bias in algorithms.
