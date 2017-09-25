@@ -277,6 +277,15 @@ p code, li code
   .author-byline-preview
     bottom: 0.875rem * 4 * 1.5
 
+.html-video-holder
+  margin: 1.5rem 0
+  +measure-max
+    width: calc(100% - 2rem)
+    margin-left: 1rem
+
+.html-video-holder video
+  max-width: 100%
+
 .video-holder
   position: relative
   height: 0
@@ -284,6 +293,7 @@ p code, li code
   overflow: hidden
   width: 100%
   margin: 1rem 0
+  line-height: 0
   +measure-max
     width: calc(100% - 2rem)
     margin-left: 1rem
