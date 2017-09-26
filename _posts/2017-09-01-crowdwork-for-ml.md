@@ -7,7 +7,6 @@ feature: true
 author: Manny
 author_link: https://twitter.com/mannymoss
 ---
-#Crowdwork for Machine Learning: An Autoethnography
 
 Amazon’s [Mechanical Turk](https://www.wired.com/2002/03/turk/) is a platform for soliciting work on online tasks that has been used by market researchers, translators, and data scientists to complete surveys, perform work that cannot be easily automated, and create human-labeled data for supervised learning systems. Its namesake, the original Mechanical Turk, was an 18th-century chess-playing automaton gifted to the Austrian Empress Maria Theresa. An elaborate hoax, it concealed a human player amidst the clockwork machinery that appeared to direct each move on the board. Amazon's Mechanical Turk (mTurk), which they call "artificial artificial intelligence," isn't all that different. From the outside, mTurk appears to perform tasks automatically that only humans can, like identifying objects in photographs, discerning the sentiment towards a brand in a tweet, or generating natural language in response to a prompt. Behind the scenes, however, there are actual human beings - crowdworkers - logging in and performing each of these "human intelligence tasks" (HITs), usually for a few pennies per task. 
 
@@ -60,6 +59,7 @@ I suggest, then, that task designers could leverage the “human” aspect of th
 For example, consider an image labeling task: the first task would solicit labels for images, and then the second task would supply the image with the labels and ask whether the labels were “good” labels or not. This kind of double validation is a fairly straightforward way to avoid “teaching to the test” and would, I believe, avoid overly deterministic labels for training data. Other methods might also be effective, or might even be in common practice, although I couldn’t find many in my literature review. 
 
 ### Conclusion
+
 I know that my experience barely scraped the surface of the kinds of tasks that are available on crowdworking platforms. I also only waded into the shallow end of the online [forums](http://www.turkernation.com/) that crowdworkers generally use to discuss rewarding tasks, complain about unfair or inconvenient labor practices on these sites, and strategies for maximizing their work. Having seen both sides of the crowdworking coin, however, I would strongly recommend that task requesters visit these forums regularly, to get a sense of who their most dedicated workers are, how they approach their work, and how their work habits affect data.
 
 Do you regularly use mTurk? Crowdflower? Have you tried out Stanford University's worker-first platform [Daemo](https://www.daemo.org/home)? What other platforms are commonly used? What experiences have you had with them? What should others know about using crowdwork for training models?
