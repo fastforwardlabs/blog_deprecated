@@ -50,9 +50,10 @@ In general, lower-priced tasks are [more likely](http://faculty.washington.edu/m
 The pace with which work gets done is also subject to some of these factors. When designing a project expecting workers from all around the world to contribute to it, various economies come into play. The more the project pays, the faster it will get done. But as you lower the price for a task, not only does the turnaround time rise, but the spread of workers contributing to the project changes as well. Lower-priced tasks are less likely to be taken by US workers in locales with high costs of living, and are less likely to be taken up by experienced workers, overall. 
 
 ### Designing Better Tasks
+
 What can be done about the “teaching to the test” problem? 
 
-There is extensive existing literature[^1] on designing crowdwork tasks that offers many creative ways of validating tasks. By inserting ‘gold’ tasks that you already know the answer for, you can filter out all work from those who don’t get those known tasks correct. Or, by soliciting multiple responses to identical tasks, you can filter out anomalous responses, keeping only the types of responses on which there is substantial agreement. These methods still fall victim to the “teaching to the test” problem, however. They also require the reduplication of effort: paying twice (or more) for a single task, or throwing out work that didn’t get the ‘gold’ questions right.
+There is extensive existing literature on designing crowdwork tasks that offers many creative ways of validating tasks. By inserting ‘gold’ tasks that you already know the answer for, you can filter out all work from those who don’t get those known tasks correct. Or, by soliciting multiple responses to identical tasks, you can filter out anomalous responses, keeping only the types of responses on which there is substantial agreement. These methods still fall victim to the “teaching to the test” problem, however. They also require the reduplication of effort: paying twice (or more) for a single task, or throwing out work that didn’t get the ‘gold’ questions right.
 
 I suggest, then, that task designers could leverage the “human” aspect of the “human intelligence tasks.” By loosening validation rules and soliciting a broader range of responses, it is possible to get a more realistic representation of the data from the tasks created, even if it does leave more room for “incorrect” responses. Rather than rejecting “wrong” answers, or averaging across multiple responses, instead these responses can be passed on as a second type of task, to a second group of crowdworkers. In this second pass, crowdworkers can evaluate whether or not the response is suitable or not, or can (potentially) correct the original response.
 
@@ -64,7 +65,8 @@ I know that my experience barely scraped the surface of the kinds of tasks that 
 
 Do you regularly use mTurk? Crowdflower? Have you tried out Stanford University's worker-first platform [Daemo](https://www.daemo.org/home)? What other platforms are commonly used? What experiences have you had with them? What should others know about using crowdwork for training models?
 
-[^1]: Designing Crowdwork Tasks References: 
+### Designing Crowdwork Tasks References:
+
 - Khattak, Faiza Khan. 2016. “Toward a Robust Crowd - Labeling Framework Using Expert Evaluation and Pairwise Comparison Ansaf Salleb - Aouissi.” Journal of Artificial Intelligence Research 1 (16): 1–15.
 - Posch, Lisa, Arnim Bleier, and Markus Strohmaier. 2017. “Measuring Motivations of Crowdworkers: The Multidimensional Crowdworker Motivation Scale.” http://arxiv.org/abs/1702.01661.
 - Whiting, Mark E, Dilrukshi Gamage, Snehalkumar (Neil) S Gaikwad, Aaron Gilbee, Shirish Goyal, Alipta Ballav, Dinesh Majeti, et al. 2017. “Crowd Guilds: Worker-Led Reputation and Feedback on Crowdsourcing Platforms.” Proceedings of the 2017 ACM Conference on Computer Supported Cooperative Work and Social Computing, 1902–13. doi:10.1145/2998181.2998234.
