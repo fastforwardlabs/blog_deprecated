@@ -1,11 +1,10 @@
 ---
 layout: post
 title: "Crowdwork for Machine Learning: An Autoethnography"
-date: 2017-06-30 11:19
+date: 2017-09-26 10:30
 preview_image: /images/2017/09/the_turk.jpg
 feature: false
 author: Manny
-published: false
 author_link: https://twitter.com/mannymoss
 ---
 #Crowdwork for Machine Learning: An Autoethnography
