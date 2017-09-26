@@ -39,7 +39,9 @@ If you're just starting out then we recommend either [Doing Bayesian Data
 Analysis](https://sites.google.com/site/doingbayesiandataanalysis/) by John
 Kruschke, or [Probabilistic Programming and Bayesian Methods for
 Hackers](http://camdavidsonpilon.github.io/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/)
-by Cameron Davidson-Pilon. Krushke's book uses R and Stan (and a language
+by Cameron Davidson-Pilon. 
+
+Krushke's book uses R and Stan (and a language
 called JAGS, that is really only used for teaching these days). Davidson-Pilon
 uses Python and PyMC. Choose between these books based on your language
 preferences. If you don't have a language preference, we at Fast Forward Labs
@@ -73,10 +75,12 @@ bibliography](https://psyarxiv.com/ph6sw/) published last year by Alexander Etz
 and colleagues. Their notes place the research in a historical and conceptual
 context, so this is in a sense the _least_ technical document in this list. But
 the papers they discuss are academic research, so you'll be grappling with some
-big ideas (including our favorite: "the probability that a person is dead
-(i.e., data) given that a shark has bitten the person’s head off (i.e., theory)
-is 1. However, given that a person is dead, the probability that a shark has
-bitten this person’s head off is very close to zero").
+big ideas, including our favorite
+
+> The probability that a person is dead (i.e., data) given that a shark has
+> bitten the person’s head off (i.e., theory) is 1. However, given that a
+> person is dead, the probability that a shark has bitten this person’s head
+> off is very close to zero".
 
 If you're interested in the algorithmic and computational cutting edge
 (Hamiltonian Monte Carlo, variational methods, etc.) then we have [a blog post
