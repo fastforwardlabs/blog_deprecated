@@ -99,8 +99,7 @@ change.
 Because this sorting is an obvious move, it's easy to undervalue its
 usefulness. It is worth remembering that without LIME (or a different
 interpretability strategy), the list would remain unsorted. You could manually
-alter features to see how the probability changed (as described earlier in the
-Credit Karma example), but it would be a long and tedious process.
+alter features to see how the probability changed, but it would be a long and tedious process.
 
 The implicit recommendations of the feature checklist are built upon with
 further information. The recommendation side panel highlights the top three
@@ -164,4 +163,4 @@ collaboration, and for better and more responsible use of algorithms. As those
 techniques develop they will need to be supported by interfaces that balance
 the need for context with a focus on possible actions.
 
-##### Access to the Refractor prototype is available as part of our research subscription. To learn more about subscribing to our reports and prototypes email us at [contact@fastforwardlabs.com](mailto:contact@fastforwardlabs.com).
+##### Full access to the Refractor prototype is available as part of our research subscription. To learn more about subscribing to our reports and prototypes email us at [contact@fastforwardlabs.com](mailto:contact@fastforwardlabs.com).
