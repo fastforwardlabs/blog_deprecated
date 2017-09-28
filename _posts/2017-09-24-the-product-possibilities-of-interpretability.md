@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: "The Product Possibilities of Interpretability"
-date: 2017-09-24 15:30
+date: 2017-09-28 10:30
 preview_image: /images/2017/09/refractor-local.gif
 feature: true
 author: Grant
