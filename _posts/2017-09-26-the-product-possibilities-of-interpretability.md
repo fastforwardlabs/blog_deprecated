@@ -29,7 +29,7 @@ the system being modeled and advise on what actions to take.
 
 For our prototype, we wanted to explore how that collaboration through
 interpretability might look. We chose an area, churn probability for customers
-of an internet service provider, where the collaboration payoff is high. The base of the prototype is a supervised machine learning model of customer churn (how likely a customer is to unsubscribe) trained on pulbic data. Making
+of an internet service provider, where the collaboration payoff is high. The base of the prototype is a supervised machine learning model of customer churn (how likely a customer is to unsubscribe) trained on public data. Making
 the churn prediction is the kind of problem machine learning excels at, but
 without an understanding of what features are driving the predictions, user
 trust and ability to take action based on the model are limited. With
