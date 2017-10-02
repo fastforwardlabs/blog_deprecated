@@ -1,12 +1,11 @@
 ---
 layout: post
 title: "Probabilistic programming: an annotated bibliography"
-date: 2017-09-11
+date: 2017-10-02
 preview_image: /images/2017/09/ff05.gif
 author: Mike
 author_link: http://twitter.com/mikepqr
 feature: true
-published: false
 ---
 
 Earlier this year we launched a research report on [probabilistic
