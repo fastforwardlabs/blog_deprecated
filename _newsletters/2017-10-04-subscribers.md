@@ -7,7 +7,7 @@ Hello!
 
 "We learned we are truly rhythmic organisms," [says Michael W. Young](https://www.washingtonpost.com/news/to-your-health/wp/2017/10/02/nobel-prize-in-medicine-or-physiology-awarded-to-tktk/?utm_term=.d03136659314), who just [won the Nobel Prize](https://www.newyorker.com/tech/elements/the-real-message-of-the-2017-nobel-prize-in-physiology-medicine) in medicine alongside his colleagues Michael Rosbash and Jeffrey C. Hall, for their discoveries about the mechanisms that control an organism's internal clocks (or circadian rhythms); their work explains why jet lag feels so discordant. 
 
-In this week's newsletter, we cover: synthetic gradients; an alternative to backpropagation that enables distributed (read: much faster) training of neural networks; and we reflect on new machine intelligence research institutions like The Allen Institute for AI, OpenAI, and yes, Cloudera Fast Forward Labs.
+In this week's newsletter, we cover synthetic gradients (an alternative to backpropagation that enables distributed (read: much faster) training of neural networks) and reflect on new machine intelligence research institutions like The Allen Institute for AI, OpenAI, and yes, Cloudera Fast Forward Labs.  Also, problematic kittens.
 
 ---
 
