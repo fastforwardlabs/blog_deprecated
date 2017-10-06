@@ -25,7 +25,7 @@ If you have ideas on how to do this stuff better I'd love to hear them at
 
 ## What I'm after
 
-![](//blog.fastforwardlabs.com/images/2017/10/Screen_Shot_2017_10_05_at_4-1507236987242.55)
+![A screenshot of a codepen of the T-SNE rendered in three.js](//blog.fastforwardlabs.com/images/2017/10/Screen_Shot_2017_10_05_at_4-1507236987242.55)
 
 ##### The final result: [a T-SNE rendered in three.js with a map style pan and zoom](https://codepen.io/GrantCuster/pen/rGGRRp).
 
@@ -37,8 +37,7 @@ not crash when I do those things.
 
 ## Challenges
 
-The main challenge has been getting a good zoom-feel. Zoom feels bad to
-me when:
+The main challenge has been getting a good zoom-feel. For me, zoom feels bad when:
 
 1. The framerate drops because the browser can't handle rendering that many points.
 2. The zoom behavior is weird.
@@ -82,10 +81,10 @@ experience, he had to invest considerable dev time in understanding
 three.js's camera system.
 
 Based on those experiences, I went into this project thinking three.js. It also
-seemed like fun. Three.js comes more out of the game dev world 
+seemed like fun. Three.js comes more out of the computer graphics and game dev world 
 than the web app one I'm used to. A lot of recent web app
 innovation has come from adopting techniques from the video game world, so I was
-excited about the opportunity to go further down the video game path.
+excited about going further down the video game path.
 
 ## Getting started in three.js
 
@@ -98,15 +97,17 @@ love that by the third update they're reading [Computer Graphics and Principles]
 
 ### Setting the scene
 
-I started with the base scene set-up from the three.js
+I started with the basic scene set-up from the three.js
 tutorial, and worked on replacing the spinning cube with a wall of points. I put
 some work in trying to understand the [PerspectiveCamera](https://threejs.org/docs/#api/cameras/PerspectiveCamera), but in terms of getting
-things to render at the size I was after I mainly used trial and error of
+things to render at the size I was after I mainly used the trial and error approach of
 plugging in different parameters. One of the downsides of rendering to a canvas
 (rather than HTML or SVG) is that you don't have a DOM to inspect for debugging.
 Often I'd find myself  with a blank canvas and I'd have to retrace my steps to a
 point where things were working. I made frequent reference to [Sepand's
 code](https://github.com/sepans/wikiviz).
+
+### The animation loop
 
 One of the video game techniques you use in three.js is the animation loop:
 
@@ -127,16 +128,18 @@ update. This resonates with philosophy of newer javascript frameworks like
 [React](https://reactjs.org/). I don't know the exact paths of influence there (I would be interested to
 read them!) but it's fun for me to discover connections as I go.
 
-![](//blog.fastforwardlabs.com/images/2017/10/Screen_Shot_2017_10_05_at_5-1507238689767.23)
+### Z-Fighting
+
+![A screenshot of a codepen showing the z-fighting problem.](//blog.fastforwardlabs.com/images/2017/10/Screen_Shot_2017_10_05_at_5-1507238689767.23)
 
 ##### An early challenge: [flickering caused by z-fighting](https://codepen.io/GrantCuster/pen/GMmPxx)
 
-I was able to render a lot of points without too much trouble. One early problem was that some of the
+After I got a lot of points to render at the size I wanted, I found that some of the
 points would flicker. I eventually learned this flickering was caused by
 [z-fighting](https://en.wikipedia.org/wiki/Z-fighting), where, because they were
 all on the same z-level, different points were 'winning' each time the scene was
 drawn. It sounds like there is some combination of camera properties that could
-solve the issue, but I was unable to find the magic combo. As pointed out in the
+solve the issue, but I was unable to find the right combo. As pointed out in the
 [above-mentioned Stack Overflow
 post](https://stackoverflow.com/questions/21786184/setting-up-a-2d-view-in-three-js),
 you also may be able to fix it by slightly varying the z-value of each point. If
@@ -220,7 +223,7 @@ some developer tools profiling but wasn't really sure what to look for. Compared
 to an error message, a crash is a real bummer to recover from, and it's a big
 reason I didn't dissect the zoom code further. The cost of a mistake was too
 high. This was compounded because I don't really have a sense yet of what is
-expensive for three.js/3D and general and what is not. I kept stumbling into
+expensive for three.js/3D in general and what is not. I kept stumbling into
 crashes while changing something I thought was innocuous. It all made me less
 likely to experiment with changing things that were working, which is a big part
 of how I learn how things work. I don't know if there's anything to be done at a
@@ -236,15 +239,15 @@ panning. I did not like the zoom-feel, however. In my opinion it moves
 too fast and the thresholding makes it jerky. The momentum setting on the
 panning is also not what I was after.
  
-I checked out the code, and found the extremely useful `getCurrentScale`
+I checked out the code, and found the `getCurrentScale`
 function which calculates the current scale based on the camera settings and `z`
 value. Using this along with the `movementX` and `movementY` events from D3's
 zoom behavior (how
 far you'd dragged) yielded the pan behavior I was after.
 
-I experimented with using `getCurrentScale` to replace the ray function I was using.
+I experimented with using `getCurrentScale` to replace the ray function I was using for zoom.
 It seemed cleaner to have the directed zoom and panning operating off the same
-logic. After a fair amount of experimenting I got values fairly close to the ray
+logic. After a fair amount of experimenting I got values close to the ray
 method – but not close enough. It felt like you were zooming on ice.  I'm
 still 90% sure I should be able to do it, but after crashing the browser a bunch
 of times trying to figure it out, I decided to stick with the current working
