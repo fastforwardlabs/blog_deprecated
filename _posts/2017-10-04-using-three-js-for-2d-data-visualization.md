@@ -73,10 +73,10 @@ past projects from FFL interns.
 - [Aditya](//www.twitter.com/whaleandpetnuia) used D3 rendered to canvas in his
   [visualization of a community's taste in
 movies](http://fastforwardlabs.github.io/cinephile_tsne/). I watched him push
-canvas rendering to its limits, rendering around TODO: 50,000 points. 
+canvas rendering to its limits, rendering around 20,000 points. 
 - [Sepand](//www.twitter.com/sepans) used three.js to render his [visualization
   of Wikipedia articles](//www.fastforwardlabs.com/encartopedia). He was able to
-render TODO: 100,000 points without framerate issues. Coming (like me) from D3
+render 100,000 points without framerate issues. Coming (like me) from D3
 experience, he had to invest considerable dev time in understanding
 three.js's camera system.
 
