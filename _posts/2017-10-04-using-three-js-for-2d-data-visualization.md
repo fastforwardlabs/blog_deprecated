@@ -41,7 +41,7 @@ The main challenge has been getting a good zoom feel. For me, zoom feels bad
 when:
 
 1. The framerate drops because the browser can't handle rendering that many points.
-2. The zoom behavior is too fast, or jery.
+2. The zoom behavior is too fast, or jerky.
 
 The solution to #1 is to use three.js. The solution to #2 (so far) is to use
 [D3.js's zoom behavior](https://github.com/d3/d3-zoom) combined with three.js.
