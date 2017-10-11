@@ -8,7 +8,7 @@ author_link: https://twitter.com/GrantCuster
 published: false
 ---
 
-We've started work on our next prototype here at FFL. While the design is still
+We've started work on our next prototype. While the design is still
 evolving, we're pretty sure one element of it will be a visualization of tens of
 thousands of data points, clustered through a dimensional reduction algorithm
 (most likely using
@@ -85,11 +85,11 @@ Based on those experiences, I went into this project thinking I'd use three.js. 
 seemed like fun. Three.js comes more out of the game dev world 
 than the web app one I'm used to. A lot of recent web app
 innovation has come from adopting techniques from the video game world, so I was
-excited about the opportunity to go further down that path.
+excited about the opportunity to further explore that path.
 
 ## Getting started in three.js
 
-I looked through the three.js [documentation](https://threejs.org/docs/index.html#manual/introduction/Creating-a-scene)  and [examples](https://threejs.org/examples/). Then I started looking
+I looked through the three.js [documentation](https://threejs.org/docs/index.html#manual/introduction/Creating-a-scene) and [examples](https://threejs.org/examples/). Then I started looking
 for examples of 2D visualizations that were similar to what I wanted to create. There are
 not many. I did find this [Stack Overflow post about setting up a 2D
 view](https://stackoverflow.com/questions/21786184/setting-up-a-2d-view-in-three-js),
@@ -236,7 +236,7 @@ crashes, but it would be a big help for getting started.
 While looking for a panning solution, I found [Andrei Kashcha's
 three.map.control](https://github.com/anvaka/three.map.control),
 which conceptually had the things I was after for both directed zoom and
-panning. I did not like the zoom feel, however, in my opinion it moves 
+panning. I did not like the zoom feel, however. In my opinion it moves 
 too fast and the thresholding makes it jerky. The momentum setting on the
 panning is also not what I was after.
  
@@ -285,7 +285,7 @@ culling?
 bunch of experience with it. You can ask them about it and they'll probably draw
 diagrams.
 - Why am I using a 3D library for a 2D visualization? Because it's fast. I did
-  look at the 2D WebGL rendere [PixiJS](http://www.pixijs.com/) but found mostly
+  look at the 2D WebGL renderer [PixiJS](http://www.pixijs.com/) but found mostly
 game related examples. I could also try using the WebGL library directly. I'd
 love to read about either of those approaches. But given my time limit three.js
 seemed the right level at which to dive in.
