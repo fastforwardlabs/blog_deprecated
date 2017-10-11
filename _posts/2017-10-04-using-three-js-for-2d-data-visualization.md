@@ -223,7 +223,7 @@ some developer tools profiling, but I wasn't really sure what to look for. Compa
 to an error message, a crash is a real bummer to recover from, and it's a big
 reason I didn't dissect the zoom code further. The cost of a mistake was too
 high. This was compounded because I don't really have a sense yet of what is
-expensive for three.js/3D and general and what is not. I kept stumbling into
+expensive for three.js/3D in general and what is not. I kept stumbling into
 crashes while changing something I thought was innocuous. The whole experience made me less
 likely to experiment with changing things that were working, which is a big part
 of how I learn how things work. I don't know if there's anything to be done at a
