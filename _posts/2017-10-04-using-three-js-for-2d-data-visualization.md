@@ -24,7 +24,7 @@ Twitter ([@grantcuster](//www.twitter.com/GrantCuster)).
 
 ## What I'm after
 
-![A screenshot of the final working demo: a plotted t-sne with working pan and zoom](//blog.fastforwardlabs.com/images/2017/10/Screen_Shot_2017_10_05_at_4-1507236987242.55)
+![A screenshot of the final working demo: a plotted t-sne with working pan and zoom](//blog.fastforwardlabs.com/images/2017/10/Screen_Shot_2017_10_05_at_4-1507236987242.png)
 
 ##### The final result: [a T-SNE rendered in three.js with a map style pan and zoom](https://codepen.io/GrantCuster/pen/rGGRRp).
 
