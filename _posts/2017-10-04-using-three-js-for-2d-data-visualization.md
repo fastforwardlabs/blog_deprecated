@@ -130,7 +130,7 @@ read them!) but it's fun for me to discover connections as I go.
 
 ### Z-Fighting
 
-![A screenshot of the flickering points debug demo](//blog.fastforwardlabs.com/images/2017/10/Screen_Shot_2017_10_05_at_5-1507238689767.23)
+![A screenshot of the flickering points debug demo](//blog.fastforwardlabs.com/images/2017/10/Screen_Shot_2017_10_05_at_5-1507238689767.png)
 
 ##### An early challenge: [flickering caused by z-fighting](https://codepen.io/GrantCuster/pen/GMmPxx)
 
