@@ -130,7 +130,7 @@ read them!) but it's fun for me to discover connections as I go.
 
 ### Z-Fighting
 
-![A screenshot of the flickering points debug demo.](//blog.fastforwardlabs.com/images/2017/10/Screen_Shot_2017_10_05_at_5-1507238689767.png)
+![A screenshot of the flickering points debug demo](//blog.fastforwardlabs.com/images/2017/10/Screen_Shot_2017_10_05_at_5-1507238689767.png)
 
 ##### An early challenge: [flickering caused by z-fighting](https://codepen.io/GrantCuster/pen/GMmPxx)
 
@@ -248,7 +248,7 @@ far you'd dragged) yielded the pan behavior I was after.
 I experimented with using `getCurrentScale` to replace the ray function I was using for zoom.
 It seemed cleaner to have the directed zoom and panning operating off the same
 logic. After a fair amount of experimenting I got values fairly close to the ray
-method – but not close enough. It felt like I was zooming on ice.  I'm
+method – but not close enough. It felt like I was zooming on ice.  I'm
 still 90% sure can be done, but after crashing the browser a bunch
 of times trying to figure it out, I decided to stick with the current working
 configuration.
@@ -291,5 +291,4 @@ seemed the right level at which to dive in.
 - Why are the points squares? It is apparently more taxing to draw circles.
   Sepand did it, and I plan to eventually (with sprites) once I understand the
 ins-and-outs a little more. 
-
 
