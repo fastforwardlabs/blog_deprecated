@@ -2,219 +2,274 @@
     url: 'https://hbr.org/2016/12/hiring-algorithms-are-not-neutral'
     text: 'Hiring Algorithms Are Not Neutral'
     image: 'https://hbr.org/resources/images/article_assets/2016/12/dec16-09-175134657-383x215.jpg'
+    date: '2017-10-06T04:00:00.000Z'
 -
     url: 'https://www.theguardian.com/technology/2016/dec/19/discrimination-by-algorithm-scientists-devise-test-to-detect-ai-bias'
     text: 'Discrimination by algorithm: scientists devise test to detect AI bias'
     image: 'https://i.guim.co.uk/img/media/b7d49b6cf8a9b93d2feb7ab024ed2e8819a14a2a/0_0_3888_2335/master/3888.jpg?w=1200&amp;h=630&amp;q=55&amp;auto=format&amp;usm=12&amp;fit=crop&amp;crop=faces%2Centropy&amp;bm=normal&amp;ba=bottom%2Cleft&amp;blend64=aHR0cHM6Ly91cGxvYWRzLmd1aW0uY28udWsvMjAxNi8wNi8wNy9vdmVybGF5LWxvZ28tMTIwMC05MF9vcHQucG5n&amp;s=8d7b6fd0d7e8bee469babc176a6fb6fc'
+    date: '2017-10-06T04:00:00.000Z'
 -
     url: 'http://course.fast.ai/'
     text: 'Practical Deep Learning for Coders'
     image: 'http://i3.ytimg.com/vi/V2h3IOBDvrA/hqdefault.jpg'
+    date: '2017-10-06T04:00:00.000Z'
 -
     url: 'https://www.wired.com/2017/01/d-wave-turns-open-source-democratize-quantum-computing/'
     text: 'Quantum Computing Is Real, and D-Wave Just Open-Sourced It'
     image: 'https://www.wired.com/wp-content/uploads/2017/01/GettyImages-547934569-1200x630.jpg'
+    date: '2017-10-06T04:00:00.000Z'
 -
     url: 'https://github.com/RaRe-Technologies/gensim/blob/128f42ce1350f344537a8313d1588a03fab07a90/docs/notebooks/Word2Vec_FastText_Comparison.ipynb'
     text: 'Comparison of FastText and Word2Vec'
     image: 'http://imgur.com/IJUSKpn.png'
+    date: '2017-10-06T04:00:00.000Z'
 -
     url: 'https://blog.ought.com/nips-2016-875bb8fadb8c#.qq47cl881'
     text: '50 Things I learned at NIPs'
     image: 'https://cdn-images-1.medium.com/max/800/1*YHdae9jFdjEgJM46QSfO-w.jpeg'
+    date: '2017-10-06T04:00:00.000Z'
 -
     url: 'http://www.nytimes.com/2016/12/14/magazine/the-great-ai-awakening.html'
     text: 'The Great AI Awakening'
     image: 'https://static01.nyt.com/images/2016/12/18/magazine/18ai-cover2/18ai-cover2-articleLarge-v4.jpg'
+    date: '2017-10-06T04:00:00.000Z'
 -
     url: 'https://points.datasociety.net/did-media-literacy-backfire-7418c084d88d#.ribqhzie5'
     text: 'Did Media Literacy Backfire'
     image: 'https://cdn-images-1.medium.com/max/600/1*_xkUoRuG9HZz3VU3LdeCFw.png'
+    date: '2017-10-06T04:00:00.000Z'
 -
     url: 'http://www.newyorker.com/magazine/2017/01/02/rewriting-the-code-of-life'
     text: 'How DNA Editing Could Change Life on Earth'
     image: 'http://www.newyorker.com/wp-content/uploads/2017/01/170102_r29230-1200x630-1481836641.jpg'
+    date: '2017-10-06T04:00:00.000Z'
 -
     url: 'https://vimeo.com/199488031'
     text: 'Object Masking - The Wolf of Wall Street'
-    image: /images/link_images/Screen%20Shot%202017-01-23%20at%204.29.25%20PM.png
+    image: '/images/link_images/Screen%20Shot%202017-01-23%20at%204.29.25%20PM.png'
+    date: '2017-10-06T04:00:00.000Z'
 -
     url: 'http://arstechnica.com/information-technology/2017/01/alphago-is-back-and-secretly-crushing-the-worlds-best-human-players/'
     text: 'That mystery Go player crushing the world’s best online? It was AlphaGo again'
     image: 'https://cdn.arstechnica.net/wp-content/uploads/2017/01/GettyImages-515689382-800x591.jpg'
+    date: '2017-10-06T04:00:00.000Z'
 -
     url: 'https://github.com/marcotcr/lime'
-    text: Lime
+    text: 'Lime'
     image: 'https://raw.githubusercontent.com/marcotcr/lime/master/doc/images/twoclass.png'
+    date: '2017-10-06T04:00:00.000Z'
 -
     url: 'https://lines.chromeexperiments.com/'
     text: 'Land Lines'
     image: 'http://imgur.com/PBJNXfg.png'
+    date: '2017-10-06T04:00:00.000Z'
 -
     url: 'https://jaan.io/food2vec-augmented-cooking-machine-intelligence/'
     text: 'food2vec - Augmented cooking with machine intelligence'
     image: 'https://jaan.io/images/mise-en-place.jpg'
+    date: '2017-10-06T04:00:00.000Z'
 -
     url: 'https://ragulpr.github.io/2016/12/22/WTTE-RNN-Hackless-churn-modeling/'
     text: 'WTTE-RNN - Less hacky churn prediction'
     image: 'https://i.imgur.com/eR2OPmP.gif'
+    date: '2017-10-06T04:00:00.000Z'
 -
     url: 'http://affinelayer.com/pix2pix/index.html'
     text: 'Image-to-Image Translation in Tensorflow'
     image: 'http://blog.fastforwardlabs.com/images/link_images/affinelayer.png'
+    date: '2017-10-06T04:00:00.000Z'
 -
     url: 'https://pudding.cool/process/how-to-implement-scrollytelling/'
     text: 'How to Implement Scrollytelling with Six Different Libraries'
     image: 'https://pudding.cool/process/how-to-implement-scrollytelling/assets/scrollytelling.gif"'
+    date: '2017-10-06T04:00:00.000Z'
 -
     url: 'http://www.unofficialgoogledatascience.com/2017/01/causality-in-machine-learning.html'
     text: 'Causality in Machine Learning'
     image: 'https://2.bp.blogspot.com/-SPMRpqxF5Tg/WJGHwp8ZqQI/AAAAAAAAcBE/V3nSX-o_U0UZ9RSSp8p8HPxsFxtxHQK0gCLcB/s400/puppies.png'
+    date: '2017-10-06T04:00:00.000Z'
 -
     url: 'https://arxiv.org/abs/1701.02434'
     text: 'A Conceptual Introduction to Hamiltonian Monte Carlo'
     image: 'http://blog.fastforwardlabs.com/images/link_images/hmc.png'
+    date: '2017-10-06T04:00:00.000Z'
 -
     url: 'https://arxiv.org/abs/1611.03530'
     text: 'Understanding deep learning requires rethinking generalization'
     image: 'http://blog.fastforwardlabs.com/images/link_images/generalization.png'
+    date: '2017-10-06T04:00:00.000Z'
 -
     url: 'https://www.codelitt.com/blog/doom-ai/'
     text: 'Building a deep learning DOOM bot'
     image: 'http://blog.fastforwardlabs.com/images/link_images/Doom_Header-1.jpg'
+    date: '2017-10-06T04:00:00.000Z'
 -
     url: 'http://sebastianruder.com/optimizing-gradient-descent/'
     text: 'An overview of gradient descent optimization algorithms'
     image: 'http://sebastianruder.com/content/images/2016/09/loss_function_image_tumblr.png'
+    date: '2017-10-06T04:00:00.000Z'
 -
     url: 'https://arxiv.org/abs/1702.06235'
     text: 'Learning to generate one-sentence biographies from Wikidata'
     image: 'http://blog.fastforwardlabs.com/images/link_images/seq_model_attn.png'
+    date: '2017-10-06T04:00:00.000Z'
 -
     url: 'https://www.wired.com/2017/02/machine-learning-drifting-real-world-internet-balloons/'
     text: 'Machine Learning Invades the Real World on Internet Balloons'
     image: 'https://assets.wired.com/photos/w_582/wp-content/uploads/2017/02/Project-Loon-1.jpg'
+    date: '2017-10-06T04:00:00.000Z'
 -
     url: 'https://www.oreilly.com/ideas/ideas-on-interpreting-machine-learning'
     text: 'Ideas on interpreting machine learning'
     image: 'https://d3tdunqjn7n0wj.cloudfront.net/1400x933/main_art_2-ddae9ba5567dbd9bc5e0f362097b42ab.jpg'
+    date: '2017-10-06T04:00:00.000Z'
 -
     url: 'https://iamtrask.github.io/2017/03/17/safe-ai/'
     text: 'Building Safe A.I.: A Tutorial for Encrypted Deep Learning'
     image: 'https://iamtrask.github.io/img/he.png'
+    date: '2017-10-06T04:00:00.000Z'
 -
     url: 'http://distill.pub/about/'
     text: 'Distill: A modern Medium for Presenting Machine Learning Research'
     image: 'http://distill.pub/preview.jpg'
+    date: '2017-10-06T04:00:00.000Z'
 -
     url: 'https://openai.com/blog/learning-to-communicate/'
     text: 'Learning to Communicate'
     image: 'https://openai.com/assets/blog/learning_to_communicate/multi_agent_comm_1-471605aa1baa2c145933775e1a02f63d0db4ffe11436171f109b96a9fdd1b5fd.png'
+    date: '2017-10-06T04:00:00.000Z'
 -
     url: 'https://blog.openai.com/evolution-strategies/'
     text: 'Evolution Strategies as a Scalable Alternative to Reinforcement Learning'
     image: 'https://blog.openai.com/content/images/2017/03/2x-2.jpg'
+    date: '2017-10-06T04:00:00.000Z'
 -
     url: 'http://www.theverge.com/2017/3/30/15113162/future-utopia-tellart-design-agency-world-government-summit-dubai'
     text: 'The Future Agency: Inside the big business of imagining the future'
     image: 'https://cdn0.vox-cdn.com/thumbor/RuDxcxgAhuzwXHJ2GaDB3k6OQ_8=/0x0:3000x1571/fit-in/1200x630/cdn0.vox-cdn.com/uploads/chorus_asset/file/8250197/PMO_GS15_03__1_.jpg'
+    date: '2017-10-06T04:00:00.000Z'
 -
     url: 'https://gist.github.com/kylemcdonald/c25c64dabdfd21ca8ab0e23b8e559061'
     text: 'Comparison of different t-SNE implementations for speed and results.'
     image: 'https://pbs.twimg.com/media/C8mDHRcXkAAn-PS.png'
+    date: '2017-10-06T04:00:00.000Z'
 -
     url: 'https://research.googleblog.com/2017/04/federated-learning-collaborative.html'
     text: 'Federated Learning: Collaborative Machine Learning without Centralized Training Data'
     image: 'https://3.bp.blogspot.com/-sb40Lg5MchE/WOa92rSrXVI/AAAAAAAABsU/edvH01nn2SMCnJle8mLnHT_hCa-xXrnsACLcB/s640/02_Personalization%2Bsleeping.png'
+    date: '2017-10-06T04:00:00.000Z'
 -
     url: 'https://www.wired.com/2017/04/googles-dueling-neural-networks-spar-get-smarter-no-humans-required/'
     text: 'Google’s Dueling Neural Networks Spar to Get Smarter, No Humans Required'
     image: 'https://www.wired.com/wp-content/uploads/2017/04/HandshakeHP-551958467-1200x630.jpg'
+    date: '2017-10-06T04:00:00.000Z'
 -
     url: 'http://www.nature.com/news/astronomers-explore-uses-for-ai-generated-images-1.21398'
     text: 'Astronomers explore uses for AI-generated images'
     image: 'http://www.nature.com/polopoly_fs/7.42071.1485880737!/image/WEB_lead_Nguyen%20and%20Mandelbaum.jpg_gen/derivatives/nature_homepage/WEB_lead_Nguyen%20and%20Mandelbaum.jpg'
+    date: '2017-10-06T04:00:00.000Z'
 -
     url: 'https://blog.dominodatalab.com/fitting-gaussian-process-models-python/'
     text: 'Fitting Gaussian Process Models in Python'
     image: 'https://blog.dominodatalab.com/wp-content/uploads/2017/03/banner.png'
+    date: '2017-10-06T04:00:00.000Z'
 -
     url: 'http://www.openias.org/variational-coin-toss'
     text: 'Variational Coin Toss'
     image: 'http://www.openias.org/img/feature-coin-toss.jpg'
+    date: '2017-10-06T04:00:00.000Z'
 -
     url: 'https://research.googleblog.com/2017/05/neural-network-generated-illustrations.html'
     text: 'Neural Network-Generated Illustrations in Allo'
     image: 'https://3.bp.blogspot.com/-AD4KlSCL-2E/WROV2QtjHSI/AAAAAAAABzc/G_f1w3s_RdgOXDx02RcdD1LvSBoOwBrPgCLcB/s640/image2.gif'
+    date: '2017-10-06T04:00:00.000Z'
 -
     url: 'https://blog.acolyer.org/2017/05/11/understanding-deep-learning-requires-re-thinking-generalization/'
     text: 'Understanding deep learning requires re-thinking generalization'
     image: 'https://adriancolyer.files.wordpress.com/2017/05/understanding-deep-learning-fig-2.jpeg?w=640'
+    date: '2017-10-06T04:00:00.000Z'
 -
     url: 'https://medium.com/@samim/assisted-writing-7adea9aed19'
     text: 'Assisted Writing – samim – Medium'
     image: 'https://cdn-images-1.medium.com/max/1200/1*R1kWE3my6Avll0DmEOI22w.jpeg'
+    date: '2017-10-06T04:00:00.000Z'
 -
     url: 'http://seat14c.com'
     text: 'A flight to the future. A new world to consider.'
     image: 'https://s3-us-west-1.amazonaws.com/xprize-ana-assets/images/banners/content-submssion-banner.jpg'
+    date: '2017-10-06T04:00:00.000Z'
 -
     url: 'https://www.youtube.com/watch?v=Al0iYEgbWsI'
     text: 'VR Notebook Flip Through'
     image: 'https://i.ytimg.com/vi/Al0iYEgbWsI/maxresdefault.jpg'
+    date: '2017-10-06T04:00:00.000Z'
 -
     url: 'http://composition.al/blog/2017/05/30/proving-that-safety-critical-neural-networks-do-what-theyre-supposed-to-where-we-are-where-were-going-part-1-of-2'
     text: 'Proving that safety-critical neural networks do what they''re supposed to'
     image: 'http://composition.al/images/content/acas-xu-dnn-table-comparison.png'
+    date: '2017-10-06T04:00:00.000Z'
 -
     url: 'https://www.thenation.com/article/how-you-can-join-todays-internet-wide-day-of-action-to-save-net-neutrality/'
     text: 'How You Can Join Today’s Internet-Wide Day of Action to Save Net Neutrality'
     image: 'https://www.thenation.com/wp-content/uploads/2017/06/net_neutrality_protest_cc.jpg'
+    date: '2017-10-06T04:00:00.000Z'
 -
     url: 'https://arstechnica.com/science/2017/07/pocket-brains-neuromorphic-hardware-arrives-for-our-brain-inspired-algorithms/'
     text: 'Pocket brains: Neuromorphic hardware arrives for our brain-inspired algorithms'
     image: 'https://cdn.arstechnica.net/wp-content/uploads/2017/07/GettyImages-172686184-640x853.jpg'
+    date: '2017-10-06T04:00:00.000Z'
 -
     url: 'http://bair.berkeley.edu/blog/2017/07/18/learning-to-learn/'
     text: 'Learning to Learn'
     image: 'http://bair.berkeley.edu/blog/assets/maml/ant_maml.gif'
+    date: '2017-10-06T04:00:00.000Z'
 -
     url: 'https://hbr.org/2017/07/the-business-of-artificial-intelligence'
     text: 'The Business of Artificial Intelligence'
     image: 'https://hbr.org/resources/images/article_assets/2017/07/AI-hero-premium.jpg'
+    date: '2017-10-06T04:00:00.000Z'
 -
     url: 'https://limn.it/utopian-hacks/'
     text: 'Utopian Hacks'
     image: 'https://limn.it/wp-content/uploads/v02n05p005-SolPC-ad.png'
+    date: '2017-10-06T04:00:00.000Z'
 -
     url: 'http://ruder.io/multi-task/'
     text: 'An Overview of Multi-Task Learning for Deep Learning'
     image: 'http://ruder.io/content/images/2017/05/relationship_networks.png'
+    date: '2017-10-06T04:00:00.000Z'
 -
     url: 'http://ncase.me/trust/'
     text: 'The Evolution of Trust'
     image: 'http://ncase.me/trust/social/thumbnail.png'
+    date: '2017-10-06T04:00:00.000Z'
 -
     url: 'http://www.newyorker.com/tech/elements/better-business-through-sci-fi'
     text: 'Better Business Through Sci-Fi'
     image: 'https://media.newyorker.com/photos/597b53c9314ae86efe4dab1e/16:9/w_1200,h_630,c_limit/Romeo-Better-Business-Through-Sci-Fi.jpg'
+    date: '2017-10-06T04:00:00.000Z'
 -
     url: 'https://www.youtube.com/watch?v=59bMh59JQDo'
     text: 'Machine Learning and Human Bias'
     image: 'https://i.ytimg.com/vi/59bMh59JQDo/maxresdefault.jpg'
+    date: '2017-10-06T04:00:00.000Z'
 -
     url: 'https://experiments.withgoogle.com/ar'
     text: 'AR Experiments'
     image: 'https://lh3.googleusercontent.com/_jcm73r3fb-gBc_Y5NbhXVYfy34MKRLalhYKnSpp4RpEV9nTe0M6B2Qq_bQmOuVHbAIizrxhEKAegMgHVSsTWkLBD6br'
+    date: '2017-10-06T04:00:00.000Z'
 -
     url: 'https://www.nature.com/articles/nature23463.epdf?referrer_access_token=uplEG40T7AzKfaPeAeKlndRgN0jAjWel9jnR3ZoTv0O4LAhrt7fpCgAOW22z2TXZZIfOPREG7W8fglNDja0fVcQmhyDtn1isVNmLeKFFa0f2PrKHYoflAWS-UfBur9c1e1svpzpBiaQ9Olk9nnTCkMrfkzZqqy3JDF_VU4yqcFSFYph0ag_cFmQASwVfV9ksDEH5N036s_6SekVDeM9oai1GKX4L_JmgVHazSqOTPrS1qYxajyc1ChobULn54DTV4dbRm17uij3x56UqYCi7cyvrsZMsklexVUc0B3hyPc9-eawY7jWwhkhgh97iBLnB&tracking_referrer=physicsworld.com'
     text: 'Fast automated analysis of strong gravitational lenses with convolutional neural networks'
     image: 'http://images.iop.org/objects/phw/news/21/8/39/2017-08-30-grav-lens.jpg'
+    date: '2017-10-06T04:00:00.000Z'
 -
     url: 'https://guzpenha.github.io/guzblog/2017-09-19/recsys2017-highlights'
     text: 'RecSys 2017 Highlights'
-    image: /images/2017/09/5-1506032750674.png
+    image: '/images/2017/09/5-1506032750674.png'
+    date: '2017-10-06T04:00:00.000Z'
 -
     url: 'https://teachablemachine.withgoogle.com/'
     text: 'Teachable Machine'
     image: 'https://teachablemachine.withgoogle.com/assets/static/share-image.jpg'
+    date: '2017-10-06T04:00:00.000Z'
