@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: "Using Three.js for 2D Data Visualization"
-date: 2017-10-04 10:30
+date: 2017-10-11 10:30
 preview_image: http://blog.fastforwardlabs.com/images/2017/10/tsne-final.png
 author: Grant
 author_link: https://twitter.com/GrantCuster
