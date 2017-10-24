@@ -107,7 +107,7 @@ We're always happy to share opportunities we hear about; please let us know if y
 
 ## FFL Updates
 
-Conference season is beginning to slow down a bit, but we are hard at work on our next report. Friederike will be speaking at [PyData 2017] here in New York City in November; please look her up, if you're attending!
+Conference season is beginning to slow down a bit, but we are hard at work on our next report. Friederike will be speaking at [PyData 2017](https://pydata.org/nyc2017/) here in New York City in November; please look her up, if you're attending!
 
 ![]({{ site.github.url }}/images/2017/10/2017_09_24_D4GX_UN-1508803365045.jpg)
 
