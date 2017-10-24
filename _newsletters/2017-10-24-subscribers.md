@@ -58,11 +58,11 @@ The approach taken by AlphaGo Zero may help solve other problems that are *struc
 ### What's interesting
 Through pure self-play without any guidance by human game playing data, AlphaGo Zero learned moves and strategies known to Go players: 
 
->*AlphaGo Zero rapidly progressed from entirely random moves towards a sophisticated understanding of Go concepts, including* fuseki *(opening)*, tesuji *(tactics)*, life-and-death, ko *(repeated board situations)*, yose *(endgame), capturing races,* sente *(initiative)*, shape, influence *and* territory, *all discovered from first principles.* 
+>*AlphaGo Zero rapidly progressed from entirely random moves towards a sophisticated understanding of Go concepts, including* **fuseki** *(opening)*, **tesuji** *(tactics)*, **life-and-death**, **ko** *(repeated board situations)*, **yose** *(endgame)*, **capturing races**, **sente** *(initiative)*, **shape**, **influence** *and* **territory**, *all discovered from first principles.* 
 
 But what comes easy to humans may not come as easily to an AI:
 
->*Surprisingly,* shicho *(‘ladder’ capture sequences that may span the whole board) — one of the first elements of Go knowledge learned by humans — were only understood by AlphaGo Zero much later in training.*
+>*Surprisingly,* **shicho** *(‘ladder’ capture sequences that may span the whole board) — one of the first elements of Go knowledge learned by humans — were only understood by AlphaGo Zero much later in training.*
 
 Not all the moves the systems learned to make were components of known strategies; it is likely that Go masters will study the moves of AlphaGo Zero to inform their own strategies and future chances of winning. 
 
@@ -81,11 +81,11 @@ The DeepMind researchers characterize Go (in their paper introducing AlphaGo Zer
 
 Complexity is more than combinatorics, the number of possible states in the world (in that sense, and in that sense only, Go is a complex game). As F. Scott Fitzgerald once said: 
 
->The test of a first-rate intelligence is the ability to hold two opposed ideas in mind at the same time and still retain the ability to function.
+>*The test of a first-rate intelligence is the ability to hold two opposed ideas in mind at the same time and still retain the ability to function.*
 
 AlphaGo Zero, alongside its other artificially intelligent companions, would suffer; they need a black or white world. 
 
-Finally, let's not forget that games, however important they may or may not be for machine learning research, are not only about winning; they are a fun, shared, social activity. The effects of AlphaGo Zero on the game Go are not going to be ["seismic"](https://www.quantamagazine.org/artificial-intelligence-learns-to-learn-entirely-on-its-own-20171018/); the lens of current learning algorithms, with objective and value functions, cannot fully capture a valuable human practice.
+Finally, let's not forget that games, however important they may or may not be for machine learning research, are not only about winning; they are a fun, shared, social activity. The effects of AlphaGo Zero on the game Go are not going to be "[seismic](https://www.quantamagazine.org/artificial-intelligence-learns-to-learn-entirely-on-its-own-20171018/)"; the lens of current learning algorithms, with objective and value functions, cannot fully capture a valuable human practice.
 
 ---
 
