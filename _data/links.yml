@@ -46,7 +46,7 @@
 -
     url: 'https://vimeo.com/199488031'
     text: 'Object Masking - The Wolf of Wall Street'
-    image: '/images/link_images/Screen%20Shot%202017-01-23%20at%204.29.25%20PM.png'
+    image: /images/link_images/Screen%20Shot%202017-01-23%20at%204.29.25%20PM.png
     date: '2017-10-06T04:00:00.000Z'
 -
     url: 'http://arstechnica.com/information-technology/2017/01/alphago-is-back-and-secretly-crushing-the-worlds-best-human-players/'
@@ -55,7 +55,7 @@
     date: '2017-10-06T04:00:00.000Z'
 -
     url: 'https://github.com/marcotcr/lime'
-    text: 'Lime'
+    text: Lime
     image: 'https://raw.githubusercontent.com/marcotcr/lime/master/doc/images/twoclass.png'
     date: '2017-10-06T04:00:00.000Z'
 -
@@ -266,7 +266,7 @@
 -
     url: 'https://guzpenha.github.io/guzblog/2017-09-19/recsys2017-highlights'
     text: 'RecSys 2017 Highlights'
-    image: '/images/2017/09/5-1506032750674.png'
+    image: /images/2017/09/5-1506032750674.png
     date: '2017-10-06T04:00:00.000Z'
 -
     url: 'https://teachablemachine.withgoogle.com/'
@@ -278,4 +278,7 @@
     text: 'Universal Paperclips'
     image: 'http://feed.grantcuster.com/static/images/feed/Screen%20Shot%202017-10-10%20at%209.11.51%20PM-1507684554155.png'
     date: '2017-10-13T15:26:50.634Z'
-    
+-
+    url: 'http://ruder.io/word-embeddings-2017/'
+    text: 'Word embeddings in 2017: Trends and future directions'
+    image: null
