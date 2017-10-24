@@ -18,7 +18,7 @@ This newsletter is all about AlphaGo Zero.
 ## What's cool about AlphaGo Zero, and what isn't
 In May 2016, Andrej Karpathy, research scientist at OpenAI, wrote an [insightful post](https://medium.com/@karpathy/alphago-in-context-c47718cb95a5) explaining why AlphaGo is cool, and, largely, why it isn't:
 
-> AlphaGo is a narrow AI system that can play Go and that’s it. The ATARI-playing agents from DeepMind do not use the approach taken with AlphaGo. The Neural Turing Machine has little to do with AlphaGo. The Google data center improvements definitely do not use AlphaGo. The Google Search engine is not going to use AlphaGo. Therefore, AlphaGo does not generalize to any problem outside of Go [...].
+> *AlphaGo is a narrow AI system that can play Go and that’s it. The ATARI-playing agents from DeepMind do not use the approach taken with AlphaGo. The Neural Turing Machine has little to do with AlphaGo. The Google data center improvements definitely do not use AlphaGo. The Google Search engine is not going to use AlphaGo. Therefore, AlphaGo does not generalize to any problem outside of Go [...].*
 
 AlphaGo was successful because its DeepMind creators studied the game Go and uncovered (at least) seven conveniences of the game, which they then exploited to build an expert AI game-playing agent.
 
@@ -32,7 +32,7 @@ But, AlphaGo Zero still relies on other conveniences of Go: most importantly, th
 
 Karpathy updated his post last week:
 
-> Update Oct 18, 2017: AlphaGo Zero was announced. This post refers to the previous version. 95% of it still applies.
+> *Update Oct 18, 2017: AlphaGo Zero was announced. This post refers to the previous version. 95% of it still applies.*
 
 Yes.
 
@@ -58,17 +58,17 @@ The approach taken by AlphaGo Zero may help solve other problems that are *struc
 ### What's interesting
 Through pure self-play without any guidance by human game playing data, AlphaGo Zero learned moves and strategies known to Go players: 
 
->AlphaGo Zero rapidly progressed from entirely random moves towards a sophisticated understanding of Go concepts, including *fuseki* (opening), *tesuji* (tactics), life-and-death, *ko* (repeated board situations), *yose* (endgame), capturing races, *sente* (initiative), shape, influence and  territory, all discovered from first principles. 
+>*AlphaGo Zero rapidly progressed from entirely random moves towards a sophisticated understanding of Go concepts, including* fuseki *(opening)*, tesuji *(tactics)*, life-and-death, ko *(repeated board situations)*, yose *(endgame), capturing races,* sente *(initiative)*, shape, influence *and* territory, *all discovered from first principles.* 
 
 But what comes easy to humans may not come as easily to an AI:
 
->Surprisingly, *shicho* (‘ladder’ capture sequences that may span the whole board) — one of the first elements of Go knowledge learned by humans — were only understood by AlphaGo Zero much later in training.
+>*Surprisingly,* shicho *(‘ladder’ capture sequences that may span the whole board) — one of the first elements of Go knowledge learned by humans — were only understood by AlphaGo Zero much later in training.*
 
 Not all the moves the systems learned to make were components of known strategies; it is likely that Go masters will study the moves of AlphaGo Zero to inform their own strategies and future chances of winning. 
 
 Rather poetically, Andy Okun and Andrew Jackson from the American Go Association describe the (possible) exchange between human and artificially intelligent AI masters as ["a conversation"](https://www.nature.com/nature/journal/v550/n7676/pdf/550336a.pdf)):
 
-> Go players, coming from so many nations, speak to each other with their moves, even when they do not share an ordinary language. They share ideas, intuitions and, ultimately, their values over the board — not only particular openings or tactics, but whether they prefer chaos or order, risk or certainty, and complexity or simplicity. The time when humans can have a meaningful conversation with an AI has always seemed far off and the stuff of science fiction. But for Go players, that day is here.
+> *Go players, coming from so many nations, speak to each other with their moves, even when they do not share an ordinary language. They share ideas, intuitions and, ultimately, their values over the board — not only particular openings or tactics, but whether they prefer chaos or order, risk or certainty, and complexity or simplicity. The time when humans can have a meaningful conversation with an AI has always seemed far off and the stuff of science fiction. But for Go players, that day is here.*
 
 AlphaGo Zero, welcome!
 
