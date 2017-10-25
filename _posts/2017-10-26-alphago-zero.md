@@ -33,7 +33,7 @@ Yes.
 
 We encourage the reader to read [Rodney Brooks' quite amusing account](https://spectrum.ieee.org/transportation/self-driving/the-big-problem-with-selfdriving-cars-is-people) of all the things self-driving cars have to worry about (like being bullied by humans).
 
-### Okay, now what's cool
+## Okay, now what's cool
 But, AlphaGo Zero is cool. AlphaGo has two neural networks, one trained to generate a distribution over likely Go moves and one to generate an evaluation for each move (i.e., how likely it is to lead to a win). AlphaGo Zero has only *one* neural network trained on a dual objective (move *and* evaluation prediction) (see [the Nature paper](https://www.nature.com/nature/journal/v550/n7676/full/nature24270.html)); this is a neat application of [multi-task learning](https://arxiv.org/abs/1706.05098).
 
 AlphaGo Zero uses a tweaked, simplified, and very clever [Monte Carlo Tree Search](http://jeffbradberry.com/posts/2015/09/intro-to-monte-carlo-tree-search/) (MCTS) that relies on the (single) neural network to evaluate positions and sample moves; the neural network guides the MCTS (and therefore MCTS improves with neural network training).
@@ -50,7 +50,7 @@ The *real awesomeness of AlphaGo Zero*, however, is the reduction in computation
 
 The approach taken by AlphaGo Zero may help solve other problems that are *structurally similar* to Go (i.e., problems that share characteristics of the game Go). Other games come to mind, and the DeepMind researchers suggest structured problems like protein folding, [reducing energy consumption](https://deepmind.com/blog/deepmind-ai-reduces-google-data-centre-cooling-bill-40/), or searching for revolutionary new materials. The application of AlphaGo Zero to these problems won't be trivial.
 
-### What's interesting
+## What's interesting
 Through pure self-play without any guidance by human game playing data, AlphaGo Zero learned moves and strategies known to Go players: 
 
 >*AlphaGo Zero rapidly progressed from entirely random moves towards a sophisticated understanding of Go concepts, including* **fuseki** *(opening)*, **tesuji** *(tactics)*, **life-and-death**, **ko** *(repeated board situations)*, **yose** *(endgame)*, **capturing races**, **sente** *(initiative)*, **shape**, **influence** *and* **territory**, *all discovered from first principles.* 
@@ -69,7 +69,7 @@ Rather poetically, Andy Okun and Andrew Jackson from the [American Go Associatio
 
 AlphaGo Zero, welcome!
 
-### Parting thoughts
+## Parting thoughts
 The DeepMind researchers characterize Go (in their paper introducing AlphaGo Zero) as belonging to one of the "most challenging domains in terms of human intellect." While convenient, a solution is all the more impressive when the problem is extremely difficult. Aren't there more important problems for us to solve, more challenging problems?
 
 ![](/images/2017/10/gallery_6-1508465225174.jpg)
