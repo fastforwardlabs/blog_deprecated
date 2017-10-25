@@ -1,11 +1,11 @@
 --- 
 layout: post
 title: "AlphaGo Zero's win, what it means"
-date: 2017-10-26 08:30
+date: 2017-10-25
 preview_image: "/images/2017/10/220px_Go_board_part-1508964914733.jpg"
 author: Friederike
 author_link: "https://twitter.com/FSchueuer"
-published: false
+published: true
 ---
 
 In an almost Freudian twist, a play on [*Vatermord*](http://www.gutenberg.org/files/41214/41214-h/41214-h.htm) by an artificial intelligence, [AlphaGo Zero](https://deepmind.com/blog/alphago-zero-learning-scratch/) has dethroned its "parent," AlphaGo. 
