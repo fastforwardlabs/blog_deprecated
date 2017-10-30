@@ -47,7 +47,7 @@ Applied to text, [attention mechanisms improve machine translation](https://arxi
 
 But, albeit inspired by human attention, attention mechanisms integrated into neural networks *are* different, as [Denny Britz from WILDML points out](http://www.wildml.com/2016/01/attention-and-memory-in-deep-learning-and-nlp/). 
 
-> Human attention is something that’s supposed to save computational resources. By focusing on one thing, we can neglect many other things. But that’s not really what we’re doing in the above model. We’re essentially looking at everything in detail before deciding what to focus on.
+> *Human attention is something that’s supposed to save computational resources. By focusing on one thing, we can neglect many other things. But that’s not really what we’re doing in the above model. We’re essentially looking at everything in detail before deciding what to focus on.*
 
 Attention, implemented as a mask, is actually more akin to (working) memory. Despite the possible misnomer, attention mechanisms are a general and powerful technique, and are becoming increasingly widespread. (We may use them in the prototype we're currently working on.)
 
@@ -59,17 +59,17 @@ For a technical deep dive into attention mechanisms, including the math, we reco
 
 What was most surprising about AlphaGo Zero's win was its portrayal in the media. Nearly every publication, from the [MIT Tech Review](https://www.technologyreview.com/s/609141/alphago-zero-shows-machines-can-become-superhuman-without-any-help/) to [Wired](https://www.wired.com/story/this-more-powerful-version-of-alphago-learns-on-its-own/) and [Quanta Magazine](https://www.quantamagazine.org/artificial-intelligence-learns-to-learn-entirely-on-its-own-20171018/), chose to emphasize the fact that AlphaGo Zero learns without human game play data (or "supervision") - but algorithms that learn without human supervision have been around for a while:
 
-> Unsupervised learning is a type of machine learning algorithm used to draw inferences from datasets consisting of input data without labeled responses.
+> *Unsupervised learning is a type of machine learning algorithm used to draw inferences from datasets consisting of input data without labeled responses.*
 
 According to Wikipedia. Gerald Tesauro's [TD-Gammon](http://www.bkgm.com/articles/tesauro/tdl.html) learned only through self-play, in 1995. We published last week's newsletter on [AlphaGo Zero's win (and what it actually means)](http://blog.fastforwardlabs.com/2017/10/25/alphago-zero.html) on our blog, in an effort to guide the conversation in a more fruitful direction. AlphaGo Zero's win shows that:
 
-> to build successful machine learning (or, yes, AI, if you prefer) products, a deep understanding of the problem you are looking to solve is as important as a good grasp of the tech.
+> *to build successful machine learning (or, yes, AI, if you prefer) products, a deep understanding of the problem you are looking to solve is as important as a good grasp of the tech.*
 
 Why did the media focus on the AlphaGo-Zero-does-not-need-us aspect?
 
 Reporting on machine learning and AI in the popular media tends to be superficial, as is any reporting on a complex topic. But, the need to simplify does not explain the singular focus of the coverage. Instead, it may result from - and further fuel - a sense of doom that all too often accompanies technological innovation in today's society. Computers don't need us anymore.
 
-> How did we arrive at this moment in history, in which humanity is more technologically powerful than ever before, and yet we feel ourselves to be increasingly fragile?
+> *How did we arrive at this moment in history, in which humanity is more technologically powerful than ever before, and yet we feel ourselves to be increasingly fragile?*
 
 asks [Sally Davis in Aeon](https://aeon.co/essays/the-human-world-is-not-more-fragile-now-it-always-has-been). 
 
