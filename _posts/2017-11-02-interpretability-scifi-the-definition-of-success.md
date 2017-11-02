@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: "Interpretability Sci-Fi: The Definition of Success"
-date: 2017-10-02 10:00
+date: 2017-11-02 10:00
 preview_image: /images/2017/09/5-07.png
 author: Grant
 author_link: https://twitter.com/GrantCuster
