@@ -1,0 +1,132 @@
+---
+layout: newsletter
+slug: 2017-11-08-subscribers
+---
+
+Hello!
+
+Turbulent times in tech! Facebook, Twitter, and Google reported to a senate hearing. (We recommend Ben Thompson's [*Tech Goes To Washington*](https://stratechery.com/2017/tech-goes-to-washington/) for an analysis of last week's hearing.)
+
+In the meantime, the National Bureau of Economic Statistics put out a working paper on [*Artificial Intelligence and the Modern Productivity Paradox: A Clash of Expectations and Statistics*](http://www.nber.org/papers/w24001.pdf) to examine the current and future promise of artificial intelligence for the economy and society. 
+
+> *There is no inherent inconsistency between forward-looking technological optimism and backward-looking disappointment. Both can simultaneously exist. Indeed, there are good conceptual reasons to expect them to simultaneously exist when the economy undergoes the kind of restructuring associated with transformative technologies.*
+
+AI is a transformative technology. The paper, an argument for optimism. 
+
+In this newsletter, we discuss yet another topic from within machine learning that [recently made the news](https://www.nytimes.com/2017/11/05/technology/machine-learning-artificial-intelligence-ai.html): automated machine learning.
+
+---
+
+## The promise of Automated Machine Learning (AutoML)
+
+There is a lot of interest in automated machine learning (AutoML) as evidenced by a recent New York Times article [*Building A.I. That Can Build A.I.*](https://www.nytimes.com/2017/11/05/technology/machine-learning-artificial-intelligence-ai.html). Companies are excited about AutoML due to the scarcity of machine learning (ML) talent. According to the New York Times:
+
+> *By some estimates, only 10,000 people worldwide have the education, experience and talent needed to build the complex and sometimes mysterious mathematical algorithms that will drive this new breed of artificial intelligence.*
+
+Furthermore, ML experts (AI experts, if you prefer) are expensive: [*Tech Giants Are Paying Huge Salaries for Scarce A.I. Talent*](https://www.nytimes.com/2017/10/22/technology/artificial-intelligence-experts-salaries.html?_r=0). AutoML promises more ML at lower cost; it is an enticing offering.
+
+### The multiple meanings of AutoML
+
+As they emerge, the promise of new capabilities can be hard to grasp. There are at least three different notions of AutoML:
+
+ - **Citizen Data Science / ML**: AutoML will allow everyone to do data science and ML. It requires no special training or skills.
+ - **Efficient Data Science / ML**: AutoML will supercharge your data scientists and ML engineers by making them more efficient.
+ - **Learning to Learn**: AutoML will automate architecture and optimization algorithm design (much like neural networks automated feature engineering).
+ 
+ We could add a fourth:
+
+  - **Transfer Learning**: AutoML will allow algorithms to learn new tasks faster by utilizing what they learned from mastering other tasks in the past.
+
+But AutoML as *Transfer Learning* is related to *Efficient Data Science / ML* (as we will explain below). (Note: The NY Times article is about AutoML as *Learning to Learn* **and** *Transfer Learning* but fails to make this distinction; it's confusing.)
+
+Google Brain's AutoML project is about [*Learning to Learn*](https://research.googleblog.com/2017/05/using-machine-learning-to-explore.html):
+
+> *Typically, our machine learning models are painstakingly designed by a team of engineers and scientists. This process of manually designing machine learning models is difficult because the search space of all possible models can be combinatorially large — a typical 10-layer network can have ~1010 candidate networks! For this reason, the process of designing networks often takes a significant amount of time and experimentation by those with significant machine learning expertise.*
+
+Learning to learn is very exciting! But it requires extensive computational resources for model training, the kind Google has access to, but not many others. By providing access to (cloud) compute power, of course, AutoML as *Learning to Learn* is an excellent strategy to monetize Google's cloud compute offering; Google has an excellent *business case* for investing time and resources into the AutoML project (of course).
+
+Experts agree it will take a while before the promise of AutoML as *Learning to Learn* will materialize:
+
+> *Renato Negrinho, a researcher at Carnegie Mellon University who is exploring technology similar to AutoML, said this was not a reality today but should be in the years to come. “It is just a matter of when,” he said.*
+
+We agree. So how about the promise of the other notions of AutoML?
+
+There are data science and ML platform vendors that promise to automate data science and ML to the extent that *Citizen Data Science / ML* may soon became real (e..g, [DataRobot](https://www.datarobot.com/), [RapidMiner](https://rapidminer.com/)). Data science and ML practitioners, however, are skeptical about the promise of Citizen Data Science (and, frankly, worried about some of its output and consequences).
+
+We believe AutoML as *Efficient Data Science / ML* shows the most promise for the largest number of companies within the near to midterm future. There is ample opportunity to improve the data science and ML work flow - and to automate parts of it - to make your data professionals more effective.
+
+### The promise of AutoML as Efficient Data Science
+
+The typical ML system can be broken down into a number of different components, or modules, each with a different aim and focus.
+
+![]({{ site.github.url }}/images/2017/11/Screen_Shot_2017_11_07_at_10_07_43_AM-1510067292745.png)
+
+##### The different components of ML systems. Only a small fraction of real-world ML systems is composed of the ML code. To put ML to work requires complex surrounding infrastructure (taken from the paper [*Hidden Technical Debt in Machine Learning Systems*](https://papers.nips.cc/paper/5656-hidden-technical-debt-in-machine-learning-systems.pdf)).
+
+ML code, while important, is only a small fraction of the code base authored by data teams (and their colleagues) to put algorithms to work: even the best, highest accuracy models are useful only in production; they need monitoring, and eventually retraining. Building and maintaining these often fragile ML pipelines is expensive, both in time and effort. In the process, teams often build up [significant technical debt](https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/43146.pdf).
+
+[UBER](https://eng.uber.com/michelangelo/) and [Google](http://www.kdd.org/kdd2017/papers/view/tfx-a-tensorflow-based-production-scale-machine-learning-platform) recently published papers describing their ML platforms. Both provide a framework for reliably producing and deploying machine learning models at scale and promise AutoML as *Efficient Data Science / ML* (and, eventually, *Transfer Learning*).
+
+#### Uber's Michelangelo platform
+
+[Uber's Michelangelo](https://eng.uber.com/michelangelo/) is an end-to-end platform with access to UBER's data lake and deployment tools. Offline, it supports large-scale distributed training of decision trees, linear and logistic models, unsupervised models, time series models, and deep neural networks. Once trained, these model configurations and results are stored within Michelangelo. Visualization tools and feature reports enable engineers to further understand these models. Post model development, the system provides tools for managing model deployment. It continuously monitors model predictions to recognize the need for model retraining.
+
+Michelangelo has a feature store that allows teams to share, discover and use any curated feature to solve their own machine learning problems. Users can easily add features they have built into the shared store by including a small amount of meta-data. Once added, these features can be consumed by referencing its canonical name in the model configuration. 
+
+Michelangelo currently has 10,000 features in the store which are calculated and updated daily. Ironically, the feature store actually becomes less useful as the number of features grow. The Michelangelo team foresees this, and intends to build an automated system to identify the best set of features for a particular problem. 
+
+Feature engineering is a time-consuming process. By providing a searchable access to known, informative features, Michelangelo makes the Uber data science and ML teams more efficient; it's AutoML in one of its interpretations, especially with automated feature suggestion, and it's attainable *today*.
+
+##### Google's TFX platform
+
+[Google's TFX](http://www.kdd.org/kdd2017/papers/view/tfx-a-tensorflow-based-production-scale-machine-learning-platform) is a TensorFlow-based general purpose ML platform which orchestrates model training, analysis, validation, and deployment. Emphasis is placed on building a system capable of detecting failure and bugs so they do not propagate into the production environment.
+
+TFX's front-end is a module for data analysis, transformation, and validation. This module uses descriptive statistics to understand data and find anomalies. Data validation relies on a schema that provides a versioned, succinct description of the expected properties of the data. Deviations are flagged and modifications to the schema are suggested. The overarching theme is to "treat data errors with the same rigor and care as bugs in code."
+
+Once data is considered clean, it is fed into the training module. The training module supports any model configured using Google's TensorFlow. Minimal effort is required to integrate the TensorFlow model with the trainer; different learning algorithms can be switched off easily post-integration. Warm-starting, related to transfer learning, is supported to make use of previously learned information. 
+
+Finally, once trained, a model validation module compares prediction quality against a fixed threshold as well as a baseline model. Only passing models are served; failing models are held back and product teams are alerted. Of course, TFX also provides a complete serving solution for deployment which is, among other things, low latency and high efficiency. 
+
+Given the amount of time data teams spend on data and model validation, the Google TFX platform makes data teams more efficient; it's AutoML. The platform furthermore defines and enforces a (high) quality standard for data science and ML models, consistent throughout the company.
+
+### Michelangelo and TFX in context
+
+AutoML as *Learning to Learn* is novel and therefore more exciting. But, it is also just a further step along the (predictable) path of ML automation. First, neural networks automated feature engineering. Now, neural networks automate architecture and optimization algorithm design. Also, as so often, what's most exciting is not immediately most useful. 
+
+Uber's Michelangelo and Google's TFX are two excellent examples to show how companies can effectively increase the efficiency of their data teams *today* whilst increasing the quality and consistency of their work. Furthermore, these platforms establish the foundation for transfer learning. Previously trained models, their features, and their parameters, are required for *Transfer Learning* (without them, there is no information to transfer).
+
+Finally, Michelangelo and TFX highlight the challenges faced by generic platform vendors. Michelangelo and TFX are purposefully built to make use of previously learned information (Michelangel's feature store, TFX's data validation benchmarks) and to enforce company standards (TXF's model validation). Generic platforms need to provide that same functionality universally; a tricky challenge.
+
+---
+
+## Data turns poetry
+
+Data promises insight, and the unexpected, too. 
+
+As cities become smart, our behavior within cities leaves a trace more concrete than ever before. In [*every thing every time*](http://everythingeverytime.net/about.html), an artwork by Naho Matsuda, data generated by Manchester’s citizens interactions with the city is turned into poems.
+
+![]({{ site.github.url }}/images/2017/11/Screen_Shot_2017_11_07_at_12_36_40_PM-1510076290006.png)
+
+A strangely moving alternative take on the going-ons within a city, powered by data.
+
+---
+
+## Jobs, Jobs, Jobs
+
+We're hiring!!!
+* **Cloudera Fast Forward Labs** is hiring a Research Engineer ([job description](https://cloudera.wd5.myworkdayjobs.com/External_Career/job/USNew-YorkBrooklyn/Research-Engineer_171058))
+
+Be sure to check out the [other job opportunities](https://www.cloudera.com/careers/careers-listing.html) at Cloudera as well! And here are a couple of other jobs we've heard about recently, too:
+
+* **NYC Mayor's Office of Operations** - Chief Analytics Officer ([job description](http://www1.nyc.gov/assets/operations/downloads/pdf/employment-opportunities/chief-analytics-officer-job-description-vf.pdf))
+* **Elucd** - Data Scientist ([job description](https://jobs.lever.co/elucd/7a251473-f3a7-40f6-b97c-c10c8838d316))
+
+---
+
+## FFL Updates 
+
+Friederike will be speaking at [PyData 2017](https://pydata.org/nyc2017/) during the last week of November here in New York City; if you're attending, please do say hello!  In the meantime, we are hard at work on our next report.  Stay tuned!
+
+And thank you, as always, for reading.  We'd love to hear your thoughts - please feel free to reach out any time to subscribers@fastforwardlabs.com.
+
+-- The Cloudera Fast Forward Labs Team
