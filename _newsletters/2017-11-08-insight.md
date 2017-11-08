@@ -120,6 +120,7 @@ Be sure to check out the [other job opportunities](https://www.cloudera.com/care
 
 * **NYC Mayor's Office of Operations** - Chief Analytics Officer ([job description](http://www1.nyc.gov/assets/operations/downloads/pdf/employment-opportunities/chief-analytics-officer-job-description-vf.pdf))
 * **Elucd** - Data Scientist ([job description](https://jobs.lever.co/elucd/7a251473-f3a7-40f6-b97c-c10c8838d316))
+* **USA for UNHCR** - Data Scientist ([job description](https://www.linkedin.com/jobs/view/503624429/))
 
 ---
 
