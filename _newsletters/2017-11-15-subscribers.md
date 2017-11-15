@@ -68,7 +68,7 @@ Yasmin Green, Director of R&D at Jigsaw (a tech incubator within Alphabet), emph
 
 The little known [UNICEF Ponder Program in Kosovo](http://www.ponder-ks.org/about/what-is-ponder/) gives reasons for hope: a three-day workshop that fosters media literacy and critical approaches to information among adolescents, it helped reduce the number of adolescents recruited by ISIS, and is concrete evidence for [a possible future imagined by the Economist](https://www.economist.com/news/leaders/21730871-facebook-google-and-twitter-were-supposed-save-politics-good-information-drove-out). Over time, we *can* build resilience to online media manipulation and disinformation.
 
-(Do you agree? Disagree? Is there material we overlooked? [Send us a note!](mailto:subscribers@fastforwardlabs.com)
+(Do you agree? Disagree? Is there material we overlooked? [Send us a note!](mailto:subscribers@fastforwardlabs.com))
 
 ---
 
