@@ -13,7 +13,7 @@ Jeopardy! It is [so 2011](https://en.wikipedia.org/wiki/Watson_(computer)). In 2
 
 ![]({{ site.github.url }}/images/2017/11/shanked_whipping_peanuts-1511015801664.jpg)
 
-For the literary minded, we recommend training the neural network first on the works of your favorite author before feeding it recipes. Here is what happens when you use the works of H. P. Lovecraft:
+For the literary-minded, we recommend training the neural network first on the works of your favorite author before feeding it recipes. Here is what happens when you use the works of H. P. Lovecraft:
 
 > Bake at 350 degrees for 30 to 32 minutes. Test corners to see if done, as center will seem like the next horror of Second House.
 > 
@@ -43,13 +43,13 @@ Finally, you will be pleased to know that the Association for Computing Machiner
 
 *"You realize that our mistrust of the future makes it hard to give up the past,"* said Chuck Palahniuk. Eleanore Roosevelt adds, *"the future belongs to those who believe in the beauty of their dreams."* 
 
-This Thanksgiving at CFFL, Hilary is hopeful for a future in which machines reduce cognitive drudgery and *actually* help us spend more of our time on the parts of our lives that we enjoy. Brian is hopeful for data connecting people and saving lives (not just [smart salt dispensers called SMALT](https://www.youtube.com/watch?v=o2e1x5IaO7k)) while Ryan wishes for major tech companies to release their data for the greater good, regulatory policy that favors democracy over concentration of information and wealth, and more public datasets of puppy photos.
+This Thanksgiving at CFFL, Hilary is hopeful for a future in which machines reduce cognitive drudgery and *actually* help us spend more of our time on the parts of our lives that we enjoy. Brian is hopeful for data connecting people and saving lives (not just [smart salt dispensers called SMALT](https://www.youtube.com/watch?v=o2e1x5IaO7k)), while Ryan wishes for major tech companies to release their data for the greater good, regulatory policy that favors democracy over concentration of information and wealth, and more public datasets of puppy photos.
 
 ![]({{ site.github.url }}/images/2017/11/cffl-1511032492377.jpg)
 
 ##### A view into the CFFL office with one of our two office dogs.
 
-Grant hopes we see more focus on using advanced techniques to make machines better collaborators with humans rather than replacements for humans.  Danielle is hopeful for the impact and the beauty of new forms and styles of artistic expression enabled by AI/human collaboration through platforms like Google's [Deep Dream Generator](https://deepdreamgenerator.com/) and [Amper Music](https://www.ampermusic.com/). Putting aside technical challenges and societal concerns just for a hot second, Friederike imagines the aesthetic beauty in a world of self-driving and self-flying cars seamlessly coordinating their activities like one grand ballet performance in our city streets (and skies). Shioulin is thankful for her bouncy and gibberish 19 month old who puts all machine learning algorithms to shame and is a constant reminder of how much further the field has to go!
+Grant hopes we see more focus on using advanced techniques to make machines better collaborators with humans rather than replacements for humans.  Danielle is hopeful for the impact and the beauty of new forms and styles of artistic expression enabled by AI/human collaboration through platforms like Google's [Deep Dream Generator](https://deepdreamgenerator.com/) and [Amper Music](https://www.ampermusic.com/). Putting aside technical challenges and societal concerns just for a hot second, Friederike imagines the aesthetic beauty in a world of self-driving and self-flying cars seamlessly coordinating their activities like one grand ballet performance in our city streets (and skies). Mike is hopeful for a carless rather than driverless future. And Shioulin is thankful for her bouncy and gibberish 19 month old who puts all machine learning algorithms to shame and is a constant reminder of how much further the field has to go!
 
 ---
 
