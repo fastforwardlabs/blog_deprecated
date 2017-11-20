@@ -70,7 +70,7 @@ And here are a few other jobs we've heard about:
 
 Friederike will be speaking at [PyData 2017](https://pydata.org/nyc2017/) next week Monday (11/27); if you're attending, please do say hello!  Friederike will also be on a panel at [NIPS](https://nips.cc/) on 12/6 on "Applied AI careers in industry" (alongside representatives from Google Brain and Salesforce Einstein); if you'd like an invitation to a reception following the panel, please do [reach out](mailto: friederike@cloudera.com). A few other members of the CFFL research team will be attending NIPS in December as well, and would be happy to connect during the conference.
 
-As always, for reading.  We'd love to hear your thoughts - please feel free to reach out any time to subscriberss@fastforwardlabs.com.
+As always, for reading.  We'd love to hear your thoughts - please feel free to reach out any time to subscribers@fastforwardlabs.com.
 
 Happy Thanksgiving!
 
