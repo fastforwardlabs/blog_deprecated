@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-  <link rel="stylesheet" href="{{ "/assets/css/newsletter.css" | relative_url }}">
+	<style type="text/css">
+		body{font-family:sans-serif;font-size:18px;line-height:1.5}img{max-width:100%;margin:0 auto;display:block}h5{font-style:italic}blockquote{border-left:.25em solid #dfe2e5;padding:0 1em;color:#666;margin:1em 0}</style>
 
   <body>
 
@@ -10,7 +11,7 @@
  			<div style="overflow: hidden; font-size: 14px; margin-top: 14px;">
  				<div style="float: left; width: 46%;">Updates from FFL on new papers, articles, and exciting developments</div>
  				{% if page.slug %}
-	 				<div style="float: right; width: 46%; text-align: right;"><a href="{{github_url}}/newsletters/{{page.slug}}.html">View this email in browser</a></div>
+	 				<div style="float: right; width: 46%; text-align: right;"><a href="{{site.github_url}}/newsletters/{{page.slug}}.html">View this email in browser</a></div>
 	 			{% endif %}
  			</div>
 
