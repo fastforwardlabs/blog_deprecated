@@ -80,7 +80,7 @@ In the article [Your company's Slack is probably sexist](https://work.qz.com/112
 
 ![]({{ site.github.url }}/images/2017/11/unconcious_bias1-1511390001877.jpg)
 
-##### A conversation between Alix an M(an). Reading this exchange, you might not notice anything wrong. That’s how unconscious biases and microaggressions work. (Taken from Quartz article on [sexist communication patterns in Slack](https://work.qz.com/1128150/your-companys-slack-is-probably-sexist/).)
+##### A conversation between Alix and M(an). Reading this exchange, you might not notice anything wrong. That’s how unconscious biases and microaggressions work. (Taken from Quartz article on [sexist communication patterns in Slack](https://work.qz.com/1128150/your-companys-slack-is-probably-sexist/).)
 
 Diversity is in *everybody's* best interest. (Probably a good reminder: also follow the ["no asshole rule"](https://hbr.org/2007/03/why-i-wrote-the-no-asshole-rule) (a technical term and therefore entirely workplace appropriate) or - in "tech speak" - the ["no brilliant jerks in engineering" rule](http://www.brendangregg.com/blog/2017-11-13/brilliant-jerks.html).)
 
