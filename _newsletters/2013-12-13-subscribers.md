@@ -1,0 +1,83 @@
+---
+layout: newsletter
+slug: 2017-12-13-subscribers
+---
+
+Hello!
+
+With about 8,000 attendees, 7 invited speakers, 679 paper presentations (out of 3,240 submissions), not to mention the introductory tutorials ahead of the conference and the in-depth discussion workshops thereafter, NIPS 2017 in Long Beach, CA was the largest NIPS ever, which [caused some concern](https://www.economist.com/news/science-and-technology/21732081-machine-learnings-big-event-all-buzz-ais-big-shindig).
+
+Not exactly your regular NIPS attendee, the NIPS 2017 Intel AI party featured rapper Flo Rida. Ben Recht, accepting his Test of Time award for the paper [Random Features for Large-Scale Kernel Machines](https://papers.nips.cc/paper/3182-random-features-for-large-scale-kernel-machines.pdf) (presented at NIPS 2007), used a (veiled) Kurt Cobain reference for commentary: his [t-shirt](https://twitter.com/AndrewLBeam/status/938104772116099072) read *"corporate conferences still suck."* His [acceptance talk](https://www.youtube.com/watch?v=Qi1Yry33TQE) sparked further debate.
+
+![]({{ site.github.url }}/images/2017/12/Screen_Shot_2017_12_11_at_6_49_12_PM-1513047042671.png)
+
+##### Yann LeCun's reaction, posted on Facebook, to NIPS 2017 Test of Time Award talk by Ali Rahimi and Benjamen Recht (read Yann's [entire reaction](https://www.reddit.com/r/MachineLearning/comments/7i1uer/n_yann_lecun_response_to_ali_rahimis_nips_lecture/)).
+
+Reflecting on NIPS 2017, what we need is a nuanced understanding of how diverse interests shape the research landscape without drawing unnecessarily sharp boundaries between research and its applications. For example: Few object to hospitals using deep learning to assist clinicians in diagnosing cancer; not all "corporatization" is bad. But there is growing concern about the role and influence of tech giants, such as Google and their subsidiary DeepMind. Open sourcing TensorFlow seems great and in service of the community - until you note that it is optimized to work with Google's TPUs and their cloud computing offering.
+
+There is a synergy we like to harvest (and should, in case of life saving medical technology), a mutually beneficial exchange of information. *"Don't throw the baby out with the bathwater,"* as the saying goes.
+
+In this newsletter, we cannot possibly cover all of NIPS 2017. We present a few standouts and highlights (with more to come in future newsletters). Enjoy!
+
+---
+
+## Teaching Machines
+
+*Machine teaching* (MT) is the inverse of *machine learning* (ML). The goal of MT is to find the optimal training data given an ML algorithm and model. It's much like teaching humans. You can help improve the student (i.e., machine) only through exposure to appropriate learning opportunities (i.e., training data). (In this comparison, algorithm design equates to brain stimulation or surgery.)
+
+While the study of MT began in the 1990s, there has been a surge in interest recently, evidenced by a [tutorial](https://nips.cc/Conferences/2017/Schedule?showEvent=8738) and [workshop](http://teaching-machines.cc/nips2017/index.html) at NIPS 2017. A clever choice of training data can help reduce the overall amount of data we need to train sophisticated algorithms. Exposure to strategically chosen data points helps [reinforcement learning algorithms become smarter faster](https://arxiv.org/pdf/1703.07853.pdf). Finally, it can help [guide smart tutoring systems to guide human learners](http://teaching-machines.cc/nips2017/papers/nips17-teaching_paper-12.pdf) for personalized education at scale (only one of MT's applications).
+
+Current efforts are, in part, guided by our knowledge of human to human teaching. Good human teachers deliberately [select examples that are helpful for learning](https://arxiv.org/abs/1711.09401). Because this data is more informative, learning can require less data. The work also highlights some of the challenges within MT: teachers use their understanding of students and student learning as they assist them in their efforts. We currently lack a good "mental model" that teachers can use to teach machines; this is one of the [ongoing efforts within MT](https://arxiv.org/pdf/1707.06742.pdf). 
+
+In short, we need to learn how to teach the teachers to teach the machines.
+
+---
+
+## On the behavior of Stochastic Gradient Descent (SGD)
+
+Functional Magnetic Resonance Imaging (fMRI) provided a new tool for the study of the human brain and, starting in the 1990s, sparked a flurry of research activity within neuroscience, only to receive a slap in the face with a dead fish. In [*"Neural Correlates of Interspecies Perspective Taking in the Post-Mortem Atlantic Salmon: An Argument For Proper Multiple Comparisons Correction"*](http://prefrontal.org/files/posters/Bennett-Salmon-2009.pdf), researchers reported the curious observation of task-relevant brain activity in a dead salmon (the salmon was asked to engage in a perspective-taking task). In an ingenious way, the paper highlighted problems with current methods and research practice within the field of neuroscience, and concretized the discomfort some neuroscience researchers had felt for years.
+
+Stochastic Gradient Descent (SGD) is one of the workhorse methods within deep learning (it helps train neural networks) and recently, luminaries in the field such as Goeff Hinton have grown ["deeply suspicious"](https://medium.com/intuitionmachine/the-deeply-suspicious-nature-of-backpropagation-9bed5e2b085e) of SGD. Does something (forgive the pun) smell fishy?
+
+In his talk *"Generalization, Memorization, and SGD* during the NIPS 2017 workshop on [*Deep Learning, Theory & Practice*](https://ludwigschmidt.github.io/nips17-dl-workshop-website/), Yoshua Bengio presented a series of studies on the properties and behavior of SGD. While deep neural networks are capable of memorizing noise data (a source of discomfort), due to the vast number of trainable parameters of neural nets, Bengio presented a paper that demonstrates that neural nets [tend to prioritize simple patterns first](https://arxiv.org/abs/1706.05394) (such as patterns found in real data), above noise; it's a reassuring result.
+
+Another study looked at the [convergence behavior of SGD](https://arxiv.org/abs/1711.04623): its ability to find a good solution to a given learning problems. Prior to neural networks, the dominant optimization method within machine learning was convex minimization. Convex minimization is a subfield of optimization - the problem of minimizing convex functions over convex sets. The convexity makes optimization easier than the general case since a local minimum must be the global minimum (there is only *one* minimum). 
+
+The optimization functions of neural networks are known to be more complex and contain multiple minima (another source of discomfort). We know neural networks find solutions in practice, but we lack theory as to why and how (yet another source of discomfort).
+
+Bengio presented a theoretical and empirical analysis on the influence of parameters such as batch size, learning rate, and gradient variance on SGD as it finds (local or global) minima - a significant step in understanding why neural networks work so well in practice, and offering a practical guide to advanced machine learning researchers (batch size and learning rate are set by the developer or trainable as part of hyperparameter optimization). Elegant and foundational work to demystify deep learning (#NoMagic).
+
+---  
+
+## Kinds of Intelligence
+
+The [Kinds of Intelligence symposium](https://intelligence.webs.upv.es/) at NIPS 2017, subtitled *"Types, Tests and Meeting the Needs of Society"*, was a true treat, entertaining as well as informative. 
+
+Demis Hassabis from Google DeepMind presented [AlphaZero](https://arxiv.org/abs/1712.01815), the "grown up" version of AlphaGo Zero, an artificial agent that can now play Go *and* chess *and* shogi. The algorithmic machinery of AlphaGo Zero generalizes ... to other games.
+
+Next up and never shying away from debate, NYU professor Gary Marcus. Contrary to the depiction of AlphaGo Zero in the popular media (undoubtedly promoted by the language in DeepMind research papers on this game-playing agent and its spawns), Gary argues that AlphaGo, AlphaGo Zero, AlphaZero — Alpha \*, as Gary calls it — take advantage of massive amounts of human knowledge baked into the design of the algorithm. A fair point. 
+
+More broadly, he doubts the approach taken by DeepMind - a focus on game playing agents - will deliver artificial generalized intelligence (AGI). Instead, we should look at how children learn throughout development. As [Alison Gopnik](http://alisongopnik.com/), a professor at Berkley, had pointed out in an earlier talk, human life is weird. We have a much longer childhood than any other primate (twice as long as chimps) during which we interact and explore our environment to make sense of it and to learn flexible and adaptible strategies to continue to make sense of it over the course of our lives. She argues for an AI that [knows the world like children do](https://www.scientificamerican.com/article/an-ai-that-knows-the-world-like-children-do/).
+
+The most interesting talk of the night was given by Cambridge professor (in political science) David Runciman. He chose to focus less on the "I" and more on the "A" in "AI." Artificial agents have been around for a while, especially in states, corporations, and financial markets. They have continuity, a form of identity over time, are thought of as agents capable of action, and carry a certain responsibility for their action. They even have a certain ["morality"](https://link.springer.com/article/10.1023/B:MIND.0000035461.63578.9d). These artificial agents have powers humans do not have; they can carry unbelievable amounts of debt, for example. The parallel with other artificial agents that have had a significant influence on human life is helpful in thinking through some of the challenges we may face when it comes to artificially intelligent agents.
+
+---
+
+## Job Postings (for individual subscribers and insight fellows)
+
+Here is a new position we just heard about:
+
+* **TD Ameritrade** - Senior Specialist, UI/UX Lead ([job description](https://jobs.tdameritrade.com/job/st-louis/senior-specialist-ui-ux-lead/1121/6333455))
+
+If you have (or have heard of) a job posting you'd like us to share, please do let us know.
+
+---
+
+## CFFL Updates
+
+Things are slowing down a bit for the holidays, and we will be taking the next 4 weeks off from writing our newsletter. This will be our final newsletter until mid-January. As always, thank you for reading, and we look forward to hearing your thoughts. Contact us anytime at subscribers@fastforwardlabs.com.
+
+Happy Holidays!
+
+All our best,
+The Cloudera Fast Forward Labs Team
