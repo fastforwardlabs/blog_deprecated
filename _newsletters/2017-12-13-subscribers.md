@@ -63,7 +63,7 @@ The most interesting talk of the night was given by Cambridge professor (in poli
 
 ---
 
-## Job Postings (for individual subscribers and insight fellows)
+## Job Postings
 
 Here is a new position we just heard about:
 
