@@ -16,7 +16,7 @@ author_link: https://twitter.com/mikepqr
 
 <h5>This article is <a
 href="https://github.com/fastforwardlabs/keras-hello-world">available as a
-notebook on Github</a> Please refer to that notebook for a more detailed
+notebook on Github</a>. Please refer to that notebook for a more detailed
 discussion and code fixes and updates.</h5>
 
 <p>Despite all the recent excitement around deep learning, neural networks have a reputation among non-specialists as complicated to build and difficult to  interpret.</p><p>And while interpretability remains an issue, there are now high-level neural network libraries that enable developers to quickly build neural network models without worrying about the numerical details of floating point operations and linear algebra.</p><p>This post compares keras with scikit-learn, the most popular, feature-complete classical machine learning library used by Python developers.</p>
