@@ -96,7 +96,7 @@ Impact](http://www.doc.ic.ac.uk/~rbc/papers/fse-serverless-17.pdf).
 
 One of our favorite annual traditions is a putting together a round-up of some of the research, talks, sci-fi, visualizations/art, and other things we found interesting over the course of the past year.  Be sure to check out our "[Highlights of 2017](http://blog.fastforwardlabs.com/2017/11/22/2017-highlights.html)" post on the FFL blog!
 
-2018 promises some great content ahead, as well.  For example, Rodney Brooks is always an entertaining read, and in [this post](https://rodneybrooks.com/my-dated-predictions/) published on the first of the year, he reflects on predictions he has made in the past re: CS, ML, AI, etc.
+We found [this round-up of deep learning papers](http://cachestocaches.com/2017/12/favorite-deep-learning-2017/) at Caches-to_Caches interesting, and 2018 already promises some great content ahead, as well.  For example, Rodney Brooks is always an entertaining read, and in [this post](https://rodneybrooks.com/my-dated-predictions/) published on the first of the year, he reflects on predictions he has made in the past re: CS, ML, AI, etc.
 
 ---
 
