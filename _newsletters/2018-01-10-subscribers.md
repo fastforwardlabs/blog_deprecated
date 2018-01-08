@@ -99,11 +99,18 @@ One of our favorite annual traditions is a putting together a round-up of some o
 
 ## Job Postings
 
-Here's a 
+Here's are a couple of job postings that we've heard about recently: 
+
+**The Rockefeller Foundation** - Managing Director, Data Technology ([job description](https://www.rockefellerfoundation.org/about-us/careers/managing-director-data-technology/))
+**TD Ameritrade** - Senior Specialist, UI/UX Lead ([job description](https://jobs.tdameritrade.com/job/st-louis/senior-specialist-ui-ux-lead/1121/6333455))
+
+We're always happy to share opportunities we hear about; please let us know if you have any you'd like for us to pass along.
+
+---
 
 ## FFL Updates
 
-Please welcome our newest Research Engineer, Alice Albrecht!
+Please welcome our newest Research Engineer, [Alice Albrecht](https://www.linkedin.com/in/alice-albrecht-6379868/)!
 (TODO: add brief bio and/or a note from Alice?)
 
 Last year we had the opportunity to be a part of some great events; you can catch a video of Friederike's talk on The Realistic Promise of Smart Machines at Thornton Tomasetti, Inc.'s fifth annual AEC Technology Symposium and Hackathon [here](https://youtu.be/EexnY6G46Qs), and her PyData talk (picked up by [Data Science Weekly](https://www.datascienceweekly.org/newsletters/data-science-weekly-newsletter-issue-214)!) on Why your relationship is likely to last, or not (Local Interpretable Model-Agnostic Explanations) [here](https://youtu.be/Z3v2c_OysI4).
