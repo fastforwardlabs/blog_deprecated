@@ -66,7 +66,7 @@ are similar to those faced in distributed analytics clusters running Hadoop or
 Spark. To do data analytics in these environments, we have the map-reduce
 computing paradigm, which parallelizes work by splitting it into small parcels.
 
-![PyWren performance](serverless-pywren.png)
+![]({{ site.github.url }}/images/2018/01/serverless_pywren-1515449109658.png)
 
 [PyWren](http://pywren.io/) is a distributed analytics tool that connects the
 dots. It splits up large analytics jobs into smaller parcels of work, and ships
