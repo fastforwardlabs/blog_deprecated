@@ -114,7 +114,6 @@ We're always happy to share opportunities we hear about; please let us know if y
 ## FFL Updates
 
 Please welcome our newest Research Engineer, [Alice Albrecht](https://www.linkedin.com/in/alice-albrecht-6379868/)!
-(TODO: add brief bio and/or a note from Alice?)
 
 Last year we had the opportunity to be a part of some great events; you can catch a video of Friederike's talk on The Realistic Promise of Smart Machines at Thornton Tomasetti, Inc.'s fifth annual AEC Technology Symposium and Hackathon [here](https://youtu.be/EexnY6G46Qs), and her PyData talk (picked up by [Data Science Weekly](https://www.datascienceweekly.org/newsletters/data-science-weekly-newsletter-issue-214)!) on Why your relationship is likely to last, or not (Local Interpretable Model-Agnostic Explanations) [here](https://youtu.be/Z3v2c_OysI4).
 
