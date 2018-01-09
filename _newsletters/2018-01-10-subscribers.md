@@ -94,9 +94,9 @@ Impact](http://www.doc.ic.ac.uk/~rbc/papers/fse-serverless-17.pdf).
 
 ## Food for thought
 
-One of our favorite annual traditions is a putting together a round-up of some of the research, talks, sci-fi, visualizations/art, and other things we found interesting over the course of the past year.  Be sure to check out our "[Highlights of 2017](http://blog.fastforwardlabs.com/2017/11/22/2017-highlights.html)" post on the FFL blog!
+One of our favorite annual traditions is a putting together a round-up of some of the research, talks, sci-fi, visualizations/art, and other things we found interesting over the course of the past year.  Be sure to check out our "[Highlights of 2017](http://blog.fastforwardlabs.com/2017/11/22/2017-highlights.html)" post on the CFFL blog!
 
-We found [this round-up of deep learning papers](http://cachestocaches.com/2017/12/favorite-deep-learning-2017/) at Caches-to_Caches interesting, and 2018 already promises some great content ahead, as well.  For example, Rodney Brooks is always an entertaining read, and in [this post](https://rodneybrooks.com/my-dated-predictions/) published on the first of the year, he reflects on predictions he has made in the past re: CS, ML, AI, etc.
+We found [this round-up of deep learning papers](http://cachestocaches.com/2017/12/favorite-deep-learning-2017/) at Caches-to-Caches interesting, and 2018 promises some great content ahead, as well.  (For example, Rodney Brooks is always an entertaining read, and in [this post](https://rodneybrooks.com/my-dated-predictions/) published on the first of the year, he reflects on predictions he has made in the past re: CS, ML, AI, etc.)
 
 ---
 
@@ -111,11 +111,13 @@ We're always happy to share opportunities we hear about; please let us know if y
 
 ---
 
-## FFL Updates
+## CFFL Updates
 
-Please welcome our newest Research Engineer, [Alice Albrecht](https://www.linkedin.com/in/alice-albrecht-6379868/)!
+Please welcome our newest Research Engineer, [Alice Albrecht](https://www.linkedin.com/in/alice-albrecht-6379868/)! Prior to joining Cloudera Fast Forward Labs, Alice worked in both finance and technology companies as a practicing data scientist, data science leader and most recently a data product manager.  In addition to teaching machines to do cool things, Alice is passionate about mentoring and helping others grow in their careers.  Alice holds a PhD from Yale in cognitive neuroscience where she studied how humans summarize sensory information from the world around them and the neural substrates that underlie those summaries.  
 
-Last year we had the opportunity to be a part of some great events; you can catch a video of Friederike's talk on The Realistic Promise of Smart Machines at Thornton Tomasetti, Inc.'s fifth annual AEC Technology Symposium and Hackathon [here](https://youtu.be/EexnY6G46Qs), and her PyData talk (picked up by [Data Science Weekly](https://www.datascienceweekly.org/newsletters/data-science-weekly-newsletter-issue-214)!) on Why your relationship is likely to last, or not (Local Interpretable Model-Agnostic Explanations) [here](https://youtu.be/Z3v2c_OysI4).
+### CFFL Talks
+
+Last year we had the opportunity to be a part of some great events; you can catch a video of Friederike's talk on *The Realistic Promise of Smart Machines* at Thornton Tomasetti, Inc.'s fifth annual AEC Technology Symposium and Hackathon [here](https://youtu.be/EexnY6G46Qs), and her PyData talk (picked up by [Data Science Weekly](https://www.datascienceweekly.org/newsletters/data-science-weekly-newsletter-issue-214)!) on *Why your relationship is likely to last, or not (Local Interpretable Model-Agnostic Explanations)* [here](https://youtu.be/Z3v2c_OysI4).
 
 ### Our new report: Semantic Recommendations
 
@@ -125,7 +127,7 @@ Our Semantic Recommendations report (coming soon!) explores the current state of
 
 ### Upcoming Webinar
 
-Micha will be presenting a webinar for Cloudera on January 16th, entitled "Building a Better Recommendation System," based on our semantic recommendations report. If you'd like a sneak peek at the prototype and content of our new report, you can register [here](http://go.cloudera.com/semantic-recommendation-systems).
+Micha will be presenting a webinar on January 16th, entitled *"Building a Better Recommendation System,"* based on our semantic recommendations report. If you'd like a sneak peek at the prototype and content of our new report, you can register [here](http://go.cloudera.com/semantic-recommendation-systems).
 
 Thank you, as always, for reading!  We'd love to hear your thoughts - and questions! You can reach us anytime at subscribers@fastforwardlabs.com.
 
