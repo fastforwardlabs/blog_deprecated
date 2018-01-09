@@ -104,8 +104,8 @@ We found [this round-up of deep learning papers](http://cachestocaches.com/2017/
 
 Here's are a couple of job postings that we've heard about recently: 
 
-**The Rockefeller Foundation** - Managing Director, Data Technology ([job description](https://www.rockefellerfoundation.org/about-us/careers/managing-director-data-technology/))
-**TD Ameritrade** - Senior Specialist, UI/UX Lead ([job description](https://jobs.tdameritrade.com/job/st-louis/senior-specialist-ui-ux-lead/1121/6333455))
+* **The Rockefeller Foundation** - Managing Director, Data Technology ([job description](https://www.rockefellerfoundation.org/about-us/careers/managing-director-data-technology/))
+* **TD Ameritrade** - Senior Specialist, UI/UX Lead ([job description](https://jobs.tdameritrade.com/job/st-louis/senior-specialist-ui-ux-lead/1121/6333455))
 
 We're always happy to share opportunities we hear about; please let us know if you have any you'd like for us to pass along.
 
