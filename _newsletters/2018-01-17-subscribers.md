@@ -1,6 +1,6 @@
 ---
 layout: newsletter
-slug: 2018-01-17-client
+slug: 2018-01-17-subscribers
 ---
 
 Hello!  In our newsletter this week, we share some thoughts on image segmentation and a response to Gary Marcus's paper, "[Deep Learning: A Critical Appraisal](https://arxiv.org/abs/1801.00631_)."
@@ -31,7 +31,7 @@ This is not machine learning. The algorithm is based on clever ideas and trial-a
 
 ---
 
-## Our Perspective on Gary Marcus's "Deep Learning: A Critical Appraisal"
+## On Gary Marcus's "Deep Learning: A Critical Appraisal"
 
 In a recent [short paper](https://arxiv.org/abs/1801.00631), NYU Professor Gary Marcus discusses the limitations of deep learning as a technology, and argues that the hype over deep learning stands to do more harm than good. His central thesis is that deep learning cannot be a panacea that enables generalized AI.  This reasonable position is at odds with most of the rest of the article, though, which reads like a catalog of reasons deep learning won’t be useful beyond its current, limited applications.
 
@@ -45,12 +45,24 @@ We agree with Marcus’s assessment that deep learning is but one tool in a tool
 
 ---
 
-## FFL Updates
+## Job Postings
 
-Last week we introduced our newest research engineer, [Alice Albrecht](https://www.linkedin.com/in/alice-albrecht-6379868/), but unfortunately her biography was inadvertently left out of the newsletter - so here's a bit more about Alice: prior to joining Cloudera Fast Forward Labs, Alice worked in both finance and technology companies as a practicing data scientist, data science leader, and - most recently - a data product manager. In addition to teaching machines to do cool things, Alice is passionate about mentoring and helping others grow in their careers. Alice holds a PhD from Yale in cognitive neuroscience where she studied how humans summarize sensory information from the world around them and the neural substrates that underlie those summaries.
+Here are a few job postings we've heard about recently: 
+
+* **The Rockefeller Foundation** - Managing Director, Data Technology ([job description](https://www.rockefellerfoundation.org/about-us/careers/managing-director-data-technology/))
+* **TD Ameritrade** - Senior Specialist, UI/UX Lead ([job description](https://jobs.tdameritrade.com/job/st-louis/senior-specialist-ui-ux-lead/1121/6333455))
+* **Center for Court Innovation** - Project Manager, Technology ([job description](https://www.courtinnovation.org/careers/project-manager-technology))
+
+We're always happy to share opportunities; please let us know if you have any you'd like for us to pass along.
+
+---
+
+## CFFL Updates
+
+Last week we introduced our newest research engineer, [Alice Albrecht](https://www.linkedin.com/in/alice-albrecht-6379868/), but unfortunately, her biography was inadvertently left out of the newsletter - so here's a bit more about Alice: prior to joining Cloudera Fast Forward Labs, Alice worked in both finance and technology companies as a practicing data scientist, data science leader, and - most recently - a data product manager. In addition to teaching machines to do cool things, Alice is passionate about mentoring and helping others grow in their careers. Alice holds a PhD from Yale in cognitive neuroscience where she studied how humans summarize sensory information from the world around them and the neural substrates that underlie those summaries.
 
 
-Thank you, as always, for reading!  We'd love to hear your thoughts - and questions! You can reach us anytime at clients@fastforwardlabs.com.
+Thank you, as always, for reading!  We'd love to hear your thoughts - and questions! You can reach us anytime at subscribers@fastforwardlabs.com.
 
 Until next week,
 
