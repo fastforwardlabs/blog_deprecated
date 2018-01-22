@@ -1,12 +1,11 @@
----
+--- 
 layout: post
 title: "Exploring Recommendation Systems"
 date: 2018-01-22
 preview_image: "/images/2018/01/ROC_NMF_tag_loop_1115_nodot.png"
 author: Shioulin
-author_link: @shioulin_sam
-published: true
----
+author_link: https://twitter.com/shioulin_sam
+--- 
 
 While we commonly associate recommendation systems with e-commerce, their
 application extends to any decision-making problem which requires pairing two
