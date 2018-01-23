@@ -21,7 +21,8 @@ applying them to the rate of births in the United States actually made the cover
 [one of the most famous textbooks in
 statistics](http://www.stat.columbia.edu/~gelman/book/).
 
-![Births plot](gp-births.png)
+![]({{ site.github.url }}/images/2018/01/gp_births-1516741412077.png)
+##### Births plot
 
 In comparison to the zoo of traditional time series models popular in finance
 and elsewhere ([ARIMA, GARCH, etc.](https://github.com/RJT1990/pyflux)), GPs
@@ -35,7 +36,8 @@ these uncertainties allow you to quantify risk, even when you have little
 training data - and they're in
 [scikit-learn](http://scikit-learn.org/stable/modules/gaussian_process.html)!
 
-![GPs with scikit-learn](gp-sklearn.png)
+![]({{ site.github.url }}/images/2018/01/gp_sklearn-1516741529680.png)
+##### GPs with scikit-learn
 
 That's the good news. The bad news is that GPs are slow. Their exact and
 general solution involves the inversion of a matrix, which is unavoidably (and
@@ -62,7 +64,8 @@ entire market) then the new and very well-documented
 to start (and is being used right now to [learn about planets orbiting distant
 stars](https://arxiv.org/abs/1706.05865))
 
-![GPs in astronomy](gp-astro-alt.png)
+![]({{ site.github.url }}/images/2018/01/gp_astro_alt-1516741587169.png)
+##### GPs in astronomy
 
 If your dataset is small (or you're just getting started with GPs), we
 recommend [Chris Fonnesbeck's introductory
@@ -82,7 +85,9 @@ On a somewhat related note, we came across a couple of really thought-provoking 
 
 Most recommendation systems do not understand what they are recommending. They work by i) finding users similar to you, ii) assuming you share the same item preferences, and iii) recommending to you the items that these users have liked.    
 
-In our [latest blog post](http://blog.fastforwardlabs.com/2018/01/22/exploring-recommendation-systems.html) we share some challenges we encountered in building basic recommendation systems using two datasets (one from Flickr and one from Amazon). Both datasets contain historical rating information that users assigned to items (photos for Flicker and books for Amazon). Because each user only rates a small percentage of items available, historical interaction data is generally sparse. Our experiments show that basic recommendation systems which rely on this sparse data are unable to extract enough information to give good results. In addition, these systems are unable to recommend new items (this is known as the cold start problem) because they do not know who has interacted with them or the outcome of those interactions (as that information is not in the historical interaction data).                                                           
+In our [latest blog post](http://blog.fastforwardlabs.com/2018/01/22/exploring-recommendation-systems.html) we share some challenges we encountered in building basic recommendation systems using two datasets (one from Flickr and one from Amazon). Both datasets contain historical rating information that users assigned to items (photos for Flicker and books for Amazon). Because each user only rates a small percentage of items available, historical interaction data is generally sparse. Our experiments show that basic recommendation systems which rely on this sparse data are unable to extract enough information to give good results. In addition, these systems are unable to recommend new items (this is known as the cold start problem) because they do not know who has interacted with them or the outcome of those interactions (as that information is not in the historical interaction data).     
+
+![]({{ site.github.url }}/images/2018/01/recommendations-1516742153349.png)
                                                                                                      
 Therefore, to make a better recommender, we built a system that understands what it is recommending by injecting content. (Please see [our blogpost](http://blog.fastforwardlabs.com/2018/01/22/exploring-recommendation-systems.html) for specific details.) This change not only resulted in a huge jump in performance, it also alleviated the cold start problem.
 
