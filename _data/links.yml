@@ -286,3 +286,7 @@
     url: 'https://blog.cardiogr.am/screening-for-hypertension-and-sleep-apnea-with-deepheart-416c9bc03efc'
     text: 'Screening for Hypertension and Sleep Apnea with DeepHeart'
     image: 'https://cdn-images-1.medium.com/max/1200/1*XyKOu9SeCiFj94h3yuvA7w.png'
+-
+    url: 'http://simonwillison.net/2017/Nov/13/datasette/'
+    text: 'Datasette: instantly create and publish an API for your SQLite databases'
+    image: 'https://static.simonwillison.net/static/2017/fivethirtyeight-surnames.png'
