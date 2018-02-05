@@ -142,12 +142,42 @@ div.highlighter-rouge
   position: relative
   overflow-x: auto
   background: #fafafa
+  box-shadow: inset 0 1.25rem 0 #eee
+  // &:before
+  //   content: ""
+  //   position: absolute
+  //   left: 0
+  //   right: 0
+  //   top: 0
+  //   height: 1.25rem
+  //   background: #eee
+
+div.highlighter-rouge > div.highlight
+  margin: 0 auto
+  &:before
+    content: ""
+    text-transform: uppercase
+    font-size: 0.6rem
+    letter-spacing: 0.1em
+    position: relative
+    color: #aaa
+    line-height: 1rem
+    padding: 0 1rem
+    +chambers
+
+div.highlighter-rouge.language-python > div.highlight
+  &:before
+    content: "python"
+
+div.highlighter-rouge.language-javascript > div.highlight
+  &:before
+    content: "javascript"
 
 pre
   margin: 0
   width: $measure-max
   margin: 0 auto
-  padding: 1rem 2rem
+  padding: 1rem
   color: #444
   position: relative
   @media (max-width: $measure_max)
