@@ -142,7 +142,7 @@ div.highlighter-rouge
   position: relative
   overflow-x: auto
   background: #fafafa
-  box-shadow: inset 0 1.25rem 0 #eee
+  // box-shadow: inset 0 1.25rem 0 #eee
   // &:before
   //   content: ""
   //   position: absolute
@@ -154,24 +154,24 @@ div.highlighter-rouge
 
 div.highlighter-rouge > div.highlight
   margin: 0 auto
-  &:before
-    content: ""
-    text-transform: uppercase
-    font-size: 0.6rem
-    letter-spacing: 0.1em
-    position: relative
-    color: #aaa
-    line-height: 1rem
-    padding: 0 1rem
-    +chambers
+  // &:before
+  //   content: ""
+  //   text-transform: uppercase
+  //   font-size: 0.6rem
+  //   letter-spacing: 0.1em
+  //   position: relative
+  //   color: #aaa
+  //   line-height: 1rem
+  //   padding: 0 1rem
+  //   +chambers
 
-div.highlighter-rouge.language-python > div.highlight
-  &:before
-    content: "python"
-
-div.highlighter-rouge.language-javascript > div.highlight
-  &:before
-    content: "javascript"
+// div.highlighter-rouge.language-python > div.highlight
+//   &:before
+//     content: "python"
+//
+// div.highlighter-rouge.language-javascript > div.highlight
+//   &:before
+//     content: "javascript"
 
 pre
   margin: 0
@@ -337,3 +337,27 @@ p code, li code
   left: 0
   width: 100%
   height: 100%
+
+
+table
+  margin-bottom: 1rem
+  margin-left: 1rem
+  width: calc(100% - 2rem)
+  text-align: left
+  border-collapse: collapse
+  border: 1px solid #222
+  font-size: 0.8em
+  tr
+    &:nth-child(even)
+      background-color: #eee
+  th, td
+    padding: 0.25rem 0.25
+  th
+    font-weight: 400
+    background: #ddd
+    background: #222
+    color: #fff
+    border: 1px solid #222
+  td
+    border: 1px solid #222
+
