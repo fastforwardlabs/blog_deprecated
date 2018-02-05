@@ -168,7 +168,6 @@ ID is the column index, and the rating information is the value of the
 interaction matrix. Here is the code snippet. 
 
 ```python
-
 from spotlight.interactions import Interactions
 interactions = Interactions(np.asarray(userid, dtype=np.int32),
 	       		    np.asarray(bookid, dtype=np.int32),
