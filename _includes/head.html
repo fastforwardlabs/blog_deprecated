@@ -20,7 +20,7 @@
     <meta name="og:description" content="{{ page.content | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
     <meta name="og:image" content="{% if page.preview_image contains '://' %}{{ page.preview_image }}{% else %}{{ page.preview_image | prepend: public_baseurl }}{% endif %}">
   {% else %}
-    <meta name="og:title" content="Fast Forward Labs Blog">
+    <meta name="og:title" content="Cloudera Fast Forward Labs Blog">
     <meta name="og:description" content="{{ site.description }}">
     <meta name="og:image" content="{{ public_baseurl }}/images/blog-share-card.png">
   {% endif %}
