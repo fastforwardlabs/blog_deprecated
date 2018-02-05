@@ -86,7 +86,6 @@ The following code snippet shows how custom datasets can be defined and used in
 SURPRISE. 
 
 ```python
-
 from surprise import Dataset
 from surprise import Reader
 
@@ -94,12 +93,10 @@ train_file = os.path.expanduser(data_path + 'train.data')
 test_file = os.path.expanduser(data_path + 'test.data')
 reader = Reader(line_format='user item rating timestamp', sep=';')
 data = Dataset.load_from_folds([(train_file, test_file)], reader=reader)
-
 ```
 Training a model and getting a prediction is straightforward.
 
 ```python
-
 from surprise import dump
 from surprise import KNNBasic
 from surprise.accuracy import rmse
@@ -110,7 +107,6 @@ for trainset, testset in data.folds():
     predictions = algo.test(testset)
     rmse(predictions)
     dump('./dump_KNN', predictions, trainset, algo)
-
 ```
 
 The ROC curve for our system was underwhelming - it is very close to the diagonal
@@ -182,14 +178,12 @@ interactions = Interactions(np.asarray(userid, dtype=np.int32),
 Training and scoring the model is a two liner.
 
 ```python
-
 from spotlight.factorization.explicit import ExplicitFactorizationModel
 from spotlight.evaluation import rmse_score
 
 model = ExplicitFactorizationModel(n_iter=1)
 model.fit(sp_train[0])
 rmse = rmse_score(model, sp_test[0])  # 0.62
-
 ```
 
 Similar to our results with the Flickr dataset, the initial results were underwhelming, but expected for a
