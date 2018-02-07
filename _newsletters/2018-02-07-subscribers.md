@@ -3,7 +3,7 @@ layout: newsletter
 slug: 2018-02-07-subscribers
 ---
 
-Hello!  In this week's newsletter, we discuss multi-task learning, and also share some thoughts on Deep Mind's release of PsychLab.
+Hello!  In this week's newsletter, we discuss multi-task learning, and also share some thoughts on DeepMind's release of PsychLab.
 
 ---
 
@@ -24,7 +24,7 @@ Are you (thinking about) using MTL in your organization? We would love to hear a
 
 ---
 
-## Comparing human and agent performance: Deep Mind releases PsychLab
+## Comparing human and agent performance: DeepMind releases PsychLab
 
 Google’s DeepMind released [PsychLab](https://deepmind.com/blog/open-sourcing-psychlab/) this week, which has been developed internally and released to the public as part of [DeepMind’s efforts](http://www.cell.com/neuron/abstract/S0896-6273(17)30509-3) to apply decades of research in cognitive science/neuroscience to advance the state of the art in machine learning and artificial intelligence. Many modern machine learning models have taken inspiration from principles derived from decades of research in cognitive science/neuroscience. This announcement, along with the accompanying [paper](https://arxiv.org/abs/1801.08116), provide an open-source playground for testing how agents (built using LSTM deep learning alrogirthms) perform when compared to humans on a slew of cognitive tasks that are fairly well-understood and widely used to study human perception.   
 
@@ -33,7 +33,7 @@ The research findings point out some potentially non-obvious ways in which the m
 Interestingly, the agent failed to produce many well-known effects in humans. The pattern of differences between humans and the agent isn’t complete enough yet to make any big theoretical claims, but it appears that the agent has some deficits in integrating information over time, yet is spared the deficit typically seen in humans when asked to search for an object composed of the conjunction of two features (e.g., orientation and color). As these patterns continue to emerge, they will inform how new models are developed and will more clearly delineate the fundamental differences between how agents and humans perform cognitive tasks.
 
 ![]({{ site.github.url }}/images/2018/02/PsychLabs_DeepMind_figure-1517949199677.png)
-##### Figure from [the Psychlab paper](https://arxiv.org/abs/1801.08116)
+##### Figure from [the PsychLab paper](https://arxiv.org/abs/1801.08116)
 
 Most of the machine learning models in _production_ today, as opposed those used for more pure research, are aimed at automating tasks typically performed by humans or augmenting already-existent human capabilities. Currently, many practitioners make tuning decisions to increase the efficiency of machine learning models, but may be inadvertently making trade-offs that affect how well their models actually reliably replicate or augment human abilities. This collaboration between machine learning and cognitive science/neuroscience research, as it evolves, will bring to light new potential approaches to decrease that error. 
 
@@ -60,9 +60,11 @@ Here are a couple of new job postings we've heard about recently.  We're always 
 
 * Mike will also be speaking on interpretability at [Qcon.ai](https://qcon.ai/) on April 11th in San Francisco.
 
+---
 
+Finally, a correction. In last week's newsletter, we credited David King with the DLib project. It should have been *Davis* King. Thanks to one of our regular readers for pointing out the mistake. We welcome your thoughts, feedback, and suggestions anytime; please feel free to drop us a note at clients@fastforwardlabs.com.
 
-As always, thank you for reading!  We welcome your thoughts, feedback, and suggestions anytime; please drop us a note at subscribers@fastforwardlabs.com.
+As always, thank you for reading!  
 
 Until next week,
 
