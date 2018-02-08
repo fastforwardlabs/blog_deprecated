@@ -1,5 +1,5 @@
 ---
-title: The post editor did this
+title: The post editor edited this
 date: 2018-02-08 18:02 -0500
 preview_image: /images/editor_uploads/2018-02-08-170315-ff_logo_white_bg.png
 feature: false
