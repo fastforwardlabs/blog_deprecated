@@ -20,7 +20,7 @@ Additionally, IMPALA has achieved a throughput of 250K frames per second (which 
 
 ## Valentine’s Bots
 
-We at Cloudera Fast Forward Labs have had our eyes on [Natural Language Processing]( https://fastforwardlabs.com/research/FF01) and [machine learning applied to text]( https://fastforwardlabs.com/research/FF04) for awhile, and we enjoy reading about unusual and entertaining use cases. 
+We've had our eyes on [Natural Language Processing]( https://fastforwardlabs.com/research/FF01) and [machine learning applied to text]( https://fastforwardlabs.com/research/FF04) for awhile, and we enjoy reading about unusual and entertaining use cases. 
 
 [Janelle Shane](http://aiweirdness.com/) has [trained a neural network](http://aiweirdness.com/post/170685749687/candy-heart-messages-written-by-a-neural-network) to write messages of the type normally seen on those little candy hearts that tend to appear on store shelves in February (does _anyone_ actually eat them?).
 
