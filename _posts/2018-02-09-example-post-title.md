@@ -3,8 +3,10 @@ title: Example post title
 date: 2018-02-09 18:02 -0500
 preview_image: /images/editor_uploads/2018-02-08-170315-ff_logo_white_bg.png
 feature: false
-published: false
+published: true
 ---
+
+Does saving a post still work after I did stuff for the newsletter?
 
 Example post text: Fast Forward Labs is a machine intelligence research company. Our unique applied research program helps organizations innovate with data science and machine learning.
 
