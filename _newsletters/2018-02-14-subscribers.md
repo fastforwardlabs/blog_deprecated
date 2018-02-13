@@ -59,7 +59,7 @@ Here are a couple of other new job postings we've heard about recently.  We're a
 
 * and Mike will be speaking on interpretability at [Qcon.ai](https://qcon.ai/) on April 11th in San Francisco.
 
-As always, thank you for reading!  We welcome your thoughts, feedback, and suggestions; please drop us a note anytime at clients@fastforwardlabs.com.
+As always, thank you for reading!  We welcome your thoughts, feedback, and suggestions; please drop us a note anytime at subscribers@fastforwardlabs.com.
 
 Until next week,
 
