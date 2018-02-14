@@ -6,21 +6,53 @@ feature: true
 published: false
 author: Ryan Micallef
 post_type: Fast Forward Food Labs
+author_link: https://www.flickr.com/photos/jqpubliq
 ---
 
 In the spirit of Valentine's Day, we at Fast Forward Labs thought it would be fun to bake cookies for our sweethearts. Being DIY nerds, we thought we'd math it up a bit.
 
-We used python to generate probability distributions and matplotlib to check our distributions. Then we wrote a python function to generate a SCAD file defining three-dimensional shapes from the distributions. Using OpenSCAD, an open-source CAD program, we checked the 3D models and exported them to STL files for printing. We used a 5th Generation MakerBot Replicator to print our 3D models. And we baked cookies. Here's one of our office dogs (and my best friend), Dogface, admiring the results.
+We used python to generate probability distributions and matplotlib to check our distributions. Then we wrote a python function to generate a SCAD file defining three-dimensional shapes from the distributions. Using [OpenSCAD](http://www.openscad.org/), an open-source CAD program, we checked the 3D models and exported them to STL files for printing. We used a 5th Generation [MakerBot Replicator](https://www.makerbot.com/replicator/) to print our 3D models. And we baked cookies. Here's one of our office dogs (and my best friend), Dogface, admiring the results.
 
-![](/images/editor_uploads/2018-02-15-173451-IMG_20180208_151037.jpg)
+![](/images/editor_uploads/2018-02-15-194945-DogfaceWithCookies.jpg)
 
 There were a number of challenges involved in generating 3D models and printing them. Here's how the basic process went.
 
 We chose a beta distribution for our first prototype because it's well behaved for purposes of making a 3D printed object.
 * A beta distribution only has values from 0 to 1. This gives us a fixed-width shape to work with. (Compare a Gaussian distribution, which has long tails on both sides and thus may not normalize to a good shape across 0 to 1.)
 * The area under the curve of a beta distribution is necessarily 1, which helps keep the shape from getting too eccentric while allowing flexibility in choice of parameters, and thus a wider range of shapes.
+* If you take two beta distributions, put them x-axis to x-axis, and squint, they look a bit like a heart.
 
-Plotting that distribution with some suitable parameters gave us a shape like this:
+We created a beta distribution in python.
+
+```python
+import numpy as np
+from scipy.stats import beta
+import matplotlib.pyplot as plt
+
+# choose enough points to have a relatively smooth curve without 
+# creating so many facets that the 3D printer is slow
+#
+# choose an odd number so there is a definitive peak to the curve
+numpoints = 35
+
+# set up linspace
+X = np.linspace(0, 1, numpoints)
+
+# beta distribution parameters
+a, b = 2, 1.6
+
+# get beta distribution array
+betadist = beta.pdf(X, a, b)
+```
+And plotted that distribution with some suitable parameters.
+
+```python
+# turn off the axes so we only see the curve
+plt.axis('off')
+
+# plot the curve itself
+plt.plot(X, betadist)
+```
 
 ![](/images/editor_uploads/2018-02-15-174748-betadistplot.png)
 
