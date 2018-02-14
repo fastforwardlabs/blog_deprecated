@@ -1,10 +1,11 @@
 ---
 title: Probabilistic Cookies!
 date: 2018-02-14 12:02 -0500
-preview_image: /images/editor_uploads/2018-02-08-170315-ff_logo_white_bg.png
-feature: false
+preview_image: /images/editor_uploads/2018-02-15-173354-IMG_20180208_091928.jpg
+feature: true
 published: false
 author: Ryan Micallef
+post_type: Fast Forward Food Labs
 ---
 
 In the spirit of Valentine's Day, we at Fast Forward Labs thought it would be fun to bake cookies for our sweethearts. Being DIY nerds, we thought we'd math it up a bit.
@@ -13,7 +14,7 @@ We used python to generate probability distributions and matplotlib to check our
 
 ![](/images/editor_uploads/2018-02-15-173451-IMG_20180208_151037.jpg)
 
-There were a number of challenges involved in generating 3D models and printing them. Here's how the basic process went.  We [documented the basics in an ipython notebook](LINK HERE) with some sample code in case you want to make your own.
+There were a number of challenges involved in generating 3D models and printing them. Here's how the basic process went.
 
 We chose a beta distribution for our first prototype because it's well behaved for purposes of making a 3D printed object.
 * A beta distribution only has values from 0 to 1. This gives us a fixed-width shape to work with. (Compare a Gaussian distribution, which has long tails on both sides and thus may not normalize to a good shape across 0 to 1.)
@@ -47,10 +48,12 @@ We [made some cookie dough](http://www.inkatrinaskitchen.com/best-sugar-cookie-r
 
 ![](/images/editor_uploads/2018-02-15-173354-IMG_20180208_091928.jpg)
 
-Note that the Poisson distribution (printed in white) has big solid areas at the top. This makes it more of a cookie-dough perturber than a cookie cutter. Those solid areas are an artifact of my ignorance of OpenSCAD. The "clever" OpenSCAD ```scale()``` approach I had been using was a hack; I later learned that the ```offset()``` function is the correct solution.
+Note that the Poisson distribution (printed in white) has big solid areas at the top. This makes it more of a cookie-dough perturber than a cookie cutter. Those solid areas are an artifact of my own ignorance of OpenSCAD. The "clever" OpenSCAD ```scale()``` approach I had been using was a hack; I later learned that the ```offset()``` function is the correct solution.
 
 OpenSCAD issues aside, the cookies turned out fine. Here are some of the results, some decorated with axes and histograms.
 
 ![](/images/editor_uploads/2018-02-15-173432-IMG_20180208_153153.jpg)
+
+If you feel inclined to give it a shot yourself, [here's a jupyter notebook](https://github.com/fastforwardlabs/probabilistic-cookie-cutters) with some code to get you started.
 
 Happy Valentine's Day from Fast Forward Labs!
