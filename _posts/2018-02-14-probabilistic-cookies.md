@@ -3,7 +3,7 @@ title: Probabilistic Cookies!
 date: 2018-02-14 12:02 -0500
 preview_image: /images/editor_uploads/2018-02-15-173354-IMG_20180208_091928.jpg
 feature: true
-published: false
+published: true
 author: Ryan Micallef
 post_type: Fast Forward Food Labs
 author_link: https://www.flickr.com/photos/jqpubliq
