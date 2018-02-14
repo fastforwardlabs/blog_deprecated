@@ -41,15 +41,13 @@ Here are the first results (we had begun tinkering with a Gaussian distribution 
 
 ![](/images/editor_uploads/2018-02-15-173256-IMG_20180205_170725.jpg)
 
-Of course those first test shapes are too small for cookies. After a lot of tinkering and refinement, we ended up with a beta, Gaussian, and Poisson distributions shapes scaled up for cookie size (about 100mm high).
+Of course these first test shapes are too small for cookies. After a lot of tinkering and refinement, we ended up with beta, Gaussian, and Poisson distribution shapes scaled up for cookie size (about 100mm high).
 
 We [made some cookie dough](http://www.inkatrinaskitchen.com/best-sugar-cookie-recipe-ever/) and got to business.
 
 ![](/images/editor_uploads/2018-02-15-173354-IMG_20180208_091928.jpg)
 
-Note that the Poisson distribution (printed in white) has big solid areas. This makes is more of a cookie-dough perturber than a cookie cutter.
-
-Those solid areas are an artifact of my ignorance of SCAD. The functions I was using work just fine for continuous distributions, but left something to be desired for histogram plots. The "clever" OpenSCAD ```scale()``` approach I had been using was a hack; I later learned that ```offset()``` is the correct solution.
+Note that the Poisson distribution (printed in white) has big solid areas at the top. This makes it more of a cookie-dough perturber than a cookie cutter. Those solid areas are an artifact of my ignorance of OpenSCAD. The "clever" OpenSCAD ```scale()``` approach I had been using was a hack; I later learned that the ```offset()``` function is the correct solution.
 
 OpenSCAD issues aside, the cookies turned out fine. Here are some of the results, some decorated with axes and histograms.
 
