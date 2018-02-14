@@ -1,0 +1,58 @@
+---
+title: Probabilistic Cookies!
+date: 2018-02-14 12:02 -0500
+preview_image: /images/editor_uploads/2018-02-08-170315-ff_logo_white_bg.png
+feature: false
+published: false
+author: Ryan Micallef
+---
+
+In the spirit of Valentine's Day, we at Fast Forward Labs thought it would be fun to bake cookies for our sweethearts. Being DIY nerds, we thought we'd math it up a bit.
+
+We used python to generate probability distributions and matplotlib to check our distributions. Then we wrote a python function to generate a SCAD file defining three-dimensional shapes from the distributions. Using OpenSCAD, an open-source CAD program, we checked the 3D models and exported them to STL files for printing. We used a 5th Generation MakerBot Replicator to print our 3D models. And we baked cookies. Here's one of our office dogs (and my best friend), Dogface, admiring the results.
+
+![](/images/editor_uploads/2018-02-15-173451-IMG_20180208_151037.jpg)
+
+There were a number of challenges involved in generating 3D models and printing them. Here's how the basic process went.  We [documented the basics in an ipython notebook](LINK HERE) with some sample code in case you want to make your own.
+
+We chose a beta distribution for our first prototype because it's well behaved for purposes of making a 3D printed object.
+* A beta distribution only has values from 0 to 1. This gives us a fixed-width shape to work with. (Compare a Gaussian distribution, which has long tails on both sides and thus may not normalize to a good shape across 0 to 1.)
+* The area under the curve of a beta distribution is necessarily 1, which helps keep the shape from getting too eccentric while allowing flexibility in choice of parameters, and thus a wider range of shapes.
+
+Plotting that distribution with some suitable parameters gave us a shape like this:
+
+![](/images/editor_uploads/2018-02-15-174748-betadistplot.png)
+
+Once we found a set of parameters that we liked, we used the points in the distribution in python to create an OpenSCAD-formatted SCAD file. A SCAD file is a readable text file that contains a combination of points in space that define shapes and instructions to manipulate those shapes. We made two 2D copies of the distribution, sized one up a bit, and centered them together. We extruded them both into 3D, one linear, and the other with a slight "cone" projection. This gave us one relatively thin edge for piercing cookie dough. Then we subtracted one shape from the other to make a hollow in the larger shape. Rendered in 3D in OpenSCAD, it looks like this:
+
+![](/images/editor_uploads/2018-02-15-175332-SCAD_Beta_with_Taper.png)
+
+Note that the 3D model looks more eccentric than the python-generated plot. This is because the plot had axes of differing scales.
+
+With a 3D model in hand, it was time to print a physical object. We exported our SCAD object into a stereolithography (STL) file, which we then imported into [MakerBot's printing software](https://www.makerbot.com/download-print/).
+
+![](/images/editor_uploads/2018-02-15-180914-MakerBot_Render.png)
+
+We made a final print file and extruded our first prototypes at [NYC Resistor](http://nycresistor.com) our friendly neighborhood hackerspace. 3D printing can take a while for large shapes, so we started out small.
+
+![](/images/editor_uploads/2018-02-15-173237-IMG_20180207_154319.jpg)
+
+Here are the first results (we had begun tinkering with a Gaussian distribution at that point):
+
+![](/images/editor_uploads/2018-02-15-173256-IMG_20180205_170725.jpg)
+
+Of course those first test shapes are too small for cookies. After a lot of tinkering and refinement, we ended up with a beta, Gaussian, and Poisson distributions shapes scaled up for cookie size (about 100mm high).
+
+We [made some cookie dough](http://www.inkatrinaskitchen.com/best-sugar-cookie-recipe-ever/) and got to business.
+
+![](/images/editor_uploads/2018-02-15-173354-IMG_20180208_091928.jpg)
+
+Note that the Poisson distribution (printed in white) has big solid areas. This makes is more of a cookie-dough perturber than a cookie cutter.
+
+Those solid areas are an artifact of my ignorance of SCAD. The functions I was using work just fine for continuous distributions, but left something to be desired for histogram plots. The "clever" OpenSCAD ```scale()``` approach I had been using was a hack; I later learned that ```offset()``` is the correct solution.
+
+OpenSCAD issues aside, the cookies turned out fine. Here are some of the results, some decorated with axes and histograms.
+
+![](/images/editor_uploads/2018-02-15-173432-IMG_20180208_153153.jpg)
+
+Happy Valentine's Day from Fast Forward Labs!
