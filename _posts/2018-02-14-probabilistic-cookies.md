@@ -1,7 +1,7 @@
 ---
 title: Probabilistic Cookies!
 date: 2018-02-14 12:02 -0500
-preview_image: /images/editor_uploads/2018-02-15-173354-IMG_20180208_091928.jpg
+preview_image: /images/editor_uploads/2018-02-15-204722-IMG_20180208_091928_1200.jpg
 feature: true
 published: true
 author: Ryan Micallef
@@ -13,7 +13,7 @@ In the spirit of Valentine's Day, we at Fast Forward Labs thought it would be fu
 
 We used python to generate probability distributions and matplotlib to check our distributions. Then we wrote a python function to generate a SCAD file defining three-dimensional shapes from the distributions. Using [OpenSCAD](http://www.openscad.org/), an open-source CAD program, we checked the 3D models and exported them to STL files for printing. We used a 5th Generation [MakerBot Replicator](https://www.makerbot.com/replicator/) to print our 3D models. And we baked cookies. Here's one of our office dogs (and my best friend), Dogface, admiring the results.
 
-![](/images/editor_uploads/2018-02-15-194945-DogfaceWithCookies.jpg)
+![](/images/editor_uploads/2018-02-15-204703-DogfaceWithCookies1200.jpg)
 
 There were a number of challenges involved in generating 3D models and printing them. Here's how the basic process went.
 
@@ -72,19 +72,19 @@ We made a final print file and extruded our first prototypes at [NYC Resistor](h
 
 Here are the first results (we had begun tinkering with a Gaussian distribution at that point):
 
-![](/images/editor_uploads/2018-02-15-173256-IMG_20180205_170725.jpg)
+![](/images/editor_uploads/2018-02-15-204811-IMG_20180205_170725_1200.jpg)
 
 Of course these first test shapes are too small for cookies. After a lot of tinkering and refinement, we ended up with beta, Gaussian, and Poisson distribution shapes scaled up for cookie size (about 100mm high).
 
 We [made some cookie dough](http://www.inkatrinaskitchen.com/best-sugar-cookie-recipe-ever/) and got to business.
 
-![](/images/editor_uploads/2018-02-15-173354-IMG_20180208_091928.jpg)
+![](/images/editor_uploads/2018-02-15-204722-IMG_20180208_091928_1200.jpg)
 
 Note that the Poisson distribution (printed in white) has big solid areas at the top. This makes it more of a cookie-dough perturber than a cookie cutter. Those solid areas are an artifact of my own ignorance of OpenSCAD. The "clever" OpenSCAD ```scale()``` approach I had been using was a hack; I later learned that the ```offset()``` function is the correct solution.
 
 OpenSCAD issues aside, the cookies turned out fine. Here are some of the results, some decorated with axes and histograms.
 
-![](/images/editor_uploads/2018-02-15-173432-IMG_20180208_153153.jpg)
+![](/images/editor_uploads/2018-02-15-204937-IMG_20180208_153153_1200.jpg)
 
 If you feel inclined to give it a shot yourself, [here's a jupyter notebook](https://github.com/fastforwardlabs/probabilistic-cookie-cutters) with some code to get you started.
 
