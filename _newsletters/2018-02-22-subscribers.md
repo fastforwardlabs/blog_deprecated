@@ -81,6 +81,8 @@ We love to read; here are a few of our (notably eclectic) favorite finds from th
 * [Candy Heart messages written by a neural network](http://aiweirdness.com/post/170685749687/candy-heart-messages-written-by-a-neural-network)
 * and last, but not least, [Finally, Facial Recognition for Cows Is Here](https://gizmodo.com/finally-facial-recognition-for-cows-is-here-1822609005)!
 
+![]({{ site.github.url }}/images/2018/02/b8bzwnjho4eyv0xk7vvi-1519303932664.png)
+##### image source: https://gizmodo.com/finally-facial-recognition-for-cows-is-here-1822609005
 ---
 
 ## Job Postings
