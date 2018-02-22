@@ -68,7 +68,7 @@ This is definitely an interesting model and one we'll be keeping an eye on!
 
 ## CFFL Recommended Reading
 
-Be sure to check out this post on our blog! 
+Be sure to check out this post on our blog:
 * [Probabilistic Cookies!](http://blog.fastforwardlabs.com/2018/02/14/probabilistic-cookies.html)  
 * as well as this post by Seth Hendrickson on Cloudera's Engineering Blog, [Production Recommendation Systems with Cloudera](http://blog.cloudera.com/blog/2018/02/production-recommendation-systems-with-cloudera/)
 
