@@ -1,6 +1,6 @@
 ---
 layout: newsletter
-slug: 2018-02-22-client
+slug: 2018-02-22-subscribers
 ---
 
 Hello, and happy Thursday!  In this week's newsletter, we discuss Quantum Computing and Deep Forests, and also share a few links to articles we've enjoyed reading.
