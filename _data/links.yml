@@ -298,3 +298,7 @@
     url: 'https://blog.acolyer.org/2018/02/05/quantum-computing-in-the-nisq-era-and-beyond/'
     text: 'Quantum computing in the NISQ era and beyond'
     image: 'https://secure.gravatar.com/blavatar/09326a066a08237015d6b84f026d36ae?s=200&ts=1517944925'
+-
+    url: 'https://blog.cloudflare.com/validating-leaked-passwords-with-k-anonymity/'
+    text: 'Validating Leaked Passwords with k-Anonymity'
+    image: 'https://blog.cloudflare.com/content/images/2018/02/trapdoor-1.jpg'
