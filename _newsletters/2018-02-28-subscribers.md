@@ -1,6 +1,6 @@
 ---
 layout: newsletter
-slug: 2018-02-28-client
+slug: 2018-02-28-subscribers
 ---
 
 Hello! In this week's newsletter, we discuss benchmarking algorithmic fairness tools and why listening to those who have a real stake in the technology is critical in the ongoing debates around the impact of ML/AI on employment.
