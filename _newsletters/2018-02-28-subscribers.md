@@ -45,6 +45,17 @@ Collaborations between domain experts and developers can be built into the very 
 
 ---
 
+## Job Postings
+
+Come work with us!  In addition to several other [open positions](https://www.cloudera.com/careers/careers-listing.html), **Cloudera** is hiring a **Director of Product Management, Data Science** ([job description](https://cloudera.wd5.myworkdayjobs.com/External_Career/job/USA--California--Palo-Alto/Director-Product-Management--Data-Science_180286)).
+
+Here are a few other positions we've heard about as well:
+* **Silectis** - Data Engineer ([job description](https://www.silect.is/careers-data-engineer))
+* **Silectis** - Platform Engineer ([job description](https://www.silect.is/careers-platform-engineer))
+* **Pew Research Center** - Director, Data Labs ([job description](https://jobs-prc.icims.com/jobs/5386/director%2C-data-labs/job?mobile=false&width=641&height=500&bga=true&needsRedirect=false&jan1offset=-300&jun1offset=-240))
+
+---
+
 ## CFFL Updates
 
 * This week Cloudera is hosting its annual Tech Summit and Sales Kickoff in Las Vegas, NV. Several of us are attending, and it's been great to have the opportunity to chat with so many other folks from Cloudera in person.
