@@ -302,3 +302,7 @@
     url: 'https://blog.cloudflare.com/validating-leaked-passwords-with-k-anonymity/'
     text: 'Validating Leaked Passwords with k-Anonymity'
     image: 'https://blog.cloudflare.com/content/images/2018/02/trapdoor-1.jpg'
+-
+    url: 'http://ruder.io/deep-learning-nlp-best-practices/'
+    text: 'Deep Learning for NLP Best Practices'
+    image: null
