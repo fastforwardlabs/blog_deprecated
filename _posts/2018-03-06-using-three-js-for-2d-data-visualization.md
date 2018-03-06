@@ -10,4 +10,4 @@ author: Grant
 author_link: https://twitter.com/GrantCuster
 ---
 
-In this post we are going to look at an interactive visualization that clusters movies together based on their ratings by a set of users. This visualization will give us a glimpse into the aesthetic tastes of a community of cinephiles.
+A code walkthrough of how to use three.js for large 2D data visualization. This is the guide that I wish I would have had when I built our most recent prototype.
