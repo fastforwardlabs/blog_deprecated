@@ -5,7 +5,7 @@ date: 2018-03-06 10:50
 preview_image: http://blog.fastforwardlabs.com/images/2018/03/Screen_Shot_2018_03_06_at_10_53_16_AM-1520351645421.png
 feature: true
 post_type: Demo
-external_url: 
+external_url: https://beta.observablehq.com/@grantcuster/using-three-js-for-2d-data-visualization
 author: Grant
 author_link: https://twitter.com/GrantCuster
 ---
