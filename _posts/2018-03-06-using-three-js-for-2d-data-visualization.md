@@ -10,4 +10,4 @@ author: Grant
 author_link: https://twitter.com/GrantCuster
 ---
 
-A code walkthrough of how to use three.js for large 2D data visualization. This is the guide that I wish I would have had when I built our most recent prototype.
+A code walkthrough of how to use three.js for large 2D data visualizations. Three.js can smoothly render a large number of points in the browser but there are some tricks to making it work for interactive 2D visualizations. This is the guide that I wish I would have had when I built our most recent prototype.
