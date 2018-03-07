@@ -46,7 +46,7 @@ Here are a few other positions we've heard about as well:
 
 * And be sure to check out Grant's post on [using three.js for 2D data visualization](https://beta.observablehq.com/@grantcuster/using-three-js-for-2d-data-visualization)!
 
-As always, thank you for reading. We welcome your thoughts, feedback, and suggestions; please drop us a note anytime at clients@fastforwardlabs.com.
+As always, thank you for reading. We welcome your thoughts, feedback, and suggestions; please drop us a note anytime at subscribers@fastforwardlabs.com.
 
 Until next week,
 
