@@ -306,3 +306,7 @@
     url: 'http://ruder.io/deep-learning-nlp-best-practices/'
     text: 'Deep Learning for NLP Best Practices'
     image: null
+-
+    url: 'https://distill.pub/2018/building-blocks'
+    text: 'The Building Blocks of Interpretability'
+    image: 'https://distill.pub/2018/building-blocks/thumbnail.jpg'
