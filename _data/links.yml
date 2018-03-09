@@ -310,3 +310,7 @@
     url: 'https://distill.pub/2018/building-blocks'
     text: 'The Building Blocks of Interpretability'
     image: 'https://distill.pub/2018/building-blocks/thumbnail.jpg'
+-
+    url: 'http://science.sciencemag.org/content/359/6380/1146'
+    text: 'The spread of true and false news online'
+    image: ""
