@@ -38,6 +38,12 @@ Are you an experienced software engineer who wants to help us build a machine le
 
 [Read the full job description and apply here.](https://cloudera.wd5.myworkdayjobs.com/External_Career/job/USA--California--San-Francisco/Software-Engineer-Data-Science-Tools_180008)
 
+## Senior Director of ISV (Bay Area/New York)
+
+We're looking for an experienced business development professional to manage partnerships and ISV for the machine learning program.
+
+[Read the full job description and apply here.](https://cloudera.wd5.myworkdayjobs.com/en-US/External_Career/job/USA--California--Palo-Alto/Senior-Director-of-ISV_180389)
+
 ## And more
 
 If none of these specific opportunities suit you, please do stay tuned for future roles, including internship opportunities. You can also [follow along on our mailing list](https://fastforwardlabs.us8.list-manage.com/subscribe/post?u=bdb368b9a389b010c19dbcd54&id=1d8c97a0bd).
