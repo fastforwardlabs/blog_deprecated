@@ -10,7 +10,7 @@ At Cloudera, we believe that with data we can make what is impossible today poss
 
 The Machine Learning team is a new group at Cloudera focused on accelerating enterprise data science capabilities through applied research, consulting services, and our software platform. You’ll be working with a talented team around the world and across every function in the business.
 
-We’re looking for people for a few exciting opportunities on the ML team. If one of these might be a match for you please apply using the links below.
+We’re looking for people for a few exciting opportunities on the ML team. If one of these might be a match for you, please apply using the links below.
 
 ## Director of Research and Data Science Services (New York)
 
