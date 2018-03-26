@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<div style="max-width: 660px; margin: 0 auto; padding: 0 8px 27px;">
+  <h2>Newsletter List</h2>
+<ul>
+{% for item in site.newsletters reversed %}
+  <li><a href="{{ item.url }}">{{ item.slug }}</a></li>
+{% endfor %}
+</ul>
+</div>
