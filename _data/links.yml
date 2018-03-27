@@ -334,3 +334,7 @@
     url: 'https://aeon.co/essays/how-science-fiction-feeds-the-fuel-solutions-of-the-future'
     text: 'How science fiction feeds the fuel solutions of the future – Iwan Rhys Morus | Aeon Essays'
     image: 'https://omicron.aeon.co/images/6f31de41-0f73-43b8-9f75-afd46d86339c/header_jones-george-invasion-012630_h_1-002.jpg'
+-
+    url: 'https://rise.cs.berkeley.edu/blog/anna-kvs/'
+    text: 'Anna: A Crazy Fast, Super-Scalable, Flexibly Consistent KVS - RISE Lab'
+    image: 'https://databeta.files.wordpress.com/2018/03/anhu-1024x768-alan-vernon.jpg'
