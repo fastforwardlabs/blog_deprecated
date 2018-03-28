@@ -9,8 +9,8 @@ When you look under the hood of neural networks, you see arrays of numbers, or t
 
 In [*The Building Blocks of Interpretability*](https://distill.pub/2018/building-blocks/), researchers from Google and CMU set out to provide answers to these questions. Applied to images, their methods allow us to look at and make sense of what neurons see — strange, psychedelic distortions of floppy ears and soft fur. Their methods likely generalize beyond images to audio files and text documents. It's just, averaged words are harder to make sense of. In *The Building Blocks of Interpretability*, images are chosen for pedagogical reasons.
 
-![]({{ site.github.url }}/images/2018/03/dog_cat-1522260434836.jpeg)
-##### adorable Labrador puppy, cute little kitten ([image source](https://distill.pub/2018/building-blocks/))
+![]({{ site.github.url }}/images/2018/03/animal_cat_cute_46024-1522261528296.jpg)
+##### dog, cat ([image source](https://www.pexels.com/photo/orange-tabby-cat-beside-fawn-short-coated-puppy-46024/))
 
 We covered *The Building Blocks of Interpretability* in a [recent newsletter](http://blog.fastforwardlabs.com/newsletters/2018-03-14-client.html). We recommend reading the article and playing with the interactive visualizations provided by the authors to get a feel for neural activity patterns and what they might mean. What we'd like to add — we are intrigued by similarities in the authors' approach to approaches in neuroscience. 
 
