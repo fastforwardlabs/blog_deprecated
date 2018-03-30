@@ -338,3 +338,7 @@
     url: 'https://rise.cs.berkeley.edu/blog/anna-kvs/'
     text: 'Anna: A Crazy Fast, Super-Scalable, Flexibly Consistent KVS - RISE Lab'
     image: 'https://databeta.files.wordpress.com/2018/03/anhu-1024x768-alan-vernon.jpg'
+-
+    url: 'https://blog.acolyer.org/2018/03/30/the-surprising-creativity-of-digital-evolution/'
+    text: 'The surprising creativity of digital evolution'
+    image: 'https://adriancolyer.files.wordpress.com/2018/03/de-creativity-fig-12.jpeg?w=640'
