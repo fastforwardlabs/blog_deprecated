@@ -346,3 +346,7 @@
     url: 'http://multithreaded.stitchfix.com/blog/2018/04/05/lumpers-and-splitters/'
     text: 'Lumpers and Splitters: Tensions in Taxonomies | Stitch Fix Technology – Multithreaded'
     image: 'http://multithreaded.stitchfix.com/assets/posts/2018-03-29-lumpers-and-splitters/image_3_lump_or_split.png'
+-
+    url: 'http://jdlm.info/articles/2018/03/18/markov-decision-process-2048.html'
+    text: 'The Mathematics of 2048: Optimal Play with Markov Decision Processes'
+    image: 'http://jdlm.info/assets/2048/mdp_2x2_3_with_no_canonicalization.png'
