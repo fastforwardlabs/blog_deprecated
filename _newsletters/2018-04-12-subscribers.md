@@ -3,7 +3,7 @@ layout: newsletter
 slug: 2018-04-12-subscribers
 ---
 
-Hello!  In this week's newsletter, we discuss new advancements in deep probabilistic programming and a machine learning patent that has earned itself an unfortunate recognition.
+Hello!  In this week's newsletter, we discuss new advancements in deep probabilistic programming and a machine learning patent that has earned itself unfortunate recognition.
 
 ---
 
@@ -85,7 +85,8 @@ But most importantly, it's bad behavior to stockpile patents as deterrents. Pate
 Obviously there are situations where someone has outright stolen a product design or copied a substantive technology that resulted from costly specialized research and development. But using a similar algorithm or [adding a similar trivial feature](https://en.wikipedia.org/wiki/Alcatel-Lucent_v._Microsoft_Corp.) shouldn't be seen as a chance to profit by throwing a wrench into the gears of innovation and competition.
 
 
--- 
+---
+
 ## CFFL Updates
 
 * Hilary will be speaking at the [MIT Digital Economy Conference 2018](http://mitsloan.mit.edu/alumni/events/2018-new-york-ide-conference/) on April 27th in New York.
@@ -96,7 +97,7 @@ Obviously there are situations where someone has outright stolen a product desig
 
 * And be sure to check out Shioulin's latest post on the CFFL blog, [PyTorch for Recommenders 101](http://blog.fastforwardlabs.com/2018/04/10/pytorch-for-recommenders-101.html)!
 
-As always, thank you for reading. We welcome your thoughts, feedback, and suggestions; please drop us a note anytime at subscibers@fastforwardlabs.com.
+As always, thank you for reading. We welcome your thoughts, feedback, and suggestions; please drop us a note anytime at subscribers@fastforwardlabs.com.
 
 Until next week,
 
