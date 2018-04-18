@@ -46,7 +46,7 @@ Deep learning methods (which include CNNs) in general, though, require large amo
 * and Friederike will also be speaking at the [Research & Applied AI Summit](https://raais.co/) in London on June 29th.
 
 
-As always, thank you for reading. We welcome your thoughts, feedback, and suggestions; please drop us a note anytime at clients@fastforwardlabs.com.
+As always, thank you for reading. We welcome your thoughts, feedback, and suggestions; please drop us a note anytime at subscribers@fastforwardlabs.com.
 
 Until next week,
 
