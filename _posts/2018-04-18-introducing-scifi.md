@@ -1,6 +1,6 @@
 ---
 title: Introducing SciFi
-date: 2018-04-18 14:04 -0400
+2018-04-19 14:04 -0400
 preview_image: /images/editor_uploads/2018-04-19-185324-scifi_crop.png
 feature: false
 published: false
