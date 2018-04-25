@@ -15,11 +15,11 @@ CNNs were designed originally to take advantage of spatial structure in the inpu
 
 Vanilla CNNs applied to sequence forecasting have two pitfalls - the output incorporates input from both the past and the future, and they struggle to “see” or “remember” events in the distant past. Luckily, there are solutions for these two shortcomings: _causal convolutions_ and _dilated convolutions_, respectively. A causal convolution adjusts the convolution kernel to only look at data in the past:
 
-![](images/CausalConv.jpg)
+![]({{ site.github.url }}/images/2018/04/CausalConv-1524689210501.jpg)
 
 while dilated convolutions introduce gaps that allow the output to incorporate information from the distant past:
 
-![](images/DilatedCausalConv.jpg)
+![]({{ site.github.url }}/images/2018/04/DilatedCausalConv-1524689251611.jpg)
 
 CNNs that have been modified for use in temporal domains are called temporal convolutional networks or TCNs. One of the main benefits of using TCNs for sequence modeling tasks is that the convolutions can be computed in parallel since the output at a given timestep does not need to wait for previous timesteps. This is in contrast to an RNN, where each prediction must wait for all previous predictions. One potential downside to TCNs is that they do not encode the history of the sequence in a single hidden state like RNNs do, but instead require the entire input sequence to generate predictions. 
 
