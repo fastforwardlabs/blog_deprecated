@@ -47,7 +47,7 @@ But _abstractive_ summarization is harder still. Not only must you identify the
 salient ideas, but you must also generate new text that expresses those ideas
 concisely.
 
-##### Include this image: http://abigailsee.com/img/pointer-gen.png
+![]({{ site.github.url }}/images/2018/05/b11i8uw-1525210311642.png)
 ##### Pointer network for summarization. Credit: [Abigail See and collaborators](http://www.abigailsee.com/2017/04/16/taming-rnns-for-better-summarization.html)
 
 There has been considerable progress along these lines. The current state of
@@ -101,7 +101,7 @@ discussed above; you can reach us anytime at subscribers@fastforwardlabs.com.
 
 * Mike will be speaking at the [Strata Data Conference](https://conferences.oreilly.com/strata/strata-eu/public/schedule/detail/65283) in London on May 24th.
 
-* Friederike will be speaking at the [Data Science Salon](https://www.eventbrite.com/e/data-science-salon-nyc-tickets-40072527007) on applying AI and Machine Learning To Media and Entertainment on **June 13th** (please note the corrected date) in New York.
+* Friederike will be speaking at the [Data Science Salon](https://www.eventbrite.com/e/data-science-salon-nyc-tickets-40072527007) on applying AI and Machine Learning To Media and Entertainment on June 13th in New York.
 
 * Friederike will also be speaking at the [Research & Applied AI Summit](https://raais.co/) in London on June 29th.
 
