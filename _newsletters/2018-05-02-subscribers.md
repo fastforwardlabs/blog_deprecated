@@ -1,0 +1,112 @@
+---
+layout: newsletter
+slug: 2018-05-02-subscribers
+---
+
+Hello!  In this week's newsletter, we share some thoughts on building good data science teams, as well as some updates on the progress that has been made in text summarization since [our original report](https://ff04.fastforwardlabs.com/).
+
+---
+
+## More Than A Trophy
+
+At Cloudera Fast Forward Labs, we spend a lot of time studying how good things get built - keeping up-to-date on new and emerging techniques in machine intelligence, tracking vendors that provide real value to their users, and cutting through the hype to see where real capabilities are in the field. We also spend a lot of time thinking about how good data science teams get built, because it takes good data science teams to build good data science products. Without support throughout the organization, without significant buy-in at the C-suite level, and without a cogent and coherent data plan, a good data science team cannot truly thrive.
+
+It is with that in mind that we read Peadar Coyle's [missive](https://peadarcoyle.wordpress.com/2017/07/23/avoiding-being-a-trophy-data-scientist/) to data scientists on how to avoid becoming a part of an organization that cannot support their skills and contributions. The author lays out a series of anti-patterns to look for, but these anti-patterns are more usefully read as a debugging guide for organizations building a data science team and Coyle offers solutions for each anti-pattern he identifies. Turning his narrative on its head provides useful lessons for building teams that help good data scientists thrive. 
+
+![]({{ site.github.url }}/images/editor_uploads/2018-05-02-143157-14206487403_249d758720_z.jpg)
+
+One meta-anti-pattern he identifies is the confusion between **analytics** and **data science**. Companies sometimes confuse the two, and hiring data scientists when what you need is analytics or business intelligence is not a step forward. On the other hand, building a robust data analytics program is often a necessary precursor to a robust data science program. This is an important waypoint on the path that leads from collecting the right kinds of data and developing useful key performance indicators to doing good data science. 
+
+Another meta-anti-pattern we see in Coyle's article is the tension between **development** and **deployment**. This tension parallels and overlaps with tensions between science and technology, and refers to the embrace of uncertainty and exploration as opposed to working towards predictable and scheduled outcomes. Data science is not engineering; it relies on experiments, novel outcomes, and generative failures. This kind of work proceeds at a pace that is very different from that of software engineers, and that difference should be recognized and supported across the organization. None of this is to say that there shouldn't be clear goals and frameworks for reproducability; indeed, organizations should have clear product roadmaps and workflows. Organizations that treat data science as more than a trophy will build teams that acknowledge this tension, which in turn will help them build good things.
+
+---
+
+## Progress in text summarization
+
+We published our report on text summarization in 2016. Since then, we've
+enjoyed helping our clients make use of techniques such as topic modeling,
+document embedding, and recurrent neural networks to deal with text that ranges
+in scope from product reviews to insurance documents to call transcripts to news. 
+
+Our goal when we do research is to address capabilities and technologies that
+we expect to become production-ready in one to two years. That focus on
+fast-moving areas means that new algorithmic ideas sometimes come along that
+allow our clients to extend or improve upon the work in our reports. Prompted in
+part by Yue Dong's March 2018 _[Survey on Neural Network-Based Summarization
+Methods](https://arxiv.org/abs/1804.04589)_, we thought we'd take some time to
+describe the developments in text summarization since our report was published. 
+
+Put simply: there's bad news and there's good news.
+
+The bad news is that we still don't think _abstractive_ summarization is ready
+for production prime time. _Extractive_ summarization involves selecting a few
+passages from a document or corpus and stitching them together to form a
+summary. As we discuss in our report, [this is a tough
+problem](http://blog.fastforwardlabs.com/2016/04/11/new-tools-to-summarize-text.html).
+But _abstractive_ summarization is harder still. Not only must you identify the
+salient ideas, but you must also generate new text that expresses those ideas
+concisely.
+
+##### Include this image: http://abigailsee.com/img/pointer-gen.png
+##### Pointer network for summarization. Credit: [Abigail See and collaborators](http://www.abigailsee.com/2017/04/16/taming-rnns-for-better-summarization.html)
+
+There has been considerable progress along these lines. The current state of
+the art is 2017's attention-based pointer networks, e.g. [work from Abigail See
+and collaborators at Stanford and Google
+Brain](http://www.abigailsee.com/2017/04/16/taming-rnns-for-better-summarization.html)
+and [Salesforce Research's work lead by Romain
+Paulus](https://einstein.ai/research/your-tldr-by-an-ai-a-deep-reinforced-model-for-abstractive-summarization).
+
+However, those authors would concede what [Noah Weber and collaborators showed
+last month](https://arxiv.org/abs/1803.07038): in practice, these abstractive
+networks work by "mostly, if not entirely, copying over phrases, sentences, and
+sometimes multiple consecutive sentences from an input paragraph, effectively
+performing extractive summarization." So, for now at least, you get the training
+data requirements and engineering complexity of cutting-edge deep learning
+without the practical performance increase. Which is not to say academic work
+on abstractive summarization is at a dead end; we look forward to reporting on the
+inevitable breakthroughs in a year or two.
+
+In the meantime, we promised good news!
+
+##### Include this image: https://i.imgur.com/b11i8uw.png
+##### Extractive summarization with reinforcement learning. Credit: [Shashi Narayan and collaborators](https://arxiv.org/abs/1802.08636)
+
+The good news is a couple of really nice papers that make concrete improvements
+to _extractive_ summarization. Both are from the same Edinburgh group. [Neural
+Extractive Summarization with Side
+Information](https://arxiv.org/abs/1704.04530) (2017) takes advantage of a very
+natural heuristic that was used in classical summarization algorithms: titles
+and image captions are particularly strong signals of the important ideas in a
+document. This heuristic is incorporated into an attention-based
+encoder-decoder network, and they get [really nice extractive
+results](http://kinloch.inf.ed.ac.uk/sidenet.html). If your source documents
+have that kind of structure, this approach is worth investigating. More
+ambitiously, in [Ranking Sentences for Extractive Summarization with
+Reinforcement Learning](https://arxiv.org/abs/1802.08636) (2018) the same group
+recasts extractive summarization as a reinforcement learning task. Unusually,
+they learn to _rank_ sentences in the source document rather than score them in isolation, which they argue results in more coherent (and less verbose) overall
+summaries.
+
+So, two years after our report, text summarization remains not only a useful
+business capability, but a very vibrant area of research. Please let us know if you'd
+like to talk about the report, your text data, or any of the new research
+discussed above; you can reach us anytime at subscribers@fastforwardlabs.com.
+
+---
+
+## CFFL Updates
+
+* Hilary will be presenting a webinar on [Demystifying ML & AI](https://info.cloudera.com/LP=1968?src=FFL) on May 9th.
+
+* Mike will be speaking at the [Strata Data Conference](https://conferences.oreilly.com/strata/strata-eu/public/schedule/detail/65283) in London on May 24th.
+
+* Friederike will be speaking at the [Data Science Salon](https://www.eventbrite.com/e/data-science-salon-nyc-tickets-40072527007) on applying AI and Machine Learning To Media and Entertainment on **June 13th** (please note the corrected date) in New York.
+
+* Friederike will also be speaking at the [Research & Applied AI Summit](https://raais.co/) in London on June 29th.
+
+
+As always, thank you for reading. We welcome your thoughts, feedback, and suggestions; please drop us a note anytime!
+
+Until next week,
+The Cloudera Fast Forward Labs Team
