@@ -47,8 +47,8 @@ But _abstractive_ summarization is harder still. Not only must you identify the
 salient ideas, but you must also generate new text that expresses those ideas
 concisely.
 
-![]({{ site.github.url }}/images/2018/05/b11i8uw-1525210311642.png)
-##### Pointer network for summarization. Credit: [Abigail See and collaborators](http://www.abigailsee.com/2017/04/16/taming-rnns-for-better-summarization.html)
+![]({{ site.github.url }}/images/2018/05/pointer_gen-1525287901132.png)
+##### Pointer network for summarization. Credit: [Abigail See and collaborators](http://www.abigailsee.com/2017/04/16/taming-rnns-for-better-summarization.html) 
 
 There has been considerable progress along these lines. The current state of
 the art is 2017's attention-based pointer networks, e.g. [work from Abigail See
@@ -69,7 +69,7 @@ inevitable breakthroughs in a year or two.
 
 In the meantime, we promised good news!
 
-##### Include this image: https://i.imgur.com/b11i8uw.png
+![]({{ site.github.url }}/images/2018/05/b11i8uw-1525210311642.png)
 ##### Extractive summarization with reinforcement learning. Credit: [Shashi Narayan and collaborators](https://arxiv.org/abs/1802.08636)
 
 The good news is a couple of really nice papers that make concrete improvements
