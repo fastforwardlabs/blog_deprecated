@@ -350,3 +350,7 @@
     url: 'http://jdlm.info/articles/2018/03/18/markov-decision-process-2048.html'
     text: 'The Mathematics of 2048: Optimal Play with Markov Decision Processes'
     image: 'http://jdlm.info/assets/2048/mdp_2x2_3_with_no_canonicalization.png'
+-
+    url: 'http://www.sciencemag.org/news/2018/05/ai-researchers-allege-machine-learning-alchemy'
+    text: 'AI researchers allege that machine learning is alchemy'
+    image: 'https://www.sciencemag.org/sites/default/files/styles/article_main_large/public/ma_0504_NID_alchemy_WEB.jpg?itok=l1G2iEz7'
