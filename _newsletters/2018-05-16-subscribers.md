@@ -1,0 +1,121 @@
+---
+layout: newsletter
+slug: 2018-05-16-subscribers
+---
+
+Hello! In this week's newsletter, we dive into an interesting case in the world of adversarial maching learning, discuss the boycott of a new academic journal, and highlight the upcoming launch of a self-driving car service this summer.
+
+---
+
+## Adversarial Machine Learning meets Sensor Design
+
+Adversarial machine learning has been a frequent topic of discussion in the
+Machine Learning world, even in [our newsletter][1]. A recent attack named the
+[DolphinAttack][2], is an interesting take on this subject, in which both the
+machine learning models and hardware sensor design are exploited at the same
+time. This makes it possible for an attacker to run voice commands on your phone
+using [inaudible triggers][5].
+
+![]({{ site.github.url }}/images/2018/05/receiver-1526482785701.png)
+##### [Image source](https://raw.githubusercontent.com/USSLab/DolphinAttack/master/images/receiver.png)
+
+The [basic attack][6] works by taking advantage of the non-linearity of the
+microphones used on mobile devices. When we have a microphone, we assume that if
+we make a 10kHz tone, the microphone only detects this 10kHz tone. However,
+because of resonance and harmonic effects, the microphone also reads other tones
+as well, albeit very faintly. In general, the microphones in mobile devices are
+designed in a way to only accept audio that is in the audible range for humans,
+but by leveraging this harmonic effect, attackers are able to transmit
+in-audible sounds that create harmonics within the microphone that are read as
+audible.
+
+Furthermore, the machine learning models used to detect voice commands on phones
+don't look directly at the audio signals coming in. Rather, they look at the
+[MFCC transformation][3] of that audio. What this means is that the audio
+signals that are triggered on the device don't need to be a perfect
+reproduction of human speech, but rather something that simply reproduces
+similar MFCC signals. This is very similar to the examples of [adding noise][4]
+to an image to manipulate the classification result -- the resulting image may
+not be comprehensible to a human, but it satisfies the rules that the model has
+learned.
+
+The result is an easy-to-implement attack that can trigger commands on phones
+from a distance without anyone hearing what commands were issued. This attack
+has an area-of-effect characteristic to it in which a large ultra-sonic speaker
+could be used to exploit all phones in an area. (Our own researchers
+have played with these concepts and can confirm the simplicity of implementing the
+methods outlined in the DolphinAttack paper.) And all of this simply because the
+assumption that a microphone only hears audio _that actually happened_ is
+wrong.
+
+One thing that is fascinating about this attack is how it speaks to really
+understanding the differences between the ideal setup a researcher has when
+researching and developing a model versus the realities of the world. Similar
+issues affected computer vision research - where the real world has cameras with
+substantially different lens and image sensor properties than those represented
+in the training data used by researchers. The effects of these sorts of
+incongruities are easy to dissect when it comes to image/audio applications,
+especially these sorts of low-stakes scenarios; however the same design problems
+can arise in more critical locations. For example, what are the effects on real
+people if researchers into fraud detection simply don't understand the
+limitations and biases of the sensors that are creating the data on which they are basing their
+model?
+
+
+[1]: http://blog.fastforwardlabs.com/newsletters/2018-04-18-subscribers.html
+[2]: https://arxiv.org/abs/1708.09537
+[3]: https://en.wikipedia.org/wiki/Mel-frequency_cepstrum
+[4]: https://arxiv.org/abs/1704.05051
+[5]: https://www.youtube.com/watch?v=21HjF4A3WE4
+[6]: https://blog.acolyer.org/2018/05/11/inaudible-voice-commands-the-long-range-attack-and-defense/
+
+---
+
+## Boycotting Nature
+
+A large segment of the machine learning research community has [joined a boycott](https://openaccess.engineering.oregonstate.edu/) of _Nature Machine Intelligence_, a new [planned academic journal](https://medium.com/syncedreview/natures-machine-intelligence-journal-to-launch-in-jan-2019-1e27858b97b6) annouced by publisher Springer, which already publishes _Nature_ and _Scientific American_; the main issue is that Springer intends to charge for publication and subscription to the journal.
+
+Almost three thousand researchers (so far) have signed a statement rejecting closed-access research in the field of machine learning - and rightly so. The field of machine learning has a long history of openly publishing foundational research papers. As the statement notes, "In addition to JMLR, virtually all of the major machine learning outlets including NIPS, ICML, ICLR, COLT, UAI, and AISTATS make no charge for access to or publication of papers." Sites like arXiv.org allow free publication and access to computer science and mathematics research papers.
+
+Indeed, it is common for for-profit companies, including Google and Microsoft (and even Apple, which is not known for a culture of openness or sharing) to publish machine learning research openly, and to [share some of their tools as open-source software](https://opensource.google.com/projects/list/machine-learning). Machine learning researchers at Facebook, Apple, Google, and Microsoft (to name a few) have signed the statement.
+
+Springer's motivation in creating a closed-access machine learning journal is clearly profit-seeking, and window dressing for its [initial public offering](https://www.reuters.com/article/us-springer-nature-ipo/springer-nature-to-offer-1-6-billion-euros-of-shares-in-listing-idUSKBN1HW2W3).
+
+![Locked books]({{ site.github.url }}/images/editor_uploads/2018-05-14-195851-4052599_21c7d43e.jpg)
+
+Professor Thomas Dettrich of Oregon State University, who began the statement, [tweeted about it](https://twitter.com/tdietterich/status/990325895729594368). _Nature Machine Intelligence_ [responded](https://twitter.com/NatMachIntell/status/990503910673715200), and the [replies](https://twitter.com/Kenneth_Marino/status/990666353139892224) [to](https://twitter.com/ThomioW/status/990587153653665792) [that](https://twitter.com/LippertChr/status/990561207743590401) response have been [appropriately critical](https://twitter.com/Issamou3/status/990706694756814848). 
+
+![]({{ site.github.url }}/images/2018/05/Tweets-1526330628639.jpeg)
+![]({{ site.github.url }}/images/2018/05/KM_Tweet-1526330923139.jpeg)
+![]({{ site.github.url }}/images/2018/05/TW_Tweet-1526331071464.jpeg)
+![]({{ site.github.url }}/images/2018/05/CL_Tweet-1526330986935.jpeg)
+##### Click thru the links in the paragraph above for the full conversation.
+
+Nothing I (Ryan) have seen suggests that Springer is offering anything other than a chance for researchers to boost Springer's share prices.
+
+---
+
+## Drive.ai
+
+[Drive.ai recently announced](https://medium.com/@andrewng/self-driving-cars-are-here-aea1752b1ad0) an on-demand self-driving car service pilot in Frisco, Texas. Beginning in July 2018, members of the community will be able to call these vehicles to shuttle between HALL Park offices and The Star, connecting busy offices with retail, dining, and entertainment options. The deployment of a Level 4 (high automation) self-driving system is exciting (with Level 5 being complete automation), and is de-risked in three ways. 
+
+First, the team has designed a self-driving architecture using modern AI from the ground up; deep learning is built into mapping, perception, motion planning, localization, fleet management, telechoice (remote assistance), communications and mobile app. Second, the deployment is geofenced and accomplished via local partnerships, both public and private. This allows Drive.ai to predictably manage potential interaction issues between human and self-driving cars. Third, there is a laser focus on safety for both people inside and outside of the car. 
+
+As a design choice, these cars are bright orange and equipped with exterior panels for communicating subtle human cues ("It's safe to cross!"  "I'm waiting patiently."). It's a first step, and we look forward to the day when these cars are free to roam safely, and communication between human and car is seamless!           
+
+---
+
+## CFFL Updates
+
+* Mike will be speaking at the [Strata Data Conference](https://conferences.oreilly.com/strata/strata-eu/public/schedule/detail/65283) in London on May 24th.
+
+* Friederike will be speaking at the [Data Science Salon](https://www.eventbrite.com/e/data-science-salon-nyc-tickets-40072527007) on applying AI and Machine Learning To Media and Entertainment on June 13th in New York.
+
+* Friederike will also be speaking at the [Research & Applied AI Summit](https://raais.co/) in London on June 29th, and at [Curious2018](https://curious2018.com/) in Darmstadt, Germany in mid-July.
+
+
+As always, thank you for reading. We welcome your thoughts, feedback, and suggestions; please [drop us a note](mailto:subscribers@fastforwardlabs.com) anytime!
+
+Until next week,
+
+The Cloudera Fast Forward Labs Team
