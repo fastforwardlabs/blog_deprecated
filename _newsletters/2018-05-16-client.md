@@ -87,9 +87,7 @@ Professor Thomas Dettrich of Oregon State University, who began the statement, [
 
 ![]({{ site.github.url }}/images/2018/05/Tweets-1526330628639.jpeg)
 ![]({{ site.github.url }}/images/2018/05/KM_Tweet-1526330923139.jpeg)
-![]({{ site.github.url }}/images/2018/05/TW_Tweet-1526331071464.jpeg)
-![]({{ site.github.url }}/images/2018/05/CL_Tweet-1526330986935.jpeg)
-##### Click thru the links in the paragraph above for the full conversation.
+##### Note: click thru the links in the paragraph above for the full conversation.
 
 Nothing I (Ryan) have seen suggests that Springer is offering anything other than a chance for researchers to boost Springer's share prices.
 
