@@ -3,7 +3,7 @@ layout: newsletter
 slug: 2018-05-16-subscribers
 ---
 
-Hello! In this week's newsletter, we dive into an interesting case in the world of adversarial maching learning, discuss the boycott of a new academic journal, and highlight the upcoming launch of a self-driving car service this summer.
+Greetings from rainy Brooklyn, NY! In this week's newsletter, we dive in to a new twist on adversarial maching learning, wade into the issues surrounding the boycott of a new academic journal, and highlight the upcoming launch of a self-driving car service that's sure to make a splash this summer.
 
 ---
 
@@ -26,7 +26,7 @@ because of resonance and harmonic effects, the microphone also reads other tones
 as well, albeit very faintly. In general, the microphones in mobile devices are
 designed in a way to only accept audio that is in the audible range for humans,
 but by leveraging this harmonic effect, attackers are able to transmit
-in-audible sounds that create harmonics within the microphone that are read as
+inaudible sounds that create harmonics within the microphone that are read as
 audible.
 
 Furthermore, the machine learning models used to detect voice commands on phones
@@ -43,21 +43,21 @@ The result is an easy-to-implement attack that can trigger commands on phones
 from a distance without anyone hearing what commands were issued. This attack
 has an area-of-effect characteristic to it in which a large ultra-sonic speaker
 could be used to exploit all phones in an area. (Our own researchers
-have played with these concepts and can confirm the simplicity of implementing the
+have played with these concepts within the confines of our office and can confirm the simplicity of implementing the
 methods outlined in the DolphinAttack paper.) And all of this simply because the
-assumption that a microphone only hears audio _that actually happened_ is
+assumption that a microphone only hears audio _that was actually audible_ is
 wrong.
 
 One thing that is fascinating about this attack is how it speaks to really
 understanding the differences between the ideal setup a researcher has when
 researching and developing a model versus the realities of the world. Similar
-issues affected computer vision research - where the real world has cameras with
+issues affect computer vision research - where the real world has cameras with
 substantially different lens and image sensor properties than those represented
 in the training data used by researchers. The effects of these sorts of
 incongruities are easy to dissect when it comes to image/audio applications,
-especially these sorts of low-stakes scenarios; however the same design problems
+especially in these sorts of low-stakes scenarios; however the same design problems
 can arise in more critical locations. For example, what are the effects on real
-people if researchers into fraud detection simply don't understand the
+people if researchers focused on fraud detection simply don't understand the
 limitations and biases of the sensors that are creating the data on which they are basing their
 model?
 
@@ -73,13 +73,13 @@ model?
 
 ## Boycotting Nature
 
-A large segment of the machine learning research community has [joined a boycott](https://openaccess.engineering.oregonstate.edu/) of _Nature Machine Intelligence_, a new [planned academic journal](https://medium.com/syncedreview/natures-machine-intelligence-journal-to-launch-in-jan-2019-1e27858b97b6) annouced by publisher Springer, which already publishes _Nature_ and _Scientific American_; the main issue is that Springer intends to charge for publication and subscription to the journal.
+A large segment of the machine learning research community has [joined a boycott](https://openaccess.engineering.oregonstate.edu/) of _Nature Machine Intelligence_, a newly planned planned [academic journal](https://medium.com/syncedreview/natures-machine-intelligence-journal-to-launch-in-jan-2019-1e27858b97b6) annouced by Springer, the publisher which already publishes _Nature_ and _Scientific American_; the main issue is that Springer intends to charge for publication and subscription to the journal.
 
-Almost three thousand researchers (so far) have signed a statement rejecting closed-access research in the field of machine learning - and rightly so. The field of machine learning has a long history of openly publishing foundational research papers. As the statement notes, "In addition to JMLR, virtually all of the major machine learning outlets including NIPS, ICML, ICLR, COLT, UAI, and AISTATS make no charge for access to or publication of papers." Sites like arXiv.org allow free publication and access to computer science and mathematics research papers.
+Almost three thousand researchers (so far) have signed a statement rejecting closed-access research in the field of machine learning - and rightly so. The field of machine learning has a long history of openly publishing foundational research papers. As the statement notes, "In addition to JMLR, virtually all of the major machine learning outlets including NIPS, ICML, ICLR, COLT, UAI, and AISTATS make no charge for access to or publication of papers." Sites like arXiv.org allow free preprint publication and access to computer science and mathematics research papers.
 
 Indeed, it is common for for-profit companies, including Google and Microsoft (and even Apple, which is not known for a culture of openness or sharing) to publish machine learning research openly, and to [share some of their tools as open-source software](https://opensource.google.com/projects/list/machine-learning). Machine learning researchers at Facebook, Apple, Google, and Microsoft (to name a few) have signed the statement.
 
-Springer's motivation in creating a closed-access machine learning journal is clearly profit-seeking, and window dressing for its [initial public offering](https://www.reuters.com/article/us-springer-nature-ipo/springer-nature-to-offer-1-6-billion-euros-of-shares-in-listing-idUSKBN1HW2W3).
+Springer's motivation in creating a closed-access machine learning journal is clearly in line with profit-seeking [throughout](https://www.theatlantic.com/science/archive/2016/01/elsevier-academic-publishing-petition/427059/) the academic publishing industry, but is also window dressing for its [initial public offering](https://www.reuters.com/article/us-springer-nature-ipo/springer-nature-to-offer-1-6-billion-euros-of-shares-in-listing-idUSKBN1HW2W3).
 
 ![Locked books]({{ site.github.url }}/images/editor_uploads/2018-05-14-195851-4052599_21c7d43e.jpg)
 
