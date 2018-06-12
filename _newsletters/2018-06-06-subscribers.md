@@ -56,7 +56,7 @@ Leaving the technical readiness of this or other human-machine interactive platf
 * And, Friederike will still be speaking at the [Data Science Salon](https://datascience.salon/ny9-18/) on applying AI and Machine Learning To Media and Entertainment, but the date has been changed to September 27th.
 
 
-As always, thank you for reading. We welcome your thoughts, feedback, and suggestions; please [drop us a note](mailto:cffl@fastforwardlabs.com) anytime!
+As always, thank you for reading. We welcome your thoughts, feedback, and suggestions; please [drop us a note](mailto:cffl@cloudera.com) anytime!
 
 All the best,
 
