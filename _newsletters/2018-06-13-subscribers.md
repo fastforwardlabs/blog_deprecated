@@ -3,6 +3,13 @@ layout: newsletter
 slug: 2018-06-13-subscribers
 ---
 
+Hello!  In this week's newsletter, we talk about [spaCy](https://spacy.io/), and the benefits of the GDPR for machine intelligence.  We'd also like to nominate [this post](https://twitter.com/skyetetra/status/1006257529733537792) for Tweet of the Week:
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I&#39;m happy to report that hyper-intelligent AI isn&#39;t that close: currently Amazon, Microsoft, and Google&#39;s cutting-edge APIs all believe &quot;My leg was eaten by a great white shark&quot; is a sentence with a highly positive sentiment. <a href="https://t.co/rWSvyek9zs">pic.twitter.com/rWSvyek9zs</a></p>&mdash; Jonathan Nolis (@skyetetra) <a href="https://twitter.com/skyetetra/status/1006257529733537792?ref_src=twsrc%5Etfw">June 11, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+---
+
 ## spaCy shines in processing text data
 
 Increasingly, a lot of the work being done in machine learning involves processing text data.  There are many tools for doing machine learning research on text data, such as the python natural language toolkit [NLTK](https://www.nltk.org/), and [CoreNLP](https://stanfordnlp.github.io/CoreNLP/index.html).  These tools are well-known and broadly used, but aren’t necessarily the best options for businesses looking to put their models into production environments.  
@@ -38,4 +45,3 @@ As always, thank you for reading. We welcome your thoughts, feedback, and sugges
 All the best,
 
 The Cloudera Fast Forward Labs Team
-
