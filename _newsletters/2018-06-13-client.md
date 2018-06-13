@@ -12,7 +12,7 @@ Hello!  In this week's newsletter, we talk about [spaCy](https://spacy.io/), and
 
 ## spaCy shines in processing text data
 
-Increasingly, a lot of the work being done in machine learning involves processing text data.  There are many tools for doing machine learning research on text data, such as the python natural language toolkit [NLTK](https://www.nltk.org/), and [CoreNLP](https://stanfordnlp.github.io/CoreNLP/index.html).  These tools are well-known and broadly used, but aren’t necessarily the best options for businesses looking to put their models into production environments.  
+Increasingly, a lot of the work being done in machine learning involves processing text data.  There are many tools for doing machine learning research on text data, such as the Python natural language toolkit [NLTK](https://www.nltk.org/), and [CoreNLP](https://stanfordnlp.github.io/CoreNLP/index.html).  These tools are well-known and broadly used, but aren’t necessarily the best options for businesses looking to put their models into production environments.  
 
 When models have been developed and need to be deployed quickly in production environments, [spaCy](https://spacy.io/) really shines.  When using spaCy, there are fewer customizable options, but it works faster on large-scale datasets because the people who developed it did so with an eye toward speed.  SpaCy has an impressive list of capabilities that allow for text preprocessing (such as tokenization and lemmatization) and also entity recognition, similarity, and text classification.  
 
