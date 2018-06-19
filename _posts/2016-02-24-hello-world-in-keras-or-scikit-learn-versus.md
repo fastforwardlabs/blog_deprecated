@@ -109,8 +109,9 @@ setosa versicolor virginica
     return np_utils.to_categorical(ids, len(uniques))
 
 >>> train_y_ohe = one_hot_encode_object_array(train_y)
->>> test_y_ohe = one_hot_encode_object_array(test_y)</code></pre><h2>Build the neural network model</h2>
+>>> test_y_ohe = one_hot_encode_object_array(test_y)
 ```
+<h2>Build the neural network model</h2>
 
 <p>Building the model is the only aspect of using keras that is substantially more code than in scikit-learn.</p><p>Keras is a neural network library. As such, while the number of features/classes in your data provide constraints, you can determine all other aspects of model structure. This means that instaniating the classifier requires more work than the one line required by scikit-learn.</p>
 
