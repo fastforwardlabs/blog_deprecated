@@ -29,7 +29,8 @@ to identify parts of speech while concurrently learning to identify the
 semantic role words play in a sentence. 
 
 ![](/images/2018/06/02_03-1530032857031.png)
-###### Multi-task Learning can improve the prediction of two variables (e.g. "risk factor" and "white blood cell count")at the same time that it improves overall performance. 
+
+##### Multi-task Learning can improve the prediction of two variables (e.g. "risk factor" and "white blood cell count")at the same time that it improves overall performance. 
 
 Recently, multi-task learning was shown to improve the prediction of diabetic
 retinopathy. A team at [Google Brain](https://ai.google/research/teams/brain),
