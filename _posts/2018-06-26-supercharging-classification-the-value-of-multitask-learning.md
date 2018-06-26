@@ -6,8 +6,6 @@ feature: false
 published: true
 ---
 
-## Supercharging Classification: The Value of Multi-task Learning
-
 Today's machines can identify objects in photographs, predict loan repayments or
 defaults, write short summaries of long articles, or recommend movies you may
 like. Up until now, machines have achieved mastery through laser-like focus; most
