@@ -5,8 +5,8 @@ preview_image: /images/2018/06/02_03-1530032857031.png
 feature: false
 published: true
 layout: post
-author: Shioulin
-author_link: https://twitter.com/shioulin_sam
+author: Manny
+author_link: https://twitter.com/mannymoss
 ---
 
 Today's machines can identify objects in photographs, predict loan repayments or
