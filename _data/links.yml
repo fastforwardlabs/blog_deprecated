@@ -362,8 +362,11 @@
     url: 'http://aiweirdness.com/post/175110257767/the-visual-chatbot'
     text: 'The Visual Chatbot'
     image: 'https://78.media.tumblr.com/2f1db229cf793c9699fe67c2fdeddd96/tumblr_inline_pancrgLJLe1rl9zu7_500.png'
-
 -
     url: 'https://queue.acm.org/detail.cfm?id=3231573'
     text: 'FPGAs in Data Centers'
-    image: '/images/2018/06/Screen_Shot_2018_06_21_at_10_30_02-1529602253382.png'
+    image: /images/2018/06/Screen_Shot_2018_06_21_at_10_30_02-1529602253382.png
+-
+    url: 'http://deliprao.com/archives/294'
+    text: 'Design Patterns for Production NLP Systems'
+    image: 'http://s10379.pcdn.co/wp-content/uploads/2018/07/fb-immune-system-1024x519.png'
