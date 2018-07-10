@@ -1,0 +1,185 @@
+---
+layout: newsletter
+slug: 2018-07-10-client
+---
+
+Hello! 
+
+Today’s machine learning classifiers achieve high performance through a laser-like focus on one and only one task.  Humans, by contrast, when learning new things, benefit from learning how to do separate but related things. An exciting new approach called multi-task learning, which gives machines the ability to learn multiple tasks at once and in parallel, has many advantages - including better performance on complex challenges like virtual drug screening and retinopathy detection. It’s "Classification 2.0," opening up multiple new use-cases across several diverse industries; in everything from healthcare to finance, robotics to agriculture, multi-task learning has the potential to take classification tasks to the next level - making machine learning, a little bit, more like human learning.   
+
+We hope you'll join us tommorrow, July 11th, at 1:00pm EDT for our webinar, *Multi-task Learning: Classification 2.0*, as Friederike Schüür discusses:
+* A conceptual introduction to multi-task learning (MTL), how and why it works
+* A technical deep dive, from MTL random forests to MTL neural networks
+* Applications of MTL, from structured data to text and images
+* The benefits of MTL to organizations, from financial services to healthcare and agriculture
+
+Friederike will also share a sneak peek at the prototype that accompanies our newest report (coming soon!) and uses MTL (and neural networks) to classify news articles across publications and topics.  You can register [here](https://info.cloudera.com/LP=2027?utm_medium=website&utm_source=organicweb&utm_campaign=lfym&src=blog&cid=70134000001Svft&utm_content=FFL08_Multitask%20Learning_AMER_Webinar_2018-06-20).
+
+---
+
+### Is I.A. the New A.I.?
+
+Of the very few things physical anthropologists agree on, one of the most 
+durable points of agreement among them, is that what 
+separates humans (okay, humans _and_ our hominin ancestors) from other forms of 
+life
+is the ability to construct and use tools to extend our capacity to act on 
+the physical world. (And even this general rule is subject to adorable 
+exceptions (here's looking at you, [otter with a hammer stone](https://www.hakaimagazine.com/features/quest-archaeology-sea-otter-tool-use/)).) 
+For hundreds of thousands of years, our technological creations 
+have continuously informed what it means to be human. As the stone knife, the
+woven basket, the steel plow, and the hydroelectric dam have reshaped what we
+can *do* as humans, so, too, have they reshaped what we can *be*; they have 
+helped us become hunters, gatherers, farmers, and urbanites. But while our tools may 
+have unlocked our potential, they have never replaced *us*. Rather, they 
+have extended our capacities in ways that support and deepen our place in the world. 
+
+That may be why more commentators on data science are now shifting the script on Artificial Intelligence, and beginning to talk about **Intelligence 
+Augmentation** (I.A.). The promise of machine learning and data science may not be 
+in creating an 'intelligence' separate and independent from the humans that 
+create it, but rather in creating tools that can extend our capacities to act in
+the world. Evidence that this is a worthwhile approach for designing data 
+science tools is offered in [a recent article](https://jods.mitpress.mit.edu/pub/issue3-case) from the MIT Media Lab, which revisits an experiment in which mediocre chess 
+players, when paired with moderately-advanced computer programs, outperformed
+more advanced chess-playing programs, and also outperformed the best human 
+players. Average humans, when supplemented by computational tools that work 
+well with what humans do best, can exceed the performance of the best humans 
+and the best computational systems working on their own. This offers 
+promising lessons for designing useful tools with machine learning, but it is
+also a hearty antidote to fears of an [AI apocalypse](https://www.vanityfair.com/news/2017/03/elon-musk-billion-dollar-crusade-to-stop-ai-space-x), because if our most advanced tools extend our own 
+capacities, they are less likely to displace us entirely. 
+
+This line of reasoning is bolstered by a recent reconsideration in [Aeon](https://aeon.co/essays/are-humans-really-blind-to-the-gorilla-on-the-basketball-court) of 
+Nobel laureate Daniel Kahneman's maxim that we humans are "blind to the 
+obvious, and blind to our blindness." Kahneman's maxim has been taken as 
+gospel in some branches of behavioral economics and cognitive science, and 
+has also been used to argue that AI might be a suitable improvement over 
+fallible humans in some roles. But, citing a study in which humans who were prompted 
+to count the number of passes in a basketball game failed to notice someone in 
+a gorilla suit prancing across the court, the article points out that humans 
+are not so much blind to the obvious, but that what is obvious is a function 
+of human attention. Prompted to notice anything unusual about the basketball 
+game, most humans could hardly have failed to notice the gorilla. This leads 
+to two insights relevant for the pursuit of I.A.: One is that any augmentation 
+of human capabilities should treat any sweeping generalizations about the 
+limits of human capabilities with an open question by pursuing empirical 
+confirmation that new products work as well as they can _with_ human 
+capabilities. The other insight is that there may be some comparative 
+advantages on both the human and computational ends of any I.A. 
+system. While both humans and machines can focus their attention narrowly on 
+anything that has salience for them, humans tend to excel at using contextual 
+knowledge to generate novel insights that were not previously anticipated 
+and - importantly - at asking new questions. A basketball-pass-counting neural 
+network might meet or exceed human abilities to count basketball passes, but 
+it could also be deployed to augment a human observer. With an assist from a 
+pass-minding algorithm, we might be better able to notice the gorilla on the
+ court!
+
+![]({{ site.github.url }}/images/2018/07/gorilla-1530914169750.JPG)
+##### Humans focused on counting basketball passes sometimes fail to notice the anomaly in this scene.
+
+As a sidenote: it isn't just MIT Media Lab looking towards I.A.. Other important takes on 
+intelligence automation can be found [here](https://medium.com/@QuantumBlack/the-real-ai-augmented-intelligence-9766e74f13a8), [here](https://www.informationweek.com/big-data/ai-machine-learning/its-about-augmented-intelligence-not-artificial-intelligence/a/d-id/1331460), and [here](https://www.mondo.com/augmented-intelligence-the-new-ai/).
+
+---
+
+## Progress in machine learning interpretability
+ 
+Our goal when we do research is to address capabilities and technologies that
+we expect to become production-ready in one to two years. That focus on
+fast-moving areas means that new algorithmic ideas sometimes come along that
+allow our clients to extend or improve upon the work in our reports.
+
+We published our report on machine learning interpretability last year. The technical focus of our report was LIME, a tool that computes locally
+correct explanations of a model's behaviour. If a model is good, LIME's
+explanations can offer completely new insights. (We saw this in our prototype,
+which models customer churn using traditional machine learning techniques, but
+then uses LIME to say precisely what it is about a customer that makes them a
+churn risk.) And if a model is bad, LIME can help you understand why.
+
+This all sounds great, but we had to leave three issues unresolved in our
+report. Progress since last year has begun to address those concerns.
+
+![](/images/2018/07/lime-1530894622923.png)
+
+##### LIME explanations of sentiment classification. "Not" is a positive word in one example, but not in another. Image credit: [Anchors](https://homes.cs.washington.edu/~marcotcr/aaai18.pdf).
+
+Firstly, LIME's explanations are local. For example, a LIME explanation may
+(correctly) tell you that "This movie is not bad" has positive sentiment
+because it contains the word "not." But because LIME's explanations are local,
+a user is not generally entitled to conclude from this that the word "not"
+always indicates positive sentiment. This makes sense: the presence of "not" in
+"this movie is not very good" does not tell you its sentiment is positive! But
+how local is "local"? How similar to the original sentence does a new sentence
+need to be for LIME's explanation to apply?
+
+![](/images/2018/07/anchor-1530894675267.png)
+
+##### Anchors explanations of sentiment classification. "Not" is a positive word in combination with "bad." Image credit: [Anchors](https://homes.cs.washington.edu/~marcotcr/aaai18.pdf).
+
+The creators of LIME offer an answer to this question in the form of [_Anchors:
+High-Precision Model-Agnostic Explanations_(PDF,
+2.7MB)](https://homes.cs.washington.edu/~marcotcr/aaai18.pdf)." Anchors works
+like LIME in that it probes the behaviour of the black-box model by perturbing
+the original example. But it takes a very different approach to constructing a
+human-friendly explanation. Rather than fit a locally correct linear model
+(which raises the question: how local?), it constructs a set of rules. For the
+"this movie is not bad" example above, the rule might be "sentence contains
+'not' _and_ 'bad'". Such black and white rules are easier for many people to
+understand than quantitative weights. And they implicitly define locality: if
+the sentence doesn't contain "not" or "bad," the rule (and the explanation)
+doesn't apply. The [Anchors code is publicly
+available](https://github.com/marcotcr/anchor).
+
+![](https://raw.githubusercontent.com/slundberg/shap/master/docs/artwork/boston_instance.png)
+
+##### [SHAP](https://github.com/slundberg/shap) explanation of a prediction for a model of the Boston house price dataset.
+
+Secondly, LIME's choice of perturbation strategy and its local linear model are
+heuristics -- which is to say they feel a little arbitrary, and it's reasonable
+to wonder whether they are optimal in practice. In [A Unified Approach to
+Interpreting Model
+Predictions](http://papers.nips.cc/paper/7062-a-unified-approach-to-interpreting-model-predictions.pdf)
+Lundberg and Lee carefully define what we mean by optimal, and show that LIME
+is a specific example of a more general class of explanation tools they call
+"additive feature attribution methods." This class includes the classical
+"Shapley" feature importance measure familiar to economists, and
+[DeepLIFT](https://github.com/kundajelab/deeplift), a neural network
+interpretability tool. They unify this class in a provably optimal way they
+call [SHAP](https://github.com/slundberg/shap). The code is public, and is
+[highly optimized](https://arxiv.org/abs/1802.03888) for the particular case of
+tree-based methods such as XGboost. One thing we really like about SHAP is that
+the built-in visualization tools are very nice! This seemingly minor point is
+surprisingly important to the adoption of new tools, and we're glad to see
+these authors spend time on this aspect of their code.
+
+Finally, how do we _test_ explanations? How do we know whether an explanation
+is evidence of a problem with the model or a surprising insight? Patrick Hall
+and colleagues at [H2O.ai](https://www.h2o.ai/) sum up the current situation very well in a new
+article for O'Reilly [Testing machine learning interpretability
+techniques](https://www.oreilly.com/ideas/testing-machine-learning-interpretability-techniques).
+The conclusion is: "use more than one type of tool to explain your machine
+learning models, and look for consistent results across different explanatory
+methods." We agree, and we're glad to see new options such as Anchors and SHAP
+that make this easy!
+
+So, a year after our report, machine learning interpretability remains not only
+a very useful business capability, but a vibrant area of research. Please let
+us know if you’d like to talk about the report, or any of the new research
+discussed above. You can reach us anytime at cffl@cloudera.com.
+
+---
+
+## CFFL Updates
+
+* Friederike will be participating in a panel at [Curious2018](https://curious2018.com/) in Darmstadt, Germany on July 17th.
+
+* Mike will be speaking on "Serverless for Data Scientists" at [Pybay](https://pybay.com/) in San Francisco, August 17-19.
+
+And don't forget to join us tomorrow for [our webinar](https://info.cloudera.com/LP=2027?utm_medium=website&utm_source=organicweb&utm_campaign=lfym&src=blog&cid=70134000001Svft&utm_content=FFL08_Multitask%20Learning_AMER_Webinar_2018-06-20) on multi-task learning!
+
+As always, thank you for reading. We welcome your thoughts, feedback, and suggestions; please [drop us a note](mailto:cffl@cloudera.com) anytime!
+
+All the best,
+
+The Cloudera Fast Forward Labs Team
