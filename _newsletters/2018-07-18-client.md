@@ -59,7 +59,7 @@ that provide examples of those desired results, which isn't all that
 different from the code-free deep learning of EasyDL. 
 
 ![]({{ site.github.url }}/images/2018/07/software_20-1531425563836.png)
-##### Software 2.0
+##### Software 1.0 defines a single set of instructions. Software 2.0 defines a starting point that evolves with training and new data.
 
 Our take-away from the 
 conversation is that one of the most important skills in applied machine 
@@ -69,7 +69,6 @@ solved by machine intelligence is the key to good work now, and will likely
 continue to be the case in the near future. Without a good abstraction of a 
 problem, choosing datasets, algorithmic approaches, and even hardware is 
 difficult - but it can be done by building domain knowledge into models, careful feature engineering, and a clear articulation of what 'success' looks like for any given project. 
-
 
 ---
 
