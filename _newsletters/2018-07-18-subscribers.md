@@ -1,0 +1,124 @@
+---
+layout: newsletter
+slug: 2018-07-18-subscribers
+---
+
+Hello! In this week's newsletter, we discuss an important key to success in applied machine 
+intelligence, and take a deep dive into some new dynamics in topic modeling.  We're also thrilled to report that our newest report on multi-task learning is almost finished; stay tuned!
+
+---
+
+## Is Applied Machine Intelligence Work Stratifying?
+
+For those who work in data science and machine intelligence, there has never 
+been a single, stable job description that covers the entire range of skills 
+and forms of expertise that the work actually entails. Depending on the job, 
+there can be a rather large contrast between the skills that are regularly 
+drawn upon and the responsibilities of employees to perform 
+research, interface with clients, build and deploy products, maintain 
+systems, and innovate their practices. Despite - or perhaps because of - the 
+wide gamut of roles that fall under the heading of 'data scientist,' there have been a slew
+of thoughtful articles published in recent weeks about the changing 
+landscape of this kind of work.
+ 
+One article squarely addresses the range of demands placed on data scientists
+working in industry. Writing for [Hackernoon](https://hackernoon.com/why-businesses-fail-at-machine-learning-fbff41c4d5db), Cassie Kozyrkov 
+suggests that there are "two machine learnings," one centered on researching 
+advances in the algorithms that power machine learning capabilities, and one 
+centered on building things for business that utilize these capabilites. Her 
+analogy to the world of baking is not inapt: there are folks building better 
+ovens and folks baking better biscuits, and the folks baking biscuits don't 
+need to know how to build an oven. We generally agree that being able to 
+recreate a formal proof of the mathematics of backpropagation is not a 
+prerequisite for implementing a neural network, but the difference between 
+these skills is not as clear cut as it might seem. Bakers need to know how 
+ovens work in intimate detail in order to be the best bakers they can be: 
+understanding thermodynamics and how they play in to various oven 
+designs helps in choosing which oven to buy, how to adjust its settings, and 
+even how to forecast its maintenance costs over its lifetime. So, while you 
+don't necessarily _need_ to hire an academic AI researcher to build you a 
+custom algorithm, you _do_ need a team that is adept at fitting business 
+problems, available data, and tools together in a way that achieves a 
+meaningful result. Without knowing how algorithms work, it's difficult to put everything together properly.
+
+![]({{ site.github.url }}/images/2018/07/oven-1531425665764.png)
+##### Details matter.
+
+On the other hand, there are two emerging trends in machine intelligence that
+seem to run counter to the advice given above. One is the rise of code-free 
+deep learning, which Baidu is rapidly developing and deploying under the 
+moniker [EasyDL](https://www.techrepublic.com/article/baidu-no-code-easydl-tool-could-democratize-ai-for-small-businesses-bridge-talent-gap/). With code-free machine learning platforms, 
+non-programmers can train, test, and deploy classifiers without much more than 
+labelled data sets and a well-posed problem. This looks like an early example 
+of another emerging theme that some are calling [Software 2.0](https://medium.com/@karpathy/software-2-0-a64152b37c35), which shifts the 
+emphasis of software design from coding "explicit instructions" towards 
+mapping inputs to desired outputs by learning that mapping with, for 
+example, a neural network. Beyond setting up a neural network architecture, 
+then, Software 2.0 relies mostly on thoughtful curation of the training data 
+that provide examples of those desired results, which isn't all that 
+different from the code-free deep learning of EasyDL. 
+
+![]({{ site.github.url }}/images/2018/07/software_20-1531425563836.png)
+##### Software 2.0
+
+Our take-away from the 
+conversation is that one of the most important skills in applied machine 
+intelligence will continue to be the ability to properly frame problems. 
+Being able to properly abstract a real-world problem to one that can be 
+solved by machine intelligence is the key to good work now, and will likely 
+continue to be the case in the near future. Without a good abstraction of a 
+problem, choosing datasets, algorithmic approaches, and even hardware is 
+difficult - but it can be done by building domain knowledge into models, careful feature engineering, and a clear articulation of what 'success' looks like for any given project. 
+
+
+---
+
+## New Dynamics for Topic Models
+
+Topic models can extract key themes from large collections of documents in an unsupervised manner, which makes them one of the most powerful tools in organizing, searching, and understanding the vast troves of text data produced by humanity. Their power derives, in part, from their in-built assumptions about the nature of text; specifically, to identify topics, the model has to give the notion of a topic a mathematical structure that echoes its significance to a human reader. In their recent paper, [*Scalable Generalized Dynamic Topic Models*](https://arxiv.org/abs/1803.07868), Patrick Jähnichen, Florian Wenzel, Marius Kloft, and Stephan Mandt show scalable models that allow topics to change over time in a way that is more general than it was previously, extracting new forms of patterns from large-scale datasets. 
+
+### Probabilistic Topic Models: from Static to Dynamic 
+Jähnchen et al.'s work builds on the shift towards probabilistic topic models that was cemented by the publication of David Blei, Andrew Ng, and Michael Jordan’s seminal [*Latent Dirichlet Allocation (LDA)*](https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation) in 2003. The context, at the time, was given in particular by [*Latent Semantic Indexing (LSI)*](http://lsa.colorado.edu/papers/JASIS.lsi.90.pdf) (1990), which relies on finding linear combinations of [*tf-idf*]( https://en.wikipedia.org/wiki/Tf%E2%80%93idf) features that explain the greatest amount of variation in a corpus. Topics, in that case, are then weighted collections of words that are particularly discriminative with respect to identifying individual documents in the corpus, and finding them requires the singular value decomposition of a document matrix.
+
+In contrast, [probabilistic topic models](https://cacm.acm.org/magazines/2012/4/147361-probabilistic-topic-models/fulltext#F1) rely on reverse engineering an imagined statistical process that generates the documents, in which the topics are latent parameters that are inferred from the raw corpus data. The generative process for LDA, for example, is a hierarchical Bayesian model that assumes that each word within a document is drawn from one of several multinomial distributions that correspond to topics. The mixture of topics in each document, i.e. the probability with which one of the multinomial distributions will give rise to a word in the document, is in turn determined by drawing from a Dirichlet distribution. Writing this out results in an intractable expression for the probability of each word, which is conditional on the topic parameters and can be fitted to the corpus using a host of well-known methods (as well as, conveniently, packages like [gensim](https://radimrehurek.com/gensim/models/ldamodel.html) and [sklearn](http://scikit-learn.org/stable/modules/generated/sklearn.decomposition.LatentDirichletAllocation.html#sklearn.decomposition.LatentDirichletAllocation)). 
+
+Of course, the inference process is considerably more difficult than the linear algebra required of LSI, but the process of designing a generative process makes it possible to imbue the topics with properties that highlight aspects of interest, or that make the topic model more realistic. For example, one might allow for topics to be correlated in the way that they co-occur within a document. At the expense of having to fit additional parameters, this enables surfacing [topic relationships](http://people.ee.duke.edu/~lcarin/Blei2005CTM.pdf). 
+
+With [Dynamic Topic Models](https://mimno.infosci.cornell.edu/info6150/readings/dynamic_topic_models.pdf) (2006), David Blei and John Lafferty revisited the LDA process to tackle the problem of topics changing over time. While the original LDA model ignores any ordering of the documents in the corpus, dynamic topic models will take their time stamps into account. Blei and Lafferty did so by allowing the topic parameters to wander over time, specifically by imposing upon them a [Wiener Process](https://en.wikipedia.org/wiki/Wiener_process), also known as Brownian Motion. The results are highly compelling: in their [paper](https://mimno.infosci.cornell.edu/info6150/readings/dynamic_topic_models.pdf), they analyze over a century of *Science* magazine articles, and automatically extract a small history of neuroscience and atomic physics. (Blei happens to be an excellent lecturer, and those looking for his talks online will find a more [comfortable introduction](https://www.youtube.com/watch?v=FkckgwMHP2s) to ideas in topic modeling than is provided by the technical papers.)
+
+![]({{ site.github.url }}/images/2018/07/f5-1531838383022.jpg)
+##### Time Evolution of two topics within the Science corpus. From: [D. Blei, Probabilistic Topic Models,  Communications of the ACM (2012)](https://deliveryimages.acm.org/10.1145/2140000/2133826/figs/f5.jpg)
+
+### Scalable New Dynamics
+A Wiener process is convenient in several ways. It describes a random walk in which the value after each time step is simply the last time step, plus a random increment that is drawn from a normal distribution. In case of the LDA topic model, this allows for the multinomial distributions that represent the topics to undergo an incremental drift. In this way, the topics can change, albeit slowly enough to draw statistical robustness from older document data. The simplicity of the Wiener process also introduces temporal dynamics with the minimum number of additional parameters, and, given the difficulty of performing scalable approximate inference on topic models that implement dynamical stochastic process priors, had so far been the only process for which inference was feasible.
+
+Jähnchen and colleagues now managed to substantially extend the spectrum of time dynamics to the general class of [Gaussian Processes](https://en.wikipedia.org/wiki/Gaussian_process), of which the Wiener process is the simplest subcase. Gaussian processes are completely defined by their mean and covariance function in the same way in which a Gaussian distribution is completely defined by mean and variance, and just like the Gaussian distribution, they simultaneously represent the simplest interesting case and are extremely broadly applicable. In [the study](https://arxiv.org/abs/1803.07868), the authors proceed by exploring the new wealth of possible functions by implementing dynamic topic models based on a three common processes used in time series modeling, comparing each to the result based on the Wiener process. The processes, which represent a small subset of realizable properties,  include:
+
+##### 1.	Ornstein-Uhlenbeck:  
+Brownian motion in the presence of a mean reverting force (in physics, this would for example occur for a spring that is undergoing thermal noise).
+
+##### 2.	Squared Exponential kernel: 
+A process with a memory over several previous time steps, in which the correlation with past time steps decreases exponentially. That is, the process has a short-term memory that can be tuned by changing the decay length.
+
+##### 3. Cauchy kernel:
+A process that has memory, similar to the one that corresponds to the squared exponential kernel, but in this case, the correlation with past time steps decreases polynomially. The process has a long-term memory. 
+
+Based on large scale datasets, the authors reveal that each of these approaches reveals qualitatively different phenomena, and conclude that they offer better performance along the lines of interpretability and usefulness, as well as perplexity measures. However, the greatest strength is likely the ability to flexibly experiment with different types of processes toward different tasks: processes with short-term memory can be used for event detection, whereas long-term memory has greater statistical strength. The mean-reversion property acts as a type of regularization that responds to small-scale changes and localized topics in time. Adding and multiplying kernels also results in valid kernels, enabling considerable fine tuning. While deferred to future work, periodic kernels should be able to detect recurring events. 
+
+On the whole, playing with different processes enables practitioners to intuitively adapt and experiment with dynamic topic models to analyze time-stamped corpora in a targeted way, benefiting from the extensive experience that has been gathered by studying time series in general. Apart from growing in sophistication, topic models will also grow in diversity: as the authors indicated toward the conclusion of the paper, the selection of a prior is a modeling choice that helps reveal the effects that one searches for. 
+
+---
+
+## CFFL Updates
+
+* Mike will be speaking on "Serverless for Data Scientists" at [Pybay](https://pybay.com/) in San Francisco, on August 19th. (Learn more about Mike's talk in [this interview](https://medium.com/pybay/meet-mike-lee-williams-serverless-and-its-relevance-for-data-scientists-ba5a6cd0862e).)
+
+* Friederike and Shioulin will both be speaking at the [Strata Data Conference](https://conferences.oreilly.com/strata/strata-ny) in NYC in September; details to come!
+
+* And don't miss this thoughtful article on putting ethical principles into practice in data science, co-authored by our very own Hilary Mason, with Mike Loukides and DJ Patil: [Doing Good Data Science](https://www.oreilly.com/ideas/doing-good-data-science).
+
+As always, thank you for reading. We welcome your thoughts, feedback, and suggestions; please [drop us a note](mailto:cffl@cloudera.com) anytime!
+
+All the best,
+
+The Cloudera Fast Forward Labs Team
