@@ -40,7 +40,7 @@ The research we get really excited about hits a sweet spot of delivering new cap
 
 Transfer learning exploits the idea that many machine learning tasks are related to each other, and so the skills required to do well on one task are often transferable to other tasks. This is similar to how humans who learn to throw a baseball do not need to completely re-learn the mechanics of throwing to also throw a football, or how skills developed in learning to speak one foreign language would also be useful in learning another foreign language. Consider some of the common tasks that we might be interested in doing in the field of computer vision:
 
-![](images/taskonomy.jpg)
+![]({{ site.github.url }}/images/2018/07/task_dict_v-1532535013679.jpg)
 
 ##### Various computer vision tasks. Image credit: [Taskonomy](https://github.com/StanfordVL/taskonomy/tree/master/taskbank).
 
