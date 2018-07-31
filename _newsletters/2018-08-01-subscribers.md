@@ -1,0 +1,143 @@
+---
+layout: newsletter
+slug: 2018-08-01-subscribers
+---
+
+Hello!  In this week's newsletter, we follow up on [an article](http://blog.fastforwardlabs.com/newsletters/2018-06-20-client.html) from a previous newsletter with some further thoughts on hyperparameter tuning, and share some reflections inspired by Microsoft's [recent call](https://blogs.microsoft.com/on-the-issues/2018/07/13/facial-recognition-technology-the-need-for-public-regulation-and-corporate-responsibility/) for government regulation of facial recognition technologies.
+
+---
+
+## Hyperparameter Tuning and Meta-Interpretability: Why You Should Track All Your Experiments, Always!
+
+From random forest to neural networks, many modern machine learning algorithms involve a number of parameters that have to be fixed before training the
+algorithm. These parameters, in contrast to the ones learned by the algorithm
+during training, are called hyperparameters. The performance of a model on a
+task given data depends on the specific values of these hyperparameters.
+
+Hyperparamter tuning is the process of determining the hyperparameter values
+that maximize model performance on a task given data. The tuning of
+hyperparameters is done by machine learning experts, or increasingly, software
+packages (e.g., [HyperOpt](http://hyperopt.github.io/hyperopt/),
+[auto-sklearn](https://automl.github.io/auto-sklearn/stable/),
+[SMAC](https://github.com/automl/SMAC3)). The aim of these libraries is to turn
+hyperparameter tuning from a "black art", requiring expert expertise and
+sometimes brute-force search, into a reproducible science - reducing the need for
+expert knowledge, whilst keeping computational complexity at bay (e.g.,[Snoek,
+Larochelle, & Adams;
+2012](http://papers.nips.cc/paper/4522-practical-bayesian-optimization)).
+
+Traditionally, hyperparameter tuning is done using grid search. Grid search
+requires that we choose a set of values for each hyperparameter and evaluate
+every possible combination of hyperparameter values. Grid search suffers from
+the *curse of dimensionality*; the number of joint values grows exponentially
+with the number of hyperparameters.
+
+In 2012, [Bergstra and Bengio](http://www.jmlr.org/papers/v13/bergstra12a.html)
+showed that random hyperparameter search is more efficient than grid search, a
+perhaps counter-intuitive result. This is because only a few hyperparameters
+tend to really matter for the performance of a model on a task given data.
+Grid search tends to spend more time in regions of the hyperparameter space
+that are low-performing compared to random search. What's more, random search
+allows one to easily add more experiments that explore even more sets of
+hyperparameter values without (expensive) adjustment of the grid (most
+recently, [sequential
+approaches](https://papers.nips.cc/paper/4443-algorithms-for-hyper-parameter-optimization.pdf)
+have shown great promise).
+
+![]({{ site.github.url }}/images/2018/07/Screen_Shot_2018_07_31_at_11_01_41_AM-1533049344437.png)
+##### Grid (left) and random (right) search for nine experiments. With random search, all nine trials explore distinct values of the hyperparameters. Random search is more efficient. (Picture taken from Bergstra and Bengio, 2012)
+
+If only a few hyperparameter values really matter, for a given model on a task
+given data, what are those parameters and what are their values? Current
+software libraries for hyperparameter tuning do not tend to discriminate
+important from unimportant hyperparameters and/or do not expose important
+parameters and their values. This limits insights into the workings of a
+model - which is important for a variety of reasons, as we explain in depth in
+our report on [model
+interpretability](http://blog.fastforwardlabs.com/2017/08/02/interpretability.html);
+interpretability allows us to verify, for example, that a model gives high
+quality predictions for the right, and not the wrong, reasons. 
+
+A series of recent papers tackles this *"meta-interpretability" problem*: what
+hyperparameters matter for model performance on a task given data? In
+[*Hyperparameter Importance Across
+Datasets*](https://arxiv.org/abs/1710.04725), Jan van Rijn and Frank Hutter
+first evaluate a model on a task given data and a set of randomly chosen
+hyperparameters to assess model performance. They then use these
+hyperparameters as inputs to a model, a so-called surrogate model, that they
+train to predict the oberved performance. Given a trained surrogate model, they
+predict model performance for hyperparameters not previously included in their
+experiments. Finally, they conduct an analysis of variance (ANOVA) to determine
+how much of the predicted model performance by the surrogate model can be
+explained by each hyperparameter or combination of hyperparameters. To draw
+conclusions across data sets, a more generalizable result, the authors repeat
+this procedure across several data sets. For random forests, for example, they
+find that only the `minimum samples per leaf` and the `maximum numbers of
+features` really matter. This finding is consistent with expert knowledge,
+which is great: it validates the method; we can use it to study more
+complex models for which we have no such intuition yet while it helps beginners
+to get started.
+
+Using a related approach also based on surrogate models, Philipp Probst, Bernd
+Bischl, and Anne-Laure Boulesteix
+[demonstrate](https://arxiv.org/abs/1802.09596) that some default values of
+hyperparameters as set by software packages (e.g., scikit-learn) lie
+outside the range of hyperparameter values that tend to yield optimal model
+performance across tasks and data; we can use solutions to the
+meta-interpretability problem to define better default values, or to define
+prior distributions for even more efficient random hyperparameter search
+(Bergtra and Bengio sample from a uniform distribution which we can replace by
+a "more informed" distribution).
+
+Within organizations, these results suggest that one should track and store the
+results of hyperparameter tuning - not only the set of parameters that result in
+the best performing model, but *all* results. These results can be used to
+train surrogate models that allow us insight into the importance of
+hyperparameter values and increase the efficiency of hyperparameter tuning by
+defining sensible default values (or distributions) for the classes of problems
+tackled by data teams at these organizations.
+
+---
+
+## Ethical Regulations and The Practice of Ethical Practice
+
+A number of recent events, around projects that use machine intelligence to support government surveillance and security operations, have us revisiting the question of how the machine intelligence community is addressing the ethical and regulatory challenges it is currently facing. To briefly enumerate: in recent weeks, Google has ended its involvement with [Project Maven](https://gizmodo.com/google-plans-not-to-renew-its-contract-for-project-mave-1826488620), and obliquely responded to criticisms of its initial involvement by releasing a broader statement of [principles](https://www.blog.google/technology/ai/ai-principles/). A facial recognition system being trialed in London was found to have a [98% error rate](https://www.theverge.com/2018/7/5/17535814/uk-face-recognition-police-london-accuracy-completely-comfortable), apparently well within the comfort zone of the police chief there. Facial recognition systems are making [inroads](https://www.axios.com/facial-recognition-debate-coming-to-schools-nationwide-28d0ae08-567f-4c92-95e0-8cbc5a2329ec.html) to US school systems, raising privacy concerns across the board.  [Drones](https://www.theverge.com/2018/6/6/17433482/ai-automated-surveillance-drones-spot-violent-behavior-crowds) that purport to be able to detect violence amidst a crowd of people are now being deployed. And, Microsoft has responded to outcries about contracts with Immigration and Customs Enforcement (ICE) by denying its involvement in the massively controversial child separations occurring on the southern border of the US and releasing [a lengthy call](https://blogs.microsoft.com/on-the-issues/2018/07/13/facial-recognition-technology-the-need-for-public-regulation-and-corporate-responsibility/) for government regulation of facial recognition technologies, in addition to greater corporate responsibility.    
+
+Microsoft's call for government regulation is a bit of an anomaly; companies rarely call for greater regulation of their industries, even if some eventually come to benefit (for example, from the kinds of broader boosts that the FAA has provided the aviation industry or that the NTSB has brought the automotive industry). Microsoft, in their call, is asserting that a lack of clear regulations makes it difficult to align working with the government to a corporate ethical stance if the government isn't clear about its own ethical stance. The line between what is legal and what is ethical can get murky in the absence of meaningful regulations. Their call raises excellent questions for government to answer, including "Should law enforcement use of facial recognition be subject to human oversight and controls, including restrictions on the use of unaided facial recognition technology as evidence of an individual’s guilt or innocence of a crime?" and "Should we create processes that afford legal rights to individuals who believe they have been misidentified by a facial recognition system?". Microsoft recommends a bi-partisan commission to address these questions, with input from industry and academia. 
+
+We think there are some uncertainties that regulation could be helpful in resolving, providing clarity, and incentivizing good behavior. As Hilary Mason (alongside DJ Patil and Mike Loukides) writes in a recent O'Reilly [post](https://www.oreilly.com/ideas/doing-good-data-science), "to put ethical principles into place, we need space to be ethical." Part of this may mean a regulatory space to practice ethics, but in the absence of that, there are other spaces to practice ethics: certainly at conferences and in training curricula, but also in our daily work. One way to turn our work into a space for ethical practices is to get into the habit of asking questions about the things we build. For classifiers, we might ask: 
+ - What kind of drop in accuracy can we anticipate over real-world scenarios?
+ - How will this product affect the public?
+ - What are the consequences of any false positives our system may return to a user?
+ - What type of legal status might our classifier have as evidence in a criminal or civil proceeding?
+ 
+No list of such questions is exhaustive, and part of an ethical practice is to carefully think through what questions we are asking about our own work. Furthermore, ethical practices are a set of habits. They literally take _practice_; they might be difficult at first and produce uncertain outcomes, but they will become stronger over time.  
+
+---
+
+## Recommended Reading - and Cloudera Now
+
+We love to read! Here are a few of our more recent favorite finds:
+* [Modeling User Journeys via Semantic Embeddings](https://codeascraft.com/2018/07/12/modeling-user-journey-via-semantic-embeddings/)
+* [Design Patterns for Production NLP Systems](http://deliprao.com/archives/294)
+* [Program Synthesis in 2017-18](https://alexpolozov.com/blog/program-synthesis-2018/)
+* [Design Patterns for Production NLP Systems](http://deliprao.com/archives/294)
+
+We'd also like to recommend [Cloudera Now](https://www.cloudera.com/more/events/cloudera-now.html) on August 2nd; with a half-day, packed agenda highlighting some of Cloudera's best customer case-studies, data use-cases, and engaging industry speakers, this online conference has an impactful keynote lineup and breakout tracks for both technical and business audiences. Cloudera Now will focus on the "how," and the best practices to help guide organizations through their data-driven journey. Learn more and register [here](https://www.cloudera.com/more/events/cloudera-now.html?utm_medium=email&utm_source=organicsdr&utm_campaign=other&src=sdr&cid=70134000001T2ub&utm_content=Cloudera%20NOW_Organic_AMER_Webinar_2018-08-02).
+
+---
+
+## CFFL Updates
+
+* Mike will be speaking on "Serverless for Data Scientists" at [Pybay](https://pybay.com/) in San Francisco, on August 19th. (Learn more about Mike's talk in [this interview](https://medium.com/pybay/meet-mike-lee-williams-serverless-and-its-relevance-for-data-scientists-ba5a6cd0862e).)
+
+* Shioulin will be speaking on [Semantic Recommendations](https://conferences.oreilly.com/strata/strata-ny/public/schedule/detail/69260) at the Strata Data Conference on September 12th, and Friederike will be [speaking at Strata](https://conferences.oreilly.com/strata/strata-ny/public/schedule/detail/69365) on September 12th as well.
+
+* Friederike will also be speaking at the [Data Science Salon](https://www.eventbrite.com/e/data-science-salon-nyc-tickets-40072527007) on September 27th here in NYC.
+
+* Shioulin will be speaking at [ODSC Europe](https://odsc.com/london) in London in mid-September.
+
+As always - thank you for reading!  We welcome your thoughts, questions, and suggestions; reach us anytime at cffl@cloudera.com.
+
+All the best,
+The Cloudera Fast Forward Labs Team
