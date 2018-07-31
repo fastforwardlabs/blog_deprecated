@@ -4,6 +4,7 @@ date: 2017-09-29 14:07 -0400
 preview_image: /images/2017/09/Screen_Shot_2017_09_13_at_9-1505322932035.59
 feature: false
 published: true
+post_type: Newsletter
 ---
 
 Adversarial samples are inputs designed to fool a model: they are inputs created by applying perturbations to example inputs in the dataset such that the perturbed inputs result in the model outputting an *incorrect* answer with *high* confidence. Often, perturbations are so small that they are imperceptible to the human eye — they are inconspicuous.
