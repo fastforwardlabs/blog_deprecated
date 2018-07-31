@@ -3,7 +3,7 @@ layout: newsletter
 slug: 2018-08-01-subscribers
 ---
 
-Hello!  In this week's newsletter, we follow up on [an article](http://blog.fastforwardlabs.com/newsletters/2018-06-20-client.html) from a previous newsletter with some further thoughts on hyperparameter tuning, and share some reflections inspired by Microsoft's [recent call](https://blogs.microsoft.com/on-the-issues/2018/07/13/facial-recognition-technology-the-need-for-public-regulation-and-corporate-responsibility/) for government regulation of facial recognition technologies.
+Hello!  In this week's newsletter, we follow up on [an article](http://blog.fastforwardlabs.com/newsletters/2018-06-20-subscribers) from a previous newsletter with some further thoughts on hyperparameter tuning, and share some reflections inspired by Microsoft's [recent call](https://blogs.microsoft.com/on-the-issues/2018/07/13/facial-recognition-technology-the-need-for-public-regulation-and-corporate-responsibility/) for government regulation of facial recognition technologies.
 
 ---
 
@@ -99,7 +99,7 @@ tackled by data teams at these organizations.
 
 ---
 
-## Ethical Regulations and The Practice of Ethical Practice
+## The Practice of Ethical Practice
 
 A number of recent events, around projects that use machine intelligence to support government surveillance and security operations, have us revisiting the question of how the machine intelligence community is addressing the ethical and regulatory challenges it is currently facing. To briefly enumerate: in recent weeks, Google has ended its involvement with [Project Maven](https://gizmodo.com/google-plans-not-to-renew-its-contract-for-project-mave-1826488620), and obliquely responded to criticisms of its initial involvement by releasing a broader statement of [principles](https://www.blog.google/technology/ai/ai-principles/). A facial recognition system being trialed in London was found to have a [98% error rate](https://www.theverge.com/2018/7/5/17535814/uk-face-recognition-police-london-accuracy-completely-comfortable), apparently well within the comfort zone of the police chief there. Facial recognition systems are making [inroads](https://www.axios.com/facial-recognition-debate-coming-to-schools-nationwide-28d0ae08-567f-4c92-95e0-8cbc5a2329ec.html) to US school systems, raising privacy concerns across the board.  [Drones](https://www.theverge.com/2018/6/6/17433482/ai-automated-surveillance-drones-spot-violent-behavior-crowds) that purport to be able to detect violence amidst a crowd of people are now being deployed. And, Microsoft has responded to outcries about contracts with Immigration and Customs Enforcement (ICE) by denying its involvement in the massively controversial child separations occurring on the southern border of the US and releasing [a lengthy call](https://blogs.microsoft.com/on-the-issues/2018/07/13/facial-recognition-technology-the-need-for-public-regulation-and-corporate-responsibility/) for government regulation of facial recognition technologies, in addition to greater corporate responsibility.    
 
@@ -140,4 +140,5 @@ We'd also like to recommend [Cloudera Now](https://www.cloudera.com/more/events/
 As always - thank you for reading!  We welcome your thoughts, questions, and suggestions; reach us anytime at cffl@cloudera.com.
 
 All the best,
+
 The Cloudera Fast Forward Labs Team
