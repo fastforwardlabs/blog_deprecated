@@ -6,6 +6,7 @@ feature: false
 published: true
 author: Grant
 author_link: https://twitter.com/GrantCuster
+post_type: Newsletter
 ---
 
 Google recently announced [TensorFlow.js](https://medium.com/tensorflow/introducing-tensorflow-js-machine-learning-in-javascript-bf3eab376db), an open-source library for running machine learning in the browser, and a successor to the deeplearn.js library. While the majority of machine learning work is unlikely to shift to JavaScript anytime soon, the examples included on the [TensorFlow.js site](https://js.tensorflow.org/) do a good job of showing the promise of machine learning models that run in the browser. 
