@@ -1,5 +1,5 @@
 ---
-title: Fast Forward Labs Blog
+title: Cloudera Fast Forward Labs Blog
 timezone: UTC - 5
 collections:
   links:
@@ -14,8 +14,8 @@ collections:
   newsletters:
     title: Newsletters
     output: true
-email: contact@fastforwardlabs.com
-description: 'Fast Forward Labs is a machine intelligence research company. We focus on taking technologies that are just becoming possible, and making them useful.'
+email: cffl@cloudera.com
+description: 'Cloudera Fast Forward Labs is a machine intelligence research group. We focus on taking technologies that are just becoming possible, and making them useful.'
 baseurl: ''
 url: 'http://blog.fastforwardlabs.com'
 twitter_username: fastforwardlabs
