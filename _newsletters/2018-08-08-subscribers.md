@@ -1,0 +1,120 @@
+---
+layout: newsletter
+slug: 2018-08-08-subscribers
+---
+
+Hello!  In this week's newsletter, Grant dives into an important design consideration when building ML models, and Micha explores an interesting (and emerging) technology: 3D Printed Optical Neural Networks.
+
+---
+
+## Understanding a generative space
+_by [Grant](https://twitter.com/GrantCuster)_
+
+[Kate Compton](http://www.galaxykate.com/), maker of many interesting things, recently tweeted a diagram from her work-in-progress dissertation zine. The illustration breaks down how we interact with a procedural generator, which can be anything from a photo filter to a character creation tool.
+
+![A diagram. The top half shows the expectation space, and the bottom half the algorithmic space. The process is circular. You start with a mental model, make a hypothesis about what a change will do, then encode the change. In the algorithmic space the model is modified by the change, the code reinterprets the model and displays the results of the change. The user then evaluates the artifact and updates their mental model of how the algorithmic space works. The process restarts.]({{ site.github.url }}/images/2018/08/compton_generator-1533226496607.jpg)
+
+##### ["How we understand a generative space" by Kate Compton](https://twitter.com/GalaxyKate/status/1012788721379303424). Understanding a generative space requires moving between the digital space (where the code is and the results are displayed) and the mental space (where we evaluate the display and make guesses about how it works).
+
+As app creators, we tend to focus on the parts we can see: the user interface and the code that determines app behavior. Those are the parts that we can directly control. Compton’s diagram is a great reminder that there’s another dimension at work in a user’s experience of an app: their mental model of how the application works. We have much less direct control over a user’s mental model. 
+
+The mental model is the user’s "parallel universe" reconstruction of the logic behind an application. As app creators, we try to shepherd the user so their mental model usefully aligns with our own. We employ metaphors, often based on familiar patterns from the physical world or other applications - but there’s always going to be slippage. Part of the fun of designing an application is figuring out how to minimize this slippage, and providing lots of entry points, so that if a user's mental model gets really misaligned, there are spots within the application where expectations can be reset. As Compton’s diagram shows, one of the best ways to encourage alignment of a mental model and the model itself is to allow the user to make changes and quickly see the results. Enabling that sort of iterative play taps into the human impulse to poke things in order to figure out how they work.
+
+Understanding the interplay between a user’s mental model and an application will be especially important for creating [machine learning tools that open up new creative possibilities](http://blog.fastforwardlabs.com/2018/03/28/new-creative-possibilities-with-machine-learning.html). Because of their complexity, it may not be feasible for users to develop a comprehensive mental model of how an ML model works. It will then be up to application creators to guide users towards a simplified or alternate mental model that helps them collaborate fruitfully with the application.
+
+---
+
+# 3D Printed Optical Neural Networks
+_by [Micha](http://micha.codes/)_
+
+Researchers at UCLA recently released a new neural network architecture, the
+Diffractive Deep Neural Network, or [D2NN][1], whose mathematical underpinnings allow it to be implemented
+physically using 3D printed parts and light. The model works by using the
+_phase_ of light to represent the state of individual neurons. 3D printed sheets
+with various elements to introduce phase shifts into incoming light can be used
+to encode the relevant weights of the neural network, allowing us to shine in
+our input using light, and seeing the result on the other side. The evaluation happens at the speed of light, and at great energy savings.
+
+![](./images/d2nn_classifier.png)
+
+Being able to 3D print a model and use it to get instantaneous evaluations is
+more than just a novelty. Even using low-tolerance 3D printers, the research
+group was able to get high quality results, showing the resilience of such a
+method to error. This seems to show that we can replace the 3D printed sheets
+with programmable [Spatial Light Modulators (SLMs)][3] to create D2NNs without having to go through the time consuming process of 3D printing.
+As it stands now, SLMs that can accurately modify light's phases are incredibly
+expensive because of their lack of wide-spread use outside of research; they are not
+ready for any sort of commodity use. This makes the 3D printing method a great
+way to play with the technology until they are ready.
+
+We can imagine hardware modules in the future that will operate similar to FPGAs in
+that it will take a bit of overhead to "load the model," but then enable incredibly quick evaluations. With a system like this, the only
+speed limitation to model evaluation would be input and readout,
+which, using current day commodity projectors, could happen at 60Hz (or 16.67ms
+per evaluation), regardless of model size (while generally, light-detection and modulation routinely happens at GHz speeds - for example, in the context of optical telecommunications). 
+
+This sort of model has many interesting properties. First, a neuron in one layer
+is not connected to _every_ neuron in the next layer; it is only connected to
+neurons where the light can reach. This ends up acting as an effective
+[receptive field][2] for the model which can be tuned based on the distance
+between the physical layers of the model. This ability introduces a way to tune
+the receptive field in order to make it applicable for various different tasks.
+
+Another interesting property is how the output of various neurons interacts as
+they make their way to the next layer of the network. Because of their
+fundamental nature, the light interacts and creates diffraction patterns, which
+is starkly different to how information transmits through conventional neural
+networks. While it isn't certain what this could mean for D2NN models, it is
+possible that this complex behaviour could be harnessed to give the system more
+computational power. In general, these sorts of behaviours are reminiscent of
+[Deep Complex][5] and [Deep Quaternion][6] networks that use properties of
+complex and quaternion numbers to get increased computational power.
+
+![](./images/d2nn_math.jpeg)
+
+However, there are some unanswered questions about this system. First, while there are a number of well-known approaches, implementing all-optical nonlinear transformations is pretty challenging in practice. In a [previous study][4] featuring a more directly recognizable optical implementation of an all-optical deep neural network, the authors, for good reason, opted to prove their point by simulating the nonlinear transformation in a computer instead. The D2NN paper only briefly
+mentioned the issue of non-linearity, but not in enough detail for the reader to fully understand
+what is happening.
+
+Secondly, the 3D printed system cannot do model training. In the paper, the
+model is first trained on a standard computer using a physical representation of
+the system. Once the model converged, it was encoded into a 3D model that could
+be printed and tested using optics. As a result, the extreme speed at which the
+resulting 3D model can be evaluated is only useful for a phase of model
+deployment where extreme speeds are not necessarily required. It is really
+during model _training_ where speed is required, since it takes millions of model
+evaluations to make the model better.
+
+![](./images/d2nn.png)
+
+All that being said, this is still an incredibly interesting field that seems to
+be progressing quickly. There are many directions this research could take (making
+the layers programmable, better definition around model non-linearities or even
+having continuous systems that don't need discrete layers!) and this paper
+does a good job at making tangible what these innovations could mean to the
+larger machine learning community.
+
+[1]: https://arxiv.org/abs/1804.08711
+[2]: https://arxiv.org/abs/1701.04128
+[3]: https://en.wikipedia.org/wiki/Spatial_light_modulator
+[4]: https://www.nature.com/articles/nphoton.2017.93
+[5]: https://arxiv.org/abs/1705.09792
+[6]: https://arxiv.org/abs/1712.04604
+
+---
+
+ ## CFFL Updates
+
+* Mike will be speaking on "Serverless for Data Scientists" at [Pybay](https://pybay.com/) in San Francisco, on August 19th. (Learn more about Mike's talk in [this interview](https://medium.com/pybay/meet-mike-lee-williams-serverless-and-its-relevance-for-data-scientists-ba5a6cd0862e).)
+
+* Shioulin will be speaking on [Semantic Recommendations](https://conferences.oreilly.com/strata/strata-ny/public/schedule/detail/69260) at the Strata Data Conference on September 12th, and Friederike will be [speaking at Strata](https://conferences.oreilly.com/strata/strata-ny/public/schedule/detail/69365) on September 12th as well.
+
+* Friederike will also be speaking at the [Data Science Salon](https://www.eventbrite.com/e/data-science-salon-nyc-tickets-40072527007) on September 27th here in NYC.
+
+* Shioulin will be speaking at [ODSC Europe](https://odsc.com/london) in London in mid-September.
+
+As always - thank you for reading!  We welcome your thoughts, questions, and suggestions; reach us anytime at cffl@cloudera.com.
+
+All the best,
+
+The Cloudera Fast Forward Labs Team
