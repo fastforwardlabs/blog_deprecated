@@ -3,7 +3,7 @@ layout: newsletter
 slug: 2018-08-08-subscribers
 ---
 
-Hello!  In this week's newsletter, Grant dives into an important design consideration when building ML models, and Micha explores an interesting (and emerging) technology: 3D Printed Optical Neural Networks.
+Hello!  In this week's newsletter, Grant dives into an important design consideration when building ML models, and Micha explores an interesting emerging technology: 3D Printed Optical Neural Networks.
 
 ---
 
@@ -103,7 +103,7 @@ larger machine learning community.
 
 ---
 
- ## CFFL Updates
+## CFFL Updates
 
 * Mike will be speaking on "Serverless for Data Scientists" at [Pybay](https://pybay.com/) in San Francisco, on August 19th. (Learn more about Mike's talk in [this interview](https://medium.com/pybay/meet-mike-lee-williams-serverless-and-its-relevance-for-data-scientists-ba5a6cd0862e).)
 
