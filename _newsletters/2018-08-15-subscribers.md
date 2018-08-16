@@ -1,0 +1,118 @@
+---
+layout: newsletter
+slug: 2018-08-15-subscribers
+---
+
+Hello! In this week's newsletter, Nisha addresses a controversial proposal from the FCA, and Mike highlights an efficient probablisitic algorithm.
+
+---
+
+## Space-Saving: an efficient probabilistic algorithm to find frequent items in a stream
+_by [Mike](https://twitter.com/mikepqr)_
+
+Imagine a choice between two algorithms. One takes a second to run, and can be
+applied to an incomplete sample of data, but gives the wrong answer 1% of the
+time. Another is guaranteed to be correct, but takes a day to run, and requires
+all the data.
+
+As we discussed in [FF02: _Probabilistic Methods for Realtime
+Streams_](https://clients.fastforwardlabs.com/ff02/report), sometimes it makes
+sense to choose the first, _probabilistic_ algorithm. Such algorithms make it
+possible to handle a stream of data that arrives so quickly you can't even
+write it to disk, much less perform a calculation.
+
+![]({{ site.github.url }}/images/2018/08/frequent_top_k_ff02-1533766685684.png)
+
+For example, a website needs to keep track of the IP addresses of its visitors,
+because attackers and ad-clickers need to be identified in a fraction of a
+second, so they can be blocked or served an ad without delay. For a busy
+website, this can be computationally demanding. A service like CloudFlare,
+through which a non-trivial fraction of internet traffic passes (10 trillion
+hits per month) [faces this challenge in the
+extreme](https://www.dotconferences.com/2015/06/john-graham-cumming-i-got-10-trillion-problems-but-logging-aint-one).
+
+To solve this problem, we need a fast, space-efficient solution to both the
+_frequent_ and _top-k_ items problems. Frequent items (such as IP addresses)
+are those that make up more than a certain fraction of the stream, say 1%. The
+top-k items are the k that occur most often. Clearly the frequent and top-k
+items are related (they're an intersecting set), and it was this connection
+that lead to [the invention of
+Space-Saving](https://www.cs.ucsb.edu/research/tech-reports/2005-23), an
+algorithm that simultaneously solves _both_ problems quickly, with excellent
+precision and recall, manageable memory requirements, and probabilistic error
+rate guarantees.
+
+![]({{ site.github.url }}/images/2018/08/frequent_top_k_space_saving-1533766732061.png)
+
+The basic idea in Space-Saving is to monitor the counts of only the top `m`
+items (e.g. IP addresses), where `m` is a number bigger than `k`, but perhaps
+not much bigger. This keeps the memory requirements down. But, of course, the top
+`m` items can change, and we need a way for new items to enter our "monitored"
+set. For this, Space-Saving uses an heuristic they call _the benefit of the
+doubt_: if the stream contains an item not in the top `m`, then it is given the
+benefit of the doubt, and replaces the rarest item in the top `m`. [The
+paper](https://www.cs.ucsb.edu/research/tech-reports/2005-23) works through the
+consequences of this assumption for error rates, and demonstrates on real data
+that the algorithm is fast enough to be both updated and queried with live
+data. In fact, as CloudFlare [revealed in a recent
+talk](https://www.dotconferences.com/2015/06/john-graham-cumming-i-got-10-trillion-problems-but-logging-aint-one),
+Space-Saving is, in fact, the algorithm they use to deal with their ten
+_trillion_ monthly clicks.
+
+Probabilistic algorithms and data structures such as Space-Saving and Cuckoo
+Filters (which we wrote about [on our
+blog](https://blog.fastforwardlabs.com/2016/11/23/probabilistic-data-structure-showdown-cuckoo.html))
+exist at the intersection of statistics and computer science. Machine
+learning's hunger for training data has made these algorithms more valuable. At
+the same time, fundamental algorithmic innovations like Space-Saving have
+driven progress in the application of machine learning at internet scale. We're
+looking forward to seeing what the future brings.
+
+Our clients have access to [FF02: _Probabilistic Methods for
+Realtime Streams_](https://clients.fastforwardlabs.com/ff02/report), which
+covers this field and its applications in more detail. We'd love to discuss any
+challenges you have along these lines.
+
+---
+
+## Small change, big impact
+_by [Nisha](https://twitter.com/NishaMuktewar)_
+
+In the midst of growing concern over AI (be it in the form of erosion of privacy, threats to democracy, automation effects 
+on unemployment, etc.), one can no longer assume that the computing research community can have a net positive impact on 
+the world. Take for instance, the recent [RadioLab interview](https://www.wnycstudios.org/story/breaking-news) about research 
+on generative visual and audio models and their powerful anti-social applications. There is clearly a gap in the way 
+researchers view their work and the way it impacts society. A recent [interview](https://www.nature.com/articles/d41586-018-05791-w) in Nature(https://www.nature.com/) with [Dr. Brent Hecht](http://www.brenthecht.com/), a computer scientist who chairs the [ACM Future of Computing Academy](https://acm-fca.org/) (FCA), talks about a controversial proposal to address these downsides to innovations. 
+
+The (FCA) proposes that the computer-science community should change its peer-review process to ensure that researchers disclose any possible negative societal consequences of their work in papers, or risk rejection. Just like a paper submitted for a conference or journal is evaluated for its intellectual rigor, the idea is to also identify the expected side effects or unintended uses of the technology.
+
+This raises two critical questions:   
+
+**What if a research project does more harm than good?** In that case, one of the FCA's recommendations for the authors would be to discuss complementary technologies, policies, or other interventions that could mitigate the negative broader impacts of the paper or proposal. In most cases, this approach will help researchers outline a path by which their work can have an overall positive effect. It could potentially also result in additional benefits - in particular, increased formal and public support from the computing community for policies that can mitigate computing’s negative impact. 
+
+**What about non-scholarly research (aka private technology companies who do research)?** This is where they would encourage 
+the technology press to come in and act as gatekeepers. It would again mean asking the researchers and the firms that they
+represent to enumerate the downsides of their products or services. It would also mean asking them to discuss what changes to their technologies and what new policies might mitigate these downsides.
+
+Action on these recommendations would lead to many desirable outcomes, be it in the form of increased intellectual rigor, more 
+support for key govermental policies, greater societal benefits, or - most importantly - greater engagement with social scientists who have a great deal of expertise in understanding the societal impacts of diverse types of interventions. 
+
+That said, implementing these recommendations would also raise a number of questions and challenges. For instance, authors of papers may be concerned that it is difficult to predict and think through all of the potential use cases of the technology; they may never be 100% certain that they have stated them all.  There could also be potential disagreements between the authors and reviewers - but all this, at the very least, is a step in the right direction. As Dr. Brent Hecht mentions in his interview, it is a hard problem to solve; the researchers might miss tonnes of negative impacts, but even if we were to catch just 1% or 5%, it would be worth it.
+
+---
+
+## CFFL Updates
+
+* Mike will be speaking on "Serverless for Data Scientists" at [Pybay](https://pybay.com/) in San Francisco, on August 19th. (Learn more about Mike's talk in [this interview](https://medium.com/pybay/meet-mike-lee-williams-serverless-and-its-relevance-for-data-scientists-ba5a6cd0862e).)
+
+* Shioulin will be speaking on [Semantic Recommendations](https://conferences.oreilly.com/strata/strata-ny/public/schedule/detail/69260) at the Strata Data Conference on September 12th, and Friederike will be [speaking at Strata](https://conferences.oreilly.com/strata/strata-ny/public/schedule/detail/69365) on September 12th as well.
+
+* Friederike will also be speaking at the [Data Science Salon](https://www.eventbrite.com/e/data-science-salon-nyc-tickets-40072527007) on September 27th here in NYC.
+
+* Shioulin will be speaking at [ODSC Europe](https://odsc.com/london) in London in mid-September.
+
+As always - thank you for reading!  We welcome your thoughts, questions, and suggestions; please reach out to us anytime at cffl@cloudera.com.
+
+All the best,
+
+The Cloudera Fast Forward Labs Team
