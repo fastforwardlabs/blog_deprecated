@@ -94,6 +94,8 @@ transfer](https://arxiv.org/pdf/1507.00448.pdf).
 
 ## CFFL Updates
 
+* Save the date!  Friederike will be presenting an interactive webinar on multi-task learning for individual subscribers at 1:00pm ET on Friday, September 14th.
+
 * Shioulin will be speaking on [Semantic Recommendations](https://conferences.oreilly.com/strata/strata-ny/public/schedule/detail/69260) at the Strata Data Conference in NYC on September 12th, and Friederike will be [speaking at Strata](https://conferences.oreilly.com/strata/strata-ny/public/schedule/detail/69365) on September 12th as well.
 
 * Hilary will be keynoting at [Strata](https://conferences.oreilly.com/strata/strata-ny) on Thursday, September 13th.
