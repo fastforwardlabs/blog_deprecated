@@ -23,7 +23,7 @@ On the flip side, if we go back in time to the pre-GPU era, one could argue that
 ---
 
 ## Distilling the Knowledge of a Neural Network
-_by [Friederike](https://www.linkedin.com/in/friederikeschueuer/)
+_by [Friederike](https://www.linkedin.com/in/friederikeschueuer/)_
 
 "Many insects have a larval form that is optimized for extracting energy and
 nutrients from the environment and a completely different adult form that is
