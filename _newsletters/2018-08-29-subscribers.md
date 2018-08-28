@@ -14,7 +14,7 @@ Two years and five months after the computer program AlphaGo [triumphed
 over Lee Sedol](https://en.wikipedia.org/wiki/AlphaGo_versus_Lee_Sedol) in the [game of Go](https://en.wikipedia.org/wiki/Go_(game)), algorithms are at it again. This time, they're taking
 on an even more ambitious task: the five on five game of Defense of the Ancients (DotA) 2.
 
-In this setting, a team of five algorithmically controlled bots, dubbed the [OpenAI five](https://openai.com/five/),
+In this setting, a team of five algorithmically controlled bots, dubbed the [OpenAI Five](https://openai.com/five/),
 are deployed against a team of five expert-level humans in a skirmish where the goal is 
 to destroy the other team's "Ancient," a large structure located in the opposing team's base.
 
