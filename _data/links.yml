@@ -390,3 +390,7 @@
     url: 'https://www.locallyoptimistic.com/post/value-reordering-lists/'
     text: 'The Value of Reordering Lists'
     image: 'https://www.locallyoptimistic.com/img/value-reordering-lists.jpg'
+-
+    url: 'http://cleverhans.io/privacy/2018/04/29/privacy-and-machine-learning.html'
+    text: 'Privacy and machine learning: two unexpected allies?'
+    image: 'http://cleverhans.io/assets/pate-aggregation.png'
