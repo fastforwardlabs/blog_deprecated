@@ -3,11 +3,8 @@ slug: 2018-09-05-newsletter-tech
 layout: newsletter
 ---
 
-Hello! This is example newsletter text.
-
----
-
 ## Snorkel: Rapid Training Data Creation with Weak Supervision
+---
 
 _by [Nisha](https://twitter.com/NishaMuktewar)_
 
