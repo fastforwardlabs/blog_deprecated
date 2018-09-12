@@ -1,0 +1,139 @@
+---
+slug: 2018-09-12-subscribers
+layout: newsletter
+---
+
+Hello!  In this week's newsletter, Ryan considers a recent article concerning ethical questions around software licensing, and Micha discusses [vid2vid](https://tcwang0509.github.io/vid2vid/) - a new type of GAN that is revolutionizing video generation.
+
+---
+
+## Licensing Ethics: Freedom of Speech and Software Use Aren't Analogous
+_by [Ryan](https://twitter.com/jqpubliq)_
+
+New technologies, including data science and machine learning in particular, enable powerful new capabilities. Of course, with power comes responsibility; these technologies are tools that can be used for good or ill. At Cloudera Fast Forward Labs, we are quite conscious of this. Our [research reports](https://www.cloudera.com/products/fast-forward-labs-research.html) enable our clients to apply the technolgy at the center of the report, and each report includes an ethics section that illuminates potential ethical and regulatory considerations related to that technology.
+
+Similar considerations are coming into focus in some open source software projects, sparking a discussion about whether software licensing should be used for ethical leverage. Specifically, the question has been raised as to whether or not it is appropriate to limit the use of open source software based on the authors' ethical stance to certain users and uses of the software. The Lerna project had [a proposal to do exactly this](https://github.com/lerna/lerna/pull/1616),[^1] via the following limitation in its license:
+
+> The following license shall not be granted to the following entities or any subsidiary thereof due to their collaboration with US Immigration and Customs Enforcement ("ICE"): [with list of companies following](https://github.com/lerna/lerna/pull/1616)
+
+[Bradley Kuhn](https://sfconservancy.org/about/officers/), President of the Software Freedom Conservancy, recently rejected this type of limited licensing [in a blog post](https://sfconservancy.org/blog/2018/aug/30/big-tent/). Kuhn's criticism of license restrictions is of course limited to software that he considers Free Software. Indeed, I suspect he would not consider any software offered under a use-restricted license to be Free Software. Of course, he and anyone else are free to define Free Software (or FOSS or FLOSS or open source) as they wish - the real issue here is if it is reasonable to consider this type of license inappropriate based on a parallel to free speech. I find this analogy to be inapposite, and the resulting analysis to be oversimplified and naive.
+
+### The Speech Right and The Use Right Are Not Comparable
+
+First, the substantive rights Kuhn compares are not analogous. The freedom of speech in the United States is _a speaker's right to speak_, i.e., the right of a speaker (or writer) to disseminate ideas. The analogous right in software is the right of a coder/author _to publish her code_ where others can see it. But an _author's right_ to _publish_ code is not the issue here; the issue is _others' right_ to _use_ the software. Rejecting use-limiting licenses on that basis that they are analogous to free speech misses this important distinction.
+
+Another key difference is that speech itself is not an enabling tool, while software is. Giving a well-known hate group a place to speak is one thing. Giving them guns is another. To make a more realistic comparison, the right of the hate group _to speak_ in an attempt to persuade others to join their cause is within the spirit of freedom of speech. Defending their right _to use_ any open source software they wish in order to (for example) track the whereabouts of potential victims, is not.
+
+### Limitations on Freedoms Are Common
+
+Kuhn compares the [Four Software Freedoms](https://www.gnu.org/philosophy/free-sw.html.en) to free speech.[^2], and his view is that the role of the free software movement is to defend the Four Software Freedoms, as the ACLU defends free speech.[^3] Specifically, he contends that as the ACLU defends _anyone's_ right to speak, even deplorable speakers, so should the free software movement defend anyone's right to use open source software, however insidious their application of that software.
+
+But free speech isn't an unconditional right, which Kuhn appropriately acknowledges. Even the ACLU recognizes that it is appropriate to draw a line where a freedom becomes toxic. The ACLU recently [effectively changed its stance on free speech cases]((https://www.pbs.org/newshour/nation/charlottesville-violence-prompts-aclu-change-policy-hate-groups-protesting-guns) in [leaked new legal guidelines](http://online.wsj.com/public/resources/documents/20180621ACLU.pdf), in response to the free speech at Charlottesville protests that resulted in violence.[^4] 
+
+Free speech is also limited in the sense that libel and slander are proscribed by law; these limitations punish dissemniation of untruths. There is also now a nascent movement to license limitations on use of _data_ that has the support of some major players in the industry. They plan to release datasets under these limited licenses in the near future. These instances all acknowledge that curtailments of speech does not mean that speech isn't free. So should it be with software.
+
+In sum, free speech isn't a good framework to analyze open source software licenses. A speaker has freedom to speak (or not), and a coder has a right to publish (or not); these are free-speech type rights. A coder also has the right to control the use of their code. That right can be analyzed as appropriate or not for the Free Software movement, but not as a speech right.
+
+
+[^1]: The _procedure_ through which the Lerna license limitation was proposed, i.e., added without consensus of the project, wasn't appropriate and it was accordingly rejected. But that procedural misstep shouldn't cloud the discussion about licenses with the _substantive intent_ of similar license limitations.
+
+[^2]: Kuhn implicitly refers to free speech as it is understood in the United States legal system.
+
+[^3]: The ACLU has done admirable work to be sure. Kuhn's desire for the free software movement to be compared to the ACLU is understandable.
+
+[^4]: The ACLU document [and their legal director](https://www.aclu.org/blog/free-speech/aclus-longstanding-commitment-defending-speech-we-hate) say this isn't a change of policy, but it's clearly a shift of priorities, precipitated by the events in Charlottesville.
+
+
+---
+
+## Realistic Video Generation
+_by [Micha](http://micha.codes/)_
+
+[Generative Adversarial Networks][6] (GANs) wowed the world in 2014 with their
+ability to generate what we considered to be [realistic images][4]. While these
+images were quite low resolution, researchers kept working on how to perfect
+these methods in order to increase the quality of the images and even to apply
+the algorithm on other types of data like text and sound.
+
+![]({{ site.github.url }}/images/2018/09/gan-1536758013486.png)
+
+However, until recently there has been little success in making realistic
+videos. The main problem with making videos is temporal consistency: while
+people can be forgiving in one frame and find some interpretation for
+unrealistic regions, we are adept at seeing inconsistencies with how videos
+progress.
+
+![]({{ site.github.url }}/images/2018/09/pix2pixhd-1536757958811.gif)
+
+For example, we can accept some strange looking texture in the background of an
+image as simply some strange looking background. However, if that background is
+randomly changing from frame to frame in a video, we immediately discount the
+video. It is exactly this temporal consistency which has plagued researchers
+trying to apply GANs to videos -- while each frame seemed realistic taken on
+its own, when assembled into a video, there were considerable inconsistencies
+which ruined any illusion of realism. This restricted the ability to reuse
+models that showed success at generating individual images, and forced
+researchers to come up with new methods to deal with the temporal nature of
+videos.
+
+![]({{ site.github.url }}/images/2018/09/maxresdefault-1536763922861.jpg)
+
+Recently, researchers at NVIDIA and MIT have come up with a new type of
+GAN, [vid2vid][1], which primarily addresses this problem by explicitly
+incorporating how things seem to be moving within the video, in order to continue
+this motion in future frames. (In addition, they follow previous work, which uses
+a multi-resolution approach for generating high resolution images). This is done
+by calculating the [optical flow][5] of the image, which is a classic computer
+vision method that simply has not been incorporated into such a model until now.
+
+![]({{ site.github.url }}/images/2018/09/citysmall-1536759505454.gif)
+
+The results are quite staggering (we highly recommend watching their [release
+video][2]). With the model you can create dashboard camera footage from the initial
+segmentation frame (allowing you to change the type and shape of objects in the
+frame by simply drawing in the corresponding color); it's even possible to create realistic looking
+dance videos from pose information. It's interesting to see this new method as
+[compared with previous methods][3], to really get a sense of how important this
+additional temporal information is for making realistic results.
+
+![]({{ site.github.url }}/images/2018/09/pose_to_body_vid2vi2-1536757918891.gif)
+
+These high quality results are quite exciting and are groundbreaking work in
+the field of video generation. From applications in generating synthetic
+training data to use in creative projects, the vid2vid model itself is instantly
+applicable.
+
+Even more interesting is how the field as a whole will learn from this
+research and start finding ways to incorporate other classic algorithms into
+neural networks. Just as conv-nets explicitly encoded the two dimensional
+understanding we have for images into models so that they can more quickly and
+accurately learn how to work with that data, this method explicitly encodes our
+understanding of how frames of a video flow from one to another (albeit this was
+much trickier to do than the conv-net example!). We're interested in seeing what
+other algorithms will be incorporated into neural networks like this and what
+capabilities these models will have.
+
+[1]: https://tcwang0509.github.io/vid2vid/
+[2]: https://www.youtube.com/watch?v=GrP_aOSXt5U&feature=youtu.be
+[3]: https://www.youtube.com/watch?v=A7g4mLD1E1E
+[4]: https://arxiv.org/abs/1701.07875
+[5]: https://en.wikipedia.org/wiki/Optical_flow
+[6]: https://arxiv.org/abs/1406.2661
+
+---
+
+## CFFL Updates
+
+* If you're attending the Strata Data Conference in NYC today, please be sure to say hello!  Shioulin will be speaking on [Semantic Recommendations](https://conferences.oreilly.com/strata/strata-ny/public/schedule/detail/69260) today, and Friederike will be [speaking](https://conferences.oreilly.com/strata/strata-ny/public/schedule/detail/69365) today as well.  Hilary will also be giving a keynote talk at Strata tomorrow morning.
+
+* Friederike will be speaking at the [Data Science Salon](https://www.eventbrite.com/e/data-science-salon-nyc-tickets-40072527007) on September 27th (also here in NYC).
+
+* Shioulin will be speaking at [ODSC Europe](https://odsc.com/london) (September 19-22) in London.
+
+* and Hilary will speaking at [GraphConnect](https://neo4j.com/blog/hilary-mason-cloudera-stephen-ogrady-redmonk-keynote-graphconnect/) in NYC on September 20th.
+
+As always, thank you for reading. We welcome your thoughts, feedback, and suggestions; please [drop us a note](mailto:cffl@cloudera.com) anytime!
+
+All the best,
+
+The Cloudera Fast Forward Labs Team
