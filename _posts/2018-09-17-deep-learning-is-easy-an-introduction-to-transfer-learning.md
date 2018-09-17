@@ -255,7 +255,7 @@ don’t need to be an expert yourself to obtain expert level results. Consider
 the popular image classification model
 [Resnet-50](https://arxiv.org/abs/1512.03385).
 
-![](/images/editor_uploads/2018-09-18-174502-resnet50.png)
+![](/images/editor_uploads/2018-09-18-181622-resnet50.png)
 
 How was that particular architecture chosen? It is the result of years of
 research and experimentation from various deep learning experts. Within this
