@@ -6,6 +6,8 @@ feature: true
 published: true
 ---
 
+<style type="text/css">.post img { max-width: 460px }</style>
+
 Deep learning has provided extraordinary advances in problem spaces that 
 are poorly solved by other approaches. This success is due to several key 
 departures from traditional machine learning that allow it to excel when 
