@@ -398,3 +398,7 @@
     url: 'http://offconvex.github.io/2018/07/27/approximating-recurrent/'
     text: 'When Recurrent Models Don''t Need to be Recurrent'
     image: 'https://storage.googleapis.com/deepmind-live-cms/documents/BlogPost-Fig2-Anim-160908-r01.gif'
+-
+    url: 'https://thegradient.pub/structure-learning/'
+    text: 'How do we capture structure in relational data?'
+    image: 'https://images.unsplash.com/photo-1495592822108-9e6261896da8?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ&s=c7f31a8c5fd0fea1620b5595ce12eb73'
