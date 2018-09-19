@@ -87,7 +87,7 @@ up with Spark.
 ---
 
 ## The True Competitive Advantage in ML 
-_by [Justin](https://twitter.com/JustinJDN)
+_by [Justin](https://twitter.com/JustinJDN)_
 
 Data science, machine learning (ML), and AI are no longer just cute buzzwords.  Nearly all organizations, companies and governments now recognize the immense potential of AI-enabled products and services, and many of them have already made the very real investment of hiring employees with skills in these emerging fields.  
 
