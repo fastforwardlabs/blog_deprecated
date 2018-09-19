@@ -402,3 +402,7 @@
     url: 'https://thegradient.pub/structure-learning/'
     text: 'How do we capture structure in relational data?'
     image: 'https://images.unsplash.com/photo-1495592822108-9e6261896da8?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ&s=c7f31a8c5fd0fea1620b5595ce12eb73'
+-
+    url: 'https://petewarden.com/2018/05/28/why-you-need-to-improve-your-training-data-and-how-to-do-it/'
+    text: 'Why you need to improve your training data, and how to do it'
+    image: 'https://petewarden.files.wordpress.com/2018/05/untitled-document-4.png'
