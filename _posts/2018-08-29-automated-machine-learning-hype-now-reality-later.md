@@ -1,6 +1,6 @@
 ---
 title: Automated Machine Learning: Hype now, reality later?
-date: 2018-08-29 18:09 -0400
+date: 2018-08-29
 preview_image: /images/editor_uploads/Screen_Shot_2017_11_07_at_10_07_43_AM-1510067292745.png
 feature: false
 published: true
