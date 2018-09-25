@@ -43,7 +43,7 @@ As an aside, as a lawyer, I recognize 23andMe's use of weasel words like "accele
 ---
 
 ## Humans in the loop with adversarial images
-_by [Alice](https://www.linkedin.com/in/alice-albrecht-6379868/)_
+_by [Alice](https://twitter.com/AliceAlbrecht)_
 
 With the ubiquity of machine learning classification models of late, we’ve also seen the creation of what are known as adversarial images - which can trick machine learning models into classifying images incorrectly.  The ability to “trick” a model may seem inconsequential, but as much of task automation (including autonomous driving) relies on correctly classifying images, the ability to alter the label of those images could have life-threatening consequences.  An oft-cited example of this danger is the ability to change the classification of speed limit signs, causing potentially hazardous speeds for autonomous vehicles. The alterations involved here can include large-scale changes that are easily spotted by humans or can involve small perturbations of just a few pixels that many researchers claim are beyond the reach of human identification. 
 
