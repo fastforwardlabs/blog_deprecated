@@ -96,14 +96,3 @@ train surrogate models that allow us insight into the importance of
 hyperparameter values and increase the efficiency of hyperparameter tuning by
 defining sensible default values (or distributions) for the classes of problems
 tackled by data teams at these organizations.
-
-
-![](http://fastforwardlabs.github.io/visuals/shared/ff07/ff07-01.png)
-
-##### We recently wrote a report on Semantic Recommendations.
-
-## What We Do
-
-Fast Forward Labs helps organizations innovate with data science and machine learning. Our [research](https://www.fastforwardlabs.com/research) keeps you up to date on the latest trends in applied artificial intelligence, showing you the practical applications of recently possible technologies.
-
-We address capability gaps from a technical, process, people, and organizational perspective, help navigate the vendor ecosystem and explore data opportunities to open up new product and business opportunities.
