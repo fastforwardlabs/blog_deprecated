@@ -1,7 +1,7 @@
 ---
-title: "Automated Machine Learning: Hype now, reality later?"
+title: Automated Machine Learning: Hype now, reality later?
 date: Tue Aug 28 2018 20:00:00 GMT-0400 (Eastern Daylight Time)
-preview_image: /images/editor_uploads/Screen_Shot_2017_11_07_at_10_07_43_AM-1510067292745.png
+preview_image: 
 feature: false
 published: true
 author: Shioulin
