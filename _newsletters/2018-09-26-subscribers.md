@@ -3,7 +3,7 @@ slug: 2018-09-26-subscribers
 layout: newsletter
 ---
 
-Hello!  In this week's newsletter, Ryan discusses some very concerning recent data privacy issues in the healthcare field, and Alice reflects on new research around human/machine interaction in the adversarial image space.
+Hello!  In this week's newsletter, Ryan discusses some  concerning recent data privacy issues in the healthcare field, and Alice reflects on new research around human/machine interaction in the adversarial image space.
 
 ---
 
