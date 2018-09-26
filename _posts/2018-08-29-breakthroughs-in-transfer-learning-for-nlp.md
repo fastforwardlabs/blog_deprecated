@@ -6,6 +6,7 @@ feature: false
 published: true
 author: Seth
 author_link: https://twitter.com/shendrickson16
+post_type: Newsletter
 ---
 
 One of the most exciting parts of our jobs at Cloudera Fast Forward Labs is [our work](https://www.fastforwardlabs.com/research) on applied machine learning research. Through this research we see and work with some of the most exciting developments in machine learning, deep learning, and AI, but - as with any field that has been overhyped - we sift through a lot of noise. By noise, we generally mean research that is too immature to be of practical use, or research that follows one or more of the [troubling trends in machine learning](https://arxiv.org/pdf/1807.03341.pdf). 
