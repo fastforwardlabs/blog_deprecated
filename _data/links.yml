@@ -406,3 +406,7 @@
     url: 'https://petewarden.com/2018/05/28/why-you-need-to-improve-your-training-data-and-how-to-do-it/'
     text: 'Why you need to improve your training data, and how to do it'
     image: 'https://petewarden.files.wordpress.com/2018/05/untitled-document-4.png'
+-
+    url: 'https://blog.janestreet.com/how-to-shuffle-a-big-dataset/'
+    text: 'How to shuffle a big dataset'
+    image: 'https://blog.janestreet.com/how-to-shuffle-a-big-dataset/shuffle_illustration.png'
