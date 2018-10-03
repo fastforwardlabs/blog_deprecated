@@ -410,3 +410,7 @@
     url: 'https://blog.janestreet.com/how-to-shuffle-a-big-dataset/'
     text: 'How to shuffle a big dataset'
     image: 'https://blog.janestreet.com/how-to-shuffle-a-big-dataset/shuffle_illustration.png'
+-
+    url: 'https://florian.github.io//federated-learning-firefox/'
+    text: 'Federated Learning for Firefox'
+    image: 'https://florian.github.io/assets/posts/federated-learning-firefox/bar.png'
