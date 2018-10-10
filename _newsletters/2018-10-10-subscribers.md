@@ -46,7 +46,7 @@ We also enjoyed:
 
 * Hilary will speaking at the [Open FinTech Forum](https://events.linuxfoundation.org/events/open-fintech-forum-2018/) in NYC on October 11th.
 
-* Mike will be speaking on serverless for data scientists at [PyData LA](https://pydata.org/la2018/) on October 22nd.
+* Mike will be speaking on Serverless for data scientists](https://pydata.org/la2018/schedule/presentation/34/) at [PyData LA](https://pydata.org/la2018/) on October 22nd.
 
 * Justin will be speaking at the [Cloudera Sessions event](https://www.cloudera.com/more/events/sessions/toronto.html) in Toronto on October 23rd.
 
