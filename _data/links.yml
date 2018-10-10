@@ -414,3 +414,7 @@
     url: 'https://florian.github.io//federated-learning-firefox/'
     text: 'Federated Learning for Firefox'
     image: 'https://florian.github.io/assets/posts/federated-learning-firefox/bar.png'
+-
+    url: 'https://a2civic.tech/blog/2018/09/30/a-taco-truck-on-every-corner-or-not.html'
+    text: 'A Taco Truck On Every Corner… or Not?'
+    image: 'https://a2civic.tech/blog/images/food_trucks.png'
