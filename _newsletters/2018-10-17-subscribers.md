@@ -14,7 +14,7 @@ Earlier this year, MIT launched [MIT Intelligence Quest](https://quest.mit.edu/)
 Some projects already coming out of The Quest are “moonshot” ideas that have the potential to really change the world. One such “moonshot” is led by work coming out of [Josh Tenenbaum's lab](https://arxiv.org/abs/1604.00289), which hopes to build models that exhibit infant-like capabilities to learn, using things like “intuitive physics” and “intuitive psychology.” These models are built using bayesian programs that utilize one-shot learning before generalizing. Tenenbaum’s moonshot project is just one of many that are being worked on as part of The Quest.
 
 ![]({{ site.github.url }}/images/2018/10/mike_petrucci_607505_unsplash-1539792581534.jpg)
-#### Moonshot (pun intended) Photo by [Mike Petrucci](https://unsplash.com/photos/uIf6H1or1nE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/moon?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) 
+##### _Moonshot (pun intended) Photo by [Mike Petrucci](https://unsplash.com/photos/uIf6H1or1nE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/moon?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_
 
 We're excited to see where this research leads and are pleased to see the announcement this week that MIT received an unprecedented $1 billion to create the [Stephen A. Schwarzman College of Computing](http://news.mit.edu/2018/mit-reshapes-itself-stephen-schwarzman-college-of-computing-1015). This new college will likely help fund many more AI moonshot projects to come!
 
@@ -39,7 +39,7 @@ Here are a few articles we enjoyed reading this week:
 
 * Matt will speaking on "A Roadmap to Open Data Science" at [Cloudera World Tokyo](http://clouderaworldtokyo.com/2018/sE-04.html) (Tokyo, Japan) on November 6th.
 
-Also, we're hiring! Please refer your data nerd friends.  We currently have open positions in [Brooklyn](https://cloudera.wd5.myworkdayjobs.com/External_Career/job/USNew-YorkBrooklyn/Research-Engineer-at-Cloudera-Fast-Forward-Labs_180950) and [San Francisco](https://cloudera.wd5.myworkdayjobs.com/External_Career/job/USA--California--San-Francisco/Research-Engineer-at-Cloudera-Fast-Forward-Labs_181051).
+Also, we're hiring! Please refer your data nerd friends.  We currently have open positions for research engineers in [Brooklyn](https://cloudera.wd5.myworkdayjobs.com/External_Career/job/USNew-YorkBrooklyn/Research-Engineer-at-Cloudera-Fast-Forward-Labs_180950) and [San Francisco](https://cloudera.wd5.myworkdayjobs.com/External_Career/job/USA--California--San-Francisco/Research-Engineer-at-Cloudera-Fast-Forward-Labs_181051).
 
 As always, thank you for reading. We welcome your thoughts, feedback, and suggestions; please [drop us a note](mailto:cffl@cloudera.com) anytime.
 
