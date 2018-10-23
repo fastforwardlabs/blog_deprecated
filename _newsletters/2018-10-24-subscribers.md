@@ -1,0 +1,139 @@
+---
+layout: newsletter
+slug: 2018-10-24-subscribers
+---
+
+## A New Look: PyTorch and Tensorflow
+
+_by [Seth](https://twitter.com/shendrickson16)_
+
+There are a lot of deep learning frameworks.
+
+![]({{ site.github.url }}/images/2018/10/dl_trends-1540212318347.jpg_large)
+##### There's a lot. Image credit: [Andrej Karpathy](https://twitter.com/karpathy/status/972295865187512320).
+
+Declaring "winners" or making absolute statements of superiority is futile in this context, but it is clear that two of these frameworks are set apart from the rest in terms of popularity. TensorFlow (from Google) and PyTorch (from Facebook) are the dominant deep learning frameworks (note that Caffe is now part of PyTorch and Keras is a high-level API for Tensorflow) and they differ rather starkly from one another. Or rather - they used to. With the announcements this year of [PyTorch 1.0](https://developers.facebook.com/blog/post/2018/05/02/announcing-pytorch-1.0-for-research-production/) and [TensorFlow 2.0](https://www.tensorflow.org/community/roadmap), the two frameworks are starting to look more alike.
+
+### Static vs. Dynamic
+
+The differences between these two frameworks is most evident from the model-building experience. Building a model in TensorFlow requires defining a _computational graph_. You need to completely define the inputs, outputs, loss functions, and model computations before you can actually use the model or see any results. This method is aptly named "define-then-run." In this way, programming in TensorFlow is more like programming in a domain specific language (DSL). Because you can't see intermediate results, it can be difficult to debug and unintuitive to use.
+
+```python
+In [2]: dataset = load_iris()
+   ...: X = dataset.data[:, :3]
+   ...: y = dataset.data[:, 3:4]
+
+In [3]: Xt = tf.placeholder(tf.float32, [None, 3])
+   ...: yt = tf.placeholder(tf.float32, [None, 1])
+   ...: W = tf.Variable(tf.ones([3, 1]))
+
+In [4]: Xt
+Out[4]: <tf.Tensor 'Placeholder:0' shape=(?, 3) dtype=float32>
+
+In [5]: yhat = tf.matmul(Xt, W)
+   ...: cost = tf.reduce_mean(tf.square(yhat - yt))  # cost represents a node in the graph, not a tensor itself
+
+In [6]: yhat
+Out[6]: <tf.Tensor 'MatMul:0' shape=(?, 1) dtype=float32>
+
+In [7]: cost
+Out[7]: <tf.Tensor 'Mean:0' shape=() dtype=float32>
+
+In [8]: init = tf.global_variables_initializer()
+   ...: sess = tf.Session()
+   ...: sess.run(init)
+   ...: sess.run(cost, feed_dict={Xt: X, yt: y})
+Out[8]: 134.29327
+```
+
+Building a model in PyTorch is much more like traditional programming, since it uses an imperative style. That is, you see the results as you execute the code. 
+
+```python
+In [2]: dataset = load_iris()
+   ...: X = dataset.data[:, :3]
+   ...: y = dataset.data[:, 3:4]
+
+In [3]: Xt = torch.from_numpy(X).float()
+   ...: yt = torch.from_numpy(y).float()
+   ...: W = torch.randn(3, 1)
+
+In [4]: Xt
+Out[4]:
+tensor([[5.1000, 3.5000, 1.4000],
+        [4.9000, 3.0000, 1.4000],
+        ...
+        [5.9000, 3.0000, 5.1000]])
+
+In [5]: yhat = torch.mm(Xt, W)
+
+In [6]: yhat
+Out[6]:
+tensor([[3.2658],
+        [1.1384],
+        [1.1479],
+        ...
+        [1.7955]])
+
+In [7]: cost = torch.mean((y - yhat)**2)
+
+In [8]: cost
+Out[8]: tensor(3.1945, dtype=torch.float64)
+```
+
+Here, the graph of computations that define the model is built dynamically, as computations are run. Hence, we call this approach "define-by-run." This imperative style makes it easier to debug PyTorch programs and inspect intermediate results, and isn't as awkward to learn. But this usability comes at a cost.
+
+With static computational graph models as in TensorFlow, the model runtime gets a complete view of the model and can perform various optimizations that make the model more efficient. Additionally, the model can be handed off to the execution engine written in a lower level language like C++ where it can operate without involving the Python interpreter. With dynamic computational graphs, many optimizations become impossible (for example, intermediate results must be stored so their memory cannot be re-used). 
+
+Because of these differences there is a perception that PyTorch is only good for research and experimentation and that TensorFlow is difficult to use but necessary for speed and productionization. Both communities are hard at work, trying to change these narratives.
+
+### PyTorch 1.0 and TensorFlow 2.0
+
+The PyTorch 1.0 release is all about improving the production workflow in PyTorch. First, the deep learning library Caffe2, which had a production focus from its inception, has been merged into the PyTorch project. Using the ONNX model serialization framework, it will be easy to train a model in PyTorch, export it via ONNX, and import it into Caffe2 for productionizaton. Second, PyTorch developers have introduced a tracing JIT compiler that makes it easy to turn your PyTorch models into, yes, _static computation graphs_, à la TensorFlow. Third, a new library version of PyTorch called `libtorch` makes it possible to use PyTorch functionality without any dependence on Python and can be linked directly into C++ applications.
+
+The TensorFlow 2.0 release is all about making TensorFlow more user-friendly and easier for experimentation. TensorFlow will now support eager execution as a first-class citizen with the goal of making programming in TensorFlow feel just like normal imperative programming. There will be continued investment in the Keras API which provides a cleaner, more Pythonic programming experience and a concerted effort to reduce clutter and provide a simplified package structure.
+
+All this is to say that the PyTorch and TensorFlow communities are attempting to fill the gaps where the other has traditionally excelled. This is great news for both user bases and machine learning practitioners in general. For now, PyTorch will still be a more user-friendly option for research and TensorFlow will still be better for production, but we expect those gaps to close soon enough.
+
+In fact, these two are not the only frameworks that are converging. Google software engineer and Keras creator Francois Chollet recently shared an enlightening tweet highlighting the similarities between four popular deep learning frameworks.
+
+![]({{ site.github.url }}/images/2018/10/Screen_Shot_2018_10_19_at_11_37_55_AM-1540212162100.png)
+##### Image credit: [Francois Chollet](https://twitter.com/fchollet/status/1052228463300493312).
+
+This convergence is not surprising. Deep learning has now reached a level of maturity where we know what works well and what doesn't, and that the needs of practitioners are diverse, spanning the spectrum from research to production. In the end, what practitioners need are tools that maximize productivity and facilitate understanding of the application of machine learning, not a single tool which is universally "best." 
+
+---
+
+## Recommended Reading (& Listening)
+
+We recommend the following :
+
+* [Puzzles, Problems, and Programs](https://thestrangeloop.com/2018/puzzles-problems-and-programs.html) – in this talk Chris Martens looks at how we form mental models to solve problems.
+
+* [The Law of Leaky Abstractions](https://www.joelonsoftware.com/2002/11/11/the-law-of-leaky-abstractions/) A blast from the past, Joel Spolsky's 2002 essay on efforts to simplify software development is well worth rereading. In many ways, the situation is even worse than it was 16 years ago, and machine learning has a lot to answer for!
+
+* [What Does it Take to Train Deep Learning Models On-Device?](https://petewarden.com/2018/10/04/what-does-it-take-to-train-deep-learning-models-on-device/) We're thinking a lot about training models on unusual hardware at the moment, thanks to our upcoming report on Federated Learning, and Pete Warden's post came at the perfect time.  (See what we just did there?  Yes!  There's a new report coming your way next month!)
+
+* [The DataCamp Podcast](https://www.datacamp.com/community/podcast/): [This episode](https://www.datacamp.com/community/podcast/project-jupyter-interactive-computing) features interviews with our former CFFL colleagues Friederike Schuur and Emanuel Moss, on multi-task learning (at ~24:40 and ~44:00), and a third segment on multi-task learning with Friederike appears in [this week's episode](https://www.datacamp.com/community/podcast/decision-intelligence-data-science) as well (~43:45).
+
+---
+
+## CFFL Updates
+
+* We're hiring! Please refer your data nerd friends. We currently have open positions for research engineers in [Brooklyn](https://cloudera.wd5.myworkdayjobs.com/External_Career/job/USNew-YorkBrooklyn/Research-Engineer-at-Cloudera-Fast-Forward-Labs_180950) and [San Francisco](https://cloudera.wd5.myworkdayjobs.com/External_Career/job/USA--California--San-Francisco/Research-Engineer-at-Cloudera-Fast-Forward-Labs_181051).
+
+* Matt will speaking on "A Roadmap to Open Data Science" at [Cloudera World Tokyo](http://clouderaworldtokyo.com/2018/sE-04.html) (Tokyo, Japan) on November 6th.
+
+* Join us on Wednesday, Nov. 7th for a webinar with Hilary Mason at 10:00am PT / 1:00pm ET: [Industrialize AI with Enterprise 
+Scale Machine Learning](https://www.cloudera.com/more/events/webinars/industrialize_ai.html?src=FFL).
+
+* Mike Lee Williams will also be presenting a webinar to introduce our new report on Thursday, Nov. 15th at 10:00am PT / 1:00pm ET: [Federated Learning: ML with Privacy on the Edge](https://www.cloudera.com/more/events/webinars/federated_learning.html?utm_medium=website&utm_source=organicsocial&utm_campaign=lfym&src=social&cid=70134000001XgDQ&utm_content=Federated_Learn_Organic_AMER_Webinar_2018-11-15).
+
+* Alice will be speaking at [NYAI](https://www.nyai.co/) on November 27th.
+
+* Hilary will be speaking at the [Cloudera Government Forum](https://events.publicsectornetwork.co/events/cloudera-government-forum-2018/) in Canberra, Australia on Tuesday, December 4th, and at [The AI Summit](https://theaisummit.com/newyork/) in New York City on Thursday, December 6th.
+
+As always, thank you for reading!  We welcome your thoughts and feedback; please [reach out](mailto:cffl@cloudera.com) anytime.
+
+All the best,
+
+Cloudera Fast Forward Labs
