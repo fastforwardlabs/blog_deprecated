@@ -1,7 +1,7 @@
 ---
 title: "The True Competitive Advantage in ML"
 date: "2018-09-28 17:10 -0400"
-preview_image: "![](/images/editor_uploads/2018-10-30-212122-rawpixel_1072884_unsplash.jpg)"
+preview_image: "/images/editor_uploads/2018-10-30-212122-rawpixel_1072884_unsplash.jpg"
 feature: "false"
 published: "true"
 author: "Justin"
