@@ -2,7 +2,7 @@
 title: "Federated Learning: Machine Learning with Privacy on the Edge"
 date: "2018-10-29 14:10 -0400"
 preview_image: "/images/editor_uploads/2018-02-08-170315-ff_logo_white_bg.png"
-feature: "false"
+feature: false
 published: false
 ---
 
