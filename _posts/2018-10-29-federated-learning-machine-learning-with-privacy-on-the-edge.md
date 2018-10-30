@@ -3,7 +3,7 @@ title: "Federated Learning: Machine Learning with Privacy on the Edge"
 date: "2018-10-29 14:10 -0400"
 preview_image: "/images/editor_uploads/2018-10-31-181344-federated_learning_animated_labeled.gif"
 feature: false
-published: false
+published: true
 ---
 
 Federated Learning is a technology that allows you to build machine learning systems when your datacenter can't get direct access to model training data. The data remains in its original location, which helps to ensure privacy and reduces communication costs.
