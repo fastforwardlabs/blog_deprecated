@@ -1,0 +1,57 @@
+---
+layout: newsletter
+slug: 2018-11-07-subscribers
+---
+
+## Federated Learning: Machine Learning with Privacy on the Edge
+
+Join us on Thursday, November 15 at 10AM PT for a live webinar on “[Federated Learning: ML with Privacy on the Edge](https://blog.fastforwardlabs.com/2018/10/29/federated-learning-machine-learning-with-privacy-on-the-edge.html).”  [Mike Lee Williams](https://twitter.com/mikepqr) of Cloudera Fast Forward Labs will be joined by Andrew Trask (founder of the open source federated learning project OpenMined), Eric Tramel (Senior Research Scientist of healthcare AI startup Owkin), and Virginia Smith (Assistant Professor in Electrical and Computer Engineering at Carnegie Mellon University).
+
+[Learn more about federated learning on our blog](https://blog.fastforwardlabs.com/2018/10/29/federated-learning-machine-learning-with-privacy-on-the-edge.html) - and [register today](https://www.cloudera.com/more/events/webinars/federated_learning.html?src=FFL)!
+
+---
+
+## Deep Learning for Media Content
+
+_by [Ryan](https://twitter.com/jqpubliq)_
+
+Machine learning continues to [make its way](STYLE_TRANSFER_LINK) [into the arts](GENERATIVE_NETWORK_LINK), most recently in film and TV.
+
+In a [recent blog post](https://cloud.google.com/blog/products/ai-machine-learning/how-20th-century-fox-uses-ml-to-predict-a-movie-audience), data scientists at 20th Century Fox and technical staff at Google Cloud described the approach they are using to predict audiences for their movies. (The tone of the post is fairly self-promoting, befitting the subject matter and industries involved.)
+
+Their product, [Merlin Video](https://datastudio.google.com/u/0/reporting/1Ss64x1ocKeeDdTcMVX3l4iQcr8gp9w-W/page/Hg2V), is a deep learning tool that analyzes movie trailer videos. It was based on a pre-trained model - Google's YouTube 8M video data set, which identifes objects in video, and tuned with movie trailers and marketing data from past movies. Fox released [a paper describing the technology in detail](https://arxiv.org/abs/1810.08189). They have been using Merlin - with success - for a year and a half.
+
+![]({{ site.github.url }}/images/2018/11/Architecture_flow_diagram_for_Merlin_max_1000x1000-1541453447025.png)
+##### Merlin's architecture [(image source)](https://cloud.google.com/blog/products/ai-machine-learning/how-20th-century-fox-uses-ml-to-predict-a-movie-audience)
+
+Fox's software works to predict an *audience*, with clear implications for "testing" likely outcomes for certain types of films, which studios can use to market existing movies more effectively, and guide writers and directors toward making more commercially appealing stories. But can machines generate the stories themselves? Not yet - but this is not far off.
+
+For a challenge, filmmaker [Oscar Sharp](http://www.thereforefilms.com/oscar-sharp.html) and creative technologist [Ross Goodwin](https://rossgoodwin.com/) used a neural network to create a screenplay. They created an [LSTM](https://en.wikipedia.org/wiki/Long_short-term_memory) recurrent neural network called Benjamin. They trained Benjamin with science fiction screenplays and prompted it with data from a science fiction filmmaking contest. Benjamin produced a screenplay, and Sharp and Goodwin, with a cast and crew, made [a film, Sunspring](https://www.youtube.com/watch?v=LY7x2Ihqjmc) from the screenplay with impressive and interesting results.
+
+Clearly, Benjamin is not ready for commercial film, but the resulting film is surprisingly coherent (acknowledging that human minds will go a long way to find order in chaos).
+
+Still, it's clear there are useful applications of machine learning in entertainment, and we expect these products to improve, with interesting results.
+
+---
+
+## Recommended Reading/Viewing
+
+* [Taryn Southern is First Artist to Compose Pop Album With AI](https://www.prweb.com/releases/taryn_southern_is_first_artist_to_compose_pop_album_with_ai/prweb15792349.htm)
+- On theme with ML in entertainment, we highlighted Taryn's first single co-written with AI [in a newsletter last year](https://blog.fastforwardlabs.com/newsletters/2017-09-28-subscribers), and are happy to see RNN's continuing to [break free](https://www.youtube.com/watch?v=XUs6CznN8pw) in creative ways on her new album.
+* [Coral Cup](https://n-e-r-v-o-u-s.com/blog/?p=8222) - The texture of Nervous System’s Coral Cup is generated using a simulation of reaction-diffusion, a mathematical model of pattern formation in biological systems, and then cast in porcelain.
+* [How Do You Explain The Unreasonable Effectiveness Of Cloud Security?](http://highscalability.com/blog/2018/9/19/how-do-you-explain-the-unreasonable-effectiveness-of-cloud-s.html) - Major websites have failures and security breaches all the time. But — touch wood! — the biggest, most complex targets of all, AWS, Google Cloud and Azure, have yet to suffer serious breaches. Why is that? It turns out at least part of the solution at AWS is the application of formal methods. These are techniques to _prove_ software is correct. This talk by Bryon Cook, director of "Automated Reasoning" at AWS (and the accessible, breezy notes High Availability's Todd Hoff) is a great introduction to the big idea.
+
+---
+
+## CFFL Updates
+
+* Join us TODAY for a webinar with Hilary Mason at 10:00am PT / 1:00pm ET: [Industrialize AI with Enterprise 
+Scale Machine Learning](https://www.cloudera.com/more/events/webinars/industrialize_ai.html?src=FFL).
+* Alice will be speaking at [NYAI](https://www.nyai.co/) on November 27th.
+* Hilary will be speaking at the [Cloudera Government Forum](https://events.publicsectornetwork.co/events/cloudera-government-forum-2018/) in Canberra, Australia on Tuesday, December 4th, and at [The AI Summit](https://theaisummit.com/newyork/) in New York City on Thursday, December 6th.
+
+As always, thank you for reading!  We welcome your thoughts and feedback; please [reach out](mailto:cffl@cloudera.com) anytime.
+
+All the best,
+
+Cloudera Fast Forward Labs
