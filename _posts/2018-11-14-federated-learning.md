@@ -42,7 +42,7 @@ In [our article on the Cloudera blog](https://www.google.com/url?q=http://vision
 
 Let’s be more specific by describing federated averaging, perhaps the simplest form of federated learning. This algorithm was [published by a Google team in 2016](https://arxiv.org/abs/1602.05629).
 
-![](/images/editor_uploads/2018-11-14-214805-ff09_09.png)
+![A diagram of federated learning. First, nodes receive the model from server and start training. Then, Nodes send their partially trained models to the server. The server takes those models and combines them to make a federated model. That federated model is sent back down to the nodes. Those models can be trained further locally as the cycle repeats.](/images/editor_uploads/2018-11-14-214805-ff09_09.png)
 
 The server first sends each node an instruction to train a model of a particular type, such as a linear model, a support vector machine, or, in the case of deep learning, a particular network architecture.
 
@@ -67,7 +67,7 @@ The prototype for our report on Federated Learning is [Turbofan Tycoon](https://
 
 Spoiler alert: the optimal strategy is federated learning, and the ROI relative to the alternatives huge! [We hope you enjoy exploring it](https://turbofan.fastforwardlabs.com/).
 
-![](/images/editor_uploads/2018-11-14-214853-ff09_browser.png)
+![A screenshot of the prototype Turbofan Tycoon.](/images/editor_uploads/2018-11-14-214853-ff09_browser.png)
 
 To train the federated model, we wrote an implementation of federated averaging in about 100 lines of PyTorch. This implementation is a *simulation* of federated learning in the sense that no real network communication takes place. The server and the nodes all exist on one machine. However, it is an algorithmically faithful implementation: the server and nodes communicate only by sending copies of their models to each other.
 
