@@ -15,7 +15,7 @@ Federated learning makes it possible to build machine learning systems without d
 This article is about the technical side of federated learning. 
 
 If you’d like to learn more:
-* Read about the business and product side of federated learning on the [Cloudera VISION blog](https://www.google.com/url?q=http://vision.cloudera.com/federated-learning-machine-learning-with-privacy-on-the-edge-2/&sa=D&ust=1542149339797000&usg=AFQjCNHnnl7MhFOM8mCoir7S1E3PnQi-8w)
+* Read about the business and product side of federated learning on the [Cloudera VISION blog](http://vision.cloudera.com/an-introduction-to-federated-learning/)
 * Explore our interactive federated learning prototype, [Turbofan Tycoon](https://turbofan.fastforwardlabs.com/)
 * [Register for our webinar](https://www.cloudera.com/more/events/webinars/federated_learning.html) (Thursday, November 15, 2018)
 * Get access to the full 85 page report and advising time with the Fast Forward Labs team by [becoming a Cloudera Fast Forward Labs client](https://www.cloudera.com/products/fast-forward-labs-research.html)
@@ -34,7 +34,7 @@ Sometimes we can work around this data locality constraint with proxy data that 
 
 Second, in the federated learning setting, each source of potential training data can in principle be different from every other. In other words, the distributions of data on each source are non-IID, and the amount of data at each source can be very different.
 
-In [our article on the Cloudera blog](https://www.google.com/url?q=http://vision.cloudera.com/federated-learning-machine-learning-with-privacy-on-the-edge-2/&sa=D&ust=1542149339797000&usg=AFQjCNHnnl7MhFOM8mCoir7S1E3PnQi-8w), we describe concrete use cases that often have these characteristics: smartphones, healthcare, and predictive maintenance. In this post, we focus on the technical solution.
+In [our article on the Cloudera blog](http://vision.cloudera.com/an-introduction-to-federated-learning/, we describe concrete use cases that often have these characteristics: smartphones, healthcare, and predictive maintenance. In this post, we focus on the technical solution.
 
 ## Federated averaging
 
