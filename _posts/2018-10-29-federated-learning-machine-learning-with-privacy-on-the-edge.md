@@ -1,8 +1,8 @@
 ---
-title: "Federated Learning: Machine Learning with Privacy on the Edge"
+title: "Coming Soon: Federated Learning"
 date: "2018-10-29 14:10 -0400"
 preview_image: "/images/editor_uploads/2018-10-31-181344-federated_learning_animated_labeled.gif"
-feature: true
+feature: false
 published: true
 ---
 
