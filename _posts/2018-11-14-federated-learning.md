@@ -36,7 +36,7 @@ Second, in the federated learning setting, each source of potential training dat
 
 In [our article on the Cloudera blog](https://www.google.com/url?q=http://vision.cloudera.com/federated-learning-machine-learning-with-privacy-on-the-edge-2/&sa=D&ust=1542149339797000&usg=AFQjCNHnnl7MhFOM8mCoir7S1E3PnQi-8w), we describe concrete use cases that often have these characteristics: smartphones, healthcare, and predictive maintenance. In this post, we focus on the technical solution.
 
-### Federated averaging
+## Federated averaging
 
 "Federated learning" refers to a family of algorithms that attempt to solve machine learning problems in the setting described above. They differ in important details, but share the basic idea: a server coordinates a network of nodes, each of which has training data. The nodes each train a local model, and it is that model which they share with the server. 
 
@@ -73,7 +73,7 @@ To train the federated model, we wrote an implementation of federated averaging 
 
 This approach made it possible for us to experiment rapidly with very large numbers of nodes, without getting bogged down in network issues. And despite the simplification, we can reproduce many of the practical challenges that a real network would face (stragglers, dropped connections, etc.). The models trained on each node (and the federated model that is their average) are simple feed-forward neural networks with one hidden layer. We give more details in the report.
 
-### Privacy
+## Privacy
 
 By leaving the training data at its source, federated learning plugs the most obvious and gaping security hole in distributed machine learning. But it is important to be clear that it is not a silver bullet.
 
@@ -99,7 +99,7 @@ This attack is more difficult to carry out against modern (and more complex) mod
 
 [In our webinar](https://www.cloudera.com/more/events/webinars/federated_learning.html), we’ll be learning more about these issues from Andrew Trask of [OpenMined](https://www.openmined.org/) and Eric Tramel of [Owkin](https://owkin.com/).
 
-### Personalization
+## Personalization
 
 In "regular" federated learning, the server’s goal is to use the data on every node to train a single global model, but in situations where a node plans to apply the model (not just contribute to its creation), it will usually care much more that the model captures the patterns in its data than any other node’s data. For example, if I’m a node in a network that is training a model that will help write emails that are more likely to receive replies, I care more that the model works for me than if it works for anyone else.
 
@@ -107,7 +107,7 @@ If the global model has an appropriately flexible architecture and was trained o
 
 Resolving this tension is the goal of research into personalization. In[ Federated Multi-Task Learning](https://arxiv.org/abs/1705.10467), Virginia Smith and collaborators frame personalization as a multi-task problem where each user’s model is a task, but there exists a structure that relates the tasks. Virginia will also be joining us for [our webinar](https://www.cloudera.com/more/events/webinars/federated_learning.html).
 
-### Conclusion
+## Conclusion
 
 Federated learning makes it easier, safer, and cheaper to apply machine learning in the world’s most regulated, competitive, and profitable industries. It’s also an area of very active current research, with open problems in privacy, security, personalization, and other areas.
 
