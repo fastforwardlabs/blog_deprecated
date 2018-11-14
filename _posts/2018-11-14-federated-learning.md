@@ -1,6 +1,6 @@
 ---
 title: "Federated learning: distributed machine learning with data locality and privacy"
-date: "2018-11-13 16:11 -0500"
+date: "2018-11-14 05:11 -0500"
 preview_image: "/images/editor_uploads/2018-11-14-214557-ff09_07.png"
 feature: true
 published: true
