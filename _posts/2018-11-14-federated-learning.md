@@ -34,7 +34,7 @@ Sometimes we can work around this data locality constraint with proxy data that 
 
 Second, in the federated learning setting, each source of potential training data can in principle be different from every other. In other words, the distributions of data on each source are non-IID, and the amount of data at each source can be very different.
 
-In [our article on the Cloudera blog](http://vision.cloudera.com/an-introduction-to-federated-learning/, we describe concrete use cases that often have these characteristics: smartphones, healthcare, and predictive maintenance. In this post, we focus on the technical solution.
+In [our article on the Cloudera blog](http://vision.cloudera.com/an-introduction-to-federated-learning/), we describe concrete use cases that often have these characteristics: smartphones, healthcare, and predictive maintenance. In this post, we focus on the technical solution.
 
 ## Federated averaging
 
