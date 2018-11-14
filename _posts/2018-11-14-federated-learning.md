@@ -3,7 +3,7 @@ title: "Federated learning: distributed machine learning with data locality and 
 date: "2018-11-13 16:11 -0500"
 preview_image: "/images/editor_uploads/2018-11-14-214805-ff09_09.png"
 feature: true
-published: false
+published: true
 author: "Mike"
 author_link: "https://twitter.com/mikepqr"
 ---
