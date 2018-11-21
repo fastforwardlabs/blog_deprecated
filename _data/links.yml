@@ -418,3 +418,7 @@
     url: 'https://a2civic.tech/blog/2018/09/30/a-taco-truck-on-every-corner-or-not.html'
     text: 'A Taco Truck On Every Corner… or Not?'
     image: 'https://a2civic.tech/blog/images/food_trucks.png'
+-
+    url: 'https://medium.com/snips-ai/federated-learning-for-wake-word-detection-c8b8c5cdd2c5'
+    text: 'Federated Learning for Wake Word detection – snips.ai'
+    image: 'https://cdn-images-1.medium.com/max/1200/1*5XqkyXR-E8EVArdG9b5ACg.jpeg'
