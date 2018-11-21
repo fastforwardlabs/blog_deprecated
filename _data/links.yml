@@ -422,3 +422,7 @@
     url: 'https://medium.com/snips-ai/federated-learning-for-wake-word-detection-c8b8c5cdd2c5'
     text: 'Federated Learning for Wake Word detection – snips.ai'
     image: 'https://cdn-images-1.medium.com/max/1200/1*5XqkyXR-E8EVArdG9b5ACg.jpeg'
+-
+    url: 'https://github.com/jantic/DeOldify'
+    text: "DeOldify: \nA Deep Learning based project for colorizing and restoring old images"
+    image: 'https://media.githubusercontent.com/media/jantic/DeOldify/master/result_images/Ballerinas.jpg'
