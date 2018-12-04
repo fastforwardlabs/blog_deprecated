@@ -2,8 +2,8 @@
 title: "Realistic Video Generation"
 date: "2018-09-28 17:10 -0400"
 preview_image: "/images/2018/09/gan-1536758013486.png"
-feature: "false"
-published: "false"
+feature: false
+published: true
 author: "Micha"
 author_link: "http://micha.codes/"
 post_type: "newsletter"
