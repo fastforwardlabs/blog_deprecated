@@ -2,8 +2,8 @@
 title: "Learning to learn in a model-agnostic way"
 date: "2018-10-29 11:11 -0400"
 preview_image: "/images/2018/10/meta_learning-1538505489954.png"
-feature: "false"
-published: "true"
+feature: false
+published: true
 author: "Nisha"
 author_link: "https://twitter.com/NishaMuktewar"
 post_type: "newsletter"
