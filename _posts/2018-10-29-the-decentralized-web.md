@@ -2,8 +2,8 @@
 title: "The Decentralized Web"
 date: "2018-10-29 11:11 -0400"
 preview_image: "/images/editor_uploads/2018-10-02-191324-Screen_Shot_2018_10_01_at_3_04_36_PM.png"
-feature: "false"
-published: "true"
+feature: false
+published: true
 author: "Grant"
 author_link: "https://twitter.com/GrantCuster"
 post_type: "newsletter"
