@@ -2,8 +2,8 @@
 title: "Snorkel: Rapid Training Data Creation with Weak Supervision"
 date: "2018-09-28 17:10 -0400"
 preview_image: "/images/editor_uploads/2018-09-05-182818-snorkel_workflow.png"
-feature: "false"
-published: "true"
+feature: false
+published: true
 author: "Nisha"
 author_link: "https://twitter.com/NishaMuktewar"
 post_type: "newsletter"
