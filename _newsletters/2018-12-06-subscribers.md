@@ -5,7 +5,7 @@ layout: newsletter
 
 ## Designing Turbofan Tycoon
 
-Our prototypes are designed to demonstrate the value of the technologies we research. For our most recent prototype, [Turbofan Tycoon](https://turbofan.fastforwardlabs.com/), we decided that the best way to demonstrate the value of [federated learning](https://clients.fastforwardlabs.com/ff09/report) was to place you in an interactive simulation where you’re in charge of maintaining four turbofan engines.  Please follow [this link to our blog](https://blog.fastforwardlabs.com/2018/12/06/designing-turbofan-tycoon.html) for this week's newsletter highlight - a deep dive from Grant Custer into the inspiration and thought behind the creation of Turbofan Tycoon.
+Our prototypes are designed to demonstrate the value of the technologies we research. For our most recent prototype, [Turbofan Tycoon](https://turbofan.fastforwardlabs.com/), we decided that the best way to demonstrate the value of [federated learning](https://clients.fastforwardlabs.com/ff09/report) was to place you in an interactive simulation where you’re in charge of maintaining four turbofan engines.  Please follow [this link to our blog](https://blog.fastforwardlabs.com/2018/12/06/designing-turbofan-tycoon.html) for this week's newsletter highlight - a deep dive from Grant Custer into the inspiration and thought behind the creation of Turbofan Tycoon, with cameos from Microsoft Flight Simulator, Universal Paperclips, and Vim.
 
 You can learn more about federated learning [here](https://blog.fastforwardlabs.com/2018/11/14/federated-learning.html).
 
