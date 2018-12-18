@@ -3,7 +3,7 @@ title: "Highlights of 2018"
 date: "2018-12-18 11:12 -0800"
 preview_image: "/images/editor_uploads/2018-12-19-194412-alchemist.jpg"
 feature: true
-published: false
+published: true
 ---
 
 We end 2018 with a round-up of some of the research, talks, sci-fi, visualizations/art, and a grab bag of other stuff we found particularly interesting, enjoyable, or influential this year (and we’re going to be a bit fuzzy about the definition of “this year”)!
