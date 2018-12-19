@@ -3,7 +3,36 @@ slug: 2018-12-19-subscribers
 layout: newsletter
 ---
 
-## Nisha's article
+## Active learning for Convolutional Neural Networks
+_by [Nisha](https://twitter.com/NishaMuktewar)_
+
+Deep learning has shown unprecedented success in many areas of computer vision and pattern recognition. And although these 
+algorithms have been successful in many such tasks, one major drawback is that a very large amount of labeled data in needed
+to train these deep networks. Thus, gathering and annotating huge datasets for supervised learning is constantly desired. And 
+although from an algorithmic perspective this is a desired behavior, labeling a dataset is a time-consuming and expensive 
+task. One possible way to address this is through [active learning](https://en.wikipedia.org/wiki/Active_learning_(machine_learning)). 
+
+The goal of active learning is to find effective ways to choose data points to label from a pool of unlabeled points and is 
+typically an iterative process. In a classical setting, active learning chooses only one data point to label at a time. 
+That one data point to label could be selected based on a variety of [heuristics](http://burrsettles.com/pub/settles.activelearning.pdf). However, such a strategy is not feasible when it comes to convolutional neural networks (CNNs) and other deep learning algorithms, primarily because it needs several samples (batch) at a time to have a consistent impact on the training. One possible solution that [Sener et al.](https://arxiv.org/abs/1708.00489) came up with for the batch sampling case is to define the active learning as a **core-set selection** problem.
+
+In order to design an active learning strategy which is effective in a batch setting, they propose to minimize the population 
+risk of a model learned on a small labeled subset. This population risk, also called the upper bound, is a linear combination of 
+the training error, the generalization error, and a third term denoted as a core-set loss. The core-set loss is simply the 
+difference between the average empirical loss over the set of points for which we have labels and the average empirical 
+loss over the entire dataset (including unlabeled points). The authors suggest that empirically, it is widely observed that CNNs 
+are highly expressive, leading to a very low training error, and they typically generalize well for various visual problems. In 
+addition, the generalization error of CNNs is shown to be [bounded](https://arxiv.org/abs/1005.2243). Hence, the critical part 
+for active learning is the core-set loss. Further, since not all the labels are available, they show that minimizing the 
+core-set loss is equivalent to the [k-Center](https://en.wikipedia.org/wiki/Metric_k-center) problem - which chooses center 
+points such that the largest distance between a data point and its nearest center is minimized. And finally, they use a mixed 
+integer programming heuristic to minimize at best the covering radius of the data. 
+
+![]({{ site.github.url }}/images/2018/12/k_center-1545238903296.png)
+
+Overall the idea is: given an initial labeled set and a budget, to try to find a set of points to query labels from an oracle 
+such that when a model is learned, the performance of the model on the labeled subset and on the whole dataset will be as 
+close as possible. They re-formulate the active learning problem as a core-set selection and study the core-set problem for CNNs. Thanks to their method, they achieve state-of-the-art performance in active learning for image classification!
 
 ---
 
