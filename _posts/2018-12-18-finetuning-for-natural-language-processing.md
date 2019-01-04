@@ -1,7 +1,7 @@
 ---
 title: "Fine-tuning for Natural Language Processing"
 date: "2018-12-18 14:01 -0500"
-preview_image: "/images/editor_uploads/2018-02-08-170315-ff_logo_white_bg.png"
+preview_image: "/images/2018/12/Screen_Shot_2018_12_07_at_12_03_44_PM-1544202300577.png"
 feature: false
 published: true
 author: "Shioulin"
