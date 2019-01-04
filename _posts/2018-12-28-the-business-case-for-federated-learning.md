@@ -73,6 +73,7 @@ The healthcare industry offers huge financial incentives to develop effective
 treatments and predict outcomes. But the training data required to apply
 machine learning to these problems is of course extremely sensitive. The
 consequences of actual and potential privacy violations can be serious.
+![](/images/editor_uploads/2018-11-22-193133-ff09_05.png)
 
 By keeping the training data in the hands of patients or providers, federated
 learning has the potential to make it possible to collaboratively build models
