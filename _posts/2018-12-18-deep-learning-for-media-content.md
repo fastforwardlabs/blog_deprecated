@@ -1,6 +1,6 @@
 ---
 title: "Deep Learning for Media Content"
-date: "2018-12-18 14:01 -0500"
+date: "2018-12-28 14:01 -0500"
 preview_image: "/images/editor_uploads/2019-01-05-191614-Merlin_Flow.png"
 feature: false
 published: true
