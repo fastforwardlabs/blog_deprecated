@@ -1,7 +1,7 @@
 ---
 title: "Making an interactive UMAP visualization of the MNIST data set"
 date: "2019-01-29 12:01 -0500"
-preview_image: "/static/images/feed/umap_zoom-1547839236092.gif"
+preview_image: "http://feed.grantcuster.com/static/images/feed/umap_zoom-1547839236092.gif"
 feature: false
 published: true
 author: "Grant"
