@@ -426,3 +426,7 @@
     url: 'https://github.com/jantic/DeOldify'
     text: "DeOldify: \nA Deep Learning based project for colorizing and restoring old images"
     image: 'https://media.githubusercontent.com/media/jantic/DeOldify/master/result_images/Ballerinas.jpg'
+-
+    url: 'https://docs.google.com/presentation/d/17NoJY2SnC2UMbVegaRCWA7Oca7UCZ3vHnMqBV4SUayc/edit?usp=embed_facebook'
+    text: 'Writing Code for NLP Research'
+    image: 'https://lh5.googleusercontent.com/ZW5WLvHxHrEqiFIYHUYxc4nmugHnRHpm_n-BPHkuR9ak5Ieikb0lAusiov85yvFqtbIyqw=w1200-h630-p'
