@@ -1,6 +1,6 @@
 ---
 title: "Machine Learning In The Browser"
-date: "2018-02-28 15:03 -0400"
+date: "2019-02-28 15:03 -0400"
 preview_image: "/images/editor_uploads/2019-02-21-221448-tfjs.jpg"
 feature: false
 published: true
