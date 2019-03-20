@@ -5,8 +5,7 @@ preview_image: "/images/editor_uploads/2019-03-21-201701-AL_loop.png"
 feature: true
 published: true
 post_type: "Featured post"
-author: "Shioulin"
-author_link: "https://twitter.com/shioulin_sam"
+author: "Shioulin and Nisha"
 ---
 
 In recent years, machine learning technologies - especially deep learning - have made breakthroughs which have turned science fiction into reality. Autonomous cars are almost possible, and machines can comprehend language. These technical advances are unprecedented, but they hinge on the availability of vast amounts of data. 
