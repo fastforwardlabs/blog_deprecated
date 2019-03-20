@@ -1,7 +1,7 @@
 ---
 title: "Learning with Limited Labeled Data"
 date: "2019-03-20 15:03 -0400"
-preview_image: "/images/editor_uploads/2018-02-08-170315-ff_logo_white_bg.png"
+preview_image: "/images/editor_uploads/2019-03-21-201701-AL_loop.png"
 feature: true
 published: false
 post_type: "Featured post"
@@ -20,6 +20,8 @@ In order to leverage supervised machine learning opportunities, many enterprises
 Learning with limited labeled data, then, is a machine learning capability that enables enterprises to leverage their pool of unlabeled data to open up new product possibilities. While there are many approaches, most of them attempt to capture the available labeled data using a representation that can be further adjusted if and when new labels are obtained.
 
 Active learning is one such approach. It takes advantage of collaboration between humans and machines to smartly pick a small subset of data to be labeled. A machine learning model is then built using this small subset of data.
+
+![](/images/editor_uploads/2019-03-21-201701-AL_loop.png)
 
 The latest report and prototype from Cloudera Fast Forward Labs  explores active learning and its implications. While not a new framework, active learning has recently been adapted to deep learning applications, where the labeled data requirement is even more stringent. Along with the availability of tooling and a maturing supporting ecosystem, active learning is now newly exciting!
 
