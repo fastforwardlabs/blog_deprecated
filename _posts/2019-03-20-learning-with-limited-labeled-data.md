@@ -3,7 +3,7 @@ title: "Learning with Limited Labeled Data"
 date: "2019-03-20 15:03 -0400"
 preview_image: "/images/editor_uploads/2019-03-21-201701-AL_loop.png"
 feature: true
-published: false
+published: true
 post_type: "Featured post"
 author: "Shioulin"
 author_link: "https://twitter.com/shioulin_sam"
@@ -25,6 +25,6 @@ Active learning is one such approach. It takes advantage of collaboration betwee
 
 The latest report and prototype from Cloudera Fast Forward Labs  explores active learning and its implications. While not a new framework, active learning has recently been adapted to deep learning applications, where the labeled data requirement is even more stringent. Along with the availability of tooling and a maturing supporting ecosystem, active learning is now newly exciting!
 
-The report will be available to corporate subscribers to Cloudera Fast Forward Labs’ research and advising service from _________. The prototype will be made available to the public the same day.
+The report will be available to corporate subscribers to Cloudera Fast Forward Labs’ research and advising service on April 2nd. The prototype will be made available to the public the same day.
 
 Please join us on Wednesday, April 3rd at 10:00am PST (1:00pm EST) for a live webinar on “Learning with Limited Labeled Data." Shioulin Sam and Nisha Muktewar of Cloudera Fast Forward Labs will be joined by [Sanjay Krishnan](https://www.linkedin.com/in/sanjay-krishnan-b4a7249/) (Assistant Professor in Computer Science, University of Chicago) and [Ines Montani](https://www.linkedin.com/in/inesmontani/) (Founder of Explosion.ai). [Register today](https://www.cloudera.com/about/events/webinars/learning_with_limited_labeled_data.html?src=FFL) to save your seat!
