@@ -162,7 +162,7 @@ active learning over different types of datasets and selection strategies. [We h
 enjoy exploring it](https://activelearner.fastforwardlabs.com/).
 
 ![](/images/2019/04/clip0-1554230510947.gif)
-##### Active Learner
+##### _Active Learner_
 
 ## Conclusion
 
