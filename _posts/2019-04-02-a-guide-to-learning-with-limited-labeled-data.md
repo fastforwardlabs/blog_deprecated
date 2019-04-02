@@ -151,6 +151,9 @@ for creating labels, and a platform for transferring the labeled datapoints.
 
 ## Active Learner
 
+![A GIF showing the Active Learner prototype](/images/2019/04/clip0-1554230510947.gif)
+##### We built the [Active Learner prototype](https://activelearner.fastforwardlabs.com/) to accompany this report.
+
 Every Cloudera Fast Forward Labs report comes with a prototype. We don't just
 write about a new exciting capability in machine learning; we also experiment with
 it to understand what it can and cannot do.
@@ -160,9 +163,6 @@ Learner. It is a tool that sheds light on and provides intuition for how and why
 active learning works. The prototype allows one to visualize the process of
 active learning over different types of datasets and selection strategies. [We hope you
 enjoy exploring it](https://activelearner.fastforwardlabs.com/).
-
-![](/images/2019/04/clip0-1554230510947.gif)
-##### _Active Learner_
 
 ## Conclusion
 
