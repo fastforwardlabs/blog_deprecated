@@ -42,8 +42,7 @@ previously chosen card and repeating the action. Because the learner does not he
 selection process, random sampling is also known as _passive learning_.
 
 ![](/images/2019/03/fig_19-1553784863589.png)
-#####
-_Random sampling is like picking the top card from a shuffled deck_
+##### _Random sampling is like picking the top card from a shuffled deck_
 
 ### Uncertainty sampling
 
