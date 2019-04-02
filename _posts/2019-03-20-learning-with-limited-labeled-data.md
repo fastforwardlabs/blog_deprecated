@@ -2,7 +2,7 @@
 title: "Learning with Limited Labeled Data"
 date: "2019-03-20 15:03 -0400"
 preview_image: "/images/editor_uploads/2019-03-21-201701-AL_loop.png"
-feature: true
+feature: false
 published: true
 post_type: "Featured post"
 author: "Shioulin and Nisha"
