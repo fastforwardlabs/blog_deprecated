@@ -1,9 +1,11 @@
 ---
 title: "A Guide to Learning with Limited Labeled Data"
 date: "2019-04-02 14:04 -0400"
-preview_image: "/images/editor_uploads/2018-02-08-170315-ff_logo_white_bg.png"
+preview_image: "/images/2019/03/fig_15-1553784931001.png"
 feature: true
-published: false
+published: true
+post_type: "Featured post"
+author: "Shioulin and Nisha"
 ---
 
 We are excited to release _Learning with Limited Labeled Data_, the latest report and prototype from Cloudera Fast Forward Labs.
@@ -15,6 +17,9 @@ Active learning makes it possible to build applications using a small set of lab
 ## The active learning loop
 
 Active learning takes advantage of the collaboration between humans and machines to smartly select a small subset of datapoints for which to obtain labels. It is an iterative process, and ideally access is available to some initial labels to start. These initial labels allow a human to build a baseline machine learning model, and use it to predict outputs for all the unlabeled datapoints. The model then looks through all its predictions, flags the one with which it has the most difficulty, and requests a label for it. A human steps in to provide the label, and the newly labeled data is combined with the initial labeled data to improve the model. Model performance is recorded, and the process repeats.
+
+![](/images/2019/03/fig_15-1553784931001.png)
+##### _The active learning loop_
 
 ## How to select datapoints
 
@@ -35,6 +40,10 @@ the pool according to no particular criteria. You can think of it as being akin
 to picking a card from the top of a shuffled deck, then reshuffling the deck without the
 previously chosen card and repeating the action. Because the learner does not help with the
 selection process, random sampling is also known as _passive learning_.
+
+![](/images/2019/03/fig_19-1553784863589.png)
+#####
+_Random sampling is like picking the top card from a shuffled deck_
 
 ### Uncertainty sampling
 
@@ -59,6 +68,9 @@ learning. Our report explores some of them in detail.
 ## When to stop
 
 Because active learning is an iterative process, when should we stop? Each label comes with a cost of acquisition - the amount of money and time it takes to acquire the label. With this cost in mind, the stopping criteria can either be static or dynamic. A static criteria sets a budget limit or performance target in the beginning. A dynamic criteria looks at the incremental gain in performance over each round of active learning and stops when it is no longer worthwhile to acquire more labels (the incremental performance plateaus).
+
+![](/images/2019/03/fig_9-1553784742213.png)
+##### _Stopping criteria for active learning_
 
 ## Does it work for deep learning?
 
@@ -148,6 +160,9 @@ Learner. It is a tool that sheds light on and provides intuition for how and why
 active learning works. The prototype allows one to visualize the process of
 active learning over different types of datasets and selection strategies. [We hope you
 enjoy exploring it](https://activelearner.fastforwardlabs.com/).
+
+![](/images/2019/04/clip0-1554230510947.gif)
+##### Active Learner
 
 ## Conclusion
 
