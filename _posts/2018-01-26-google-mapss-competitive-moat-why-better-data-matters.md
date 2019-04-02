@@ -7,7 +7,7 @@ published: true
 post_type: Newsletter
 ---
 
-Cartographer Justin O'Beirne recently wrote a [blog post](https://www.justinobeirne.com/google-maps-moat/) surveying the landscape of mapping apps and sites (with particular focus on Google Maps and Apple Maps). This is one of a [series of pieces](https://www.justinobeirne.com/cartography-comparison) O'Beirne has written [comparing Google and Apple Maps](https://www.justinobeirne.com/a-year-of-google-maps-and-apple-maps). In short, O'Beirne concludes that Google has a substantial competitive advantage in mapping that boils down to having better data.
+Justin O'Beirne recently wrote a [blog post](https://www.justinobeirne.com/google-maps-moat/) surveying the landscape of mapping apps and sites (with particular focus on Google Maps and Apple Maps). This is one of a [series of pieces](https://www.justinobeirne.com/cartography-comparison) O'Beirne has written [comparing Google and Apple Maps](https://www.justinobeirne.com/a-year-of-google-maps-and-apple-maps). In short, O'Beirne concludes that Google has a substantial competitive advantage in mapping that boils down to having better data.
 
 The article is centered around the example of Google's _Areas of Interest_ feature. Simply put, Google adds subtle shading around areas that are commercial districts, i.e., clusters of restaurants and shops, while Apple does not. This feature is quite useful as it reflects [the way humans think of cities](http://groups.ischool.berkeley.edu/mentalmaps/) in terms of their commercial districts.
 
