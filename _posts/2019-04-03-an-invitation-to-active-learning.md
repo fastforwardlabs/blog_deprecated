@@ -4,7 +4,8 @@ date: "2019-04-03"
 preview_image: "/images/editor_uploads/2018-02-08-170315-ff_logo_white_bg.png"
 feature: false
 published: true
-author_link: "[Chris](https://twitter.com/_cjwallace)"
+author_link: "https://twitter.com/_cjwallace"
+author: "Chris"
 ---
 
 Many interesting learning problems exist in places where labeled data is limited.
