@@ -26,7 +26,7 @@ The active learning process forms a loop:
 5. GOTO 1.
 
 ![The active learning loop in action](/images/editor_uploads/2019-04-04-171937-uncertainty_sampling_observable_fast.gif)
-_The active learning loop in action_
+_The active learning loop in action - try out the [demo](https://observablehq.com/@cjwallace/an-invitation-to-active-learning)!_
 
 The essence of active learning is in the _strategy_ we choose in the loop above.
 Three broad families of strategy are:
