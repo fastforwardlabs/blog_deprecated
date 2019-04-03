@@ -1,7 +1,7 @@
 ---
 title: "An Invitation to Active Learning"
 date: "2019-04-03"
-preview_image: "/images/editor_uploads/2018-02-08-170315-ff_logo_white_bg.png"
+preview_image: "/images/editor_uploads/2019-04-04-171937-uncertainty_sampling_observable_fast.gif"
 feature: false
 published: true
 author_link: "https://twitter.com/_cjwallace"
