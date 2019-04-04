@@ -430,3 +430,7 @@
     url: 'https://docs.google.com/presentation/d/17NoJY2SnC2UMbVegaRCWA7Oca7UCZ3vHnMqBV4SUayc/edit?usp=embed_facebook'
     text: 'Writing Code for NLP Research'
     image: 'https://lh5.googleusercontent.com/ZW5WLvHxHrEqiFIYHUYxc4nmugHnRHpm_n-BPHkuR9ak5Ieikb0lAusiov85yvFqtbIyqw=w1200-h630-p'
+-
+    url: 'https://hanxiao.github.io/2019/01/02/Serving-Google-BERT-in-Production-using-Tensorflow-and-ZeroMQ/'
+    text: 'Serving Google BERT in Production using Tensorflow and ZeroMQ'
+    image: 'https://hanxiao.github.io/2019/01/02/Serving-Google-BERT-in-Production-using-Tensorflow-and-ZeroMQ//bert-as-service-architecture.png'
