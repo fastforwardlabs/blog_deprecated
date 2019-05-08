@@ -1,0 +1,25 @@
+---
+title: "Do you see what I see? Visualizing higher order categories in neural networks"
+date: "2019-03-29 16:05 -0400"
+preview_image: "/images/2019/03/Activation_atlases-1551983981470.png"
+feature: false
+published: true
+author: "Alice"
+author_link: "https://twitter.com/AliceAlbrecht"
+post_type: "Newsletter"
+---
+
+Google and OpenAI have recently released a jointly developed tool to visualize the activation of neurons in an artificial neural network. They have coined the output of this tool “activation atlases.” (For reference, see: [Google AI Blog: Exploring Neural Networks with Activation Atlases](https://ai.googleblog.com/2019/03/exploring-neural-networks.html), and [Activation Atlas](https://distill.pub/2019/activation-atlas/).) 
+
+Typical convolutional neural networks used in image classification are made up of different layers of artificial neurons that build on each other. This tool furthers previous work ([Feature Visualization](https://distill.pub/2017/feature-visualization/)) that overlaid activation grids on images to illustrate which features the model was picking up on at various layers of the network. 
+
+Instead of examining a single image at a time, these activation atlases draw information from a randomly selected locations within 1 million images and average the attributes coming from each of those locations. These averaged attributes are then projected into a 2-dimensional space where similar attributes are located near each other. This illustrates which categories (rather than individual features) are represented. These are at a higher level (conceptually) than individual features. This work adds to an increasing body of work that allows deeper insight into how neural networks work, and makes them more interpretable.
+
+![](/images/2019/03/Activation_atlases-1551983981470.png)
+##### Image taken from the [OpenAI Blog](https://distill.pub/2019/activation-atlas/)
+
+While this release allows much needed transparency into how neural networks represent information, it also raises an interesting question about how we think about artificial neural networks. It’s tempting to look at these activation atlases and see hope that these models are able to represent information in a way that’s similar to the way the human brain processes images (to be clear, the authors of this work do _not_ draw that conclusion). However, the similarities between artificial and human neural networks are slim, and the evolution from visualizing features to visualizing categories will necessarily have to end there; we won’t be able to infer higher-level information from these images this way (for example, whether something in an image is funny or surprising) given the way neural networks are currently structured.
+
+We know that the human visual cortex encodes individual features and that information flows to other cortical areas that encode information about object categories, but the ways in which that information is transmitted is very different in human cortex than it is in silico.  Human brains have many different types of connections that aren’t accounted for in today’s artificial neural networks. (For instance, human brains contain lateral connections between neurons in the same layer, both local and long-range connections.)
+
+As neural networks gain broader use, and we start to see human-understandable outputs of different layers of these networks, it’s tempting to believe that we’re getting closer to replicating something as complicated as human perception. We caution, however, that without a big shift in the way neural networks are designed, we’re unlikely to see progress in real human-like artificial intelligence until the complexity of the human brain is fully considered in our models. That said, this work is a great addition to the current body of work on making machine learning models more interpretable.
