@@ -9,7 +9,7 @@ post_type: "Featured Post"
 ---
 
 [Active learning](https://blog.fastforwardlabs.com/2019/04/02/a-guide-to-learning-with-limited-labeled-data.html)
-allows us to be smart about picking the right set of data for which to create labels. Done properly, this approach results in models that are trained on less data
+allows us to be smart about picking the right set of datapoints for which to create labels. Done properly, this approach results in models that are trained on less data
 performing comparatively to models trained on much more data. In the world of meta-learning, we do not focus on label acquisition; rather, we attempt to build a
 machine that learns quickly from a small number of training data.
 
@@ -35,8 +35,7 @@ define a meta-learner. Its job is to show many different combinations of any
 two classes, each with three examples, to the learner.
 
 In contrast to regular deep learning, where training data is one large labeled
-dataset split into batches, the training data for meta-learning consists of
-_sets_ of data. First we need a set of examples, or a _support set_. This
+dataset split into batches, the training data for meta-learning is in the form of _sets_. First we need a set of examples, or a _support set_. This
 consists of a couple of images belonging to a subset of classes. Going back to
 our example, a support set could be comprised of three images of cats and three images of
 bears. We also need to specify images that we would like to classify; they form
@@ -48,18 +47,18 @@ target set correctly, episode by episode.
 
 ![Meta-learning datasets](/images/2019/05/fig1-1558038180094.png)
 
-Papers in this field often use the notation of K and N, where K represents the
-number of opportunities the fast learner is given to learn, and N is the number
-classes it is required to be able to classify each time. Our running example,
-with N=2 and K=3, illustrates a two-way three-shot (n-way, k-shot) meta-learning setting.
+Papers in this field often use the notation of _k_ and _N_, where _k_ represents the
+number of opportunities the fast learner is given to learn, and _N_ represents the number of
+classes it is required to be able to classify. Our running example,
+with _N=2_ and _k=3_, illustrates a two-way three-shot (N-way, k-shot) meta-learning setting.
 
 Astute readers will notice that while our goal is to train a model to classify four
 classes (cat, bear, fish, and bird), each training episode only consist of two
 classes. This is a feature of meta-learning. The training procedure for meta-learning, first proposed by [Oriol Vinyals in his seminal paper on matching
 networks](https://arxiv.org/abs/1606.04080) is based on the principle that testing
 and training conditions must match. We do not show all classes to the fast learner
-at once because we expect the model to predict correctly when shown a couple of
-images from a small number of classes _during inference_. In addition, not all
+at once because we expect the model to predict correctly (during inference) when shown a couple of
+images from a small number of classes. In addition, not all
 classes are used as training data. In our example, we might just use three classes,
 and expect the model to be able to make predictions accurately about the final
 class. Meta-learners can do that because they are trained to be able to
@@ -79,17 +78,17 @@ label. This is the idea behind similarity-based approaches. To classify a new
 (target) image based on the examples available (the support set), first find its
 closest image from the examples, then use that image's label as a prediction. In
 matching networks, images are represented by their embeddings, and distance
-between images are simply cosine distance between image embeddings. Embeddings,
+between images is simply cosine distance between image embeddings. Embeddings,
 which we discussed in the context of languages in our ["Summarization" and "Semantic
 Recommendations"
 reports](https://www.cloudera.com/products/fast-forward-labs-research/fast-forward-labs-research-reports.html),
 are rich numerical representations of text that a computer can understand. For
 images, embeddings can be thought of as a group of features (lines, edges) that
 richly represent images. The goal of the matching networks approach, then, is to
-converge to embeddings that will result in the following: target images being
+converge to embeddings that will result in the following: target image being
 closest to the support set image with the correct label.
 
-When an image in the target class belongs to a new unseen class, the matching
+When an image in the target set belongs to a new unseen class, the matching
 network model treats it like any other image. It links the new image to the
 closest image in the support set, and uses that image's label as a
 prediction. The matching network works with new and unseen classes!
