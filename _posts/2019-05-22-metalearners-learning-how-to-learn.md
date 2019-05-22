@@ -29,7 +29,7 @@ level slowly pulls and digests information across all tasks.
 
 Let's use a concrete example: our goal is to train a model to classify images
 into four classes (cat, bear, fish. and bird), where each class only has a small
-number of labeled data. To do so, we first define a learner whose task is to
+number of labeled datapoints. To do so, we first define a learner whose task is to
 predict one out of two classes when given three examples of each class. We then
 define a meta-learner. Its job is to show many different combinations of any
 two classes, each with three examples, to the learner.
@@ -113,10 +113,10 @@ representation is one that is broadly suitable for many tasks. Small tweaks to
 this representation will produce a model that works well for new tasks. These
 tweaks are usually performed under the framework of [transfer
 learning](https://blog.fastforwardlabs.com/2018/09/17/deep-learning-is-easy-an-introduction-to-transfer-learning.html). Training
-the network using a small number of new data while only adjusting weights at the
+the network using a small number of new datapoints while only adjusting weights at the
 final layers is an example of a feature extraction using transfer
 learning. Larger tweaks, where the entire model (or parameters) are re-trained
-using new data is also possible, and is known as fine-tuning.
+using new datapoints is also possible, and is known as fine-tuning.
 
 But where does this magical internal representation come from? In transfer
 learning, it is a pre-trained neural network from another task which has ample
