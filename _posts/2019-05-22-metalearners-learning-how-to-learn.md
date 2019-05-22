@@ -42,7 +42,7 @@ our example, a support set could be comprised of three images of cats and three 
 bears. We also need to specify images that we would like to classify; they form
 a _target set_. In our example, a target set would be a set of images of cats or
 bears. Together, the support and the target sets form a training episode. The
-meta-learner takes many many episodes and shows them to the learner
+meta-learner takes many many episodes and shows them to the learner,
 episode by episode. The learner's job is to learn to classify the images in the
 target set correctly, episode by episode.
 
