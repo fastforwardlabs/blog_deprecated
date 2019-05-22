@@ -38,7 +38,7 @@ In contrast to regular deep learning, where training data is one large labeled
 dataset split into batches, the training data for meta-learning consists of
 _sets_ of data. First we need a set of examples, or a _support set_. This
 consists of a couple of images belonging to a subset of classes. Going back to
-our example, a support set could be comprises of three images of cats and three images of
+our example, a support set could be comprised of three images of cats and three images of
 bears. We also need to specify images that we would like to classify; they form
 a _target set_. In our example, a target set would be a set of images of cats or
 bears. Together, the support and the target sets form a training episode. The
