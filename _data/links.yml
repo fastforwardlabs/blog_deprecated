@@ -442,3 +442,7 @@
     url: 'https://www.technologyreview.com/s/612768/we-analyzed-16625-papers-to-figure-out-where-ai-is-headed-next/'
     text: 'We analyzed 16,625 papers to figure out where AI is headed next'
     image: 'https://cdn.technologyreview.com/i/images/mit-deep-learning-final.jpg?cx=0&cy=56&cw=2760&ch=1552&sw1200'
+-
+    url: 'https://blog.revolutionanalytics.com/2019/03/real-time-scoring-with-r.html'
+    text: 'An architecture for real-time scoring with R'
+    image: 'https://revolution-computing.typepad.com/.a/6a010534b1db25970b0240a44090ed200c-600wi'
