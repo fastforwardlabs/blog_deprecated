@@ -450,3 +450,7 @@
     url: 'https://www.engadget.com/2019/04/19/facebook-ai-game-characters-from-video/'
     text: 'Facebook AI turns real people into controllable game characters'
     image: 'https://o.aolcdn.com/images/dims?thumbnail=1200%2C630&quality=80ℑuri=https%3A%2F%2Fo.aolcdn.com%2Fimages%2Fdims%3Fcrop%3D2086%252C1113%252C0%252C0%26quality%3D85%26format%3Djpg%26resize%3D1600%252C854%26image_uri%3Dhttps%253A%252F%252Fs.yimg.com%252Fos%252Fcreatr-uploaded-images%252F2019-04%252F71266840-627c-11e9-bff7-2b7dade976cf%26client%3Da1acac3e1b3290917d92%26signature%3D2ee269f38e7132033d4505d10fe9535b6cb1edaf&client=amp-blogside-v2&signature=460447df07476b3b5d2e86807813136f9a43f2e3'
+-
+    url: 'https://arxiv.org/abs/1904.12848v1'
+    text: 'Unsupervised Data Augmentation'
+    image: 'https://static.arxiv.org/static/browse/0.2.3/images/icons/social/bibsonomy.png'
