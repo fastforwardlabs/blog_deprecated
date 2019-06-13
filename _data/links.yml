@@ -466,3 +466,7 @@
     url: 'https://arxiv.org/abs/1904.12901v1'
     text: 'Challenges of Real-World Reinforcement Learning'
     image: 'https://static.arxiv.org/static/browse/0.2.3/images/icons/social/bibsonomy.png'
+-
+    url: 'https://freedom-to-tinker.com/2019/03/25/ai-ethics-seven-traps/'
+    text: 'AI Ethics: Seven Traps'
+    image: 'https://freedom-to-tinker.s3.amazonaws.com/CITP_sponsor_logo-200-wide.png'
