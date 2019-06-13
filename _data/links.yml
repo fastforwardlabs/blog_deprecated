@@ -454,3 +454,7 @@
     url: 'https://arxiv.org/abs/1904.12848v1'
     text: 'Unsupervised Data Augmentation'
     image: 'https://static.arxiv.org/static/browse/0.2.3/images/icons/social/bibsonomy.png'
+-
+    url: 'http://social.techcrunch.com/2019/05/02/microsoft-launches-a-drag-and-drop-machine-learning-tool-and-hosted-jupyter-notebooks/'
+    text: 'Microsoft launches a drag-and-drop machine learning tool – TechCrunch'
+    image: 'https://techcrunch.com/wp-content/uploads/2019/05/GettyImages-675949746.jpg?w=600'
