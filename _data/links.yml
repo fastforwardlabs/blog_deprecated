@@ -470,3 +470,7 @@
     url: 'https://freedom-to-tinker.com/2019/03/25/ai-ethics-seven-traps/'
     text: 'AI Ethics: Seven Traps'
     image: 'https://freedom-to-tinker.s3.amazonaws.com/CITP_sponsor_logo-200-wide.png'
+-
+    url: 'https://www.zdnet.com/article/googles-distributed-computing-for-dummies-trains-restnet-50-in-half-an-hour/'
+    text: 'Google''s distributed computing for dummies trains ResNet-50 in under half an hour | ZDNet'
+    image: 'https://zdnet1.cbsistatic.com/hub/i/r/2019/03/08/ac840f2b-771f-4756-9807-8520c51a4e86/thumbnail/770x578/ac0732a65aed3f960165f5ea8f78a23c/google-tf-replicator-patterns-2019.png'
