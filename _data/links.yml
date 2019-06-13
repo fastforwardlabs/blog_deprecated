@@ -458,3 +458,7 @@
     url: 'http://social.techcrunch.com/2019/05/02/microsoft-launches-a-drag-and-drop-machine-learning-tool-and-hosted-jupyter-notebooks/'
     text: 'Microsoft launches a drag-and-drop machine learning tool – TechCrunch'
     image: 'https://techcrunch.com/wp-content/uploads/2019/05/GettyImages-675949746.jpg?w=600'
+-
+    url: 'http://karpathy.github.io/2019/04/25/recipe/'
+    text: 'A Recipe for Training Neural Networks'
+    image: null
