@@ -462,3 +462,7 @@
     url: 'http://karpathy.github.io/2019/04/25/recipe/'
     text: 'A Recipe for Training Neural Networks'
     image: null
+-
+    url: 'https://arxiv.org/abs/1904.12901v1'
+    text: 'Challenges of Real-World Reinforcement Learning'
+    image: 'https://static.arxiv.org/static/browse/0.2.3/images/icons/social/bibsonomy.png'
