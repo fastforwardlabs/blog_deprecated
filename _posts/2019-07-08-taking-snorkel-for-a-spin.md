@@ -2,8 +2,10 @@
 title: "Taking Snorkel for a spin"
 date: "2019-07-08 17:07 -0400"
 preview_image: "/images/2019/07/snorkel_overview-1562618731259.png"
-feature: false
-published: false
+feature: true
+published: true
+author: "Shioulin and Nisha"
+post_type: "Featured Post"
 ---
 
 Active learning, which we explored in our [report on _Learning with Limited                 
