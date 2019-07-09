@@ -4,6 +4,7 @@ date: "2019-07-08 17:07 -0400"
 preview_image: "/images/2019/07/snorkel_overview-1562618731259.png"
 feature: false
 published: false
+author: "Shioulin and Nisha"
 ---
 
 Active learning, which we explored in our [report on _Learning with Limited
@@ -139,7 +140,7 @@ probabilistic labels sounds very appealing. Instead of just reading about the
 approach, we used Snorkel to build a complaint classifier using data from
 [Consumer Financial Protection
 Bureau](https://www.consumerfinance.gov/data-research/consumer-complaints/). See
-our experiments [fixme: link to experiments page] for details.
+our [notebook](https://experiments.fastforwardlabs.com/) for details.
 
 ### Practical Considerations
 
