@@ -8,7 +8,7 @@ author: "Seth"
 author_link: "https://twitter.com/shendrickson16"
 ---
 
-##### We'll be discussing this research as part of our virtual event on Wednesday, July 24th at 10:00am PT (1:00pm ET). [Register for the event here.](https://www.cloudera.com/about/events/webinars/cffl-virtual-event-7-2019.html?utm_medium=web&utm_source=fflblog)
+##### We'll be discussing this research as part of our virtual event on Wednesday, July 24th at 10:00am PT (1:00pm ET). [Register for the event here.](https://www.cloudera.com/about/events/webinars/cffl-virtual-event-7-2019.html?utm_source=blog&utm_medium=organic&utm_term=ml&utm_campaign=FFL_Showcase_Organic_AMER_Webinar_2019-07-24&cid=7012H000001l3VK&utm_content=FFL)
 
 ![](/images/editor_uploads/2019-07-18-191317-image1.png)
 
