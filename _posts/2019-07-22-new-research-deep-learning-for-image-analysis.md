@@ -23,9 +23,9 @@ In our upcoming report, we cover a variety of practical considerations relevant 
 ### Prototype
 
 ![](/images/editor_uploads/2019-07-27-190524-convnetplayground.gif)
-##### ConvNet Playground is an interactive visualization for exploring Convolutional Neural Networks applied to the task of semantic image search. 
+##### [ConvNet Playground](https://convnetplayground.fastforwardlabs.com/#/) is an interactive visualization for exploring Convolutional Neural Networks applied to the task of semantic image search. 
 
-Along with this report, we have created a prototype - Convnet Playground - an interactive visualization for exploring Convolutional Neural Networks, applied to the task of semantic image search. The prototype allows users to select search configurations (datasets, models, layers, distance metrics) and interactively explore how these impact search query performance.  It allows users to ask questions such as: How does semantic search (with pretrained models) perform for given datasets? How well does each model/layer configuration capture “semantic meaning” for a given dataset? For a given search query, how does search performance compare for each model/layer configuration? What type of features/patterns are detected by various layers in a pretrained model?  
+Along with this report, we have created a prototype - [ConvNet Playground](https://convnetplayground.fastforwardlabs.com/#/) - an interactive visualization for exploring Convolutional Neural Networks, applied to the task of semantic image search. The prototype allows users to select search configurations (datasets, models, layers, distance metrics) and interactively explore how these impact search query performance.  It allows users to ask questions such as: How does semantic search (with pretrained models) perform for given datasets? How well does each model/layer configuration capture “semantic meaning” for a given dataset? For a given search query, how does search performance compare for each model/layer configuration? What type of features/patterns are detected by various layers in a pretrained model?  
 
 The  approach in this prototype is implemented in two stages (i.) we extract features from all images in our datasets using a pre-trained CNN (think VGG16, InceptionV3, etc. pre-trained on imageNet) (ii.) We compute similarity as a measure of the distance between these features.
 
@@ -35,4 +35,4 @@ The  approach in this prototype is implemented in two stages (i.) we extract fea
 
 
 
-Interested in exploring this prototype and learning more about other recent advances in deep learning for image analysis? We discussed this research as part of our virtual event on Wednesday, July 24th; you can watch the replay [here](https://www.cloudera.com/content/dam/www/marketing/resources/webinars/advancing-ml-with-deep-learning-and-transfer-learning.landing.html?utm_source=blog&utm_medium=organic&utm_term=ml&utm_campaign=FFL_Showcase_Recording_AMER_Webinar_2019&cid=7012H000001l3cz)!
+Interested in a walkthrough of this prototype and learning more about other recent advances in deep learning for image analysis? We discussed this research as part of our virtual event on Wednesday, July 24th; you can watch the replay [here](https://www.cloudera.com/content/dam/www/marketing/resources/webinars/advancing-ml-with-deep-learning-and-transfer-learning.landing.html?utm_source=blog&utm_medium=organic&utm_term=ml&utm_campaign=FFL_Showcase_Recording_AMER_Webinar_2019&cid=7012H000001l3cz)!
