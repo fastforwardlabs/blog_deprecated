@@ -27,6 +27,8 @@ In our upcoming report, we cover a variety of practical considerations relevant 
 
 Along with this report, we have created a prototype - Convnet Playground - an interactive visualization for exploring Convolutional Neural Networks, applied to the task of semantic image search. The prototype allows users to select search configurations (datasets, models, layers, distance metrics) and interactively explore how these impact search query performance.  It allows users to ask questions such as: How does semantic search (with pretrained models) perform for given datasets? How well does each model/layer configuration capture “semantic meaning” for a given dataset? For a given search query, how does search performance compare for each model/layer configuration? What type of features/patterns are detected by various layers in a pretrained model?  
 
+The  approach in this prototype is implemented in two stages (i.) we extract features from all images in our datasets using a pre-trained CNN (think VGG16, InceptionV3, etc. pre-trained on imageNet) (ii.) We compute similarity as a measure of the distance between these features.
+
 ![](/images/editor_uploads/2019-07-32-121714-semanticsmall.png)
 
 ##### To implement semantic search, we start by extracting features from images in our dataset using pre-trained CNN models. Similarity is computed as the distance between these features.
