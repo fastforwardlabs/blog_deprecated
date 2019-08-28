@@ -4,9 +4,9 @@ date: "Mon Jul 21 2014 12:01:01 GMT-0400 (Eastern Daylight Time)"
 preview_image: "http://fastforwardlabs.github.io/resources/images/logos/ff-logo-white-bg.png"
 feature: false
 published: true
-author: "Alice"
-author_link: "https://twitter.com/AliceAlbrecht"
-post_type: "Newsletter"
+author: "Hilary"
+author_link: "https://twitter.com/hmason"
+post_type: "Post"
 tags: announcement
 layout: post
 redirect_from: /post/92438955263/hello-fast-forward-labs
