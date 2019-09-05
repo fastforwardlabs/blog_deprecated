@@ -70,6 +70,8 @@ There are a number of pretrained models available for download. Google has relea
 
 To test and demonstrate this training strategy, we built Textflix, a prototype of a social network for movie watchers. Texflix incorporates automatic sentiment analysis to help users understand which movies are popular and why. 
 
+![](/images/editor_uploads/2019-09-06-215600-textflix_sample.png)
+
 While the dataset we used to build the model behind Textflix had up to 50,000 labeled training examples available, we tested the system with varying-sized subsamples of the dataset down to as few as ten examples. We did this because we wanted to understand how different models, including transfer learning models, would perform with limited data. After all, in real-world problems there is often little or no labeled data available.
 
 To explore how dataset size affects performance, we tested models fine tuned with subsamples of the examples in the dataset to get performance curves for a variety of models.
