@@ -51,22 +51,22 @@ The good news is that as with all good science, experiments often lead to result
 
   * *IT* is one of the ML/AI team's customers. Data Scientists are building an application which has to work in the managed ecosystem provided by IT. If an ML application isn't designed to work in this environment, or is challenging to work with, it will be difficult to convince IT to properly deploy, scale and maintain the application, once the ML/AI team is no longer involved.    
 
--- *ML/AI Team(s)* are conversely the IT team's customer. ML practitioners need a stable, flexible and powerful development environment, delivered in an experience that doesn't negatively impact the research and ML application development process.
+  * *ML/AI Team(s)* are conversely the IT team's customer. ML practitioners need a stable, flexible and powerful development environment, delivered in an experience that doesn't negatively impact the research and ML application development process.
 
--- *Lines of BusinessOwners/Data Consumers* are the customer of both IT and the ML/AI team(s). It's not enough to provide an interface and "good news;" LoB owners and consumers need to deeply understand the product side of any production ML application as well as the data products that support them.
+  * *Lines of BusinessOwners/Data Consumers* are the customer of both IT and the ML/AI team(s). It's not enough to provide an interface and "good news;" LoB owners and consumers need to deeply understand the product side of any production ML application as well as the data products that support them.
 
--- *End Users* are the traditional customers of most applications, and ultimately are everyone’s responsibility. That said, core principles that inform world-class customer engagement, customer success, and application performance management serve as a useful north-start for how to support end users. 
+  * *End Users* are the traditional customers of most applications, and ultimately are everyone’s responsibility. That said, core principles that inform world-class customer engagement, customer success, and application performance management serve as a useful north-start for how to support end users. 
 
 * Take a [portfolio](https://www.thisismetis.com/blog/demystifying-data-science-recap-breaking-down-hilary-mason-keynote) approach to selecting which data products to pursue. Not all enterprise use cases are created equal, and not every great idea is actually possible to execute in practice. To address the challenges of data product development mentioned above, we find that successful organizations consider these approaches. 
 
--- *Data:* Enterprise Data Management excellence is a critical organizational competency that all enterprises should develop and sustain. We like to think of it as the base of the ML/AI "hierarchy of needs" shown below. Many organizations already have a strong technology and skills foundation in data management.  It’s important that leaders realize that this capability is central to success in enabling ML outcomes, and continue to invest in it.
+  * *Data:* Enterprise Data Management excellence is a critical organizational competency that all enterprises should develop and sustain. We like to think of it as the base of the ML/AI "hierarchy of needs" shown below. Many organizations already have a strong technology and skills foundation in data management.  It’s important that leaders realize that this capability is central to success in enabling ML outcomes, and continue to invest in it.
 
 ![](/images/editor_uploads/2019-09-12-195844-AI_Pyramid.png)
 
 
--- *Skills:* If your data organization is just getting started, your first hires might need to be a bit more flexible and versatile (data scientists will need big data and some full stack application engineering skills). This means that you might have to invest more in early hires, but that your organization will likely get by with fewer of them. As you continue along the ML/AI industrialization journey, more specialized functions and skill sets will likely emerge (i.e., distinct research, applied ML, Data/ML engineering, and MLOps teams).
+  * *Skills:* If your data organization is just getting started, your first hires might need to be a bit more flexible and versatile (data scientists will need big data and some full stack application engineering skills). This means that you might have to invest more in early hires, but that your organization will likely get by with fewer of them. As you continue along the ML/AI industrialization journey, more specialized functions and skill sets will likely emerge (i.e., distinct research, applied ML, Data/ML engineering, and MLOps teams).
 
--- *Conditions*: Sponsorship, investment, and strategic alignment should come from the top - and domain experience, innovation, and enterprise management from the bottom. It takes deliberate organizational patience to enable long-term ML/AI success in the enterprise.  
+  * *Conditions*: Sponsorship, investment, and strategic alignment should come from the top - and domain experience, innovation, and enterprise management from the bottom. It takes deliberate organizational patience to enable long-term ML/AI success in the enterprise.  
 
 When considering the total cost of ownership for an ML capability, leaders and development teams alike should estimate data ingest, storage, and access requirements, and revise those estimates throughout the project lifecycle.
 
