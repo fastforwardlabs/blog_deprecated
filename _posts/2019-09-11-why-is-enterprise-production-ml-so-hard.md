@@ -1,9 +1,12 @@
 ---
 title: "Why is (Enterprise) Production ML so hard"
 date: "2019-09-11 15:09 -0400"
-preview_image: "/images/editor_uploads/2019-09-12-195844-AI_Pyramid.png)"
+preview_image: "/images/editor_uploads/2019-09-12-195844-AI_Pyramid.png"
 feature: false
 published: false
+author: "Justin"
+author_link: "https://twitter.com/JustinJDN"
+post_type: "Post"
 ---
 
 At Fast Forward Labs, we've spent a lot of time thinking and writing about technical breakthroughs and new research that enables Production Machine Learning (ML) and Artificial Intelligence (AI), as well as advising customers on when and where to invest, in order to accelerate their respective enterprise ML journeys. Through that work, we've learned that many organizations don't focus on addressing the underlying causes of the challenges they face when industrializing ML capabilities.
@@ -59,7 +62,7 @@ The good news is that as with all good science, experiments often lead to result
 -- *Data:* Enterprise Data Management excellence is a critical organizational competency that all enterprises should develop and sustain. We like to think of it as the base of the ML/AI "hierarchy of needs" shown below. Many organizations already have a strong technology and skills foundation in data management.  It’s important that leaders realize that this capability is central to success in enabling ML outcomes, and continue to invest in it.
 
 ![](/images/editor_uploads/2019-09-12-195844-AI_Pyramid.png)
-##### AI Pyramid
+
 
 -- *Skills:* If your data organization is just getting started, your first hires might need to be a bit more flexible and versatile (data scientists will need big data and some full stack application engineering skills). This means that you might have to invest more in early hires, but that your organization will likely get by with fewer of them. As you continue along the ML/AI industrialization journey, more specialized functions and skill sets will likely emerge (i.e., distinct research, applied ML, Data/ML engineering, and MLOps teams).
 
