@@ -49,7 +49,7 @@ The good news is that as with all good science, experiments often lead to result
 
 * Perform frequent architecture reviews and treat everyone as "customers" in the conversation.
 
--- *IT* is one of the ML/AI team's customers. Data Scientists are building an application which has to work in the managed ecosystem provided by IT. If an ML application isn't designed to work in this environment, or is challenging to work with, it will be difficult to convince IT to properly deploy, scale and maintain the application, once the ML/AI team is no longer involved.    
+  * *IT* is one of the ML/AI team's customers. Data Scientists are building an application which has to work in the managed ecosystem provided by IT. If an ML application isn't designed to work in this environment, or is challenging to work with, it will be difficult to convince IT to properly deploy, scale and maintain the application, once the ML/AI team is no longer involved.    
 
 -- *ML/AI Team(s)* are conversely the IT team's customer. ML practitioners need a stable, flexible and powerful development environment, delivered in an experience that doesn't negatively impact the research and ML application development process.
 
