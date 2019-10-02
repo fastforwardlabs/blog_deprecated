@@ -1,7 +1,7 @@
 ---
 title: "Theories of (machine) learning should shape horizon scanning - not just application"
 date: "2019-09-27 14:10 -0400"
-preview_image: "![](/images/editor_uploads/2019-10-03-190806-kristin_charleton_RvA4hzyaW7k_unsplash.jpg)"
+preview_image: "/images/editor_uploads/2019-10-03-190806-kristin_charleton_RvA4hzyaW7k_unsplash.jpg"
 feature: false
 published: true
 author: "Ade"
