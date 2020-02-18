@@ -8,6 +8,8 @@ author: "Nisha and Victor"
 post_type: "Featured Post"
 ---
 
+*The full Deep Learning for Anomaly Detection report [is now available](https://ff12.fastforwardlabs.com).*
+
 In recent years, we have seen an unprecedented increase in the availability of data in a variety of domains: manufacturing, health care, finance, IT, and others. Applications leverage this data to make informed decisions. This comes with its own set of challenges (and opportunities) when things start to fail; for instance, what happens when a piece of equipment fails or a network suffers from a security vulnerability? Companies may lose customers, or fixing things could take a while (which in turn adds to the costs). In short, everything from the organization's bottom line to its reputation are at stake.
 
 But what if we had the ability to reliably detect or identify when something goes wrong? This is the premise of anomaly detection, and the subject of our latest report.
