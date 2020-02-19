@@ -5,10 +5,16 @@ preview_image: "/images/2020/02/ill-13.png"
 feature: true
 published: true
 author: "Nisha and Victor"
+author_link: "http://www.linkedin.com/in/melanierbeck"
 post_type: "Featured Post"
 ---
 
-*The full Deep Learning for Anomaly Detection report [is now available](https://ff12.fastforwardlabs.com).*
+*The full **Deep Learning for Anomaly Detection** report [is now available](https://ff12.fastforwardlabs.com).* 
+
+*You can also catch a replay of the webinar we reference below on demand [here](https://www.cloudera.com/about/events/webinars/deep-learning-for-anomaly-detection.html?utm_medium=cldr-properties&utm_source=blog&keyplay=ml&utm_campaign=FY21-Q1_CW_AMER_Webinar_2020-02-13%0A&cid=7012H000001OYfQ).*
+
+---
+
 
 In recent years, we have seen an unprecedented increase in the availability of data in a variety of domains: manufacturing, health care, finance, IT, and others. Applications leverage this data to make informed decisions. This comes with its own set of challenges (and opportunities) when things start to fail; for instance, what happens when a piece of equipment fails or a network suffers from a security vulnerability? Companies may lose customers, or fixing things could take a while (which in turn adds to the costs). In short, everything from the organization's bottom line to its reputation are at stake.
 
