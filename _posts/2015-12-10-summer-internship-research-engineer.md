@@ -1,13 +1,12 @@
 ---
-title: 'Summer Internship: Research Engineer'
-date: 2015-12-10 16:58:36 Z
-tags:
-- announcement
-- internship
+title: "Summer Internship: Research Engineer"
+date: "Thu Dec 10 2015 11:58:36 GMT-0500 (Eastern Standard Time)"
+preview_image: "http://fastforwardlabs.github.io/report_images/ff02/18.png"
+feature: false
+published: false
+tags: announcement,internship
 layout: post
-redirect_from:
-  - /post/134926967273/summer-internship-research-engineer
-preview_image: http://fastforwardlabs.github.io/report_images/ff02/18.png
+redirect_from: /post/134926967273/summer-internship-research-engineer
 ---
 
 <p>We’re excited to announce a summer internship opportunity, which is open to current undergraduate and graduate students. To apply, send your resume and cover letter to jobs@fastforwardlabs.com. </p><p>Keep reading for details on responsibilities, qualifications, and perks. </p>
