@@ -1,14 +1,12 @@
 ---
-title: NextView Ventures Podcast
-date: 2015-12-15 21:15:34 Z
-tags:
-- interview
-- podcast
-- data science
+title: "NextView Ventures Podcast"
+date: "Tue Dec 15 2015 16:15:34 GMT-0500 (Eastern Standard Time)"
+preview_image: "http://68.media.tumblr.com/2a7557828a723a63971bd2f90412bbf0/tumblr_inline_nzf49uMo1i1ta78fg_540.png"
+feature: false
+published: true
+tags: interview,podcast,data science
 layout: post
-redirect_from:
-  - /post/135272766678/nextview-ventures-podcast
-preview_image: http://68.media.tumblr.com/2a7557828a723a63971bd2f90412bbf0/tumblr_inline_nzf49uMo1i1ta78fg_540.png
+redirect_from: /post/135272766678/nextview-ventures-podcast
 ---
 
 <figure class="tmblr-full" data-orig-height="324" data-orig-width="333"><img src="http://68.media.tumblr.com/2a7557828a723a63971bd2f90412bbf0/tumblr_inline_nzf49uMo1i1ta78fg_540.png" data-orig-height="324" data-orig-width="333"/></figure>
@@ -29,4 +27,4 @@ preview_image: http://68.media.tumblr.com/2a7557828a723a63971bd2f90412bbf0/tumbl
 
 > The most important lesson Hilary has learned of late is how important it is to <b>understand the history and evolution of different technologies</b>. Contemporary programming environments are abstractions upon abstractions that can generate bizarre behavior when they hit edge cases. It’s important to grasp some of the historical quirks to resolve coding challenges.
 
-<p>Listen to the entire podcast here: <a href="https://soundcloud.com/nextview/15-skype-side-chat-on-data-science-inventing-the-future-hilary-mason-fast-forward-labs">https://soundcloud.com/nextview/15-skype-side-chat-on-data-science-inventing-the-future-hilary-mason-fast-forward-labs</a></p>
+<p>Listen to the entire podcast [here](href="https://soundcloud.com/nextview/15-skype-side-chat-on-data-science-inventing-the-future-hilary-mason-fast-forward-labs).
