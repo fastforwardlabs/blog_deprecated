@@ -1,15 +1,14 @@
 ---
-title: 'Fall Internships: Research Engineering and Prototype + Data Visualization
-  [Filled]'
-date: 2016-07-25 17:30:43 Z
-tags:
-- announcement
-- internship
+title: "Fall Internships: Research Engineering and Prototype + Data Visualization
+[Filled]"
+date: "Mon Jul 25 2016 13:30:43 GMT-0400 (Eastern Daylight Time)"
+preview_image: "https://images.pexels.com/photos/187041/pexels-photo-187041.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb"
+feature: false
+published: false
+tags: announcement,internship
 layout: post
-redirect_from:
-  - /post/147953672348/fall-internships-research-engineering-and
-post_type: Announcement
-preview_image: https://images.pexels.com/photos/187041/pexels-photo-187041.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb
+redirect_from: /post/147953672348/fall-internships-research-engineering-and
+post_type: "Announcement"
 ---
 
 **These positions have been filled.** We are not accepting further applications. For announcements of future opportunities, please <a href="http://www.fastforwardlabs.com/#contact">subscribe to our mailing list</a>.
