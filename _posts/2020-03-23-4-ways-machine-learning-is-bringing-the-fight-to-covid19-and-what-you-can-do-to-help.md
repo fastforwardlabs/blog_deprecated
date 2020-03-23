@@ -3,7 +3,7 @@ title: "4 Ways Machine Learning is Bringing the Fight to COVID-19 - and What You
 date: "2020-03-23 13:03 -0400"
 preview_image: "/images/editor_uploads/2020-03-24-015853-Screen_Shot_2020_03_20_at_5_32_17_PM.png"
 feature: true
-published: true
+published: false
 author: "Melanie"
 author_link: "https://www.linkedin.com/in/melanierbeck"
 post_type: "featured post"
