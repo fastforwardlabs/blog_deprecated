@@ -1,7 +1,7 @@
 ---
 title: "Bias in Knowledge Graphs - Part 1"
 date: "2020-04-01 11:04 -0400"
-preview_image: "/images/editor_uploads/2018-02-08-170315-ff_logo_white_bg.png"
+preview_image: "/images/editor_uploads/2020-03-28-150645-balance_2108024_1920.jpg"
 feature: false
 published: true
 author: "Keita"
