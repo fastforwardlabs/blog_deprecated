@@ -1,10 +1,12 @@
 ---
-layout: post
-title: 'Upcoming Talks with our Team'
-date: 2017-02-22 13:15
-preview_image: https://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_630,w_1200/v1/83772/WATF_DataFest_2017-TRANSPARENT_unzk9h.png
-post_type: Announcement
+title: "Upcoming Talks with our Team"
+date: "2017-02-22 13:15"
+preview_image: "https://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_630,w_1200/v1/83772/WATF_DataFest_2017-TRANSPARENT_unzk9h.png"
 feature: false
+published: false
+layout: post
+redirect_from: /post/156046009163/new-research-on-probabilistic-programming
+post_type: "Announcement"
 ---
 
 The Fast Forward Labs team will be traveling the world to give talks in March and April! Please join us and let us know if you'd like to meet one-on-one to discuss all things data science and machine learning at these events. You can reach us at contact@fastforwardlabs.com to schedule a meeting. 
