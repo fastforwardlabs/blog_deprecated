@@ -1,12 +1,14 @@
 ---
-layout: post
 title: "The Business Case for Machine Learning Interpretability"
-date: 2017-08-02 09:00
-preview_image: /images/2017/08/actions.png
-author: Manny
-author_link: "https://twitter.com/mannymoss"
+date: "2017-08-02 09:00"
+preview_image: "/images/2017/08/actions.png"
 feature: false
 published: true
+layout: post
+author: "Manny"
+author_link: "https://twitter.com/mannymoss"
+interview_with: Micha
+interview_with_link: http://github.com/mynameisfiber/
 ---
 
 Last week we launched the latest prototype and report from our machine
@@ -111,19 +113,10 @@ because glaring problems stand out. Having insight into the attributes that are
 likely causing trouble can motivate a theory about how the model works, which
 saves time when tracking down problems.
 
-## How to Access our Reports and Prototypes
+## Conclusion 
 
 The future is algorithmic. White-box models and techniques for making black-box
 models interpretable offer a safer, more productive, and ultimately more
 collaborative relationship between humans and intelligent machines. We are just
 at the beginning of the conversation about interpretability and will see the
 impact over the coming years.
-
-We offer our research on interpretability in a few ways:
-
- - Annual research subscription (for individuals and corporate members)
- - Subscription and advising (research and time with our team)
- - Special projects and workshops (help to build a great data product or
-   strategy)
-
-Email us at <contact@fastforwardlabs.com> if you’d like to learn more!
