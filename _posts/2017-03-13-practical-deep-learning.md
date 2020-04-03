@@ -1,12 +1,14 @@
 ---
-layout: post
 title: "Practical Deep Learning"
-date: 2017-03-13 15:49
-preview_image: /images/2017/03/doc-full-screen.jpg
+date: "2017-03-13 15:49"
+preview_image: "/images/2017/03/doc-full-screen.jpg"
 feature: false
-author: Micha
-author_link: https://github.com/mynameisfiber
+published: true
+layout: post
+redirect_from: /post/156046009163/new-research-on-probabilistic-programming
 post_type: "Talk Slides"
+author: "Micha"
+author_link: "https://github.com/mynameisfiber"
 ---
 
 ![](/images/2017/03/micha-talk-doc.jpg)
@@ -17,4 +19,4 @@ Our research team spent last week in London hosting sessions and workshops about
 
 ![](/images/2017/03/micha-talk-cover.jpg)
 
-You can check out [his slides on his site](http://micha.codes/2017-qcon-deeplearning/#1), and contact us at [contact@fastforwardlabs.com](contact@fastforwardlabs.com) to learn more about our deep learning reports and prototypes!
+You can check out his slides [on his site](http://micha.codes/2017-qcon-deeplearning/#1).
