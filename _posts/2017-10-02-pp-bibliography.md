@@ -1,11 +1,12 @@
 ---
-layout: post
 title: "Probabilistic programming: an annotated bibliography"
-date: 2017-10-02
-preview_image: /images/2017/09/ff05.gif
-author: Mike
-author_link: http://twitter.com/mikepqr
+date: "Sun Oct 01 2017 20:00:00 GMT-0400 (Eastern Daylight Time)"
+preview_image: "/images/2017/09/ff05.gif"
 feature: true
+published: true
+layout: post
+author: "Mike"
+author_link: "http://twitter.com/mikepqr"
 ---
 
 Earlier this year we launched a research report on [probabilistic
@@ -23,9 +24,10 @@ data scientists.
 ![](/images/2017/09/ff05.gif)
 
 If that sounds great to you, and you're looking to learn more, the first thing
-you can do is — [work with us](https://www.fastforwardlabs.com/contact)! We'll
-be glad to walk you discuss our report, relevant use cases in your industry,
-and the next steps to incorporate this approach into your data science work. 
+you can do is — [work with us](https://www.cloudera.com/about/services-and-support/fast-forward-labs.html
+)! We'll
+be glad to discuss our report, relevant use cases in your industry,
+and next steps to incorporate this approach into your data science work. 
 
 But you might also enjoy this list of our favorite resources for learning how
 to do Bayesian inference and build probabilistic programming systems. These are
