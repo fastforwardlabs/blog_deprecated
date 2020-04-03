@@ -1,9 +1,11 @@
 ---
-layout: post
 title: "F⁠ingerprinting documents​ with steganography​"
-date: 2017-06-23 11:50
-preview_image: /images/2017/06/confusables.png
-author: Noam
+date: "2017-06-23 11:50"
+preview_image: "/images/2017/06/confusables.png"
+feature: false
+published: true
+layout: post
+author: "Noam"
 author_link: "https://github.com/n-s-f"
 interview_with: Micha
 interview_with_link: http://github.com/mynameisfiber/
@@ -128,7 +130,7 @@ you​ visit​ spoofed​ urls. Think​ you’re going to www.yahoo.com​ (al
 characters)? Well, you may end up​ at​ ԝԝԝ.𝐲𝖺𝗵օօ.сօⅿ (no​ english​ characters) if
 you’re not​ careful.
 
-H⁠ere’s​ a great​ unicode​
+H⁠ere’s​ a great​ unicode ​
 [resource](http://unicode.org/cldr/utility/confusables.jsp?a=fast+forward+labs&r=None)
 for​ identifying​ confusables.
 
@@ -174,7 +176,7 @@ For example, we​ put​ five branchpoints in​ the following​ to produce a�
   It​ said, ’Be​ sure​ to​ drink your O⁠valtine’. (00010)  
 - Ralphie​ set​ his secret decoder​ ring to “B ”and​ “twelve​ ”to decode​ the​ message.
   It said, “be​ sure​ to drink your Ovaltine”‏‎. (00001)  
-- Ralphie​ set​ his secret decoder ring​ to ’B’ and​ ’12’ to​ decode​ the message. I⁠t​
+- Ralphie​ set​ his secret decoder ring​ to ’B’ and​ ’12’ to​ decode​ the message. I⁠t​ 
   said ’be sure​ to drink your Ovaltine’. (11111)
 
 ## Introducing: S⁠teganos​
