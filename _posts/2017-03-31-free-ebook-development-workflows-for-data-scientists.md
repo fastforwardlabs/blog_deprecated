@@ -1,10 +1,14 @@
---- 
-layout: post
+---
 title: "Free eBook: Development Workflows for Data Scientists"
-date: 2017-03-31 15:30
-preview_image: /images/2017/03/development-workflows-1.jpg
+date: "2017-03-31 15:30"
+preview_image: "/images/2017/03/development-workflows-1.jpg"
 feature: false
-post_type: Announcement
+published: true
+layout: post
+redirect_from: /post/156046009163/new-research-on-probabilistic-programming
+post_type: "Announcement"
+author: "Kathryn"
+author_link: "https://twitter.com/HumeKathryn"
 ---
 
 ![Cover image from Development Workflows for Data Scientists eBook](/images/2017/03/development-workflows-1.jpg)
@@ -15,4 +19,4 @@ With so many data teams looking for guidance, we’re excited to see O’Reilly�
 
 > In data science and machine learning you’re doing so many things before you know what actually works. You can’t just document the working solution. It’s equally valuable to know the dead ends. Otherwise, someone else will take the same approach.
 
-Check out the book, and feel free to contact us at [contact@fastforwardlabs.com](mailto:contact@fastforwardlabs.com) with questions about your own data science processes! 
+Check out the book, and feel free to contact us at [cffl@cloudera.com](mailto:cffl@cloudera.com) with questions about your own data science processes!
