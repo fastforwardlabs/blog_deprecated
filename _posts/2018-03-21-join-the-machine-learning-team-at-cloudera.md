@@ -1,9 +1,9 @@
 ---
-title: Join the Machine Learning Team at Cloudera!
-date: 2018-03-21 11:03 -0400
-preview_image: http://fastforwardlabs.github.io/report_images/ff04/rnn_encoder.png
+title: "Join the Machine Learning Team at Cloudera!"
+date: "2018-03-21 11:03 -0400"
+preview_image: "http://fastforwardlabs.github.io/report_images/ff04/rnn_encoder.png"
 feature: false
-published: true
+published: false
 ---
 
 At Cloudera, we believe that with data we can make what is impossible today possible tomorrow. We are building the modern platform for machine learning and analytics to help our customers solve some of the world’s greatest challenges with data. 
