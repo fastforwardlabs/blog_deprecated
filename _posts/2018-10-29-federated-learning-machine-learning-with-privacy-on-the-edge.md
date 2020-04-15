@@ -36,5 +36,4 @@ The report will be available to corporate subscribers to Cloudera Fast Forward L
 
 And all are welcome to join us on Thursday, November 15 at 10AM PT for a live webinar on "Federated Learning: ML with Privacy on the Edge". Mike Lee Williams of Cloudera Fast Forward Labs will be joined by Andrew Trask (founder of the open source federated learning project OpenMined), Eric Tramel (Senior Research Scientist of healthcare AI startup Owkin), and Virginia Smith (Assistant Professor in Electrical and Computer Engineering at Carnegie Mellon University).
 
-
-[Click here to save your seat!](https://www.cloudera.com/more/events/webinars/federated_learning.html?src=FFL)
+[Click here to watch the webinar!](https://www.cloudera.com/more/events/webinars/federated_learning.html?src=FFL)
