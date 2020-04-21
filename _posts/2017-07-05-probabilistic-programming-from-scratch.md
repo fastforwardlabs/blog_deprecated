@@ -1,17 +1,19 @@
 ---
-layout: post
 title: "Probabilistic programming from scratch"
-date: 2017-07-06 12:00
-preview_image: /images/2017/07/output_30_0.png
-author: Mike
-author_link: "https://twitter.com/mikepqr"
+date: "2017-07-06 12:00"
+preview_image: "/images/2017/07/output_30_0.png"
 feature: true
 published: true
+layout: post
+author: "Mike"
+author_link: "https://twitter.com/mikepqr"
+interview_with: Micha
+interview_with_link: http://github.com/mynameisfiber/
 ---
 
 ##### This article contains highlights from a series of [three interactive video tutorials](https://www.safaribooksonline.com/search/?query=%22Probabilistic%20Programming%20from%20Scratch%22&extended_publisher_data=true&highlight=true&is_academic_institution_account=false&source=user&include_assessments=false&include_courses=true&include_orioles=true&include_playlists=true&publishers=O%27Reilly%20Media%2C%20Inc.&field=title&sort=relevance&utm_source=oreilly&utm_medium=newsite&utm_campaign=probabilistic-programming-from-scratch-top-cta-orioles-link) on probabilistic programming from scratch published on O'Reilly Safari (login required).
 
-##### If you're interested in the business case for probabilistic programming the [Fast Forward Labs report](http://blog.fastforwardlabs.com/2017/01/18/new-research-on-probabilistic-programming.html) discusses it in detail, and compares modern industrial strength systems like Stan and PyMC3. Please [get in touch](http://www.fastforwardlabs.com/#contact) if you're interested in working with us.
+##### If you're interested in the business case for probabilistic programming the [Fast Forward Labs report](http://blog.fastforwardlabs.com/2017/01/18/new-research-on-probabilistic-programming.html) discusses it in detail, and compares modern industrial strength systems like Stan and PyMC3. Please [get in touch](mailto:cffl@cloudera.com) if you're interested in working with us.
 
 ##### This article is [available as a Jupyter Notebook](https://github.com/fastforwardlabs/probabilistic-programming-from-scratch).
 
@@ -267,4 +269,4 @@ Log in to O'Reilly Safari and check out the three tutorials for a deeper video a
  - [Part 2: Bayes' Theorem and Online Learning](https://www.safaribooksonline.com/oriole/probabilistic-programming-from-scratch-2-bayes-theorem-and-online-learning)
  - [Part 3: Improving Algorithmic Performance and PyMC3](https://www.safaribooksonline.com/oriole/probabilistic-programming-from-scratch-3-improving-algorithmic-performance-and-online-learning)
 
-The [Fast Forward Labs report](http://blog.fastforwardlabs.com/2017/01/18/new-research-on-probabilistic-programming.html), meanwhile, discusses the business case for probabilistic programming in detail, and compares modern industrial strength systems like Stan and PyMC3. Please [get in touch](http://www.fastforwardlabs.com/#contact) if you're interested in working with us.
+The [Fast Forward Labs report](http://blog.fastforwardlabs.com/2017/01/18/new-research-on-probabilistic-programming.html), meanwhile, discusses the business case for probabilistic programming in detail, and compares modern industrial strength systems like Stan and PyMC3. Please [get in touch](cffl@cloudera.com) if you're interested in working with us.

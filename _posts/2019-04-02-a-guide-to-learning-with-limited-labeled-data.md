@@ -12,7 +12,7 @@ We are excited to release _Learning with Limited Labeled Data_, the latest repor
 
 Being able to learn with limited labeled data relaxes the stringent labeled data requirement for supervised machine learning. Our report focuses on active learning, a technique that relies on collaboration between machines and humans to label smartly.
 
-Active learning makes it possible to build applications using a small set of labeled data, and enables enterprises to leverage their large pools of unlabeled data. In this blog post, we explore how active learning works. (For a higher level introduction, please see [our previous blogpost](https://blog.fastforwardlabs.com/2019/03/20/learning-with-limited-labeled-data.html).
+Active learning makes it possible to build applications using a small set of labeled data, and enables enterprises to leverage their large pools of unlabeled data. In this blog post, we explore how active learning works. (For a higher level introduction, please see [our previous blogpost](https://blog.fastforwardlabs.com/2019/03/20/learning-with-limited-labeled-data.html).)
 
 ## The active learning loop
 

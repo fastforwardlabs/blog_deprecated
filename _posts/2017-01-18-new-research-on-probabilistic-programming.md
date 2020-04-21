@@ -1,10 +1,11 @@
 ---
-title: New Research on Probabilistic Programming
-date: 2017-01-18 15:00:00 Z
+title: "New Research on Probabilistic Programming"
+date: "Wed Jan 18 2017 10:00:00 GMT-0500 (Eastern Standard Time)"
+preview_image: "https://68.media.tumblr.com/cbe0007d3ac0cdaaf70d6c4d25978e83/tumblr_inline_ojzf3jTBUF1ta78fg_540.png"
+feature: false
+published: true
 layout: post
-preview_image: https://68.media.tumblr.com/cbe0007d3ac0cdaaf70d6c4d25978e83/tumblr_inline_ojzf3jTBUF1ta78fg_540.png
-redirect_from:
-  - /post/156046009163/new-research-on-probabilistic-programming
+redirect_from: /post/156046009163/new-research-on-probabilistic-programming
 ---
 
 ![image](https://68.media.tumblr.com/cbe0007d3ac0cdaaf70d6c4d25978e83/tumblr_inline_ojzf3jTBUF1ta78fg_540.png)
@@ -42,14 +43,3 @@ Hierarchical models helped make predictions in neighborhoods with sparse pricing
 Many companies suffer from imperfect, incomplete data. These types of inferences can be invaluable to improve predictions based on real-world dependencies.
 
 Play around with [the prototype](http://fastforwardlabs.github.io/pre)! You'll see how the color gradients give you an intuitive sense for what probability distributions look like in practice.
-
-## How to Access our Reports &amp; Prototypes
-
-We're offering our research on probabilistic programming in a few ways:
-
-*   Single Report &amp; Prototype (digital and physical copies)
-*   Annual Research Subscription (access to all our research)
-*   Subscription &amp; Advising (research &amp; time with our team)
-*   Special Projects (dedicated help to build a great data product)
-
-Write to us at contact@fastforwardlabs.com if you'd like to learn more!

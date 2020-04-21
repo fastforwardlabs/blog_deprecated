@@ -1,14 +1,15 @@
 ---
-title: Job Opportunities at Signal
-date: 2016-09-19 17:30:04 Z
-tags:
-- announcement
-- jobs
+title: "Job Opportunities at Signal"
+date: "Mon Sep 19 2016 13:30:04 GMT-0400 (Eastern Daylight Time)"
+preview_image: "https://images.pexels.com/photos/207580/pexels-photo-207580.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb"
+feature: false
+published: false
+tags: announcement,jobs
 layout: post
-redirect_from:
-  - /post/150641720788/job-opportunities-at-signal
-post_type: Announcement
-preview_image: https://images.pexels.com/photos/207580/pexels-photo-207580.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb
+redirect_from: /post/150641720788/job-opportunities-at-signal
+post_type: "Announcement"
+author: "Sean Lorenz, SENTER"
+author_link: "http://senter.io/"
 ---
 
 We’re excited to partner with Prehype and an international news media organization to develop Signal, a new way to understand and structure large volumes of streaming news and media content. Signal will combine novel data with <a href="http://blog.fastforwardlabs.com/2016/04/11/new-tools-to-summarize-text.html">emerging algorithms</a>. We're looking for a couple of folks to join the team. Read more below, and if this is interesting to you, get in touch!

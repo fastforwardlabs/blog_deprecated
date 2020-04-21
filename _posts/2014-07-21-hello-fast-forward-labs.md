@@ -18,7 +18,7 @@ redirect_from: /post/92438955263/hello-fast-forward-labs
 <p>Our business model is simple: we make our clients as smart as we are about data and technology.</p>
 <p>You can subscribe to our research, and every few months you’ll get a new paper that describes an emerging technology, how it works, the current landscape of the technology (commercial, academic, and open source), and our predictions for where it will go next along with a working prototype of the technology. If you like what you see, we’ll be happy to work with you.</p>
 <p>Our first project is on natural language generation algorithms (representing structured data as stories!), and will be available in early August. Look forward to future projects on rich media classification, stream algorithms, context-aware computing and more.</p>
-<p>If this sounds like fun to you, <a href="https://www.cloudera.com/products/fast-forward-labs-research.html#contact">get in touch</a>, or follow along with our adventures <a href="http://www.fastforwardlabs.com/#contact">here</a>.</p>
+<p>If this sounds like fun to you, <a href="mailto:cffl@cloudera.com">get in touch</a>, or follow along with our adventures <a href="https://www.cloudera.com/products/fast-forward-labs-research/fast-forward-lab-research-newsletter-sign-up.html">here</a>.</p>
 <p>Always moving forward,</p>
 <p>Hilary</p>
 <p>Founder and CEO</p>

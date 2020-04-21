@@ -1,11 +1,14 @@
 ---
-layout: post
 title: "Encartopedia"
-date: 2017-08-15 10:30
-preview_image: /images/2017/08/enc-tabula.jpg
-author: Sepand
-author_link: "https://sepans.com/sp"
+date: "2017-08-15 10:30"
+preview_image: "/images/2017/08/enc-tabula.jpg"
 feature: true
+published: true
+layout: post
+author: "Sepand"
+author_link: "https://sepans.com/sp"
+interview_with: Micha
+interview_with_link: http://github.com/mynameisfiber/
 ---
 
 ![Tabula Rogeriana](/images/2017/08/enc-tabula.jpg)
@@ -48,6 +51,6 @@ The UI is build using [React](https://facebook.github.io/react/) and [Redux](htt
 
  On the other hand hyperlinks are no longer the unique source of signifying the relation between two nodes on the web. [The hypertext web is declining](https://medium.com/matter/the-web-we-have-to-save-2eb1fe15a426) where social media indexes play a more important role in determining how much media objects on the web are valuable and related. Wikipedia is unique for remaining purely hypertextual. Encartopedia is also a celebration of the good old hypertextual web. 
 
-##### In the end I wanted to mention how grateful I am for Fast Forward Labs, especially [Grant](https://twitter.com/GrantCuster), [Hilary](https://twitter.com/hmason) for giving me the opportunity to work on this project which I have been fascinated with for a long time. I would also like to thank [Micha](https://github.com/mynameisfiber) for help with figuring out ML challenges and [Raschin](https://twitter.com/purplebulldozer) for help with UI, [hatnote](https://twitter.com/hatnotable) and [Owen Cornec](https://twitter.com/owencornec) for inspiration and all the creators and contributors to the open-source projects I have used. 
+##### In the end I wanted to mention how grateful I am for Fast Forward Labs, especially [Grant](https://twitter.com/GrantCuster) and [Hilary](https://twitter.com/hmason) for giving me the opportunity to work on this project which I have been fascinated with for a long time. I would also like to thank [Micha](https://github.com/mynameisfiber) for help with figuring out ML challenges and [Raschin](https://twitter.com/purplebulldozer) for help with UI, [hatnote](https://twitter.com/hatnotable) and [Owen Cornec](https://twitter.com/owencornec) for inspiration and all the creators and contributors to the open-source projects I have used. 
 
 &ndash; [Sepand](https://sepans.com/sp)

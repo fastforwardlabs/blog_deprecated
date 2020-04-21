@@ -1,11 +1,12 @@
---- 
-layout: post
+---
 title: "The Product Possibilities of Interpretability"
-date: 2017-09-28 10:30
-preview_image: /images/2017/09/refractor-local.gif
+date: "2017-09-28 10:30"
+preview_image: "/images/2017/09/refractor-local.gif"
 feature: true
-author: Grant
-author_link: https://twitter.com/GrantCuster
+published: true
+layout: post
+author: "Grant"
+author_link: "https://twitter.com/GrantCuster"
 ---
 
 ##### This post is part of a series highlighting the importance of interpretability. Previous posts include a [video conversation on interpretability](http://blog.fastforwardlabs.com/2017/09/11/interpretability-webinar.html), [a guide to using the LIME technique to predict whether couples will stay together](http://blog.fastforwardlabs.com/2017/09/01/LIME-for-couples.html), and a look at the [business rationale](http://blog.fastforwardlabs.com/2017/08/02/business-interpretability.html). In [our post on FairML](http://blog.fastforwardlabs.com/2017/03/09/fairml-auditing-black-box-predictive-models.html), we used interpretability techniques to identify discriminatory bias in algorithms.
@@ -162,5 +163,3 @@ grow. Interpretability strategies like LIME open up new possibilities for that
 collaboration, and for better and more responsible use of algorithms. As those
 techniques develop they will need to be supported by interfaces that balance
 the need for context with a focus on possible actions.
-
-##### Full access to the Refractor prototype is available as part of our research subscription. To learn more about subscribing to our reports and prototypes email us at [contact@fastforwardlabs.com](mailto:contact@fastforwardlabs.com).

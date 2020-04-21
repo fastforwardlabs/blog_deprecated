@@ -1,12 +1,12 @@
 ---
-layout: post
 title: "Why your relationship is likely to last (or not): using Local Interpretable Model-Agnostic Explanations (LIME)"
-date: 2017-09-01
-preview_image: /images/2017/09/henry_viii-1504299070584.jpg
-author: Friederike
-author_link: http://www.linkedin.com/in/friederikeschueuer
+date: "Thu Aug 31 2017 20:00:00 GMT-0400 (Eastern Daylight Time)"
+preview_image: "/images/2017/09/henry_viii-1504299070584.jpg"
 feature: true
 published: true
+layout: post
+author: "Friederike"
+author_link: "http://www.linkedin.com/in/friederikeschueuer"
 ---
 
 ![](/images/2017/09/henry_viii-1504299070584.jpg)
@@ -139,14 +139,4 @@ Algorithmic relationship advice should be taken with a grain of salt, LIME reaso
 
 What's more, LIME picks up on patterns in the data learned by the model, it does not inform about reality. Data reflects current and past conventions and social practices (which we see in our results). LIME is no oracle, but it allows humans to enter a more collaborative relationship with black-box machine learning models, and question them when necessary.
 
-## How to Access our Reports and Prototypes
-
-The future is algorithmic. White-box models and techniques for making black-box models interpretable offer a safer, more productive, and ultimately more collaborative relationship between humans and intelligent machines. We are just at the beginning of the conversation about interpretability and will see the impact over the coming years.
-
-We offer our research on interpretability in a few ways:
-
- - Annual research subscription (for individuals and corporate members)
- - Subscription and advising (research and time with our team)
- - Special projects and workshops (help to build a great data product or strategy)
-
-Email us at <contact@fastforwardlabs.com> if you’d like to learn more!
+As [we've said before](https://blog.fastforwardlabs.com/2017/08/02/business-interpretability.html): "The future is algorithmic. White-box models and techniques for making black-box models interpretable offer a safer, more productive, and ultimately more collaborative relationship between humans and intelligent machines. We are just at the beginning of the conversation about interpretability and will see the impact over the coming years."

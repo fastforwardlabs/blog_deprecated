@@ -1,12 +1,14 @@
 ---
-layout: post
 title: "New Research on Interpretability"
-date: 2017-08-02 09:00
-preview_image: /images/2017/08/ff06-animation.gif
-author: Mike
-author_link: "https://twitter.com/mikepqr"
+date: "2017-08-02 09:00"
+preview_image: "/images/2017/08/ff06-animation.gif"
 feature: true
 published: true
+layout: post
+author: "Mike"
+author_link: "https://twitter.com/mikepqr"
+interview_with: Micha
+interview_with_link: http://github.com/mynameisfiber/
 ---
 
 We're excited to release the latest prototype and report from our machine
@@ -86,14 +88,4 @@ co-author of [Ideas on Interpreting Machine
 Learning](https://www.oreilly.com/ideas/ideas-on-interpreting-machine-learning))
 and Sameer Singh (Assistant Professor of Computer Science at UC Irvine,
 co-creator of LIME, a model-agnostic tool for extracting explanations from
-black box machine learning models). 
-
-## How to Access our Reports and Prototypes
-
-We offer our research on interpretability in a few ways:
-
- - Annual research subscription (for individuals and corporate members)
- - Subscription and advising (research and time with our team)
- - Special projects and workshops (help to build a great data product or strategy)
-
-Email us at <contact@fastforwardlabs.com> if you’d like to learn more!
+black box machine learning models).

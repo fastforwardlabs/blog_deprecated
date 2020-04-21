@@ -1,10 +1,12 @@
 ---
-layout: post
-title: 'Online Talk: Introduction to Probabilistic Programming'
-date: 2017-02-09 09:44
-preview_image: http://fastforwardlabs.github.io/report_images/ff05/2-08.png
-post_type: Announcement
+title: "Online Talk: Introduction to Probabilistic Programming"
+date: "2017-02-09 09:44"
+preview_image: "http://fastforwardlabs.github.io/report_images/ff05/2-08.png"
 feature: false
+published: true
+layout: post
+redirect_from: /post/156046009163/new-research-on-probabilistic-programming
+post_type: "Announcement"
 ---
 
 On Tuesday, we hosted an online talk with the [Stan Group](http://stan.fit/) discussing why probabilistic programming is generating so much excitement in the fields of machine learning and statistics. In essence, probabilistic programming is a powerful tool to help organizations make rational decisions under uncertainty.
@@ -18,7 +20,7 @@ Watching the recording, you will learn:
 - What Stan is, what it does well, and what its limitations are
 - What we’re excited about in the near future
 
-This online talk part of a series of educational resources accompanying our [recent research on probabilistic programming](http://blog.fastforwardlabs.com/2017/01/18/new-research-on-probabilistic-programming.html). Our research dives deeper into the topic, teaching readers how to build products using Bayesian inference models. To learn more or subscribe to our research, write to us at [contact@fastforwardlabs.com](mailto:contact@fastforwardlabs.com).
+This online talk part of a series of educational resources accompanying our [recent research on probabilistic programming](http://blog.fastforwardlabs.com/2017/01/18/new-research-on-probabilistic-programming.html). Our research dives deeper into the topic, teaching readers how to build products using Bayesian inference models. To learn more, write to us at [cffl@cloudera.com](mailto:cffl@cloudera.com).
 
 <div class="video-holder">
   <iframe src="https://www.youtube.com/embed/7BjqGEl6mRs" frameborder="0" allowfullscreen=""></iframe>

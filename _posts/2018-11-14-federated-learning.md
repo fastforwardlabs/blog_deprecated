@@ -18,7 +18,7 @@ If you’d like to learn more:
 * Read about the business and product side of federated learning on the [Cloudera VISION blog](http://vision.cloudera.com/an-introduction-to-federated-learning/)
 * Explore our interactive federated learning prototype, [Turbofan Tycoon](https://turbofan.fastforwardlabs.com/)
 * [Register for our webinar](https://www.cloudera.com/more/events/webinars/federated_learning.html) (Thursday, November 15, 2018)
-* Get access to the full 85 page report and advising time with the Fast Forward Labs team by [becoming a Cloudera Fast Forward Labs client](https://www.cloudera.com/products/fast-forward-labs-research.html)
+* Get access to the full 85 page report and advising time with the Fast Forward Labs team by [becoming a Cloudera Fast Forward Labs client](https://www.cloudera.com/about/services-and-support/fast-forward-labs.html)
 
 ## The federated learning setting
 
@@ -111,4 +111,6 @@ Resolving this tension is the goal of research into personalization. In[ Federat
 
 Federated learning makes it easier, safer, and cheaper to apply machine learning in the world’s most regulated, competitive, and profitable industries. It’s also an area of very active current research, with open problems in privacy, security, personalization, and other areas.
 
-In this article, we’ve only scratched the surface. Our report goes into much more detail, and covers issues not mentioned here (including systems and networking issues, libraries and frameworks, and practical recommendations based on our experience building Turbofan Tycoon). We hope you [join the webinar,](https://www.cloudera.com/more/events/webinars/federated_learning.html) [explore the prototype](https://turbofan.fastforwardlabs.com/), and [get in touch](https://www.cloudera.com/products/fast-forward-labs-research.html) if you’re interested in working together.
+In this article, we’ve only scratched the surface. Our report goes into much more detail, and covers issues not mentioned here (including systems and networking issues, libraries and frameworks, and practical recommendations based on our experience building Turbofan Tycoon). We hope you [join the webinar](https://www.cloudera.com/more/events/webinars/federated_learning.html), [explore the prototype](https://turbofan.fastforwardlabs.com/), and [get in touch](https://www.cloudera.com/about/services-and-support/fast-forward-labs.html) if you’re interested in working together. 
+
+*Update:  You can watch the recorded webinar [here](https://www.cloudera.com/more/events/webinars/federated_learning.html).*

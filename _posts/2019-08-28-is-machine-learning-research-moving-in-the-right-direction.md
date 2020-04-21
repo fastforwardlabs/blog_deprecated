@@ -4,9 +4,9 @@ date: "2019-08-28 15:08 -0400"
 preview_image: "/images/editor_uploads/2019-08-21-204110-robots_question.jpg"
 feature: false
 published: true
+post_type: "Newsletter"
 author: "Alice"
 author_link: "https://twitter.com/AliceAlbrecht"
-post_type: "Newsletter"
 ---
 
 Research in machine learning has seen some of the biggest and brightest minds of our time -  and copious amounts of funding - funneled into the pursuit of better, safer, and more generalizable algorithms. As the field grows, there is vigorous debate around the direction that growth should take (for a less biased take, see [here](https://www.technologyreview.com/s/612768/we-analyzed-16625-papers-to-figure-out-where-ai-is-headed-next/)). This week, I give some background on the major algorithm types being researched, help frame aspects of the ongoing debate, and ultimately conclude that there is no single direction to build toward - but that through collaboration, we’ll see advances on all fronts. 
@@ -25,11 +25,11 @@ One place where debates over whether machine learning is heading in the “right
 
 Each goal stated above requires a different weighting of the algorithms being used, and hence a differential investment in lines of research. I won’t belabor the landscape of possible machine learning research areas here, but to ensure everyone reading this has at least a basic understanding of the landscape, I’ll touch on a few key areas. 
 
-* Deep learning (a type of neural network with many layers) has seen an explosion in terms of research over the last 7 years, mainly employing supervised learning (check out our [recent report](https://clients.fastforwardlabs.com/ff03-2019/report) on Deep Learning for more). 
+* Deep learning (a type of neural network with many layers) has seen an explosion in terms of research over the last 7 years, mainly employing supervised learning (check out our [recent report](https://www.cloudera.com/products/fast-forward-labs-research/fast-forward-labs-research-reports.html) on Deep Learning for more). 
 * Reinforcement learning (also a neural network) is an algorithm that aims to choose the optimal behavioral action in an environment given a pre-specified goal to achieve the largest cumulative reward (a lot of the research in this area is being led by Google’s [DeepMind](https://deepmind.com/) and [OpenAI](https://openai.com/)). 
-* Natural language processing is a larger field in computer science but recent work has focused on using recurrent neural networks to glean meaning and even generate language (several of our research reports utilize NLP, the most recent of which you can find [here](https://clients.fastforwardlabs.com/ff11/report)). 
+* Natural language processing is a larger field in computer science, but recent work has focused on using recurrent neural networks to glean meaning and even generate language (several of our research reports utilize NLP). 
 
-A problem with most of these neural network-based techniques is that they are very data hungry. A lot of recent research has been dedicated to finding ways to train these algorithms with less data (see our [recent blog posts](https://blog.fastforwardlabs.com/) for a sampling of some exciting directions).   
+A problem with most of these neural network-based techniques is that they are very data hungry. A lot of recent research has been dedicated to finding ways to train these algorithms with less data (see our report on [Learning with Limited Labeled Data](https://blog.fastforwardlabs.com/2019/04/02/a-guide-to-learning-with-limited-labeled-data.html)).   
 
 Alongside the fervor for neural networks, there’s been renewed attention given to Bayesian methods for developing machine learning models that can learn from less data and learn in a way that’s more akin to how human beings learn [see Josh Tennehbaum](https://web.mit.edu/cocosci/josh.html). [Judea Pearl](https://en.wikipedia.org/wiki/Judea_Pearl) has also recently re-popularized the use of Bayesian inference and causal models when trying to build intelligent machines. 
 

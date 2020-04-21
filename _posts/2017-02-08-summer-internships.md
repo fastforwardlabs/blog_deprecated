@@ -1,10 +1,12 @@
 ---
-layout: post
-title: 'Summer Internships: Data Science, Applied Data Science Writing, Prototyping & Data Viz.'
-date: 2017-02-08 11:34
-preview_image: http://fastforwardlabs.github.io/resources/images/logos/ff-logo-white-bg.png
+title: "Summer Internships: Data Science, Applied Data Science Writing, Prototyping & Data Viz."
+date: "2017-02-08 11:34"
+preview_image: "http://fastforwardlabs.github.io/resources/images/logos/ff-logo-white-bg.png"
 feature: false
-post_type: Announcement
+published: false
+layout: post
+redirect_from: /post/156046009163/new-research-on-probabilistic-programming
+post_type: "Announcement"
 ---
 
 We’re excited to announce [three summer internship opportunities](https://fast-forward-labs.workable.com/), which are open to current undergraduate and graduate students, as well as recent graduates and career changers seeking an internship position.

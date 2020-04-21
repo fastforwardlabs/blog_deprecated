@@ -14,7 +14,7 @@ post_type: "newsletter"
 We recently explored Snorkel, a weak supervision framework for learning when
 there are limited high-quality labels (see [blog
 post](https://blog.fastforwardlabs.com/2019/07/08/snorkel_final.html) and
-[notebook](https://experiments.fastforwardlabs.com/)). To use Snorkel, subject
+[notebook](https://github.com/fastforwardlabs/snorkel-demo-colab/blob/master/snorkel_demo.ipynb)). To use Snorkel, subject
 matter experts first write labeling functions to programmatically create
 labels. Very often these labeling functions attempt to capture heuristics. The
 labels are then fed into a generative model. The job of the generative model is

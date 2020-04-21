@@ -1,15 +1,15 @@
 ---
-title: Breakthroughs in transfer learning for natural language processing
-date: 2018-08-29 18:09 -0400
-preview_image: /images/2018/07/task_dict_v-1532535013679.jpg
+title: "Breakthroughs in transfer learning for natural language processing"
+date: "2018-08-29 18:09 -0400"
+preview_image: "/images/2018/07/task_dict_v-1532535013679.jpg"
 feature: false
 published: true
-author: Seth
-author_link: https://twitter.com/shendrickson16
-post_type: Newsletter
+author: "Seth"
+author_link: "https://twitter.com/shendrickson16"
+post_type: "Newsletter"
 ---
 
-One of the most exciting parts of our jobs at Cloudera Fast Forward Labs is [our work](https://www.fastforwardlabs.com/research) on applied machine learning research. Through this research we see and work with some of the most exciting developments in machine learning, deep learning, and AI, but - as with any field that has been overhyped - we sift through a lot of noise. By noise, we generally mean research that is too immature to be of practical use, or research that follows one or more of the [troubling trends in machine learning](https://arxiv.org/pdf/1807.03341.pdf). 
+One of the most exciting parts of our jobs at Cloudera Fast Forward Labs is [our work](https://www.cloudera.com/products/fast-forward-labs-research/fast-forward-labs-research-reports.html) on applied machine learning research. Through this research we see and work with some of the most exciting developments in machine learning, deep learning, and AI, but - as with any field that has been overhyped - we sift through a lot of noise. By noise, we generally mean research that is too immature to be of practical use, or research that follows one or more of the [troubling trends in machine learning](https://arxiv.org/pdf/1807.03341.pdf). 
 
 The research we get really excited about hits a sweet spot of delivering new capabilities that are of practical use to general data science teams. That’s why we’re particularly excited about developments in transfer learning, a technique that allows anyone from ML beginner to expert to deploy state-of-the-art models on challenging tasks like computer vision and NLP. Specifically, there have been several recent results which indicate that transfer learning will have huge impacts in NLP, similar to what we’ve observed in computer vision.
 

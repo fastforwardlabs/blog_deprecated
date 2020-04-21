@@ -1,12 +1,12 @@
 ---
-title: Supercharging Classification - The Value of Multi-task Learning
-date: Tue Jun 26 2018 20:00:00 GMT-0400 (Eastern Daylight Time)
-preview_image: /images/2018/06/02_03-1530032857031.png
+title: "Supercharging Classification - The Value of Multi-task Learning"
+date: "Tue Jun 26 2018 20:00:00 GMT-0400 (Eastern Daylight Time)"
+preview_image: "/images/2018/06/02_03-1530032857031.png"
 feature: false
 published: true
+author: "Manny"
+author_link: "https://twitter.com/mannymoss"
 layout: post
-author: Manny
-author_link: https://twitter.com/mannymoss
 ---
 
 Today's machines can identify objects in photographs, predict loan repayments or
@@ -14,7 +14,7 @@ defaults, write short summaries of long articles, or recommend movies you may
 like. Up until now, machines have achieved mastery through laser-like focus; most
 machine learning algorithms today train models to master one task, and one task only.
 We are excited to introduce **multi-task learning** in our upcoming
-[webinar](https://info.cloudera.com/LP=2027?src=website&cid=70134000001SxY3),
+[webinar](https://www.cloudera.com/content/dam/www/marketing/resources/webinars/Multi-task-learning-recorded-webinar.png.landing.html),
 report, and prototype. Multi-task learning is an approach to machine learning
 that goes beyond single-task approaches and supercharges classification by
 allowing algorithms to master more than one task at once and in parallel.
@@ -105,6 +105,4 @@ Given the value of a multi-task approach, we are likely to see more applications
 
 We invite anyone interested in supercharging their classification algorithms
 using multi-task learning to our upcoming
-[webinar](https://info.cloudera.com/LP=2027?src=website&cid=70134000001SxY3).
-Also, be sure to keep an eye on the CFFL
-[blog](http://blog.fastforwardlabs.com/) for more announcements.
+[webinar](https://www.cloudera.com/content/dam/www/marketing/resources/webinars/Multi-task-learning-recorded-webinar.png.landing.html).

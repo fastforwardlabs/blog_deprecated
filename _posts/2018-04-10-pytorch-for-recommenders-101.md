@@ -1,9 +1,11 @@
 ---
-title: PyTorch for Recommenders 101
-date: 2018-04-10 13:04 -0400
-preview_image: /images/editor_uploads/2018-04-11-175944-02_07.png
-author: Shioulin
-author_link: https://twitter.com/shioulin_sam
+title: "PyTorch for Recommenders 101"
+date: "2018-04-10 13:04 -0400"
+preview_image: "/images/editor_uploads/2018-04-11-175944-02_07.png"
+feature: false
+published: true
+author: "Shioulin"
+author_link: "https://twitter.com/shioulin_sam"
 ---
 
 Recommenders, generally associated with e-commerce, sift though a huge inventory
@@ -277,5 +279,5 @@ respectively on the Movielens 100K dataset with ratings scaled between [0,
 relatively easily. When we did encounter errors, most of them were triggered by
 incorrect data types.
 
-For more on recommendations, please see our [Semantic Recommendations report](https://www.cloudera.com/more/services-and-support/fast-forward-labs.html)
+For more on recommendations, please see our [Semantic Recommendations report](https://www.cloudera.com/products/fast-forward-labs-research.html),
 where we focus on how machines can better understand content!

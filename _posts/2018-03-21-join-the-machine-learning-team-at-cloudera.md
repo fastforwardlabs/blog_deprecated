@@ -1,9 +1,9 @@
 ---
-title: Join the Machine Learning Team at Cloudera!
-date: 2018-03-21 11:03 -0400
-preview_image: http://fastforwardlabs.github.io/report_images/ff04/rnn_encoder.png
+title: "Join the Machine Learning Team at Cloudera!"
+date: "2018-03-21 11:03 -0400"
+preview_image: "http://fastforwardlabs.github.io/report_images/ff04/rnn_encoder.png"
 feature: false
-published: true
+published: false
 ---
 
 At Cloudera, we believe that with data we can make what is impossible today possible tomorrow. We are building the modern platform for machine learning and analytics to help our customers solve some of the world’s greatest challenges with data. 
@@ -46,4 +46,4 @@ We're looking for an experienced business development professional to manage par
 
 ## And more
 
-If none of these specific opportunities suit you, please do stay tuned for future roles, including internship opportunities. You can also [follow along on our mailing list](https://fastforwardlabs.us8.list-manage.com/subscribe/post?u=bdb368b9a389b010c19dbcd54&id=1d8c97a0bd).
+If none of these specific opportunities suit you, please do stay tuned for future roles, including internship opportunities.

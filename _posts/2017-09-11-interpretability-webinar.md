@@ -1,12 +1,12 @@
 ---
-layout: post
 title: "Interpretability in conversation with Patrick Hall and Sameer Singh"
-date: 2017-09-11
-preview_image: /images/2017/08/ff06-logo.png
-author: Mike
-author_link: http://twitter.com/mikepqr
+date: "Sun Sep 10 2017 20:00:00 GMT-0400 (Eastern Daylight Time)"
+preview_image: "/images/2017/08/ff06-logo.png"
 feature: true
 published: true
+layout: post
+author: "Mike"
+author_link: "http://twitter.com/mikepqr"
 ---
 
 <div class="video-holder">
@@ -32,7 +32,7 @@ interested in working together.
 
 ### Contact
 
- * Fast Forward Labs, <contact@fastforwardlabs.com>,
+ * Fast Forward Labs, <cffl@cloudera.com>,
    [@fastforwardlabs](https://twitter.com/FastForwardLabs)
  * Mike Lee Williams, [@mikepqr](https://twitter.com/mikepqr)
  * Patrick Hall, [@jpatrickhall](https://twitter.com/jpatrickhall),
@@ -345,4 +345,4 @@ types of interpretations that an interpretable model provides.
 ### Mailing list
 
 Our public mailing list is a great way of getting a taste of what Fast Forward 
-Labs is interested in and working on right now. [We hope you'll sign up](https://fastforwardlabs.us8.list-manage.com/subscribe/post?u=bdb368b9a389b010c19dbcd54&id=1d8c97a0bd)!
+Labs is interested in and working on right now. [We hope you'll sign up](https://www.cloudera.com/products/fast-forward-labs-research/fast-forward-lab-research-newsletter-sign-up.html)!
