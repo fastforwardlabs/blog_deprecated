@@ -1,4 +1,4 @@
-# Fast Forward Labs Blog
+# DEPRECATED Fast Forward Labs Blog
 
 Our blog lives here: http://blog.fastforwardlabs.com/
 
